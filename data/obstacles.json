@@ -1,0 +1,44 @@
+{
+  "spawn": {
+    "telegraphSec": 1.3,
+    "minTelegraphSec": 1.1,
+    "maxTelegraphSec": 1.5,
+    "hitboxShrinkPct": 10,
+    "landingSpacePx": 140,
+    "extraSpawnPaddingPx": 32,
+    "minGapSec": 2.2
+  },
+  "types": {
+    "smallRock": {
+      "width": 24,
+      "height": 24,
+      "requiredAction": "jump",
+      "color": "#777777"
+    },
+    "largeRock": {
+      "width": 36,
+      "height": 36,
+      "requiredAction": "jump",
+      "color": "#5e6870"
+    },
+    "tree": {
+      "width": 40,
+      "height": 128,
+      "requiredAction": "doubleJump",
+      "color": "#2f8f46"
+    },
+    "spike": {
+      "width": 28,
+      "height": 18,
+      "requiredAction": "preciseLanding",
+      "color": "#a84d4d"
+    },
+    "stump": {
+      "width": 34,
+      "height": 30,
+      "requiredAction": "jump",
+      "color": "#6b4a2a"
+    }
+  },
+  "_note": "GDD 3.3 v5.10 revision: tree 112->140->132->128. 128 is the GDD 3.3 floor: the single-jump apex is 126.8px, so anything under 128 could be cleared with one tap and the double-jump lesson collapses. Rock/spike sizes reduced from the 3.3 defaults (32/48/32x24) after playtest — on a 390px-wide screen they read as walls. minGapSec is a time-based floor for hazard spacing so gaps scale with speed."
+}

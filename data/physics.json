@@ -1,0 +1,15 @@
+{
+  "physics": {
+    "gravityY": 2400,
+    "jumpVelocityY": -780,
+    "doubleJumpVelocityY": -680,
+    "maxFallVelocityY": 1400,
+    "hitboxShrinkPct": 15,
+    "playerCollider": {
+      "baseWidth": 34,
+      "baseHeight": 56,
+      "baseOffsetX": 11,
+      "baseOffsetY": 14
+    }
+  }
+}

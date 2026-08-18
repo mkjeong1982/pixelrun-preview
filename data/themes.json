@@ -1,0 +1,204 @@
+{
+  "_meta": {
+    "status": "APPROVED — Claude PM 확정 (2026-08-11). WP7 ThemeManager 사용 가능.",
+    "authoredBy": "Claude Master PM",
+    "date": "2026-08-11",
+    "gddRefs": [
+      "6.2",
+      "6.3"
+    ],
+    "notes": "테마 = 레이어 조합(6.2). 배경을 통째로 만들지 않고 하늘/먼산/중경/전경/날씨/조명 레이어를 조합·필터로 변주. 에셋 키는 assets manifest(구현)와 1:1(확장자만 다름). 설원/성벽은 2순위(23.11)이므로 tier-1(평원·숲·야경)만 활성.",
+    "revision": "2026-08-11: field midground = castle+tree (was far_mountain); night keeps house/moon. Fixes night-only house repeating in the field theme. | 2026-08-12: second tree species (mid_pine_green) in field/forest; mid_pine stays the snow-theme conifer per GDD 23.10 | 2026-08-12: mid_castle removed from the field theme — a castle recurring across open meadow made no sense in-fiction (user feedback). Field midground is trees only; density and depth variety now come from BackgroundLayer rather than from adding landmark props. | 2026-08-12: mid_tree_oak/mid_tree_small/mid_bush added to field/forest/night midgrounds (five species in the meadow). mid_moon moved out of the night midground — it is a sky object and SkyDecor owns it now, alongside sky_sun and sky_stars. | 2026-08-13: midgroundWeights added — the meadow reads as broadleaf with the odd conifer (field: oak 5 / big 4 / small 3 / bush 3 / pine 1), not an even mix. The forest keeps more conifer. sky_sun dropped. | 2026-08-13: fruit trees (mid_tree_apple/mid_tree_orange) join the meadow mix. | 2026-08-13: willow/poplar/maple/cherry added — the broadleaf species all had round canopies and read as one repeated tree, so these were chosen for silhouette contrast (drooping, narrow vertical, tiered, blossom). | 2026-08-13: mid_tree_willow dropped — the drooping form did not fit the game's tone (user call). Asset kept on disk in case a later theme wants it. | 2026-08-18: wall theme added and made the opening stage; rotation switched from time-based to every 1500m (sequence wall -> field). Each theme now names its own BGM pair, so the music changes with the stage. | 2026-08-18: BGM roles corrected — Adventure tracks are the normal-run beds, Rush tracks are the fever beds (user spec). Each stage takes one of each so the map still changes the music. | 2026-08-18: displayTitle localised to Korean — it is shown to the player on stage entry, so FIELD/FOREST read as debug labels. | 2026-08-18: obstacleSkins added — the wall stage restyles rock/stump/tree as rubble, barrel and turret. Art only: size, collider and required action stay with the type, so difficulty is unchanged. spike keeps its meadow sprite, which already suits a rampart."
+  },
+  "transition": {
+    "mode": "distance",
+    "switchEveryMeters": 1500,
+    "transitionSec": 2.5,
+    "remoteConfigKeys": {
+      "switchEveryMeters": "theme.switchEveryMeters"
+    },
+    "timerRules": "튜토리얼(4.1) 중 진행 안 함 / 부활(10.3) 시 누적 거리 유지 / 새 런 시작 시 초기화. 2026-08-18 개정: 시간 기준(40s/60s) → 거리 기준 1500m (GDD 6.3 역기입)."
+  },
+  "layerRoles": [
+    "sky",
+    "farMountains",
+    "midground",
+    "foreground",
+    "weather",
+    "lighting"
+  ],
+  "sequence": [
+    "wall",
+    "field"
+  ],
+  "themes": [
+    {
+      "id": "wall",
+      "displayTitle": "성벽",
+      "lighting": "night",
+      "skyTint": "#2a2340",
+      "farMountainTint": "#3a3358",
+      "layers": {
+        "sky": "sky_night_castle",
+        "farMountains": "far_castle",
+        "midground": [
+          "mid_wall",
+          "mid_banner",
+          "mid_torch"
+        ],
+        "foreground": [],
+        "ground": "tile_stone"
+      },
+      "midgroundWeights": {
+        "mid_wall": 6,
+        "mid_banner": 2,
+        "mid_torch": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 3
+      },
+      "obstacleSkins": {
+        "smallRock": "wall_rubble_s",
+        "largeRock": "wall_rubble_l",
+        "stump": "wall_barrel",
+        "tree": "wall_turret"
+      }
+    },
+    {
+      "id": "field",
+      "displayTitle": "평원",
+      "lighting": "day",
+      "skyTint": "#8ed8ff",
+      "farMountainTint": "#86a9be",
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain",
+        "midground": [
+          "mid_tree_oak",
+          "mid_tree_apple",
+          "mid_tree_maple",
+          "mid_tree_cherry",
+          "mid_tree_big",
+          "mid_tree_orange",
+          "mid_tree_poplar",
+          "mid_tree_small",
+          "mid_bush",
+          "mid_pine_green"
+        ],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
+        "ground": "tile_ground"
+      },
+      "weather": {
+        "particle": "petal",
+        "densityPerSec": 6
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_apple": 4,
+        "mid_tree_maple": 4,
+        "mid_tree_cherry": 3,
+        "mid_tree_big": 3,
+        "mid_tree_orange": 3,
+        "mid_tree_poplar": 2,
+        "mid_tree_small": 3,
+        "mid_bush": 3,
+        "mid_pine_green": 1
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      }
+    },
+    {
+      "id": "forest",
+      "displayTitle": "숲",
+      "lighting": "day",
+      "skyTint": "#7fc9a6",
+      "farMountainTint": "#5f8f7a",
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain",
+        "midground": [
+          "mid_tree_oak",
+          "mid_tree_big",
+          "mid_tree_maple",
+          "mid_tree_poplar",
+          "mid_pine_green",
+          "mid_bush"
+        ],
+        "foreground": [
+          "deco_grass"
+        ],
+        "ground": "tile_ground"
+      },
+      "weather": {
+        "particle": "leaf",
+        "densityPerSec": 7
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_big": 4,
+        "mid_tree_maple": 3,
+        "mid_tree_poplar": 2,
+        "mid_pine_green": 3,
+        "mid_bush": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush2"
+      }
+    },
+    {
+      "id": "night",
+      "displayTitle": "야경",
+      "lighting": "night",
+      "skyTint": "#22305a",
+      "farMountainTint": "#3a4a72",
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain",
+        "midground": [
+          "mid_tree_oak",
+          "mid_tree_maple",
+          "mid_tree_small",
+          "mid_bush",
+          "mid_house"
+        ],
+        "foreground": [
+          "deco_grass"
+        ],
+        "ground": "tile_ground"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 5
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_maple": 3,
+        "mid_tree_small": 3,
+        "mid_bush": 3,
+        "mid_house": 1
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush1"
+      }
+    }
+  ],
+  "backlog": {
+    "note": "23.11 2순위 — 데이터 검증 통과 후 착수",
+    "themes": [
+      "snow (설원: tile_snow + mid_pine + snow)",
+      "wall (성벽: mid_wall + mid_torch + fog)"
+    ]
+  }
+}

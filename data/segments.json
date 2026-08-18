@@ -1,0 +1,1061 @@
+{
+  "_meta": {
+    "status": "APPROVED — Claude PM 확정 (사용자가 판단 권한 위임, 2026-08-11). WP6 Route Director 사용 가능.",
+    "authoredBy": "Claude Master PM",
+    "date": "2026-08-09",
+    "gddRefs": [
+      "6.1",
+      "3.3",
+      "7.1",
+      "7.5"
+    ],
+    "coordinateSystem": {
+      "origin": "세그먼트 진입점(로컬 x=0), 오른쪽으로 진행",
+      "x": "세그먼트 시작 기준 px 오프셋",
+      "ground": "지면 상단 y (논리 720의 약 74%)",
+      "obstacle.y": "지면 위에 놓임(하단이 지면 상단에 접함) — 별도 y 미기재",
+      "coin.yAbove": "지면 상단으로부터 위쪽 px (양수=공중)",
+      "pit.w": "지면이 끊긴 가로 폭(px). midPlatform 있으면 중간 발판 제공",
+      "lengthPx": "세그먼트 전체 길이(px)",
+      "entrySafePx": "첫 해저드 이전 안전 활주 구간(사전 노출 확보, 7.5)",
+      "exitSafePx": "마지막 해저드 이후 착지·정리 안전 구간(7.5)"
+    },
+    "physicsAssumptions": {
+      "source": "public/data/physics.json + GDD 3.3 파생값",
+      "singleJumpHeightPx": 127,
+      "airtimeSingleSec": 0.65,
+      "airtimeDoubleSec": 1.1,
+      "speedByDistance": {
+        "0m": 210,
+        "300m": 285,
+        "700m": 320,
+        "1000m": 340,
+        "max": 360
+      },
+      "playerAnchorRatio": 0.12
+    },
+    "validationRule": "WP6는 각 세그먼트를 minDistance 구간의 속도로 파생값 검증: 구덩이/간격 ≤ (해당 속도 × 체공). 미통과 세그먼트는 사용 금지. 아래 값은 여유 마진을 두고 설계했으나 WP6 검증기가 최종 판정한다.",
+    "obstacleSpecPx": {
+      "rock_s": [
+        32,
+        32
+      ],
+      "rock_l": [
+        48,
+        48
+      ],
+      "tree": [
+        40,
+        140
+      ],
+      "spike_tile": [
+        32,
+        24
+      ]
+    },
+    "notEnemyData": "적(슬라임 등) 동작 파라미터(등장거리·속도·진폭·티어)는 enemies.json(WP2e 별도)에서 관리. 여기서는 배치 위치만 표기.",
+    "revision": "2026-08-11: tree height 112->140 (GDD 3.3 rev), landing gaps >=96px, player anchor 12% (GDD 14 rev) | 2026-08-11: tree segments gated to >=400m (double-jump obstacle must appear later, user feedback + GDD 4.1 step 3) | 2026-08-12: stump obstacle introduced (same jump response as rocks, different silhouette) | 2026-08-12: tree h 140->132->128 (GDD 3.3 floor; 126.8px single-jump apex means <128 stops forcing a double jump); canopy coins raised to 165 so they clear the tree and stay within the 223px double-jump apex | 2026-08-12: added A08/A09/B06/B07 — stump had no block past 200m (it vanished from the mid/late run) and spike was gated behind 400m, so both read as rare (user feedback). New blocks use current obstacles.json sizes (stump 34x30, spike 28x18). | 2026-08-13: stump pushed earlier and heavier for the meadow (user feedback) — new field-only A10 opener at 0m, A06 200->150m, A08 300->250m, weights raised. The stump is a meadow silhouette, so it leads there rather than trailing the rocks.",
+    "validation": "GDD 3.3 파생값 검증 통과: 불가능 세그먼트 0건, 착지 공간 >=96px, 이단점프 전용 나무 h=140>127."
+  },
+  "segments": [
+    {
+      "id": "A01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 12,
+      "lengthPx": 360,
+      "entrySafePx": 220,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "rock_s",
+          "x": 220,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "coins": [
+        {
+          "x": 150,
+          "yAbove": 36
+        },
+        {
+          "x": 185,
+          "yAbove": 36
+        },
+        {
+          "x": 300,
+          "yAbove": 36
+        },
+        {
+          "x": 335,
+          "yAbove": 36
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 12,
+      "lengthPx": 380,
+      "entrySafePx": 220,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 96
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 70
+        },
+        {
+          "x": 285,
+          "yAbove": 84
+        },
+        {
+          "x": 320,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 12,
+      "lengthPx": 448,
+      "entrySafePx": 200,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "rock_s",
+          "x": 200,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "type": "stump",
+          "x": 328,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 260,
+          "yAbove": 40
+        },
+        {
+          "x": 388,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 360,
+      "entrySafePx": 80,
+      "exitSafePx": 80,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 100,
+          "yAbove": 40
+        },
+        {
+          "x": 140,
+          "yAbove": 70
+        },
+        {
+          "x": 180,
+          "yAbove": 90
+        },
+        {
+          "x": 220,
+          "yAbove": 90
+        },
+        {
+          "x": 260,
+          "yAbove": 70
+        },
+        {
+          "x": 300,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "difficulty": 2,
+      "minDistance": 150,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 10,
+      "lengthPx": 400,
+      "entrySafePx": 220,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 230,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 110
+        },
+        {
+          "x": 335,
+          "yAbove": 120
+        }
+      ]
+    },
+    {
+      "id": "B01",
+      "difficulty": 2,
+      "minDistance": 400,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 10,
+      "lengthPx": 420,
+      "entrySafePx": 230,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 250,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 165
+        },
+        {
+          "x": 290,
+          "yAbove": 165
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "difficulty": 2,
+      "minDistance": 250,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 440,
+      "entrySafePx": 220,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 160,
+          "midPlatform": {
+            "x": 292,
+            "w": 40
+          }
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 70
+        },
+        {
+          "x": 350,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "difficulty": 2,
+      "minDistance": 150,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 10,
+      "lengthPx": 460,
+      "entrySafePx": 200,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 200,
+          "w": 34,
+          "h": 30
+        },
+        {
+          "type": "rock_l",
+          "x": 340,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "coins": [
+        {
+          "x": 270,
+          "yAbove": 40
+        },
+        {
+          "x": 400,
+          "yAbove": 110
+        }
+      ]
+    },
+    {
+      "id": "B02",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 10,
+      "lengthPx": 440,
+      "entrySafePx": 230,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 230,
+          "w": 32,
+          "h": 24,
+          "count": 2
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 90
+        },
+        {
+          "x": 330,
+          "yAbove": 50
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 460,
+      "entrySafePx": 260,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "enemy",
+          "enemy": "slime",
+          "x": 300,
+          "w": 28,
+          "h": 24,
+          "soloFirstAppearance": true
+        }
+      ],
+      "coins": [
+        {
+          "x": 330,
+          "yAbove": 110
+        },
+        {
+          "x": 365,
+          "yAbove": 120
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "difficulty": 3,
+      "minDistance": 450,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 480,
+      "entrySafePx": 220,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 240,
+          "w": 40,
+          "h": 128
+        },
+        {
+          "type": "rock_s",
+          "x": 380,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "coins": [
+        {
+          "x": 240,
+          "yAbove": 165
+        },
+        {
+          "x": 320,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "difficulty": 3,
+      "minDistance": 500,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 500,
+      "entrySafePx": 240,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 240,
+          "w": 240
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 90
+        },
+        {
+          "x": 360,
+          "yAbove": 100
+        },
+        {
+          "x": 420,
+          "yAbove": 90
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "difficulty": 4,
+      "minDistance": 700,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 500,
+      "entrySafePx": 240,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 240,
+          "w": 32,
+          "h": 24,
+          "count": 3
+        },
+        {
+          "type": "rock_s",
+          "x": 400,
+          "w": 32,
+          "h": 32
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 100
+        },
+        {
+          "x": 340,
+          "yAbove": 90
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "difficulty": 4,
+      "minDistance": 750,
+      "themeTags": [
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 520,
+      "entrySafePx": 250,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "enemy",
+          "enemy": "slime",
+          "x": 280,
+          "w": 28,
+          "h": 24
+        },
+        {
+          "type": "enemy",
+          "enemy": "slime",
+          "x": 420,
+          "w": 28,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 350,
+          "yAbove": 110
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "difficulty": 4,
+      "minDistance": 800,
+      "themeTags": [
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 560,
+      "entrySafePx": 240,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 240,
+          "w": 40,
+          "h": 128
+        },
+        {
+          "type": "tree",
+          "x": 420,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 240,
+          "yAbove": 165
+        },
+        {
+          "x": 330,
+          "yAbove": 60
+        },
+        {
+          "x": 420,
+          "yAbove": 165
+        }
+      ]
+    },
+    {
+      "id": "D01",
+      "difficulty": 4,
+      "minDistance": 850,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 560,
+      "entrySafePx": 230,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 230,
+          "w": 160,
+          "midPlatform": {
+            "x": 302,
+            "w": 40
+          }
+        },
+        {
+          "type": "spike",
+          "x": 460,
+          "w": 32,
+          "h": 24,
+          "count": 2
+        }
+      ],
+      "coins": [
+        {
+          "x": 260,
+          "yAbove": 70
+        },
+        {
+          "x": 360,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "E01",
+      "difficulty": 5,
+      "minDistance": 1000,
+      "themeTags": [
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 600,
+      "entrySafePx": 260,
+      "exitSafePx": 200,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 260,
+          "w": 48,
+          "h": 48
+        },
+        {
+          "type": "pit",
+          "x": 380,
+          "w": 160
+        },
+        {
+          "type": "spike",
+          "x": 520,
+          "w": 32,
+          "h": 24,
+          "count": 2
+        }
+      ],
+      "coins": [
+        {
+          "x": 320,
+          "yAbove": 110
+        },
+        {
+          "x": 440,
+          "yAbove": 80
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "difficulty": 5,
+      "minDistance": 1050,
+      "themeTags": [
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 620,
+      "entrySafePx": 260,
+      "exitSafePx": 200,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 260,
+          "w": 40,
+          "h": 128
+        },
+        {
+          "type": "pit",
+          "x": 420,
+          "w": 240
+        }
+      ],
+      "coins": [
+        {
+          "x": 260,
+          "yAbove": 165
+        },
+        {
+          "x": 480,
+          "yAbove": 100
+        },
+        {
+          "x": 540,
+          "yAbove": 100
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "difficulty": 5,
+      "minDistance": 1100,
+      "themeTags": [
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 648,
+      "entrySafePx": 260,
+      "exitSafePx": 200,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 260,
+          "w": 32,
+          "h": 24,
+          "count": 3
+        },
+        {
+          "type": "rock_s",
+          "x": 420,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "type": "rock_l",
+          "x": 548,
+          "w": 48,
+          "h": 48
+        }
+      ],
+      "coins": [
+        {
+          "x": 360,
+          "yAbove": 100
+        },
+        {
+          "x": 480,
+          "yAbove": 60
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "difficulty": 2,
+      "minDistance": 300,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 400,
+      "entrySafePx": 80,
+      "exitSafePx": 100,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 100,
+          "yAbove": 40
+        },
+        {
+          "x": 150,
+          "yAbove": 80
+        },
+        {
+          "x": 200,
+          "yAbove": 110
+        },
+        {
+          "x": 250,
+          "yAbove": 110
+        },
+        {
+          "x": 300,
+          "yAbove": 80
+        },
+        {
+          "x": 350,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "difficulty": 4,
+      "minDistance": 800,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 420,
+      "entrySafePx": 90,
+      "exitSafePx": 100,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 110,
+          "yAbove": 50
+        },
+        {
+          "x": 160,
+          "yAbove": 90
+        },
+        {
+          "x": 210,
+          "yAbove": 120
+        },
+        {
+          "x": 260,
+          "yAbove": 120
+        },
+        {
+          "x": 310,
+          "yAbove": 90
+        },
+        {
+          "x": 360,
+          "yAbove": 50
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "difficulty": 2,
+      "minDistance": 250,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 11,
+      "lengthPx": 440,
+      "entrySafePx": 200,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 200,
+          "w": 34,
+          "h": 30
+        },
+        {
+          "type": "stump",
+          "x": 352,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 268,
+          "yAbove": 70
+        },
+        {
+          "x": 300,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "difficulty": 2,
+      "minDistance": 250,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 430,
+      "entrySafePx": 210,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 210,
+          "w": 28,
+          "h": 18,
+          "count": 2
+        }
+      ],
+      "coins": [
+        {
+          "x": 180,
+          "yAbove": 80
+        },
+        {
+          "x": 320,
+          "yAbove": 50
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "difficulty": 3,
+      "minDistance": 600,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 480,
+      "entrySafePx": 220,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 220,
+          "w": 34,
+          "h": 30
+        },
+        {
+          "type": "spike",
+          "x": 372,
+          "w": 28,
+          "h": 18,
+          "count": 2
+        }
+      ],
+      "coins": [
+        {
+          "x": 292,
+          "yAbove": 75
+        },
+        {
+          "x": 448,
+          "yAbove": 55
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "difficulty": 4,
+      "minDistance": 900,
+      "themeTags": [
+        "field",
+        "forest",
+        "night"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 500,
+      "entrySafePx": 230,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 230,
+          "w": 28,
+          "h": 18,
+          "count": 3
+        },
+        {
+          "type": "stump",
+          "x": 396,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 95
+        },
+        {
+          "x": 330,
+          "yAbove": 85
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 11,
+      "lengthPx": 430,
+      "entrySafePx": 210,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 210,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 278,
+          "yAbove": 70
+        },
+        {
+          "x": 320,
+          "yAbove": 50
+        }
+      ]
+    }
+  ]
+}

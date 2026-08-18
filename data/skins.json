@@ -1,0 +1,18 @@
+[
+  { "id": "skin_classic", "tier": "free", "blessing": null },
+  {
+    "id": "skin_sakura",
+    "tier": "free",
+    "blessing": { "id": "sakura_grace", "type": "economy", "effect": "coin_gain_multiplier", "value": 1.05 }
+  },
+  {
+    "id": "skin_p1_stardust",
+    "tier": "paid",
+    "blessing": { "id": "starlight_grace", "type": "economy", "effect": "coin_magnet_small", "value": 1 }
+  },
+  {
+    "id": "skin_p2_aurora",
+    "tier": "paid",
+    "blessing": { "id": "aurora_grace", "type": "charge", "effect": "fever_charge_rate", "value": 1.1 }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "distance": {
+    "pixelsPerMeter": 16
+  },
+  "speed": {
+    "start": 280,
+    "at300m": 350,
+    "at1000m": 410,
+    "max": 440,
+    "segment1Curve": "easeOutQuad",
+    "segment2Curve": "easeOutQuad",
+    "after1000mCurve": "exponentialApproach",
+    "after1000mTauMeters": 800,
+    "tempoVariationRate": 0.06,
+    "tempoVariationDurationMs": 2500,
+    "tempoVariationCooldownMs": 12000
+  },
+  "route": {
+    "minimumHazardIntervalSec": 1.0,
+    "earlyDistanceMaxMeters": 150,
+    "earlyMaxVisibleHazards": 1,
+    "maxVisibleHazards": 2,
+    "interSegmentSafeSec": 0.6,
+    "restAfterHazardSegmentsMin": 2,
+    "restAfterHazardSegmentsMax": 4
+  },
+  "fever": {
+    "distanceChargePctPerMeter": 0.035,
+    "coinChargePct": 0.8,
+    "nearMissChargePct": 4.0,
+    "durationSec": 7.5,
+    "speedBonusPct": 20,
+    "destroyBonusCoins": 5,
+    "magnetRadiusPx": 190,
+    "_note": "GDD 8.3. Rates sit at the slow end of the sanctioned ranges (distance 0.03~0.07, coin 0.8~1.6): at the defaults the gauge filled in ~45s, under the 50~70s target, because a coin-heavy line charges far faster than the distance-only sanity check in 8.3 assumes. ~68s now. durationSec 5.0 -> 7.5 (GDD 8.3 revision, user request): five seconds ended before the payoff registered. Tune from measured per-minute distance/coins/near-miss, never by hardcoding elsewhere."
+  },
+  "items": {
+    "spawnIntervalSecMin": 7.0,
+    "spawnIntervalSecMax": 13.0,
+    "magnetDurationSec": 6.0,
+    "magnetRadiusPx": 240,
+    "boltFeverChargePct": 30,
+    "bigCoinValue": 10,
+    "shieldMaxStacks": 3,
+    "types": [
+      {
+        "id": "bigcoin",
+        "weight": 3,
+        "placement": "risk"
+      },
+      {
+        "id": "magnet",
+        "weight": 3,
+        "placement": "safe"
+      },
+      {
+        "id": "bolt",
+        "weight": 3,
+        "placement": "risk"
+      },
+      {
+        "id": "shield",
+        "weight": 1,
+        "placement": "neutral"
+      }
+    ],
+    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'."
+  }
+}
