@@ -3,10 +3,10 @@
     "pixelsPerMeter": 16
   },
   "speed": {
-    "start": 280,
-    "at300m": 350,
-    "at1000m": 410,
-    "max": 440,
+    "start": 320,
+    "at300m": 400,
+    "at1000m": 470,
+    "max": 540,
     "segment1Curve": "easeOutQuad",
     "segment2Curve": "easeOutQuad",
     "after1000mCurve": "exponentialApproach",
