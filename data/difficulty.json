@@ -69,8 +69,8 @@
     "max": 3,
     "obstacleDamage": 1,
     "pitDamage": 1,
-    "invulnerableMs": 1400,
-    "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer. | 2026-08-21: heart pickup added (user request). max stays the stage-start value; maxCap is the ceiling a pickup can raise it to, and the item stops spawning at the cap.",
+    "invulnerableMs": 520,
+    "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer. | 2026-08-21: heart pickup added (user request). max stays the stage-start value; maxCap is the ceiling a pickup can raise it to, and the item stops spawning at the cap. | 2026-08-21: invulnerableMs 1400 -> 520. At 1400 the mercy window covered 472px at pace — wider than the 390px screen — so a second, genuinely separate obstacle was absorbed for free. The player would take two hits, expect one heart left, then survive a pit and read it as being revived (user report). The window only needs to outlast one obstacle's own overlap, which is a few frames; 520ms covers ~175px, about four obstacle widths.",
     "maxCap": 5,
     "heartItemGain": 1
   },
