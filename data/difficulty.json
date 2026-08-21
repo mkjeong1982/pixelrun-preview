@@ -37,7 +37,7 @@
   "items": {
     "spawnIntervalSecMin": 7.0,
     "spawnIntervalSecMax": 13.0,
-    "magnetDurationSec": 6.0,
+    "magnetDurationSec": 7.0,
     "magnetRadiusPx": 240,
     "boltFeverChargePct": 100,
     "bigCoinValue": 10,
@@ -69,7 +69,7 @@
         "placement": "neutral"
       }
     ],
-    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up. | 2026-08-21: heart added at weight 2 — rarer than the three medium pickups but ahead of the shield, since it is the only way to undo damage."
+    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up. | 2026-08-21: heart added at weight 2 — rarer than the three medium pickups but ahead of the shield, since it is the only way to undo damage. | 2026-08-21: magnetDurationSec 6.0 -> 7.0 (user request, balance pass)."
   },
   "hp": {
     "max": 3,
