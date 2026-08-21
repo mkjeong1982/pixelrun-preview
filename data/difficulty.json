@@ -80,7 +80,7 @@
     "perNearMiss": 50,
     "perRemainingHeart": 200,
     "perFever": 150,
-    "nearMissBandPx": 22,
-    "_note": "GDD v6.0 §7 first pass. §18 leaves the formula open until balance testing, so these are a starting shape, not an answer. Near miss is worth five coins because it costs a deliberate risk; a surviving heart is worth twenty because HP is the resource the whole stage is played against. clearBonus dominates a short stage on purpose — finishing is the point, and the rest is how well."
+    "nearMissBandPx": 95,
+    "_note": "GDD v6.0 §7 first pass. §18 leaves the formula open until balance testing, so these are a starting shape, not an answer. Near miss is worth five coins because it costs a deliberate risk; a surviving heart is worth twenty because HP is the resource the whole stage is played against. clearBonus dominates a short stage on purpose — finishing is the point, and the rest is how well. | 2026-08-21: nearMissBandPx 22 -> 70. Measured live, she clears a hazard by 90-104px on a normal jump — her single-jump apex is 126.8px against obstacles 24 to 36 tall — so a 22px band could never be entered and near misses effectively never fired (user report). 70 sits under the 90px floor of an ordinary pass, so an ordinary jump still earns nothing; it pays for a late, low pass where she is already descending over the hazard. | 2026-08-21: band 70 -> 95 (user asked for more of them). Measured clearances on a normal jump run 50-104px, so 95 catches most passes; the call is graded by how close she actually came, so a loose pass reads Good! and only a tight one reads Perfect!."
   }
 }
