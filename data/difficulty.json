@@ -28,18 +28,18 @@
     "distanceChargePctPerMeter": 0.035,
     "coinChargePct": 0.8,
     "nearMissChargePct": 4.0,
-    "durationSec": 7.5,
+    "durationSec": 9.5,
     "speedBonusPct": 20,
     "destroyBonusCoins": 5,
     "magnetRadiusPx": 190,
-    "_note": "GDD 8.3. Rates sit at the slow end of the sanctioned ranges (distance 0.03~0.07, coin 0.8~1.6): at the defaults the gauge filled in ~45s, under the 50~70s target, because a coin-heavy line charges far faster than the distance-only sanity check in 8.3 assumes. ~68s now. durationSec 5.0 -> 7.5 (GDD 8.3 revision, user request): five seconds ended before the payoff registered. Tune from measured per-minute distance/coins/near-miss, never by hardcoding elsewhere."
+    "_note": "GDD 8.3. Rates sit at the slow end of the sanctioned ranges (distance 0.03~0.07, coin 0.8~1.6): at the defaults the gauge filled in ~45s, under the 50~70s target, because a coin-heavy line charges far faster than the distance-only sanity check in 8.3 assumes. ~68s now. durationSec 5.0 -> 7.5 (GDD 8.3 revision, user request): five seconds ended before the payoff registered. Tune from measured per-minute distance/coins/near-miss, never by hardcoding elsewhere. | 2026-08-21: durationSec 7.5 -> 9.5 (user request, balance pass)."
   },
   "items": {
     "spawnIntervalSecMin": 7.0,
     "spawnIntervalSecMax": 13.0,
     "magnetDurationSec": 6.0,
     "magnetRadiusPx": 240,
-    "boltFeverChargePct": 30,
+    "boltFeverChargePct": 100,
     "bigCoinValue": 10,
     "shieldMaxStacks": 3,
     "types": [
@@ -64,6 +64,13 @@
         "placement": "neutral"
       }
     ],
-    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'."
+    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up."
+  },
+  "hp": {
+    "max": 3,
+    "obstacleDamage": 1,
+    "pitDamage": 1,
+    "invulnerableMs": 1400,
+    "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer."
   }
 }
