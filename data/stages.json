@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "gddRef": "v6.0 §4 / §5 / §13",
+    "status": "STEP 1 — Stage 1 Prototype only. STEP 4 expands this to all 30 stages.",
+    "note": "GDD v6.0 §13 lists the full Stage record (obstacle/coin/item pattern, unlock condition, story event, clear reward). Only the fields STEP 1 actually consumes exist here; the rest arrive with the Stage Loader in STEP 4 rather than being stubbed now, so nothing reads a field that has never been designed.",
+    "revision": "2026-08-21: created for STEP 1. Stage 1 is the existing runner pinned to a single theme at 2000m."
+  },
+  "stages": [
+    {
+      "id": "1-1",
+      "index": 1,
+      "region": "palace",
+      "subRegion": "palace_inside",
+      "displayName": "궁궐 안",
+      "distanceMeters": 2000,
+      "theme": "wall"
+    }
+  ]
+}
