@@ -62,15 +62,22 @@
         "id": "shield",
         "weight": 1,
         "placement": "neutral"
+      },
+      {
+        "id": "heart",
+        "weight": 2,
+        "placement": "neutral"
       }
     ],
-    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up."
+    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up. | 2026-08-21: heart added at weight 2 — rarer than the three medium pickups but ahead of the shield, since it is the only way to undo damage."
   },
   "hp": {
     "max": 3,
     "obstacleDamage": 1,
     "pitDamage": 1,
     "invulnerableMs": 1400,
-    "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer."
+    "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer. | 2026-08-21: heart pickup added (user request). max stays the stage-start value; maxCap is the ceiling a pickup can raise it to, and the item stops spawning at the cap.",
+    "maxCap": 5,
+    "heartItemGain": 1
   }
 }
