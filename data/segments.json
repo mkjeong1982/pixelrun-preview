@@ -54,8 +54,8 @@
       ]
     },
     "notEnemyData": "적(슬라임 등) 동작 파라미터(등장거리·속도·진폭·티어)는 enemies.json(WP2e 별도)에서 관리. 여기서는 배치 위치만 표기.",
-    "revision": "2026-08-11: tree height 112->140 (GDD 3.3 rev), landing gaps >=96px, player anchor 12% (GDD 14 rev) | 2026-08-11: tree segments gated to >=400m (double-jump obstacle must appear later, user feedback + GDD 4.1 step 3) | 2026-08-12: stump obstacle introduced (same jump response as rocks, different silhouette) | 2026-08-12: tree h 140->132->128 (GDD 3.3 floor; 126.8px single-jump apex means <128 stops forcing a double jump); canopy coins raised to 165 so they clear the tree and stay within the 223px double-jump apex | 2026-08-12: added A08/A09/B06/B07 — stump had no block past 200m (it vanished from the mid/late run) and spike was gated behind 400m, so both read as rare (user feedback). New blocks use current obstacles.json sizes (stump 34x30, spike 28x18). | 2026-08-13: stump pushed earlier and heavier for the meadow (user feedback) — new field-only A10 opener at 0m, A06 200->150m, A08 300->250m, weights raised. The stump is a meadow silhouette, so it leads there rather than trailing the rocks. | 2026-08-19: tall-obstacle segments unlocked earlier — B01 400->180, B03 450->330, B05 800->620 (user call). Measured over a full wall stage the tall hazard spawned only ~3 times and first appeared at 674m, so the knight statue variant was almost never on screen. Onboarding already teaches the double jump before the real run, and a lower unlock means the hazard is met at a slower speed, which is more forgiving rather than less.",
-    "validation": "GDD 3.3 파생값 검증 통과: 불가능 세그먼트 0건, 착지 공간 >=96px, 이단점프 전용 나무 h=140>127."
+    "validation": "GDD 3.3 파생값 검증 통과: 불가능 세그먼트 0건, 착지 공간 >=96px, 이단점프 전용 나무 h=140>127.",
+    "revisionLog": "md_docs/data-revisions.md"
   },
   "segments": [
     {

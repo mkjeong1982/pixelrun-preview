@@ -3,12 +3,21 @@
     "gddRef": "v6.0 §4 / §5 / §13",
     "status": "STEP 1 — Stage 1 Prototype only. STEP 4 expands this to all 30 stages.",
     "note": "GDD v6.0 §13 lists the full Stage record (obstacle/coin/item pattern, unlock condition, story event, clear reward). Only the fields STEP 1 actually consumes exist here; the rest arrive with the Stage Loader in STEP 4 rather than being stubbed now, so nothing reads a field that has never been designed.",
-    "revision": "2026-08-21: created for STEP 1. Stage 1 is the existing runner pinned to a single theme at 2000m. | 2026-08-21: ⚠️ TEMPORARY — Stage 1 distance 2000 -> 500m so the clear flow can be play-tested without a 90s run. Restore to 2000 (GDD v6.0 §5: 2,000~3,000m) before any build that is not a test. | 2026-08-21: test distance 500 -> 700m. | 2026-08-21: test distance 700 -> 1000m. | 2026-08-21: stage 1 renamed 궁궐 안 -> 궁성 성벽 (user call). The wall theme's art is ramparts, so the interior name never matched what is on screen. | 2026-08-21: distance 1000 -> 1400m."
+    "revisionLog": "md_docs/data-revisions.md"
   },
   "stages": [
     {
       "id": "1-1",
       "index": 1,
+      "region": "palace",
+      "subRegion": "palace_inside",
+      "displayName": "궁궐 안",
+      "distanceMeters": 1400,
+      "theme": "palace"
+    },
+    {
+      "id": "1-2",
+      "index": 2,
       "region": "palace",
       "subRegion": "palace_inside",
       "displayName": "궁성 성벽",
