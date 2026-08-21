@@ -41,7 +41,6 @@
     "magnetRadiusPx": 240,
     "boltFeverChargePct": 100,
     "bigCoinValue": 10,
-    "shieldMaxStacks": 3,
     "types": [
       {
         "id": "bigcoin",
@@ -59,17 +58,12 @@
         "placement": "risk"
       },
       {
-        "id": "shield",
-        "weight": 1,
-        "placement": "neutral"
-      },
-      {
         "id": "heart",
         "weight": 2,
         "placement": "neutral"
       }
     ],
-    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up. | 2026-08-21: heart added at weight 2 — rarer than the three medium pickups but ahead of the shield, since it is the only way to undo damage. | 2026-08-21: magnetDurationSec 6.0 -> 7.0 (user request, balance pass)."
+    "_note": "Item table (user spec 2026-08-13). placement: risk = near a hazard so the pickup costs a manoeuvre; safe = in a clear stretch; neutral = anywhere. Weights give bigcoin/magnet/bolt 'medium' frequency and shield 'low'. | 2026-08-21: boltFeverChargePct 30 -> 100 (user request). The lightning now fills the gauge outright and fever fires on pickup, so it is a guaranteed payoff rather than a partial top-up. | 2026-08-21: heart added at weight 2 — rarer than the three medium pickups but ahead of the shield, since it is the only way to undo damage. | 2026-08-21: magnetDurationSec 6.0 -> 7.0 (user request, balance pass). | 2026-08-21: shield removed (user call). Hearts already absorb a hit, so a stackable one-hit shield was the same mechanic twice; its weight goes to the remaining pickups."
   },
   "hp": {
     "max": 3,
@@ -79,5 +73,14 @@
     "_note": "GDD v6.0 §6 (STEP 2). One hit costs one heart and grants invulnerability so a single obstacle cannot eat the whole bar on consecutive frames. A pit costs a heart and returns her to solid ground before it rather than ending the run. §18 leaves these open until play-testing; these are the first pass, not a balanced answer. | 2026-08-21: heart pickup added (user request). max stays the stage-start value; maxCap is the ceiling a pickup can raise it to, and the item stops spawning at the cap.",
     "maxCap": 5,
     "heartItemGain": 1
+  },
+  "score": {
+    "clearBonus": 1000,
+    "perCoin": 10,
+    "perNearMiss": 50,
+    "perRemainingHeart": 200,
+    "perFever": 150,
+    "nearMissBandPx": 22,
+    "_note": "GDD v6.0 §7 first pass. §18 leaves the formula open until balance testing, so these are a starting shape, not an answer. Near miss is worth five coins because it costs a deliberate risk; a surviving heart is worth twenty because HP is the resource the whole stage is played against. clearBonus dominates a short stage on purpose — finishing is the point, and the rest is how well."
   }
 }
