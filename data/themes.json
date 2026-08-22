@@ -29,6 +29,7 @@
   ],
   "sequence": [
     "palace",
+    "palace_town",
     "wall",
     "field"
   ],
@@ -78,6 +79,14 @@
           ]
         ]
       },
+      "farOverlays": [
+        {
+          "texture": "palace_portrait",
+          "x": 413,
+          "y": 238,
+          "frames": 3
+        }
+      ],
       "midgroundTint": "#b9a089",
       "indoor": true,
       "midgroundWeights": {
@@ -124,6 +133,62 @@
         "tree": 3,
         "largeRock": 2,
         "stump": 0
+      }
+    },
+    {
+      "id": "palace_town",
+      "displayTitle": "궁궐 앞마을",
+      "lighting": "night",
+      "skyTint": "#2a2444",
+      "farMountainTint": "#4a4270",
+      "layers": {
+        "sky": "town_back",
+        "farMountains": "town_street",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_cobble"
+      },
+      "farParallax": 0.45,
+      "midgroundTint": "#b9a089",
+      "farDecals": {
+        "points": [
+          [
+            210,
+            388
+          ],
+          [
+            297,
+            390
+          ],
+          [
+            535,
+            388
+          ],
+          [
+            755,
+            390
+          ]
+        ]
+      },
+      "indoor": false,
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 2
+      },
+      "obstacleSkins": {
+        "smallRock": "town_crate",
+        "largeRock": "town_crate_stack",
+        "stump": "wall_barrel",
+        "tree": "town_lamp"
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 3,
+        "stump": 3
       }
     },
     {
