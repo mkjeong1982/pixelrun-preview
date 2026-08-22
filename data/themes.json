@@ -265,11 +265,11 @@
         ],
         "largeRock": [
           {
-            "skin": "wall_guard",
+            "skin": "wall_patrol",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 36,
-            "bodyHeightPx": 68,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
             "weight": 4
           }
         ],
