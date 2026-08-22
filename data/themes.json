@@ -50,6 +50,34 @@
         "ground": "tile_palace_floor"
       },
       "farParallax": 0.45,
+      "farDecals": {
+        "points": [
+          [
+            81,
+            376
+          ],
+          [
+            101,
+            376
+          ],
+          [
+            288,
+            376
+          ],
+          [
+            306,
+            376
+          ],
+          [
+            678,
+            376
+          ],
+          [
+            697,
+            376
+          ]
+        ]
+      },
       "midgroundTint": "#b9a089",
       "indoor": true,
       "midgroundWeights": {
@@ -71,20 +99,13 @@
         "tree": "palace_candelabra"
       },
       "obstacleVariants": {
-        "tree": [
-          {
-            "skin": "wall_knight",
-            "bodyWidthPx": 26,
-            "weight": 3
-          }
-        ],
         "largeRock": [
           {
-            "skin": "wall_guard",
+            "skin": "palace_maid",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 36,
-            "bodyHeightPx": 68,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
             "weight": 4
           }
         ],
@@ -101,8 +122,8 @@
       },
       "obstacleBaseWeights": {
         "tree": 3,
-        "largeRock": 0,
-        "stump": 3
+        "largeRock": 2,
+        "stump": 0
       }
     },
     {
