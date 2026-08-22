@@ -153,20 +153,36 @@
       "farDecals": {
         "points": [
           [
-            210,
-            388
+            37,
+            353
           ],
           [
-            297,
-            390
+            322,
+            351
           ],
           [
-            535,
-            388
+            437,
+            353
           ],
           [
-            755,
-            390
+            735,
+            352
+          ],
+          [
+            855,
+            360
+          ],
+          [
+            1120,
+            361
+          ],
+          [
+            1211,
+            368
+          ],
+          [
+            1438,
+            368
           ]
         ]
       },
@@ -187,8 +203,20 @@
       },
       "obstacleBaseWeights": {
         "tree": 3,
-        "largeRock": 3,
+        "largeRock": 2,
         "stump": 3
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "town_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
+            "weight": 4
+          }
+        ]
       }
     },
     {
