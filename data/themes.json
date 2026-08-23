@@ -191,6 +191,7 @@
         ]
       },
       "indoor": false,
+      "paintedStars": true,
       "bgm": {
         "main": "bgm_adventure1",
         "fever": "bgm_rush1"
