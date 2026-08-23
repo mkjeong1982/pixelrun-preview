@@ -152,8 +152,8 @@
       "midgroundTint": "#b9a089",
       "openingLandmark": {
         "texture": "town_palace",
-        "x": 195,
-        "y": 184,
+        "x": 320,
+        "y": 190,
         "parallax": 0.12
       },
       "farDecals": {
