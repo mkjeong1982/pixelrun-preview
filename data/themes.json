@@ -150,6 +150,12 @@
       },
       "farParallax": 0.45,
       "midgroundTint": "#b9a089",
+      "openingLandmark": {
+        "texture": "town_palace",
+        "x": 195,
+        "y": 184,
+        "parallax": 0.12
+      },
       "farDecals": {
         "points": [
           [
