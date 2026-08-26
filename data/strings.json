@@ -1,0 +1,33 @@
+{
+  "ko": {
+    "dressroom.title": "드레스룸",
+    "dressroom.preview.button": "미리보기",
+    "dressroom.preview.title": "{{dress}}, 전력 질주 중!",
+    "dressroom.preview.hint": "아무 데나 톡! 옷장으로 슝 돌아가요.",
+    "dressroom.preview.close": "✕ 닫기",
+    "dressroom.nav.run": "달리기",
+    "dressroom.nav.dressroom": "드레스룸",
+    "dressroom.nav.ranking": "랭킹&업적",
+    "dressroom.nav.settings": "설정",
+    "dressroom.rarity.common": "COMMON",
+    "dressroom.rarity.rare": "RARE",
+    "dressroom.rarity.epic": "EPIC",
+    "dressroom.action.wearing": "착용 중",
+    "dressroom.action.wear": "착용하기",
+    "dressroom.action.purchase": "구매 {{price}}",
+    "dressroom.card.wearing": "착용 중 ✓",
+    "dressroom.card.owned": "보유",
+    "dressroom.card.priceCoins": "{{price}} 코인",
+    "dressroom.toast.loadFailed": "옷장이 잠깐 딸꾹질했어요!",
+    "dressroom.toast.coinFeatureSoon": "코인 버튼은 곧 열려요! 금고가 몸 푸는 중!",
+    "dressroom.toast.helpSoon": "도움말은 준비 중이에요. 설명 요정이 출근 중!",
+    "dressroom.toast.navSoon": "준비 중이에요. 길 안내 요정이 지도 펴는 중!",
+    "dressroom.toast.wearSuccess": "{{dress}}, 출동 준비 끝!",
+    "dressroom.toast.dressSoon": "이 드레스는 곧 열려요. 옷걸이 대기 중!",
+    "dressroom.toast.coinShopSoon": "코인 상점은 곧 열려요!",
+    "dressroom.toast.notEnoughCoins": "코인이 살짝 다이어트 중이에요!",
+    "dressroom.toast.purchaseSuccess": "{{dress}}, 내 옷장 입성!",
+    "dressroom.toast.storageUnavailable": "저장 서랍이 아직 준비 중이에요!",
+    "dressroom.toast.saveFailed": "저장 요정이 잠깐 졸았어요. 다시 톡!"
+  }
+}
