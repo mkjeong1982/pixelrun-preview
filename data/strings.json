@@ -28,6 +28,24 @@
     "dressroom.toast.notEnoughCoins": "코인이 살짝 다이어트 중이에요!",
     "dressroom.toast.purchaseSuccess": "{{dress}}, 내 옷장 입성!",
     "dressroom.toast.storageUnavailable": "저장 서랍이 아직 준비 중이에요!",
-    "dressroom.toast.saveFailed": "저장 요정이 잠깐 졸았어요. 다시 톡!"
+    "dressroom.toast.saveFailed": "저장 요정이 잠깐 졸았어요. 다시 톡!",
+    "ranking.title": "랭킹 & 업적",
+    "ranking.tab.ranking": "랭킹",
+    "ranking.tab.achievements": "업적",
+    "ranking.notice.seasonReset": "대규모 업데이트 시 시즌 랭킹 초기화",
+    "ranking.rank.value": "{{rank}}위",
+    "ranking.score.value": "{{score}}점",
+    "ranking.player.label": "내 순위",
+    "ranking.achievement.soon.title": "업적 요정이 메달을 닦는 중!",
+    "ranking.achievement.soon.body": "준비 중이에요. 반짝임만 조금 더 얹을게요!",
+    "ranking.mission.title": "일일 미션",
+    "ranking.mission.fever": "피버타임 {{n}}회",
+    "ranking.mission.coins": "코인 {{n}}개 획득",
+    "ranking.mission.stages": "스테이지 {{n}}회 클리어",
+    "ranking.mission.closeCalls": "아슬아슬 {{n}}회",
+    "ranking.mission.progress": "{{current}}/{{target}}",
+    "ranking.mission.done": "완료",
+    "ranking.toast.dataFallback": "랭킹 서버가 스트레칭 중! 목업 기록을 보여드릴게요.",
+    "ranking.toast.navSoon": "준비 중이에요. 길 안내 요정이 표지판 세우는 중!"
   }
 }

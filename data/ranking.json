@@ -1,0 +1,17 @@
+{
+  "_mock": true,
+  "starCoins": 12450,
+  "entries": [
+    { "rank": 1, "name": "별빛공주", "score": 12840, "avatarFrame": 0 },
+    { "rank": 2, "name": "러닝퀸", "score": 11230, "avatarFrame": 1 },
+    { "rank": 3, "name": "체리공주", "score": 9875, "avatarFrame": 2 },
+    { "rank": 4, "name": "스노우벨", "score": 8210, "avatarFrame": 3 },
+    { "rank": 5, "name": "골드러너", "score": 7450, "avatarFrame": 4 }
+  ],
+  "player": {
+    "rank": 18,
+    "name": "MK Princess",
+    "score": 6420,
+    "avatarFrame": 5
+  }
+}
