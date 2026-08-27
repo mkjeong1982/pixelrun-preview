@@ -1,12 +1,12 @@
 {
   "ko": {
-    "dressroom.title": "드레스룸",
+    "dressroom.title": "드레스샵",
     "dressroom.preview.button": "미리보기",
     "dressroom.preview.title": "{{dress}}, 전력 질주 중!",
     "dressroom.preview.hint": "아무 데나 톡! 옷장으로 슝 돌아가요.",
     "dressroom.preview.close": "✕ 닫기",
     "dressroom.nav.run": "달리기",
-    "dressroom.nav.dressroom": "드레스룸",
+    "dressroom.nav.dressroom": "드레스샵",
     "dressroom.nav.ranking": "랭킹&업적",
     "dressroom.nav.settings": "설정",
     "dressroom.rarity.common": "COMMON",
