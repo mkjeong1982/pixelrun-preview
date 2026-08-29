@@ -15,8 +15,8 @@
       "displayName": "궁궐",
       "distanceMeters": 1400,
       "theme": "palace",
-      "mapX": 110,
-      "mapY": 238
+      "mapX": 101,
+      "mapY": 260
     },
     {
       "id": "1-2",
@@ -27,8 +27,8 @@
       "displayName": "궁궐 2",
       "distanceMeters": 1400,
       "theme": "wall",
-      "mapX": 160,
-      "mapY": 337
+      "mapX": 163,
+      "mapY": 379
     },
     {
       "id": "1-3",
@@ -39,8 +39,8 @@
       "displayName": "궁궐 앞마을",
       "distanceMeters": 1400,
       "theme": "palace_town",
-      "mapX": 159,
-      "mapY": 451
+      "mapX": 173,
+      "mapY": 527
     },
     {
       "id": "1-4",
@@ -49,8 +49,8 @@
       "regionName": "달빛 왕국",
       "subRegion": "palace_town",
       "displayName": "궁궐 앞마을 2",
-      "mapX": 181,
-      "mapY": 565
+      "mapX": 183,
+      "mapY": 674
     },
     {
       "id": "1-5",
@@ -59,8 +59,8 @@
       "regionName": "달빛 왕국",
       "subRegion": "palace_outskirts",
       "displayName": "궁궐 외곽",
-      "mapX": 181,
-      "mapY": 678
+      "mapX": 159,
+      "mapY": 798
     },
     {
       "id": "1-6",
@@ -69,8 +69,8 @@
       "regionName": "달빛 왕국",
       "subRegion": "palace_outskirts",
       "displayName": "궁궐 외곽 2",
-      "mapX": 160,
-      "mapY": 805
+      "mapX": 272,
+      "mapY": 828
     },
     {
       "id": "2-1",
@@ -79,8 +79,8 @@
       "regionName": "평원",
       "subRegion": "village_front",
       "displayName": "마을 앞",
-      "mapX": 479,
-      "mapY": 754
+      "mapX": 369,
+      "mapY": 776
     },
     {
       "id": "2-2",
@@ -89,8 +89,8 @@
       "regionName": "평원",
       "subRegion": "village_front",
       "displayName": "마을 앞 2",
-      "mapX": 507,
-      "mapY": 631
+      "mapX": 477,
+      "mapY": 737
     },
     {
       "id": "2-3",
@@ -99,8 +99,8 @@
       "regionName": "평원",
       "subRegion": "wide_field",
       "displayName": "넓은 평원",
-      "mapX": 529,
-      "mapY": 516
+      "mapX": 509,
+      "mapY": 615
     },
     {
       "id": "2-4",
@@ -109,8 +109,8 @@
       "regionName": "평원",
       "subRegion": "wide_field",
       "displayName": "넓은 평원 2",
-      "mapX": 530,
-      "mapY": 397
+      "mapX": 528,
+      "mapY": 474
     },
     {
       "id": "2-5",
@@ -119,8 +119,8 @@
       "regionName": "평원",
       "subRegion": "waterfall_field",
       "displayName": "폭포 평원",
-      "mapX": 523,
-      "mapY": 282
+      "mapX": 517,
+      "mapY": 336
     },
     {
       "id": "2-6",
@@ -129,8 +129,8 @@
       "regionName": "평원",
       "subRegion": "waterfall_field",
       "displayName": "폭포 평원 2",
-      "mapX": 568,
-      "mapY": 153
+      "mapX": 575,
+      "mapY": 204
     },
     {
       "id": "3-1",
@@ -139,8 +139,8 @@
       "regionName": "숲",
       "subRegion": "shallow_forest",
       "displayName": "얕은 숲",
-      "mapX": 803,
-      "mapY": 177
+      "mapX": 713,
+      "mapY": 150
     },
     {
       "id": "3-2",
@@ -149,8 +149,8 @@
       "regionName": "숲",
       "subRegion": "shallow_forest",
       "displayName": "얕은 숲 2",
-      "mapX": 842,
-      "mapY": 300
+      "mapX": 809,
+      "mapY": 250
     },
     {
       "id": "3-3",
@@ -159,8 +159,8 @@
       "regionName": "숲",
       "subRegion": "mid_forest",
       "displayName": "중간 숲",
-      "mapX": 838,
-      "mapY": 421
+      "mapX": 847,
+      "mapY": 402
     },
     {
       "id": "3-4",
@@ -170,7 +170,7 @@
       "subRegion": "mid_forest",
       "displayName": "중간 숲 2",
       "mapX": 847,
-      "mapY": 538
+      "mapY": 569
     },
     {
       "id": "3-5",
@@ -179,8 +179,8 @@
       "regionName": "숲",
       "subRegion": "deep_forest",
       "displayName": "깊은 숲",
-      "mapX": 821,
-      "mapY": 654
+      "mapX": 815,
+      "mapY": 724
     },
     {
       "id": "3-6",
@@ -189,8 +189,8 @@
       "regionName": "숲",
       "subRegion": "deep_forest",
       "displayName": "깊은 숲 2",
-      "mapX": 823,
-      "mapY": 777
+      "mapX": 957,
+      "mapY": 813
     },
     {
       "id": "4-1",
@@ -199,8 +199,8 @@
       "regionName": "설원",
       "subRegion": "snow_plain",
       "displayName": "설원 평야",
-      "mapX": 1144,
-      "mapY": 780
+      "mapX": 1050,
+      "mapY": 787
     },
     {
       "id": "4-2",
@@ -209,8 +209,8 @@
       "regionName": "설원",
       "subRegion": "snow_plain",
       "displayName": "설원 평야 2",
-      "mapX": 1156,
-      "mapY": 300
+      "mapX": 1149,
+      "mapY": 706
     },
     {
       "id": "4-3",
@@ -219,8 +219,8 @@
       "regionName": "설원",
       "subRegion": "ice_lake",
       "displayName": "얼음호수",
-      "mapX": 1156,
-      "mapY": 421
+      "mapX": 1154,
+      "mapY": 577
     },
     {
       "id": "4-4",
@@ -229,8 +229,8 @@
       "regionName": "설원",
       "subRegion": "ice_lake",
       "displayName": "얼음호수 2",
-      "mapX": 1156,
-      "mapY": 540
+      "mapX": 1154,
+      "mapY": 442
     },
     {
       "id": "4-5",
@@ -239,8 +239,8 @@
       "regionName": "설원",
       "subRegion": "snow_valley",
       "displayName": "설원 골짜기",
-      "mapX": 1147,
-      "mapY": 655
+      "mapX": 1160,
+      "mapY": 315
     },
     {
       "id": "4-6",
@@ -249,8 +249,8 @@
       "regionName": "설원",
       "subRegion": "snow_valley",
       "displayName": "설원 골짜기 2",
-      "mapX": 1164,
-      "mapY": 177
+      "mapX": 1241,
+      "mapY": 216
     },
     {
       "id": "5-1",
@@ -259,8 +259,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_edge",
       "displayName": "외곽",
-      "mapX": 1456,
-      "mapY": 191
+      "mapX": 1344,
+      "mapY": 215
     },
     {
       "id": "5-2",
@@ -269,8 +269,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_edge",
       "displayName": "외곽 2",
-      "mapX": 1508,
-      "mapY": 309
+      "mapX": 1462,
+      "mapY": 236
     },
     {
       "id": "5-3",
@@ -279,8 +279,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_city",
       "displayName": "도심",
-      "mapX": 1522,
-      "mapY": 425
+      "mapX": 1517,
+      "mapY": 358
     },
     {
       "id": "5-4",
@@ -289,8 +289,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_city",
       "displayName": "도심 2",
-      "mapX": 1515,
-      "mapY": 550
+      "mapX": 1528,
+      "mapY": 492
     },
     {
       "id": "5-5",
@@ -299,8 +299,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_palace",
       "displayName": "궁궐",
-      "mapX": 1521,
-      "mapY": 667
+      "mapX": 1518,
+      "mapY": 635
     },
     {
       "id": "5-6",
@@ -309,8 +309,8 @@
       "regionName": "수정왕국",
       "subRegion": "abroad_palace",
       "displayName": "궁궐 2",
-      "mapX": 1492,
-      "mapY": 789
+      "mapX": 1518,
+      "mapY": 778
     }
   ]
 }
