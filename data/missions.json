@@ -10,7 +10,9 @@
       "iconFrame": 0,
       "target": 20,
       "current": 12,
-      "completed": false
+      "completed": false,
+      "reward": 50,
+      "claimed": false
     },
     {
       "id": "coins",
@@ -21,7 +23,9 @@
       "iconFrame": 1,
       "target": 200,
       "current": 85,
-      "completed": false
+      "completed": false,
+      "reward": 80,
+      "claimed": false
     },
     {
       "id": "stages",
@@ -32,7 +36,9 @@
       "iconFrame": 2,
       "target": 3,
       "current": 3,
-      "completed": true
+      "completed": true,
+      "reward": 120,
+      "claimed": false
     },
     {
       "id": "dodges",
@@ -43,7 +49,9 @@
       "iconFrame": 3,
       "target": 15,
       "current": 7,
-      "completed": false
+      "completed": false,
+      "reward": 60,
+      "claimed": false
     }
   ]
 }
