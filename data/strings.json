@@ -39,10 +39,10 @@
     "ranking.achievement.soon.title": "업적 요정이 메달을 닦는 중!",
     "ranking.achievement.soon.body": "준비 중이에요. 반짝임만 조금 더 얹을게요!",
     "ranking.mission.title": "일일 미션",
-    "ranking.mission.jump": "점프 {{n}}회",
+    "ranking.mission.doubleJumpDodge": "더블점프 회피 {{n}}회",
     "ranking.mission.coins": "코인 {{n}}개 획득",
     "ranking.mission.stages": "스테이지 {{n}}회 클리어",
-    "ranking.mission.dodges": "장애물 {{n}}개 회피",
+    "ranking.mission.smash": "장애물 파괴 {{n}}회",
     "ranking.mission.progress": "{{current}}/{{target}}",
     "ranking.mission.done": "완료",
     "ranking.mission.stamp": "COMPLETE",
@@ -73,6 +73,7 @@
     "game.pickup.heart": "하트 +1",
     "game.tutorial.done": "이제 질주하세요!",
     "game.banner.speedup": "스피드업!",
+    "game.doubleJumpDodge.call": "더블 회피!",
 
     "tutorial.step1.hint": "화면을 탭하면 점프해요",
     "tutorial.step2.hint": "장애물은 탭해서 뛰어넘어요",
@@ -99,6 +100,7 @@
     "stageclear.row.hearts": "남은 하트",
     "stageclear.row.fever": "피버 격파",
     "stageclear.row.flag": "깃발 터치",
+    "stageclear.row.doubleJumpDodge": "더블점프 회피",
 
     "stagefailed.menu": "메뉴로",
 

@@ -3,26 +3,27 @@
   "items": [
     {
       "id": "jump",
-      "titleKey": "ranking.mission.jump",
+      "titleKey": "ranking.mission.doubleJumpDodge",
       "titleParams": {
         "n": 20
       },
       "iconFrame": 0,
       "target": 20,
-      "current": 12,
+      "current": 0,
       "completed": false,
       "reward": 50,
-      "claimed": false
+      "claimed": false,
+      "liveTracked": true
     },
     {
       "id": "coins",
       "titleKey": "ranking.mission.coins",
       "titleParams": {
-        "n": 200
+        "n": 400
       },
       "iconFrame": 1,
-      "target": 200,
-      "current": 85,
+      "target": 400,
+      "current": 170,
       "completed": false,
       "reward": 80,
       "claimed": false
@@ -42,13 +43,13 @@
     },
     {
       "id": "dodges",
-      "titleKey": "ranking.mission.dodges",
+      "titleKey": "ranking.mission.smash",
       "titleParams": {
-        "n": 15
+        "n": 20
       },
       "iconFrame": 3,
-      "target": 15,
-      "current": 7,
+      "target": 20,
+      "current": 9,
       "completed": false,
       "reward": 60,
       "claimed": false
