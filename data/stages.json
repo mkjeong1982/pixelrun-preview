@@ -16,7 +16,9 @@
       "distanceMeters": 1400,
       "theme": "palace",
       "mapX": 101,
-      "mapY": 260
+      "mapY": 260,
+      "nameKey": "data.stage.1-1.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "1-2",
@@ -28,7 +30,9 @@
       "distanceMeters": 1400,
       "theme": "wall",
       "mapX": 163,
-      "mapY": 379
+      "mapY": 379,
+      "nameKey": "data.stage.1-2.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "1-3",
@@ -40,7 +44,9 @@
       "distanceMeters": 1400,
       "theme": "palace_town",
       "mapX": 173,
-      "mapY": 527
+      "mapY": 527,
+      "nameKey": "data.stage.1-3.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "1-4",
@@ -50,7 +56,9 @@
       "subRegion": "palace_town",
       "displayName": "궁궐 앞마을 2",
       "mapX": 183,
-      "mapY": 674
+      "mapY": 674,
+      "nameKey": "data.stage.1-4.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "1-5",
@@ -60,7 +68,9 @@
       "subRegion": "palace_outskirts",
       "displayName": "궁궐 외곽",
       "mapX": 159,
-      "mapY": 798
+      "mapY": 798,
+      "nameKey": "data.stage.1-5.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "1-6",
@@ -70,7 +80,9 @@
       "subRegion": "palace_outskirts",
       "displayName": "궁궐 외곽 2",
       "mapX": 272,
-      "mapY": 828
+      "mapY": 828,
+      "nameKey": "data.stage.1-6.name",
+      "regionNameKey": "stagemap.region.palace"
     },
     {
       "id": "2-1",
@@ -80,7 +92,9 @@
       "subRegion": "village_front",
       "displayName": "마을 앞",
       "mapX": 369,
-      "mapY": 776
+      "mapY": 776,
+      "nameKey": "data.stage.2-1.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "2-2",
@@ -90,7 +104,9 @@
       "subRegion": "village_front",
       "displayName": "마을 앞 2",
       "mapX": 477,
-      "mapY": 737
+      "mapY": 737,
+      "nameKey": "data.stage.2-2.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "2-3",
@@ -100,7 +116,9 @@
       "subRegion": "wide_field",
       "displayName": "넓은 평원",
       "mapX": 509,
-      "mapY": 615
+      "mapY": 615,
+      "nameKey": "data.stage.2-3.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "2-4",
@@ -110,7 +128,9 @@
       "subRegion": "wide_field",
       "displayName": "넓은 평원 2",
       "mapX": 528,
-      "mapY": 474
+      "mapY": 474,
+      "nameKey": "data.stage.2-4.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "2-5",
@@ -120,7 +140,9 @@
       "subRegion": "waterfall_field",
       "displayName": "폭포 평원",
       "mapX": 517,
-      "mapY": 336
+      "mapY": 336,
+      "nameKey": "data.stage.2-5.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "2-6",
@@ -130,7 +152,9 @@
       "subRegion": "waterfall_field",
       "displayName": "폭포 평원 2",
       "mapX": 575,
-      "mapY": 204
+      "mapY": 204,
+      "nameKey": "data.stage.2-6.name",
+      "regionNameKey": "stagemap.region.field"
     },
     {
       "id": "3-1",
@@ -140,7 +164,9 @@
       "subRegion": "shallow_forest",
       "displayName": "얕은 숲",
       "mapX": 713,
-      "mapY": 150
+      "mapY": 150,
+      "nameKey": "data.stage.3-1.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "3-2",
@@ -150,7 +176,9 @@
       "subRegion": "shallow_forest",
       "displayName": "얕은 숲 2",
       "mapX": 809,
-      "mapY": 250
+      "mapY": 250,
+      "nameKey": "data.stage.3-2.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "3-3",
@@ -160,7 +188,9 @@
       "subRegion": "mid_forest",
       "displayName": "중간 숲",
       "mapX": 847,
-      "mapY": 402
+      "mapY": 402,
+      "nameKey": "data.stage.3-3.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "3-4",
@@ -170,7 +200,9 @@
       "subRegion": "mid_forest",
       "displayName": "중간 숲 2",
       "mapX": 847,
-      "mapY": 569
+      "mapY": 569,
+      "nameKey": "data.stage.3-4.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "3-5",
@@ -180,7 +212,9 @@
       "subRegion": "deep_forest",
       "displayName": "깊은 숲",
       "mapX": 815,
-      "mapY": 724
+      "mapY": 724,
+      "nameKey": "data.stage.3-5.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "3-6",
@@ -190,7 +224,9 @@
       "subRegion": "deep_forest",
       "displayName": "깊은 숲 2",
       "mapX": 957,
-      "mapY": 813
+      "mapY": 813,
+      "nameKey": "data.stage.3-6.name",
+      "regionNameKey": "stagemap.region.forest"
     },
     {
       "id": "4-1",
@@ -200,7 +236,9 @@
       "subRegion": "snow_plain",
       "displayName": "설원 평야",
       "mapX": 1050,
-      "mapY": 787
+      "mapY": 787,
+      "nameKey": "data.stage.4-1.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "4-2",
@@ -210,7 +248,9 @@
       "subRegion": "snow_plain",
       "displayName": "설원 평야 2",
       "mapX": 1149,
-      "mapY": 706
+      "mapY": 706,
+      "nameKey": "data.stage.4-2.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "4-3",
@@ -220,7 +260,9 @@
       "subRegion": "ice_lake",
       "displayName": "얼음호수",
       "mapX": 1154,
-      "mapY": 577
+      "mapY": 577,
+      "nameKey": "data.stage.4-3.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "4-4",
@@ -230,7 +272,9 @@
       "subRegion": "ice_lake",
       "displayName": "얼음호수 2",
       "mapX": 1154,
-      "mapY": 442
+      "mapY": 442,
+      "nameKey": "data.stage.4-4.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "4-5",
@@ -240,7 +284,9 @@
       "subRegion": "snow_valley",
       "displayName": "설원 골짜기",
       "mapX": 1160,
-      "mapY": 315
+      "mapY": 315,
+      "nameKey": "data.stage.4-5.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "4-6",
@@ -250,7 +296,9 @@
       "subRegion": "snow_valley",
       "displayName": "설원 골짜기 2",
       "mapX": 1241,
-      "mapY": 216
+      "mapY": 216,
+      "nameKey": "data.stage.4-6.name",
+      "regionNameKey": "stagemap.region.snow"
     },
     {
       "id": "5-1",
@@ -260,7 +308,9 @@
       "subRegion": "abroad_edge",
       "displayName": "외곽",
       "mapX": 1344,
-      "mapY": 215
+      "mapY": 215,
+      "nameKey": "data.stage.5-1.name",
+      "regionNameKey": "stagemap.region.abroad"
     },
     {
       "id": "5-2",
@@ -270,7 +320,9 @@
       "subRegion": "abroad_edge",
       "displayName": "외곽 2",
       "mapX": 1462,
-      "mapY": 236
+      "mapY": 236,
+      "nameKey": "data.stage.5-2.name",
+      "regionNameKey": "stagemap.region.abroad"
     },
     {
       "id": "5-3",
@@ -280,7 +332,9 @@
       "subRegion": "abroad_city",
       "displayName": "도심",
       "mapX": 1517,
-      "mapY": 358
+      "mapY": 358,
+      "nameKey": "data.stage.5-3.name",
+      "regionNameKey": "stagemap.region.abroad"
     },
     {
       "id": "5-4",
@@ -290,7 +344,9 @@
       "subRegion": "abroad_city",
       "displayName": "도심 2",
       "mapX": 1528,
-      "mapY": 492
+      "mapY": 492,
+      "nameKey": "data.stage.5-4.name",
+      "regionNameKey": "stagemap.region.abroad"
     },
     {
       "id": "5-5",
@@ -300,7 +356,9 @@
       "subRegion": "abroad_palace",
       "displayName": "궁궐",
       "mapX": 1518,
-      "mapY": 635
+      "mapY": 635,
+      "nameKey": "data.stage.5-5.name",
+      "regionNameKey": "stagemap.region.abroad"
     },
     {
       "id": "5-6",
@@ -310,7 +368,9 @@
       "subRegion": "abroad_palace",
       "displayName": "궁궐 2",
       "mapX": 1518,
-      "mapY": 778
+      "mapY": 778,
+      "nameKey": "data.stage.5-6.name",
+      "regionNameKey": "stagemap.region.abroad"
     }
   ]
 }
