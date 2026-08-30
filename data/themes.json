@@ -242,6 +242,7 @@
       "midgroundTint": "#b9a089",
       "indoor": false,
       "paintedStars": true,
+      "paintedMoon": true,
       "bgm": {
         "main": "bgm_adventure1",
         "fever": "bgm_rush1"
