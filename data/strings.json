@@ -57,6 +57,7 @@
 
     "common.retry": "다시 하기",
     "common.home": "← 홈으로",
+    "common.comingSoon": "곧 열려요!",
 
     "game.pause.confirmBody": "여기서 그만둘까요?\n달린 거리는 기록되지 않아요",
     "game.pause.toMap": "스테이지 지도로",
@@ -196,5 +197,11 @@
     "settings.reset.confirmBody": "저장된 진행 상황이 모두 사라져요. 되돌릴 수 없어요!",
     "settings.reset.confirmButton": "초기화할게요",
     "settings.reset.cancelButton": "아니요"
+  },
+  "en": {
+    "title.prompt": "Tap to Start"
+  },
+  "ja": {
+    "title.prompt": "タップしてスタート"
   }
 }
