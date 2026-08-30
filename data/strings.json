@@ -70,6 +70,7 @@
     "settings.info.terms": "이용약관",
     "settings.info.privacy": "개인정보처리방침",
     "settings.info.contact": "문의하기",
+    "settings.info.logout": "로그아웃",
     "settings.info.version": "Version {{version}}",
     "settings.toast.comingSoon": "준비 중이에요! 요정이 서류 정리하는 중!",
     "settings.toast.saveFailed": "저장 요정이 잠깐 졸았어요. 다시 톡!",
