@@ -1056,6 +1056,377 @@
           "yAbove": 50
         }
       ]
+    },
+    {
+      "id": "T4-A01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 11,
+      "lengthPx": 350,
+      "entrySafePx": 190,
+      "exitSafePx": 136,
+      "obstacles": [
+        {
+          "type": "rock_s",
+          "x": 190,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 142,
+          "yAbove": 40
+        },
+        {
+          "x": 270,
+          "yAbove": 48
+        }
+      ]
+    },
+    {
+      "id": "T4-A02",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 350,
+      "entrySafePx": 185,
+      "exitSafePx": 131,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 185,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 255,
+          "yAbove": 62
+        },
+        {
+          "x": 295,
+          "yAbove": 48
+        }
+      ]
+    },
+    {
+      "id": "T4-R01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 320,
+      "entrySafePx": 80,
+      "exitSafePx": 80,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 100,
+          "yAbove": 42
+        },
+        {
+          "x": 145,
+          "yAbove": 68
+        },
+        {
+          "x": 190,
+          "yAbove": 82
+        },
+        {
+          "x": 235,
+          "yAbove": 68
+        }
+      ]
+    },
+    {
+      "id": "T4-A03",
+      "difficulty": 2,
+      "minDistance": 150,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 10,
+      "lengthPx": 360,
+      "entrySafePx": 185,
+      "exitSafePx": 139,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 185,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 76
+        },
+        {
+          "x": 292,
+          "yAbove": 54
+        }
+      ]
+    },
+    {
+      "id": "T4-S01",
+      "difficulty": 2,
+      "minDistance": 250,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 3,
+      "lengthPx": 370,
+      "entrySafePx": 190,
+      "exitSafePx": 132,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 190,
+          "w": 48,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 180,
+          "yAbove": 82
+        },
+        {
+          "x": 228,
+          "yAbove": 92
+        },
+        {
+          "x": 276,
+          "yAbove": 72
+        }
+      ]
+    },
+    {
+      "id": "T4-R02",
+      "difficulty": 2,
+      "minDistance": 300,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 330,
+      "entrySafePx": 80,
+      "exitSafePx": 90,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 105,
+          "yAbove": 40
+        },
+        {
+          "x": 155,
+          "yAbove": 62
+        },
+        {
+          "x": 205,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "T4-B01",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 390,
+      "entrySafePx": 200,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 200,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 164
+        },
+        {
+          "x": 246,
+          "yAbove": 164
+        }
+      ]
+    },
+    {
+      "id": "T4-B02",
+      "difficulty": 3,
+      "minDistance": 500,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 380,
+      "entrySafePx": 190,
+      "exitSafePx": 154,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 190,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 258,
+          "yAbove": 84
+        },
+        {
+          "x": 302,
+          "yAbove": 56
+        }
+      ]
+    },
+    {
+      "id": "T4-C01",
+      "difficulty": 4,
+      "minDistance": 700,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 400,
+      "entrySafePx": 210,
+      "exitSafePx": 156,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 210,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 275,
+          "yAbove": 78
+        },
+        {
+          "x": 320,
+          "yAbove": 50
+        }
+      ]
+    },
+    {
+      "id": "T4-R03",
+      "difficulty": 4,
+      "minDistance": 800,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 340,
+      "entrySafePx": 90,
+      "exitSafePx": 100,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 110,
+          "yAbove": 46
+        },
+        {
+          "x": 165,
+          "yAbove": 74
+        },
+        {
+          "x": 220,
+          "yAbove": 46
+        }
+      ]
+    },
+    {
+      "id": "T4-E01",
+      "difficulty": 5,
+      "minDistance": 1000,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 430,
+      "entrySafePx": 220,
+      "exitSafePx": 174,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 220,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 286,
+          "yAbove": 88
+        },
+        {
+          "x": 334,
+          "yAbove": 58
+        }
+      ]
+    },
+    {
+      "id": "T4-E02",
+      "difficulty": 5,
+      "minDistance": 1100,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 440,
+      "entrySafePx": 220,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 220,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 220,
+          "yAbove": 166
+        },
+        {
+          "x": 270,
+          "yAbove": 166
+        }
+      ]
     }
   ]
 }
