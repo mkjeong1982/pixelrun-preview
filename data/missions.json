@@ -1,5 +1,4 @@
 {
-  "_mock": true,
   "items": [
     {
       "id": "jump",
@@ -9,11 +8,7 @@
       },
       "iconFrame": 0,
       "target": 20,
-      "current": 0,
-      "completed": false,
-      "reward": 50,
-      "claimed": false,
-      "liveTracked": true
+      "reward": 50
     },
     {
       "id": "coins",
@@ -23,10 +18,7 @@
       },
       "iconFrame": 1,
       "target": 400,
-      "current": 170,
-      "completed": false,
-      "reward": 80,
-      "claimed": false
+      "reward": 80
     },
     {
       "id": "stages",
@@ -36,10 +28,7 @@
       },
       "iconFrame": 2,
       "target": 3,
-      "current": 3,
-      "completed": true,
-      "reward": 120,
-      "claimed": false
+      "reward": 120
     },
     {
       "id": "dodges",
@@ -49,10 +38,7 @@
       },
       "iconFrame": 3,
       "target": 20,
-      "current": 9,
-      "completed": false,
-      "reward": 60,
-      "claimed": false
+      "reward": 60
     }
   ]
 }
