@@ -182,7 +182,8 @@
     "settings.reset.confirmButton": "초기화할게요",
     "settings.reset.cancelButton": "아니요",
     "dressroom.stats.coin.nightStages": "저녁 스테이지 골드 {{percent}}% 증가",
-    "dressroom.stats.speed": "속도 {{percent}}% 증가"
+    "dressroom.stats.speed": "속도 {{percent}}% 증가",
+    "dressroom.toast.cashComingSoon": "현금 결제는 아직 준비 중이에요. 코인으로 먼저 만나요!"
   },
   "en": {
     "dressroom.title": "Dress Shop",
@@ -367,7 +368,8 @@
     "settings.reset.confirmButton": "Reset It",
     "settings.reset.cancelButton": "No",
     "dressroom.stats.coin.nightStages": "+{{percent}}% Gold on Night Stages",
-    "dressroom.stats.speed": "+{{percent}}% Speed"
+    "dressroom.stats.speed": "+{{percent}}% Speed",
+    "dressroom.toast.cashComingSoon": "Real-money checkout isn't open yet — coins work in the meantime!"
   },
   "ja": {
     "dressroom.title": "ドレスショップ",
@@ -552,6 +554,7 @@
     "settings.reset.confirmButton": "初期化する",
     "settings.reset.cancelButton": "いいえ",
     "dressroom.stats.coin.nightStages": "夜ステージでゴールド{{percent}}%アップ",
-    "dressroom.stats.speed": "スピード{{percent}}%アップ"
+    "dressroom.stats.speed": "スピード{{percent}}%アップ",
+    "dressroom.toast.cashComingSoon": "現金決済はまだ準備中です。まずはコインでどうぞ！"
   }
 }
