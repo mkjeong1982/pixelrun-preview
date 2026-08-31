@@ -36,6 +36,7 @@
     "description": "달빛 아래서 더 반짝이는 진홍빛 나이트 드레스!",
     "descKey": "data.skin.skin_p1_stardust.desc",
     "priceCoins": 3200,
+    "priceCash": { "KRW": 2900, "USD": 1.99, "JPY": 300 },
     "stats": {
       "hearts": 3,
       "coinBonusPercent": 15,
@@ -78,6 +79,7 @@
     "description": "하늘빛 치맛자락이 피버를 야무지게 깨워요!",
     "descKey": "data.skin.skin_p2_aurora.desc",
     "priceCoins": 14800,
+    "priceCash": null,
     "stats": {
       "hearts": 5,
       "coinBonusPercent": null,
