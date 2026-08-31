@@ -8,11 +8,17 @@
     "thumbFrame": 0,
     "displayName": "클래식 드레스",
     "nameKey": "data.skin.skin_classic.name",
+    "iconKey": "icon_skin_classic",
     "rarity": "common",
     "description": "클래식한 느낌의 기본 드레스",
     "descKey": "data.skin.skin_classic.desc",
     "priceCoins": null,
-    "effects": []
+    "stats": {
+      "hearts": 3,
+      "coinBonusPercent": null,
+      "feverBonusSeconds": null,
+      "blessingKey": null
+    }
   },
   {
     "id": "skin_p1_stardust",
@@ -21,15 +27,17 @@
     "runSheet": "princess_royalred_run",
     "displayName": "로열 레드 드레스",
     "nameKey": "data.skin.skin_p1_stardust.name",
+    "iconKey": null,
     "rarity": "rare",
     "description": "빨간 드레스 한 벌이면 입장부터 이미 주인공!",
     "descKey": "data.skin.skin_p1_stardust.desc",
     "priceCoins": 3200,
-    "effects": [
-      { "label": "코인 자석", "value": "+1", "labelKey": "data.skin.skin_p1_stardust.effect.0.label" },
-      { "label": "별빛 반짝", "value": "+30%", "labelKey": "data.skin.skin_p1_stardust.effect.1.label" },
-      { "label": "밤길 자신감", "value": "MAX", "labelKey": "data.skin.skin_p1_stardust.effect.2.label" }
-    ]
+    "stats": {
+      "hearts": 4,
+      "coinBonusPercent": null,
+      "feverBonusSeconds": null,
+      "blessingKey": null
+    }
   },
   {
     "id": "skin_sakura",
@@ -38,25 +46,17 @@
     "runSheet": "princess_sakura_run",
     "displayName": "체리블라썸 드레스",
     "nameKey": "data.skin.skin_sakura.name",
+    "iconKey": null,
     "rarity": "epic",
     "description": "달릴 때마다 봄바람이 슬쩍 편을 들어줘요!",
     "descKey": "data.skin.skin_sakura.desc",
     "priceCoins": 9800,
-    "effects": [
-      { "label": "코인 보너스", "value": "+5%", "labelKey": "data.skin.skin_sakura.effect.0.label" },
-      {
-        "label": "꽃잎 흩날림",
-        "value": "+2장",
-        "labelKey": "data.skin.skin_sakura.effect.1.label",
-        "valueKey": "data.skin.skin_sakura.effect.1.value"
-      },
-      {
-        "label": "봄 기분",
-        "value": "만개",
-        "labelKey": "data.skin.skin_sakura.effect.2.label",
-        "valueKey": "data.skin.skin_sakura.effect.2.value"
-      }
-    ]
+    "stats": {
+      "hearts": 5,
+      "coinBonusPercent": null,
+      "feverBonusSeconds": null,
+      "blessingKey": null
+    }
   },
   {
     "id": "skin_p2_aurora",
@@ -65,19 +65,16 @@
     "runSheet": "princess_winter_run",
     "displayName": "윈터 퀸 드레스",
     "nameKey": "data.skin.skin_p2_aurora.name",
+    "iconKey": null,
     "rarity": "epic",
     "description": "하늘빛 치맛자락이 피버를 야무지게 깨워요!",
     "descKey": "data.skin.skin_p2_aurora.desc",
     "priceCoins": 14800,
-    "effects": [
-      { "label": "피버 충전", "value": "+10%", "labelKey": "data.skin.skin_p2_aurora.effect.0.label" },
-      { "label": "오로라 광택", "value": "+40%", "labelKey": "data.skin.skin_p2_aurora.effect.1.label" },
-      {
-        "label": "여왕 포스",
-        "value": "철철",
-        "labelKey": "data.skin.skin_p2_aurora.effect.2.label",
-        "valueKey": "data.skin.skin_p2_aurora.effect.2.value"
-      }
-    ]
+    "stats": {
+      "hearts": 5,
+      "coinBonusPercent": null,
+      "feverBonusSeconds": null,
+      "blessingKey": null
+    }
   }
 ]
