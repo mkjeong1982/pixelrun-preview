@@ -32,6 +32,7 @@
     "palace_town",
     "palace_town2",
     "wall",
+    "outskirts",
     "field"
   ],
   "themes": [
@@ -400,6 +401,89 @@
             "bodyWidthPx": 30,
             "bodyHeightPx": 88,
             "weight": 2
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      }
+    },
+    {
+      "id": "outskirts",
+      "displayTitle": "궁궐 외곽",
+      "lighting": "night",
+      "skyTint": "#3a2f4a",
+      "farMountainTint": "#4a3f5e",
+      "_note": "TASK-STAGE5-CODE.md — 그래픽 워커 대기 중(8종: sky/far/wall/town/watchtower/tile_outskirts + flag/smoke). 에셋 도착 전까지 sky/farMountains/ground/midground 는 wall 테마의 기존 자산을 그대로 폴백(코드가 아니라 이 데이터 자체가 폴백 — layers 값이 wall 과 동일). midgroundWeights/midgroundAccessories 는 outskirts_* 이름으로 이미 준비돼 있으나 layers.midground 배열에 아직 넣지 않았다 — outskirts_wall/outskirts_town/outskirts_watchtower 가 로드되면 그 배열에 추가하고(전부 교체할지 wall 소품과 섞을지는 실제 그림을 보고 판단), midgroundAccessories 의 anchorX/anchorY(깃대 끝·굴뚝 위치)는 그래픽 워커가 보고하는 실측 좌표로 지금 값(추정치)을 갈아 끼워라.",
+      "layers": {
+        "sky": "sky_night_castle",
+        "farMountains": "far_castle",
+        "midground": ["mid_wall", "mid_banner", "mid_torch"],
+        "foreground": [],
+        "ground": "tile_stone"
+      },
+      "midgroundWeights": {
+        "mid_wall": 6,
+        "mid_banner": 2,
+        "mid_torch": 2,
+        "outskirts_wall": 6,
+        "outskirts_town": 3,
+        "outskirts_watchtower": 1
+      },
+      "midgroundAccessories": {
+        "outskirts_watchtower": [
+          {
+            "texture": "outskirts_flag",
+            "animation": "outskirts-flag-flap",
+            "anchorX": 50,
+            "anchorY": 15,
+            "origin": [0, 0.5]
+          }
+        ],
+        "outskirts_town": [
+          {
+            "texture": "outskirts_smoke",
+            "animation": "outskirts-smoke-rise",
+            "anchorX": 70,
+            "anchorY": 20,
+            "origin": [0.5, 1],
+            "alpha": 0.7
+          }
+        ]
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 2
+      },
+      "obstacleSkins": {
+        "smallRock": "wall_rubble_s",
+        "largeRock": "wall_rubble_l",
+        "stump": "wall_barrel",
+        "tree": "wall_turret"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "wall_patrol",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
+            "weight": 3
+          },
+          {
+            "skin": "outskirts_spearman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
+            "weight": 3
           }
         ]
       },
