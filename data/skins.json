@@ -9,14 +9,10 @@
     "displayName": "클래식 드레스",
     "nameKey": "data.skin.skin_classic.name",
     "rarity": "common",
-    "description": "왕도는 괜히 왕도가 아니죠. 달리기에도 찰떡!",
+    "description": "클래식한 느낌의 기본 드레스",
     "descKey": "data.skin.skin_classic.desc",
     "priceCoins": null,
-    "effects": [
-      { "label": "편안함", "value": "+100", "labelKey": "data.skin.skin_classic.effect.0.label" },
-      { "label": "공주력", "value": "+1", "labelKey": "data.skin.skin_classic.effect.1.label" },
-      { "label": "옷핀 걱정", "value": "0%", "labelKey": "data.skin.skin_classic.effect.2.label" }
-    ]
+    "effects": []
   },
   {
     "id": "skin_p1_stardust",
