@@ -38,6 +38,46 @@
       "metric": "dressesOwned",
       "iconTexture": "rank_medal",
       "iconFrame": 0
+    },
+    {
+      "id": "coins_1000",
+      "titleKey": "ranking.achievement.coins1000",
+      "target": 1000,
+      "metric": "lifetimeCoinsEarned",
+      "iconTexture": "rank_medal",
+      "iconFrame": 2
+    },
+    {
+      "id": "coins_10000",
+      "titleKey": "ranking.achievement.coins10000",
+      "target": 10000,
+      "metric": "lifetimeCoinsEarned",
+      "iconTexture": "rank_medal",
+      "iconFrame": 1
+    },
+    {
+      "id": "distance_5000",
+      "titleKey": "ranking.achievement.distance5000",
+      "target": 42195,
+      "metric": "lifetimeDistanceMeters",
+      "iconTexture": "mission_icons",
+      "iconFrame": 2
+    },
+    {
+      "id": "nearmiss_50",
+      "titleKey": "ranking.achievement.nearmiss50",
+      "target": 50,
+      "metric": "lifetimeNearMisses",
+      "iconTexture": "mission_icons",
+      "iconFrame": 3
+    },
+    {
+      "id": "djump_100",
+      "titleKey": "ranking.achievement.djump100",
+      "target": 100,
+      "metric": "lifetimeDoubleJumpDodges",
+      "iconTexture": "mission_icons",
+      "iconFrame": 0
     }
   ]
 }
