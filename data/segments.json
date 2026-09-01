@@ -1427,6 +1427,148 @@
           "yAbove": 166
         }
       ]
+    },
+    {
+      "id": "T4-P01",
+      "difficulty": 2,
+      "minDistance": 200,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 356,
+      "entrySafePx": 195,
+      "exitSafePx": 146,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 195,
+          "w": 96
+        }
+      ],
+      "coins": [
+        {
+          "x": 220,
+          "yAbove": 68
+        },
+        {
+          "x": 255,
+          "yAbove": 82
+        },
+        {
+          "x": 290,
+          "yAbove": 68
+        }
+      ]
+    },
+    {
+      "id": "T4-P02",
+      "difficulty": 3,
+      "minDistance": 450,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 425,
+      "entrySafePx": 210,
+      "exitSafePx": 158,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 210,
+          "w": 150
+        }
+      ],
+      "coins": [
+        {
+          "x": 235,
+          "yAbove": 72
+        },
+        {
+          "x": 285,
+          "yAbove": 90
+        },
+        {
+          "x": 335,
+          "yAbove": 72
+        }
+      ]
+    },
+    {
+      "id": "T4-P03",
+      "difficulty": 4,
+      "minDistance": 750,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 987,
+      "entrySafePx": 210,
+      "exitSafePx": 158,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 210,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "type": "pit",
+          "x": 792,
+          "w": 130
+        }
+      ],
+      "coins": [
+        {
+          "x": 815,
+          "yAbove": 68
+        },
+        {
+          "x": 857,
+          "yAbove": 82
+        },
+        {
+          "x": 899,
+          "yAbove": 68
+        }
+      ]
+    },
+    {
+      "id": "T4-P04",
+      "difficulty": 5,
+      "minDistance": 1050,
+      "themeTags": [
+        "palace_town2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 505,
+      "entrySafePx": 220,
+      "exitSafePx": 165,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 220
+        }
+      ],
+      "coins": [
+        {
+          "x": 255,
+          "yAbove": 78
+        },
+        {
+          "x": 330,
+          "yAbove": 96
+        },
+        {
+          "x": 405,
+          "yAbove": 78
+        }
+      ]
     }
   ]
 }
