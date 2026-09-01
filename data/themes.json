@@ -421,7 +421,7 @@
         "sky": "outskirts_sky",
         "farMountains": "outskirts_far",
         "nearStrip": "outskirts_town",
-        "midground": ["outskirts_wall", "outskirts_watchtower"],
+        "midground": ["outskirts_watchtower"],
         "foreground": [],
         "ground": "tile_outskirts"
       },
@@ -430,7 +430,6 @@
       "nearStripParallax": 0.4,
       "nearStripScale": 0.3,
       "midgroundWeights": {
-        "outskirts_wall": 6,
         "outskirts_watchtower": 4
       },
       "midgroundAccessories": {

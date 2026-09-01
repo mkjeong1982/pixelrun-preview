@@ -35,7 +35,7 @@
     "rarity": "rare",
     "description": "달빛 아래서 더 반짝이는 진홍빛 나이트 드레스!",
     "descKey": "data.skin.skin_p1_stardust.desc",
-    "priceCoins": 3200,
+    "priceCoins": 100,
     "priceCash": null,
     "stats": {
       "hearts": 3,
