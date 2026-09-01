@@ -1,0 +1,106 @@
+{
+  "slides": [
+    {
+      "index": 1,
+      "dialogueBox": {
+        "left": 24.8,
+        "top": 561.1,
+        "right": 358.5,
+        "bottom": 695.5
+      },
+      "nameplate": {
+        "left": 19.6,
+        "top": 525.8,
+        "right": 177.7,
+        "bottom": 553.8
+      },
+      "nameplateTextLeft": 52.8,
+      "nameplateTextRight": 143.2
+    },
+    {
+      "index": 2,
+      "dialogueBox": {
+        "left": 19.6,
+        "top": 540.0,
+        "right": 374.5,
+        "bottom": 679.5
+      },
+      "nameplate": {
+        "left": 16.6,
+        "top": 504.3,
+        "right": 182.4,
+        "bottom": 532.7
+      },
+      "nameplateTextLeft": 51.1,
+      "nameplateTextRight": 148.8
+    },
+    {
+      "index": 3,
+      "dialogueBox": {
+        "left": 29.1,
+        "top": 549.9,
+        "right": 362.8,
+        "bottom": 681.2
+      },
+      "nameplate": {
+        "left": 29.1,
+        "top": 514.2,
+        "right": 165.2,
+        "bottom": 542.2
+      },
+      "nameplateTextLeft": 58.4,
+      "nameplateTextRight": 151.4
+    },
+    {
+      "index": 4,
+      "dialogueBox": {
+        "left": 13.6,
+        "top": 529.2,
+        "right": 372.3,
+        "bottom": 665.7
+      },
+      "nameplate": {
+        "left": 18.3,
+        "top": 493.5,
+        "right": 176.8,
+        "bottom": 521.5
+      },
+      "nameplateTextLeft": 53.6,
+      "nameplateTextRight": 147.5
+    },
+    {
+      "index": 5,
+      "dialogueBox": {
+        "left": 27.4,
+        "top": 524.9,
+        "right": 363.7,
+        "bottom": 655.4
+      },
+      "nameplate": {
+        "left": 30.8,
+        "top": 492.2,
+        "right": 158.3,
+        "bottom": 518.5
+      },
+      "nameplateTextLeft": 65.3,
+      "nameplateTextRight": 148.0
+    },
+    {
+      "index": 6,
+      "dialogueBox": {
+        "left": 47.2,
+        "top": 555.1,
+        "right": 344.3,
+        "bottom": 676.1
+      },
+      "nameplate": {
+        "left": 38.6,
+        "top": 522.3,
+        "right": 156.1,
+        "bottom": 549.0
+      },
+      "nameplateTextLeft": 61.0,
+      "nameplateTextRight": 143.2
+    }
+  ]
+}
