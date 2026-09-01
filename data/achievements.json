@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": "first_run",
+      "titleKey": "ranking.achievement.firstRun",
+      "target": 1,
+      "metric": "stagesCleared",
+      "iconTexture": "icon_skin_night",
+      "reward": { "type": "dress", "skinId": "skin_p1_stardust" }
+    },
+    {
+      "id": "barefoot_run",
+      "titleKey": "ranking.achievement.barefootRun",
+      "target": 3,
+      "metric": "barefootClears",
+      "iconTexture": "mission_icons",
+      "iconFrame": 1,
+      "reward": { "type": "coins", "amount": 300 }
+    },
+    {
+      "id": "clear_all_palace",
+      "titleKey": "ranking.achievement.clearAllPalace",
+      "target": 5,
+      "metric": "palaceStagesCleared",
+      "iconTexture": "icon_crown"
+    },
+    {
+      "id": "dress_2",
+      "titleKey": "ranking.achievement.dress2",
+      "target": 2,
+      "metric": "dressesOwned",
+      "iconTexture": "icon_skin_classic"
+    },
+    {
+      "id": "dress_all",
+      "titleKey": "ranking.achievement.dressAll",
+      "target": 4,
+      "metric": "dressesOwned",
+      "iconTexture": "rank_medal",
+      "iconFrame": 0
+    }
+  ]
+}
