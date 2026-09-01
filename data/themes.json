@@ -536,6 +536,7 @@
         ],
         "ground": "tile_ground"
       },
+      "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "petal",
         "densityPerSec": 6
@@ -579,6 +580,7 @@
         ],
         "ground": "tile_ground"
       },
+      "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "leaf",
         "densityPerSec": 7
@@ -617,6 +619,7 @@
         ],
         "ground": "tile_ground"
       },
+      "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "star",
         "densityPerSec": 5
