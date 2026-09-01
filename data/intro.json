@@ -15,7 +15,8 @@
         "bottom": 553.8
       },
       "nameplateTextLeft": 52.8,
-      "nameplateTextRight": 143.2
+      "nameplateTextRight": 143.2,
+      "lines": [{ "speaker": "king" }]
     },
     {
       "index": 2,
@@ -32,7 +33,8 @@
         "bottom": 532.7
       },
       "nameplateTextLeft": 51.1,
-      "nameplateTextRight": 148.8
+      "nameplateTextRight": 148.8,
+      "lines": [{ "speaker": "princess" }]
     },
     {
       "index": 3,
@@ -49,7 +51,8 @@
         "bottom": 542.2
       },
       "nameplateTextLeft": 58.4,
-      "nameplateTextRight": 151.4
+      "nameplateTextRight": 151.4,
+      "lines": [{ "speaker": "king" }, { "speaker": "bruno" }]
     },
     {
       "index": 4,
@@ -66,7 +69,8 @@
         "bottom": 521.5
       },
       "nameplateTextLeft": 53.6,
-      "nameplateTextRight": 147.5
+      "nameplateTextRight": 147.5,
+      "lines": [{ "speaker": "princess" }, { "speaker": "princess" }]
     },
     {
       "index": 5,
@@ -83,7 +87,8 @@
         "bottom": 518.5
       },
       "nameplateTextLeft": 65.3,
-      "nameplateTextRight": 148.0
+      "nameplateTextRight": 148.0,
+      "lines": [{ "speaker": "princess" }]
     },
     {
       "index": 6,
@@ -100,7 +105,8 @@
         "bottom": 549.0
       },
       "nameplateTextLeft": 61.0,
-      "nameplateTextRight": 143.2
+      "nameplateTextRight": 143.2,
+      "lines": [{ "speaker": "princess" }]
     }
   ]
 }
