@@ -478,6 +478,7 @@
       },
       "paintedStars": true,
       "paintedMoon": true,
+      "groundSingleLayer": true,
       "nearStripParallax": 0.4,
       "nearStripScale": 0.3,
       "midgroundWeights": {
@@ -580,6 +581,7 @@
       },
       "paintedStars": true,
       "paintedMoon": true,
+      "groundSingleLayer": true,
       "nearStripParallax": 0.4,
       "nearStripScale": 0.3,
       "midgroundWeights": {
