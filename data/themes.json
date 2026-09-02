@@ -567,8 +567,8 @@
       "id": "outskirts2",
       "displayTitle": "궁궐 외곽 2",
       "lighting": "night",
-      "skyTint": "#0c1730",
-      "farMountainTint": "#152037",
+      "skyTint": "#3a2660",
+      "farMountainTint": "#322756",
       "_note": "2026-09-02 사용자 수정 반영: 배경의 왕가 깃발·가로등 제거(midground 비움 — outskirts2_lamp.png 은 파일만 남기고 참조하지 않음), 동트기 직전 밤으로 하늘 교체, 성 실루엣을 far 레이어에서 하늘 레이어로 옮겨 항상 보이게 함(하늘은 반복하지 않으므로), 바닥은 스테이지 5와 공통 흙바닥. skyTint/farMountainTint 는 교체된 그림에서 직접 샘플링한 값.",
       "layers": {
         "sky": "outskirts2_sky",
