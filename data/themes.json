@@ -267,22 +267,70 @@
       "farParallax": 0.52,
       "farDecals": {
         "points": [
-          [61, 441],
-          [177, 413],
-          [377, 451],
-          [466, 429],
-          [515, 495],
-          [659, 450],
-          [723, 487],
-          [849, 439],
-          [1005, 415],
-          [1079, 489],
-          [1112, 496],
-          [1163, 443],
-          [1262, 486],
-          [1358, 487],
-          [1406, 471],
-          [1468, 432]
+          [
+            61,
+            441
+          ],
+          [
+            177,
+            413
+          ],
+          [
+            377,
+            451
+          ],
+          [
+            466,
+            429
+          ],
+          [
+            515,
+            495
+          ],
+          [
+            659,
+            450
+          ],
+          [
+            723,
+            487
+          ],
+          [
+            849,
+            439
+          ],
+          [
+            1005,
+            415
+          ],
+          [
+            1079,
+            489
+          ],
+          [
+            1112,
+            496
+          ],
+          [
+            1163,
+            443
+          ],
+          [
+            1262,
+            486
+          ],
+          [
+            1358,
+            487
+          ],
+          [
+            1406,
+            471
+          ],
+          [
+            1468,
+            432
+          ]
         ]
       },
       "midgroundTint": "#b9a089",
@@ -422,7 +470,9 @@
         "sky": "outskirts_sky",
         "farMountains": "outskirts_far",
         "nearStrip": "outskirts_town",
-        "midground": ["outskirts_watchtower"],
+        "midground": [
+          "outskirts_watchtower"
+        ],
         "foreground": [],
         "ground": "tile_outskirts"
       },
@@ -440,7 +490,10 @@
             "animation": "outskirts-flag-flap",
             "anchorX": 108,
             "anchorY": 18,
-            "origin": [0, 0.5]
+            "origin": [
+              0,
+              0.5
+            ]
           }
         ]
       },
@@ -514,14 +567,14 @@
       "id": "outskirts2",
       "displayTitle": "궁궐 외곽 2",
       "lighting": "night",
-      "skyTint": "#2c1f56",
-      "farMountainTint": "#282b61",
-      "_note": "TASK-STAGE6-CODE.md — 2026-09-02, 그래픽 워커가 5종(sky/far/town/lamp/tile_outskirts2) 전부 납품, outskirts 와 규격 동일(레이어 배정도 같음: far→farMountains/town→nearStrip/lamp→midground/tile→ground). lighting:night — palace 지역은 밤, 나이트 드레스 골드 보너스(GameScene.isCoinBonusActive)가 이 값을 직접 읽는다. paintedStars/paintedMoon: outskirts2_sky.png 자체에 초승달+별이 그려져 있어 SkyDecor 의 생성분과 겹치므로 끔(outskirts 와 같은 이유 — SkyDecor.ts 의 wantsStars/wantsMoon 은 paintedStars/Moon===true 일 때 자기 생성분을 끈다, 이름과 반대로 동작하는 게 아니라 '이미 그려져 있음'을 뜻함). skyTint 는 outskirts2_sky.png 를 outskirts_sky.png 와 같은 방식으로(세로 37.5% 지점 부근 행 평균) 실측; outskirts 실제값(#2b1c55)이 같은 방식으로 outskirts_sky.png 에서 재현되는 것으로 검증한 뒤 같은 방식을 적용했다. farMountainTint 는 outskirts2_far.png 의 불투명 픽셀 중 휘도 55 미만(그림자 쪽 실루엣 기본색, 능선의 주황 하이라이트 제외) 평균 — outskirts 의 실제값(#2d2748)이 outskirts_far.png 에 같은 방식을 적용했을 때 #292859 로 재현되어(근사) 검증된 방법. obstacleSkins/obstacleVariants 는 outskirts(성벽 폐허 스킨)보다 palace_town2(같은 마을 스트립 그림)쪽이 이 강 그림(집·울타리·우물·건초더미)에 더 맞아 그쪽 스킨 구성을 재사용했다. largeRock 변형에 town_citizen(행인, 이 프로젝트 상시 규칙)을 배치. 동네 강아지 장애물(outskirts2_dog.png)은 그래픽 워커 작업 중 — 아직 obstacleVariants 에 넣지 않았고, segments.json 의 outskirts2 세그먼트 쪽에 생물 장애물 자리(주석)만 남겨뒀다.",
+      "skyTint": "#0c1730",
+      "farMountainTint": "#152037",
+      "_note": "2026-09-02 사용자 수정 반영: 배경의 왕가 깃발·가로등 제거(midground 비움 — outskirts2_lamp.png 은 파일만 남기고 참조하지 않음), 동트기 직전 밤으로 하늘 교체, 성 실루엣을 far 레이어에서 하늘 레이어로 옮겨 항상 보이게 함(하늘은 반복하지 않으므로), 바닥은 스테이지 5와 공통 흙바닥. skyTint/farMountainTint 는 교체된 그림에서 직접 샘플링한 값.",
       "layers": {
         "sky": "outskirts2_sky",
         "farMountains": "outskirts2_far",
         "nearStrip": "outskirts2_town",
-        "midground": ["outskirts2_lamp"],
+        "midground": [],
         "foreground": [],
         "ground": "tile_outskirts2"
       },
