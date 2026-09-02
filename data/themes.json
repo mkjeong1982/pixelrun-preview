@@ -33,6 +33,7 @@
     "palace_town2",
     "wall",
     "outskirts",
+    "outskirts2",
     "field"
   ],
   "themes": [
@@ -495,6 +496,60 @@
           },
           {
             "skin": "outskirts_spearman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
+            "weight": 3
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      }
+    },
+    {
+      "id": "outskirts2",
+      "displayTitle": "궁궐 외곽 2",
+      "lighting": "night",
+      "skyTint": "#2c1f56",
+      "farMountainTint": "#282b61",
+      "_note": "TASK-STAGE6-CODE.md — 2026-09-02, 그래픽 워커가 5종(sky/far/town/lamp/tile_outskirts2) 전부 납품, outskirts 와 규격 동일(레이어 배정도 같음: far→farMountains/town→nearStrip/lamp→midground/tile→ground). lighting:night — palace 지역은 밤, 나이트 드레스 골드 보너스(GameScene.isCoinBonusActive)가 이 값을 직접 읽는다. paintedStars/paintedMoon: outskirts2_sky.png 자체에 초승달+별이 그려져 있어 SkyDecor 의 생성분과 겹치므로 끔(outskirts 와 같은 이유 — SkyDecor.ts 의 wantsStars/wantsMoon 은 paintedStars/Moon===true 일 때 자기 생성분을 끈다, 이름과 반대로 동작하는 게 아니라 '이미 그려져 있음'을 뜻함). skyTint 는 outskirts2_sky.png 를 outskirts_sky.png 와 같은 방식으로(세로 37.5% 지점 부근 행 평균) 실측; outskirts 실제값(#2b1c55)이 같은 방식으로 outskirts_sky.png 에서 재현되는 것으로 검증한 뒤 같은 방식을 적용했다. farMountainTint 는 outskirts2_far.png 의 불투명 픽셀 중 휘도 55 미만(그림자 쪽 실루엣 기본색, 능선의 주황 하이라이트 제외) 평균 — outskirts 의 실제값(#2d2748)이 outskirts_far.png 에 같은 방식을 적용했을 때 #292859 로 재현되어(근사) 검증된 방법. obstacleSkins/obstacleVariants 는 outskirts(성벽 폐허 스킨)보다 palace_town2(같은 마을 스트립 그림)쪽이 이 강 그림(집·울타리·우물·건초더미)에 더 맞아 그쪽 스킨 구성을 재사용했다. largeRock 변형에 town_citizen(행인, 이 프로젝트 상시 규칙)을 배치. 동네 강아지 장애물(outskirts2_dog.png)은 그래픽 워커 작업 중 — 아직 obstacleVariants 에 넣지 않았고, segments.json 의 outskirts2 세그먼트 쪽에 생물 장애물 자리(주석)만 남겨뒀다.",
+      "layers": {
+        "sky": "outskirts2_sky",
+        "farMountains": "outskirts2_far",
+        "nearStrip": "outskirts2_town",
+        "midground": ["outskirts2_lamp"],
+        "foreground": [],
+        "ground": "tile_outskirts2"
+      },
+      "paintedStars": true,
+      "paintedMoon": true,
+      "nearStripParallax": 0.4,
+      "nearStripScale": 0.3,
+      "midgroundWeights": {
+        "outskirts2_lamp": 4
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 2
+      },
+      "obstacleSkins": {
+        "smallRock": "town_crate",
+        "largeRock": "town_crate_stack",
+        "stump": "wall_barrel",
+        "tree": "town_lamp"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "town_citizen",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "gddRef": "v6.0 §4 / §5 / §13",
-    "status": "Stage 1-1~1-4 playable. The remaining 26 are locked map slots: region, sub-region, name and temporary map coordinates only, with no theme or distance until they are built (GDD v6.0 §4).",
+    "status": "Stage 1-1~1-6 playable. The remaining 24 are locked map slots: region, sub-region, name and temporary map coordinates only, with no theme or distance until they are built (GDD v6.0 §4).",
     "note": "GDD v6.0 §13 lists the full Stage record (obstacle/coin/item pattern, unlock condition, story event, clear reward). Only the fields STEP 1 actually consumes exist here; the rest arrive with the Stage Loader in STEP 4 rather than being stubbed now, so nothing reads a field that has never been designed.",
     "revisionLog": "md_docs/data-revisions.md"
   },
@@ -83,6 +83,8 @@
       "regionName": "달빛 왕국",
       "subRegion": "palace_outskirts",
       "displayName": "궁궐 외곽 2",
+      "distanceMeters": 1750,
+      "theme": "outskirts2",
       "mapX": 272,
       "mapY": 828,
       "nameKey": "data.stage.1-6.name",

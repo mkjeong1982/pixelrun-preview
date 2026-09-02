@@ -1569,6 +1569,422 @@
           "yAbove": 78
         }
       ]
+    },
+    {
+      "id": "T6-A01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 11,
+      "lengthPx": 350,
+      "entrySafePx": 190,
+      "exitSafePx": 136,
+      "obstacles": [
+        {
+          "type": "rock_s",
+          "x": 190,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 142,
+          "yAbove": 40
+        },
+        {
+          "x": 270,
+          "yAbove": 48
+        }
+      ]
+    },
+    {
+      "id": "T6-A02",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 350,
+      "entrySafePx": 185,
+      "exitSafePx": 131,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 185,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 255,
+          "yAbove": 62
+        },
+        {
+          "x": 295,
+          "yAbove": 48
+        }
+      ]
+    },
+    {
+      "id": "T6-R01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 320,
+      "entrySafePx": 80,
+      "exitSafePx": 80,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 100,
+          "yAbove": 42
+        },
+        {
+          "x": 145,
+          "yAbove": 68
+        },
+        {
+          "x": 190,
+          "yAbove": 82
+        },
+        {
+          "x": 235,
+          "yAbove": 68
+        }
+      ]
+    },
+    {
+      "id": "T6-A03",
+      "difficulty": 2,
+      "minDistance": 120,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 360,
+      "entrySafePx": 185,
+      "exitSafePx": 139,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 185,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 76
+        },
+        {
+          "x": 292,
+          "yAbove": 54
+        }
+      ]
+    },
+    {
+      "id": "T6-S01",
+      "difficulty": 2,
+      "minDistance": 180,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 3,
+      "lengthPx": 370,
+      "entrySafePx": 190,
+      "exitSafePx": 132,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 190,
+          "w": 48,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 180,
+          "yAbove": 82
+        },
+        {
+          "x": 228,
+          "yAbove": 92
+        },
+        {
+          "x": 276,
+          "yAbove": 72
+        }
+      ]
+    },
+    {
+      "id": "T6-P01",
+      "difficulty": 2,
+      "minDistance": 150,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 380,
+      "entrySafePx": 195,
+      "exitSafePx": 146,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 195,
+          "w": 110
+        }
+      ],
+      "coins": [
+        {
+          "x": 220,
+          "yAbove": 66
+        },
+        {
+          "x": 265,
+          "yAbove": 66
+        }
+      ]
+    },
+    {
+      "id": "T6-B01",
+      "difficulty": 3,
+      "minDistance": 280,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 390,
+      "entrySafePx": 200,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 200,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 164
+        },
+        {
+          "x": 246,
+          "yAbove": 164
+        }
+      ]
+    },
+    {
+      "id": "T6-CR01",
+      "difficulty": 3,
+      "minDistance": 320,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 350,
+      "entrySafePx": 100,
+      "exitSafePx": 100,
+      "_note": "TASK-STAGE6-CODE.md — creature-obstacle slot reserved for the pending outskirts2_dog.png (sitting/sleeping, startles): x~150-250 left deliberately open (no obstacle), ground-level, sized for a ~48x48 stationary creature. Do not fill with a rock/stump/tree — this gap is reserved. See md_docs/data-revisions.md.",
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 110,
+          "yAbove": 40
+        },
+        {
+          "x": 280,
+          "yAbove": 40
+        }
+      ]
+    },
+    {
+      "id": "T6-P02",
+      "difficulty": 3,
+      "minDistance": 350,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 460,
+      "entrySafePx": 220,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 170,
+          "midPlatform": {
+            "x": 292,
+            "w": 40
+          }
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 70
+        },
+        {
+          "x": 360,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "T6-C01",
+      "difficulty": 4,
+      "minDistance": 500,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 987,
+      "entrySafePx": 210,
+      "exitSafePx": 158,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 210,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "type": "pit",
+          "x": 792,
+          "w": 130
+        }
+      ],
+      "coins": [
+        {
+          "x": 815,
+          "yAbove": 68
+        },
+        {
+          "x": 857,
+          "yAbove": 82
+        },
+        {
+          "x": 899,
+          "yAbove": 68
+        }
+      ]
+    },
+    {
+      "id": "T6-C02",
+      "difficulty": 4,
+      "minDistance": 550,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 440,
+      "entrySafePx": 220,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 220,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 220,
+          "yAbove": 166
+        },
+        {
+          "x": 270,
+          "yAbove": 166
+        }
+      ]
+    },
+    {
+      "id": "T6-E01",
+      "difficulty": 5,
+      "minDistance": 700,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 430,
+      "entrySafePx": 220,
+      "exitSafePx": 174,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 220,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 286,
+          "yAbove": 88
+        },
+        {
+          "x": 334,
+          "yAbove": 58
+        }
+      ]
+    },
+    {
+      "id": "T6-E02",
+      "difficulty": 5,
+      "minDistance": 800,
+      "themeTags": [
+        "outskirts2"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 505,
+      "entrySafePx": 220,
+      "exitSafePx": 165,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 220
+        }
+      ],
+      "coins": [
+        {
+          "x": 255,
+          "yAbove": 78
+        },
+        {
+          "x": 330,
+          "yAbove": 96
+        },
+        {
+          "x": 405,
+          "yAbove": 78
+        }
+      ]
     }
   ]
 }
