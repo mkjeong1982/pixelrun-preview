@@ -40,7 +40,7 @@
     "unlockBy": "achievement:first_run",
     "stats": {
       "hearts": 3,
-      "coinBonusPercent": 15,
+      "coinBonusPercent": 10,
       "coinBonusCondition": "nightStages",
       "feverBonusSeconds": null,
       "speedBonusPercent": 10,
