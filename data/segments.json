@@ -1803,8 +1803,15 @@
       "lengthPx": 350,
       "entrySafePx": 100,
       "exitSafePx": 100,
-      "_note": "TASK-STAGE6-CODE.md — creature-obstacle slot reserved for the pending outskirts2_dog.png (sitting/sleeping, startles): x~150-250 left deliberately open (no obstacle), ground-level, sized for a ~48x48 stationary creature. Do not fill with a rock/stump/tree — this gap is reserved. See md_docs/data-revisions.md.",
-      "obstacles": [],
+      "_note": "TASK-STAGE6-CODE.md — reserved creature slot, filled once outskirts2_dog.png landed (see md_docs/data-revisions.md). rock_l at x:200/w:48 so the theme's largeRock obstacleVariants can roll it as the sleeping dog (or town_citizen, or plain rock) — same mechanism as every other largeRock spawn, not pinned exclusively to this segment.",
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 200,
+          "w": 48,
+          "h": 48
+        }
+      ],
       "coins": [
         {
           "x": 110,
