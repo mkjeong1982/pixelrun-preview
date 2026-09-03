@@ -599,7 +599,7 @@
         "smallRock": "town_crate",
         "largeRock": "town_crate_stack",
         "stump": "wall_barrel",
-        "tree": "town_lamp"
+        "tree": "outskirts2_signpost"
       },
       "obstacleVariants": {
         "largeRock": [
