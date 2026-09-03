@@ -25,10 +25,10 @@
     "restAfterHazardSegmentsMax": 4
   },
   "fever": {
-    "distanceChargePctPerMeter": 0.035,
-    "coinChargePct": 0.8,
-    "nearMissChargePct": 4.0,
-    "durationSec": 9.5,
+    "distanceChargePctPerMeter": 0.041,
+    "coinChargePct": 0.94,
+    "nearMissChargePct": 4.7,
+    "durationSec": 7.0,
     "speedBonusPct": 20,
     "destroyBonusCoins": 5,
     "magnetRadiusPx": 190,
