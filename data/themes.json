@@ -570,7 +570,7 @@
       "lighting": "night",
       "skyTint": "#3a2660",
       "farMountainTint": "#322756",
-      "_note": "2026-09-02 사용자 수정 반영: 배경의 왕가 깃발·가로등 제거(midground 비움 — outskirts2_lamp.png 은 파일만 남기고 참조하지 않음), 동트기 직전 밤으로 하늘 교체, 성 실루엣을 far 레이어에서 하늘 레이어로 옮겨 항상 보이게 함(하늘은 반복하지 않으므로), 바닥은 스테이지 5와 공통 흙바닥. skyTint/farMountainTint 는 교체된 그림에서 직접 샘플링한 값.",
+      "_note": "2026-09-02 사용자 수정 반영: 배경의 왕가 깃발·가로등 제거(midground 비움 — outskirts2_lamp.png 은 파일만 남기고 참조하지 않음), 동트기 직전 밤으로 하늘 교체, 성 실루엣을 far 레이어에서 하늘 레이어로 옮겨 항상 보이게 함(하늘은 반복하지 않으므로), 바닥은 스테이지 5와 공통 흙바닥. skyTint/farMountainTint 는 교체된 그림에서 직접 샘플링한 값. | 2026-09-03: outskirts2_dog(동네 강아지) obstacleVariants 항목 복구 — 코드(PreloadScene/GameScene REACTIVE_HAZARDS)에는 등록돼 있었으나 themes.json 항목이 없어 한 번도 스폰되지 않았다. 콜라이더 값은 md_docs/data-revisions.md 의 실측치.",
       "layers": {
         "sky": "outskirts2_sky",
         "farMountains": "outskirts2_far",
@@ -609,6 +609,14 @@
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
             "bodyHeightPx": 66,
+            "weight": 3
+          },
+          {
+            "skin": "outskirts2_dog",
+            "displayWidthPx": 48,
+            "displayHeightPx": 48,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 36,
             "weight": 3
           }
         ]
