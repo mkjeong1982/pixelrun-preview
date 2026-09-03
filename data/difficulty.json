@@ -28,7 +28,7 @@
     "distanceChargePctPerMeter": 0.041,
     "coinChargePct": 0.94,
     "nearMissChargePct": 4.7,
-    "durationSec": 7.0,
+    "durationSec": 6.0,
     "speedBonusPct": 20,
     "destroyBonusCoins": 5,
     "magnetRadiusPx": 190,

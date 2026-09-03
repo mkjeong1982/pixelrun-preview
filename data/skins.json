@@ -65,7 +65,7 @@
       "hearts": 3,
       "coinBonusPercent": null,
       "coinBonusCondition": null,
-      "feverBonusSeconds": 1,
+      "feverBonusSeconds": 2,
       "speedBonusPercent": null,
       "blessingKey": null
     }
