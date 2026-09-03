@@ -674,6 +674,23 @@
       "bgm": {
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "town_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 66,
+            "weight": 3
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
       }
     },
     {

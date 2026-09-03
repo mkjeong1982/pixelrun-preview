@@ -1992,6 +1992,583 @@
           "yAbove": 78
         }
       ]
+    },
+    {
+      "id": "T7-A01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 11,
+      "lengthPx": 364,
+      "entrySafePx": 200,
+      "exitSafePx": 140,
+      "obstacles": [
+        {
+          "type": "rock_s",
+          "x": 200,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 150,
+          "yAbove": 40
+        },
+        {
+          "x": 300,
+          "yAbove": 50
+        }
+      ]
+    },
+    {
+      "id": "T7-A02",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 374,
+      "entrySafePx": 200,
+      "exitSafePx": 140,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 200,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 270,
+          "yAbove": 60
+        },
+        {
+          "x": 320,
+          "yAbove": 46
+        }
+      ]
+    },
+    {
+      "id": "T7-R01",
+      "difficulty": 1,
+      "minDistance": 0,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 320,
+      "entrySafePx": 80,
+      "exitSafePx": 80,
+      "obstacles": [],
+      "coins": [
+        {
+          "x": 110,
+          "yAbove": 44
+        },
+        {
+          "x": 160,
+          "yAbove": 70
+        },
+        {
+          "x": 210,
+          "yAbove": 84
+        },
+        {
+          "x": 260,
+          "yAbove": 70
+        }
+      ]
+    },
+    {
+      "id": "T7-A03",
+      "difficulty": 2,
+      "minDistance": 200,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 9,
+      "lengthPx": 396,
+      "entrySafePx": 210,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 210,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 270,
+          "yAbove": 76
+        },
+        {
+          "x": 310,
+          "yAbove": 54
+        }
+      ]
+    },
+    {
+      "id": "T7-P01",
+      "difficulty": 2,
+      "minDistance": 200,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 500,
+      "entrySafePx": 210,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 210,
+          "w": 140
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 60
+        },
+        {
+          "x": 290,
+          "yAbove": 60
+        }
+      ]
+    },
+    {
+      "id": "T7-A04",
+      "difficulty": 2,
+      "minDistance": 200,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 794,
+      "entrySafePx": 210,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 210,
+          "w": 34,
+          "h": 30
+        },
+        {
+          "type": "rock_s",
+          "x": 620,
+          "w": 24,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 50
+        },
+        {
+          "x": 690,
+          "yAbove": 48
+        }
+      ]
+    },
+    {
+      "id": "T7-S01",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 418,
+      "entrySafePx": 220,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 220,
+          "w": 48,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 190,
+          "yAbove": 80
+        },
+        {
+          "x": 270,
+          "yAbove": 92
+        },
+        {
+          "x": 330,
+          "yAbove": 80
+        }
+      ]
+    },
+    {
+      "id": "T7-B01",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 7,
+      "lengthPx": 420,
+      "entrySafePx": 220,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 220,
+          "w": 40,
+          "h": 128
+        }
+      ],
+      "coins": [
+        {
+          "x": 220,
+          "yAbove": 164
+        },
+        {
+          "x": 266,
+          "yAbove": 164
+        }
+      ]
+    },
+    {
+      "id": "T7-P02",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 550,
+      "entrySafePx": 220,
+      "exitSafePx": 150,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 220,
+          "w": 180,
+          "midPlatform": {
+            "x": 288,
+            "w": 36
+          }
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 60
+        },
+        {
+          "x": 350,
+          "yAbove": 60
+        }
+      ]
+    },
+    {
+      "id": "T7-A05",
+      "difficulty": 4,
+      "minDistance": 600,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 8,
+      "lengthPx": 426,
+      "entrySafePx": 230,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 230,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 290,
+          "yAbove": 78
+        },
+        {
+          "x": 330,
+          "yAbove": 54
+        }
+      ]
+    },
+    {
+      "id": "T7-C01",
+      "difficulty": 4,
+      "minDistance": 600,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 1185,
+      "entrySafePx": 230,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 230,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "type": "pit",
+          "x": 705,
+          "w": 320
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 50
+        },
+        {
+          "x": 760,
+          "yAbove": 90
+        }
+      ]
+    },
+    {
+      "id": "T7-B02",
+      "difficulty": 4,
+      "minDistance": 600,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 909,
+      "entrySafePx": 230,
+      "exitSafePx": 160,
+      "obstacles": [
+        {
+          "type": "spike",
+          "x": 230,
+          "w": 48,
+          "h": 24
+        },
+        {
+          "type": "stump",
+          "x": 715,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 200,
+          "yAbove": 80
+        },
+        {
+          "x": 680,
+          "yAbove": 60
+        }
+      ]
+    },
+    {
+      "id": "T7-E01",
+      "difficulty": 5,
+      "minDistance": 850,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 446,
+      "entrySafePx": 240,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 240,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 80
+        },
+        {
+          "x": 340,
+          "yAbove": 56
+        }
+      ]
+    },
+    {
+      "id": "T7-E02",
+      "difficulty": 5,
+      "minDistance": 850,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 790,
+      "entrySafePx": 240,
+      "exitSafePx": 170,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 240,
+          "w": 380
+        }
+      ],
+      "coins": [
+        {
+          "x": 280,
+          "yAbove": 96
+        },
+        {
+          "x": 420,
+          "yAbove": 110
+        },
+        {
+          "x": 540,
+          "yAbove": 96
+        }
+      ]
+    },
+    {
+      "id": "T7-F01",
+      "difficulty": 6,
+      "minDistance": 1300,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 5,
+      "lengthPx": 1006,
+      "entrySafePx": 250,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "tree",
+          "x": 250,
+          "w": 40,
+          "h": 128
+        },
+        {
+          "type": "rock_l",
+          "x": 790,
+          "w": 36,
+          "h": 36
+        }
+      ],
+      "coins": [
+        {
+          "x": 250,
+          "yAbove": 164
+        },
+        {
+          "x": 296,
+          "yAbove": 164
+        },
+        {
+          "x": 830,
+          "yAbove": 78
+        }
+      ]
+    },
+    {
+      "id": "T7-F02",
+      "difficulty": 6,
+      "minDistance": 1300,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 900,
+      "entrySafePx": 250,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "pit",
+          "x": 250,
+          "w": 470
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 110
+        },
+        {
+          "x": 420,
+          "yAbove": 130
+        },
+        {
+          "x": 560,
+          "yAbove": 110
+        },
+        {
+          "x": 660,
+          "yAbove": 90
+        }
+      ]
+    },
+    {
+      "id": "T7-F03",
+      "difficulty": 6,
+      "minDistance": 1300,
+      "themeTags": [
+        "field"
+      ],
+      "safeExit": true,
+      "weight": 4,
+      "lengthPx": 1013,
+      "entrySafePx": 250,
+      "exitSafePx": 180,
+      "obstacles": [
+        {
+          "type": "rock_l",
+          "x": 250,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "type": "spike",
+          "x": 785,
+          "w": 48,
+          "h": 24
+        }
+      ],
+      "coins": [
+        {
+          "x": 300,
+          "yAbove": 80
+        },
+        {
+          "x": 850,
+          "yAbove": 88
+        }
+      ]
     }
   ]
 }
