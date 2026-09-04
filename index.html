@@ -3,13 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#8ed8ff" />
+    <meta name="theme-color" content="#2a2340" />
     <link rel="icon" href="/pixelrun-preview/favicon.svg" type="image/svg+xml" />
     <title>PixelRun</title>
-    <script type="module" crossorigin src="/pixelrun-preview/assets/index-D0G1c4EL.js"></script>
+    <!--
+      TASK-BOOT-SPLASH.md — covers the gap before the JS bundle (currently
+      ~1.6MB) has even downloaded, when Phaser doesn't exist yet and nothing
+      it draws can show. Inline CSS + no images, so this paints on the very
+      first frame with zero network requests of its own (an <img> here would
+      just trade one blank-screen wait for another, and a hashed build path
+      would need base-URL resolution this markup can't do). Removed from
+      src/core/bootSplash.ts once Phaser has actually painted real title art
+      over it — see that file for why the timing matters.
+    -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #2a2340;
+      }
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2a2340;
+        overflow: hidden;
+        transition: opacity 200ms ease-out;
+      }
+      #boot-splash.boot-splash-hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #boot-splash-word {
+        position: absolute;
+        left: 50%;
+        top: 17%;
+        transform: translate(-50%, -50%);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        font-size: clamp(28px, 8vw, 40px);
+        letter-spacing: 0.02em;
+        color: #ffe07a;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+      }
+      #boot-splash-bar-track {
+        position: absolute;
+        left: 50%;
+        bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+        transform: translateX(-50%);
+        width: min(240px, 70vw);
+        height: 6px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.16);
+        overflow: hidden;
+      }
+      #boot-splash-bar-fill {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 55%;
+        border-radius: 3px;
+        background: #ffe07a;
+        opacity: 0.6;
+      }
+      /* Indeterminate motion only when the OS hasn't asked for less of it — a
+         static partial fill (above) still reads as "loading" on its own. */
+      @media (prefers-reduced-motion: no-preference) {
+        #boot-splash-bar-fill {
+          width: 32%;
+          opacity: 1;
+          animation: boot-splash-slide 1.3s ease-in-out infinite;
+        }
+        @keyframes boot-splash-slide {
+          0% {
+            left: -32%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/pixelrun-preview/assets/index-DnKLH7P5.js"></script>
     <link rel="stylesheet" crossorigin href="/pixelrun-preview/assets/index-8198OZbD.css">
   </head>
   <body>
+    <div id="boot-splash" aria-hidden="true">
+      <div id="boot-splash-word">PixelRun</div>
+      <div id="boot-splash-bar-track">
+        <div id="boot-splash-bar-fill"></div>
+      </div>
+    </div>
     <div id="game-root"></div>
   </body>
 </html>
