@@ -87,7 +87,7 @@
     "runSheet": "princess_winter_run",
     "displayName": "윈터 퀸",
     "nameKey": "data.skin.skin_p2_aurora.name",
-    "iconKey": null,
+    "iconKey": "icon_skin_winter",
     "rarity": "epic",
     "description": "하늘빛 치맛자락이 피버를 야무지게 깨워요!",
     "descKey": "data.skin.skin_p2_aurora.desc",
@@ -101,6 +101,7 @@
       "speedBonusPercent": null,
       "blessingKey": null
     },
-    "previewSheet": "dress_winter"
+    "previewSheet": "dress_winter",
+    "thumbFrame": 0
   }
 ]
