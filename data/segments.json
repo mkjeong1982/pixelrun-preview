@@ -64,6 +64,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -105,6 +106,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -141,6 +143,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -180,6 +183,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -222,6 +226,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -255,6 +260,7 @@
       "minDistance": 180,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -288,6 +294,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -324,6 +331,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -363,6 +371,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -397,6 +406,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -432,6 +442,7 @@
       "minDistance": 330,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -471,6 +482,7 @@
       "minDistance": 500,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -507,6 +519,7 @@
       "minDistance": 700,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -625,6 +638,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -795,6 +809,7 @@
       "minDistance": 300,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -837,6 +852,7 @@
       "minDistance": 800,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -879,6 +895,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -918,6 +935,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -952,6 +970,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -992,6 +1011,7 @@
       "minDistance": 900,
       "themeTags": [
         "field",
+        "village",
         "forest",
         "night"
       ],
@@ -1031,7 +1051,8 @@
       "difficulty": 1,
       "minDistance": 0,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 11,
@@ -1998,7 +2019,8 @@
       "difficulty": 1,
       "minDistance": 0,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 11,
@@ -2029,7 +2051,8 @@
       "difficulty": 1,
       "minDistance": 0,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 9,
@@ -2060,7 +2083,8 @@
       "difficulty": 1,
       "minDistance": 0,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 6,
@@ -2092,7 +2116,8 @@
       "difficulty": 2,
       "minDistance": 200,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 9,
@@ -2123,7 +2148,8 @@
       "difficulty": 2,
       "minDistance": 200,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 8,
@@ -2153,7 +2179,8 @@
       "difficulty": 2,
       "minDistance": 200,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 5,
@@ -2190,7 +2217,8 @@
       "difficulty": 3,
       "minDistance": 400,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 6,
@@ -2225,7 +2253,8 @@
       "difficulty": 3,
       "minDistance": 400,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 7,
@@ -2256,7 +2285,8 @@
       "difficulty": 3,
       "minDistance": 400,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 6,
@@ -2290,7 +2320,8 @@
       "difficulty": 4,
       "minDistance": 600,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 8,
@@ -2321,7 +2352,8 @@
       "difficulty": 4,
       "minDistance": 600,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 6,
@@ -2357,7 +2389,8 @@
       "difficulty": 4,
       "minDistance": 600,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 5,
@@ -2394,7 +2427,8 @@
       "difficulty": 5,
       "minDistance": 850,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 5,
@@ -2425,7 +2459,8 @@
       "difficulty": 5,
       "minDistance": 850,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 4,
@@ -2459,7 +2494,8 @@
       "difficulty": 6,
       "minDistance": 1300,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 5,
@@ -2500,7 +2536,8 @@
       "difficulty": 6,
       "minDistance": 1300,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 4,
@@ -2538,7 +2575,8 @@
       "difficulty": 6,
       "minDistance": 1300,
       "themeTags": [
-        "field"
+        "field",
+        "village"
       ],
       "safeExit": true,
       "weight": 4,
