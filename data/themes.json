@@ -699,7 +699,7 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "_note": "TASK-STAGE7-VILLAGE.md — 2-1(index 7, '마을 앞')이 갖고 있던 field 테마를 2-3(index 9, '넓은 평원', 그 이름에 실제로 맞는 스테이지)로 돌려보내고, 2-1 자리에 새로 만든 마을 테마. sky/farMountains는 목업의 하늘·산과 이미 맞아서 field 것(sky_base/far_mountain)을 그대로 재사용 — skyTint/farMountainTint도 같은 이유로 field와 동일값. nearStrip(village_town)·ground(tile_village)는 처음엔 미납품이었다가 이후 납품됐다. themeTags: segments.json의 field 태그 세그먼트 38개 전부에 village를 같이 붙여서(GameScene.getStageRouteSegments) 이 테마도 그 세그먼트 풀을 그대로 쓰게 했다 — 안 그러면 themeTags 매칭이 0건이라 스테이지가 비게 된다. obstacleSkins/obstacleVariants: 목업의 나무 그루터기·상자·나무통을 기존 에셋으로 — 상자는 smallRock:town_crate(outskirts2와 같은 매핑), 그루터기는 stump 타입 자체의 기본 에셋(stump.png)이 이미 그 모습이라 손대지 않고, 나무통(wall_barrel)을 obstacleVariants.stump에 얹어 그루터기/나무통이 같은 자리에서 섞여 나오게 했다(largeRock의 town_citizen/village_kid와 같은 방식, 치수는 obstacles.json stump 타입 자체의 34x30). largeRock 자리는 사용자 지시대로 동네꼬마 — outskirts2의 town_citizen/outskirts2_dog 항목을 그대로 본떴다. TASK-STAGE7-VILLAGE-BG.md — village_town.png 납품 후 실측: 스트립 건물 높이 270px 기준 nearStripScale 0.3은 화면에서 81 논리px에 불과해 목업(약 195px, 배율 0.72)의 절반도 안 됐다. 0.55(148px)에서 시작해 실제 플레이 화면으로 확인 후 최종 채택 — 목업 그대로(0.72)는 마을이 화면을 지배해 과했다. nearStripParallax는 0.4 그대로 두었다(BackgroundLayer.createNearStrip의 스크롤 계산이 이미 tilePositionX 증분을 nearStripScale로 나눠 스케일을 보정하므로, 배율만 올려도 화면상 이동 속도 자체는 달라지지 않는다 — 실제 플레이로 재확인). foreground에 field와 동일한 deco_grass/deco_flower를 추가해 목업의 울타리·들꽃·풀 자리를 기존 에셋으로 채웠다(방향 표지판은 대응하는 기존 에셋이 없어 보류). midground는 비워 둔다 — nearStrip에 이미 큰 참나무가 그려져 있어 추가 나무는 과함. TASK-STAGE7-KIDSIZE.md — obstacleVariants.largeRock의 village_kid 항목만 별도로 축소(town_citizen은 그대로): 실측 잉크 높이가 아이 60px > 어른 55px로 어른보다 크게 나왔다. 목표는 어른의 80% 키(잉크 약 44px) — 60→44 축소비 0.733을 표시/충돌 치수 전체에 동일 적용(73→54, 56→41, 32→24, 66→49).",
+      "_note": "TASK-STAGE7-VILLAGE.md — 2-1(index 7, '마을 앞')이 갖고 있던 field 테마를 2-3(index 9, '넓은 평원', 그 이름에 실제로 맞는 스테이지)로 돌려보내고, 2-1 자리에 새로 만든 마을 테마. sky/farMountains는 목업의 하늘·산과 이미 맞아서 field 것(sky_base/far_mountain)을 그대로 재사용 — skyTint/farMountainTint도 같은 이유로 field와 동일값. nearStrip(village_town)·ground(tile_village)는 처음엔 미납품이었다가 이후 납품됐다. themeTags: segments.json의 field 태그 세그먼트 38개 전부에 village를 같이 붙여서(GameScene.getStageRouteSegments) 이 테마도 그 세그먼트 풀을 그대로 쓰게 했다 — 안 그러면 themeTags 매칭이 0건이라 스테이지가 비게 된다. obstacleSkins/obstacleVariants: 목업의 나무 그루터기·상자·나무통을 기존 에셋으로 — 상자는 smallRock:town_crate(outskirts2와 같은 매핑), 그루터기는 stump 타입 자체의 기본 에셋(stump.png)이 이미 그 모습이라 손대지 않고, 나무통(wall_barrel)을 obstacleVariants.stump에 얹어 그루터기/나무통이 같은 자리에서 섞여 나오게 했다(largeRock의 town_citizen/village_kid와 같은 방식, 치수는 obstacles.json stump 타입 자체의 34x30). largeRock 자리는 사용자 지시대로 동네꼬마 — outskirts2의 town_citizen/outskirts2_dog 항목을 그대로 본떴다. TASK-STAGE7-VILLAGE-BG.md — village_town.png 납품 후 실측: 스트립 건물 높이 270px 기준 nearStripScale 0.3은 화면에서 81 논리px에 불과해 목업(약 195px, 배율 0.72)의 절반도 안 됐다. 0.55(148px)에서 시작해 실제 플레이 화면으로 확인 후 최종 채택 — 목업 그대로(0.72)는 마을이 화면을 지배해 과했다. nearStripParallax는 0.4 그대로 두었다(BackgroundLayer.createNearStrip의 스크롤 계산이 이미 tilePositionX 증분을 nearStripScale로 나눠 스케일을 보정하므로, 배율만 올려도 화면상 이동 속도 자체는 달라지지 않는다 — 실제 플레이로 재확인). foreground에 field와 동일한 deco_grass/deco_flower를 추가해 목업의 울타리·들꽃·풀 자리를 기존 에셋으로 채웠다(방향 표지판은 대응하는 기존 에셋이 없어 보류). midground는 비워 둔다 — nearStrip에 이미 큰 참나무가 그려져 있어 추가 나무는 과함. TASK-STAGE7-KIDSIZE.md — obstacleVariants.largeRock의 village_kid 항목만 별도로 축소(town_citizen은 그대로): 실측 잉크 높이가 아이 60px > 어른 55px로 어른보다 크게 나왔다. 목표는 어른의 80% 키(잉크 약 44px) — 60→44 축소비 0.733을 표시/충돌 치수 전체에 동일 적용(73→54, 56→41, 32→24, 66→49). TASK-STAGE7-SMOKE.md — stripAccessories: outskirts와 같은 선례(outskirts_smoke/outskirts-smoke-rise, 새 에셋 없음). village_town.png를 픽셀 스캔해 찾은 굴뚝 꼭대기 5곳 중 처음엔 스트립 전체에 고르게 퍼지는 3곳(x=135,1031,1390)을 채택했으나, 사용자 지시로 2곳(135,1031)만 남김 — '일부 집에서만 연기가 난다'는 요청에는 스트립(1560px) 안에서 스크롤 중 한 번에 둘 다 보이는 일이 드물 만큼 떨어진 두 곳이면 충분하다는 판단(255/1031/1390 등 나머지는 예비). y는 outskirts 항목과 같은 규칙으로 계산: 연기 스프라이트가 64x128(SMOKE_FRAME_H=128)이고 sprite origin이 (0,0)이라 굴뚝 꼭대기 위로 128px 전체가 얹히도록 y=굴뚝꼭대기-128 (418→290, 395→267). x/y는 스트립 네이티브 좌표(BackgroundLayer.getStripGeometry/updateStripAccessories가 nearStripScale을 자동으로 곱해 배치하므로 0.3이던 outskirts와 0.55인 village 모두 같은 계산식을 그대로 씀 — 코드 쪽 스케일 보정 확인 완료, 별도 처리 불필요). alpha는 outskirts와 같은 0.7로 시작 — 낮 배경이라 실제 화면으로 옅기를 확인.",
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain",
@@ -711,6 +711,24 @@
       "obstacleGroundSinkPx": 6,
       "nearStripParallax": 0.4,
       "nearStripScale": 0.55,
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "outskirts_smoke",
+          "animation": "outskirts-smoke-rise",
+          "x": 135,
+          "y": 290,
+          "alpha": 0.7
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "outskirts_smoke",
+          "animation": "outskirts-smoke-rise",
+          "x": 1031,
+          "y": 267,
+          "alpha": 0.7
+        }
+      ],
       "bgm": {
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
