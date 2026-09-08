@@ -699,18 +699,18 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "_note": "TASK-STAGE7-VILLAGE.md — 2-1(index 7, '마을 앞')이 갖고 있던 field 테마를 2-3(index 9, '넓은 평원', 그 이름에 실제로 맞는 스테이지)로 돌려보내고, 2-1 자리에 새로 만든 마을 테마. sky/farMountains는 목업의 하늘·산과 이미 맞아서 field 것(sky_base/far_mountain)을 그대로 재사용 — skyTint/farMountainTint도 같은 이유로 field와 동일값. nearStrip(village_town)·ground(tile_village)는 아직 미납품 — village_town/tile_village 둘 다 optional glob(PreloadScene.ts)이라 파일이 없으면 url이 undefined로 떨어져 로드를 건너뛰고, BackgroundLayer.resolveLayer()/Ground의 자체 textures.exists() 폴백이 그 자리를 각각 '레이어 없음'(nearStrip)·tile_ground(ground)로 메운다 — stage5/outskirts2가 미납품 에셋을 다루던 것과 같은 방식(PreloadScene.ts 해당 주석 참조). nearStripParallax/Scale은 outskirts 테마 값(0.4/0.3)을 그대로 가져옴 — 사용자 지정. midground/foreground는 outskirts2와 같은 빈 배열 — nearStrip이 마을 건물을 이미 보여주므로 들·화단 소품까지 겹치면 산만해질 뿐이라 비웠다. themeTags: segments.json의 field 태그 세그먼트 38개 전부에 village를 같이 붙여서(GameScene.getStageRouteSegments) 이 테마도 그 세그먼트 풀을 그대로 쓰게 했다 — 안 그러면 themeTags 매칭이 0건이라 스테이지가 비게 된다. obstacleSkins/obstacleVariants: 목업의 나무 그루터기·상자·나무통을 기존 에셋으로 — 상자는 smallRock:town_crate(outskirts2와 같은 매핑), 그루터기는 stump 타입 자체의 기본 에셋(stump.png)이 이미 그 모습이라 손대지 않고, 나무통(wall_barrel)을 obstacleVariants.stump에 얹어 그루터기/나무통이 같은 자리에서 섞여 나오게 했다(largeRock의 town_citizen/village_kid와 같은 방식, 치수는 obstacles.json stump 타입 자체의 34x30). largeRock 자리는 사용자 지시대로 동네꼬마 — outskirts2의 town_citizen/outskirts2_dog 항목을 그대로 본떴다: village_kid.png는 아직 없어 GameScene.rollObstacleVariant()의 textures.exists() 필터에 걸러지고 town_citizen만 나온다(자동 폴백, 별도 코드 불필요).",
+      "_note": "TASK-STAGE7-VILLAGE.md — 2-1(index 7, '마을 앞')이 갖고 있던 field 테마를 2-3(index 9, '넓은 평원', 그 이름에 실제로 맞는 스테이지)로 돌려보내고, 2-1 자리에 새로 만든 마을 테마. sky/farMountains는 목업의 하늘·산과 이미 맞아서 field 것(sky_base/far_mountain)을 그대로 재사용 — skyTint/farMountainTint도 같은 이유로 field와 동일값. nearStrip(village_town)·ground(tile_village)는 처음엔 미납품이었다가 이후 납품됐다. themeTags: segments.json의 field 태그 세그먼트 38개 전부에 village를 같이 붙여서(GameScene.getStageRouteSegments) 이 테마도 그 세그먼트 풀을 그대로 쓰게 했다 — 안 그러면 themeTags 매칭이 0건이라 스테이지가 비게 된다. obstacleSkins/obstacleVariants: 목업의 나무 그루터기·상자·나무통을 기존 에셋으로 — 상자는 smallRock:town_crate(outskirts2와 같은 매핑), 그루터기는 stump 타입 자체의 기본 에셋(stump.png)이 이미 그 모습이라 손대지 않고, 나무통(wall_barrel)을 obstacleVariants.stump에 얹어 그루터기/나무통이 같은 자리에서 섞여 나오게 했다(largeRock의 town_citizen/village_kid와 같은 방식, 치수는 obstacles.json stump 타입 자체의 34x30). largeRock 자리는 사용자 지시대로 동네꼬마 — outskirts2의 town_citizen/outskirts2_dog 항목을 그대로 본떴다. TASK-STAGE7-VILLAGE-BG.md — village_town.png 납품 후 실측: 스트립 건물 높이 270px 기준 nearStripScale 0.3은 화면에서 81 논리px에 불과해 목업(약 195px, 배율 0.72)의 절반도 안 됐다. 0.55(148px)에서 시작해 실제 플레이 화면으로 확인 후 최종 채택 — 목업 그대로(0.72)는 마을이 화면을 지배해 과했다. nearStripParallax는 0.4 그대로 두었다(BackgroundLayer.createNearStrip의 스크롤 계산이 이미 tilePositionX 증분을 nearStripScale로 나눠 스케일을 보정하므로, 배율만 올려도 화면상 이동 속도 자체는 달라지지 않는다 — 실제 플레이로 재확인). foreground에 field와 동일한 deco_grass/deco_flower를 추가해 목업의 울타리·들꽃·풀 자리를 기존 에셋으로 채웠다(방향 표지판은 대응하는 기존 에셋이 없어 보류). midground는 비워 둔다 — nearStrip에 이미 큰 참나무가 그려져 있어 추가 나무는 과함. TASK-STAGE7-KIDSIZE.md — obstacleVariants.largeRock의 village_kid 항목만 별도로 축소(town_citizen은 그대로): 실측 잉크 높이가 아이 60px > 어른 55px로 어른보다 크게 나왔다. 목표는 어른의 80% 키(잉크 약 44px) — 60→44 축소비 0.733을 표시/충돌 치수 전체에 동일 적용(73→54, 56→41, 32→24, 66→49).",
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain",
         "nearStrip": "village_town",
         "midground": [],
-        "foreground": [],
+        "foreground": ["deco_grass", "deco_flower"],
         "ground": "tile_village"
       },
       "obstacleGroundSinkPx": 6,
       "nearStripParallax": 0.4,
-      "nearStripScale": 0.3,
+      "nearStripScale": 0.55,
       "bgm": {
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
@@ -730,10 +730,10 @@
           },
           {
             "skin": "village_kid",
-            "displayWidthPx": 56,
-            "displayHeightPx": 73,
-            "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
+            "displayWidthPx": 41,
+            "displayHeightPx": 54,
+            "bodyWidthPx": 24,
+            "bodyHeightPx": 49,
             "weight": 3
           }
         ],
