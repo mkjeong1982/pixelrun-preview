@@ -762,6 +762,15 @@
             "bodyWidthPx": 24,
             "bodyHeightPx": 49,
             "weight": 3
+          },
+          {
+            "skin": "village_sign",
+            "displayWidthPx": 41,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 10,
+            "bodyHeightPx": 60,
+            "weight": 2,
+            "_note": "TASK-VILLAGE-SIGN-WIRE.md — largeRock 자리에 얹은 이유는 town_citizen/village_kid와 같은 이유: village_town.png의 방향 표지판 목업 자리를 채우는 정적 소품(TASK-STAGE7-VILLAGE-BG.md에서 '대응 에셋 없어 보류'로 남겼던 그 표지판). stump가 아니라 largeRock인 이유는 나무통(34x30)과 높이 대역이 전혀 다르기 때문. village_sign.png는 41x62 단일 이미지(스프라이트 시트 아님) — 실측: 잉크가 캔버스 하단(y=61)까지, 판자는 x=20(가로 중앙)에 정렬, 기둥은 최하단에서 x 16~24(폭 8px). bodyWidthPx 10은 판자(41px 폭 전체)가 아니라 실제로 부딪히는 기둥 기준 — 판자는 기둥 맨 위에 얹혀 있어 기둥 높이(≈bodyHeightPx)를 넘으면 판자도 함께 넘는다. 측정폭 8px에 약간의 여유(1px씩)를 둔 값, DEV_SHOW_HITBOXES로 확인. bodyHeightPx 60은 62 중 거의 전체 — 판자가 기둥 꼭대기에 있어 회피하려면 사실상 표지판 전체 높이를 넘어야 한다."
           }
         ],
         "stump": [
