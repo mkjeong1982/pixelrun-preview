@@ -117,8 +117,9 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 4
+            "bodyHeightPx": 54,
+            "weight": 4,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 54. 알파 실루엣 실측(idle 프레임 0): 잉크 상단이 캔버스 상단에서 13px 아래(y=13~73, 높이 60)인데 body(66)는 그 위로 6px 더 올라가 있어 그림 밖(빈 공간)에서 판정이 났다. 새 값은 60*0.9=54(기존 10% 여유 관례와 동일 비율)로 잉크 상단 바로 아래에서 시작. 폭(32)은 실루엣과의 어긋남이 기준 미달(<3px)이라 그대로 둠."
           }
         ],
         "stump": [
@@ -245,8 +246,16 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 4
+            "bodyHeightPx": 49,
+            "weight": 4,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49. 알파 실루엣 실측(idle 프레임 0): 잉크 상단이 캔버스 상단에서 18px 아래(높이 55)인데 body(66)는 그 위로 11px 더 올라가 그림 밖(빈 공간)에서 판정이 났다. 새 값은 55*0.9=49(기존 10% 여유 관례와 동일 비율). 폭(32)은 어긋남이 기준 미달(<3px, 오히려 실루엣보다 좁게 여유로움)이라 그대로 둠. town_citizen을 쓰는 다른 테마(field/outskirts2/palace_town2/village)도 동일 실측치라 동일하게 수정."
+          }
+        ],
+        "tree": [
+          {
+            "skin": "town_lamp",
+            "bodyWidthPx": 27,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyWidthPx 36(타입 기본 40*0.9) -> 27. 이 항목은 town_citizen/palace_maid/town_cat/village_kid와 달리 세로가 아니라 가로가 문제였다: 알파 실루엣 실측 결과 잉크 폭이 30px(캔버스 40px 중 좌우로 5px씩 여백)인데 기본 shrink 공식이 캔버스 40px 기준으로 body를 36으로 잡아 오른쪽으로 3px 그림 밖(빈 공간)에서 판정이 났다. 새 값은 30*0.9=27(동일한 10% 여유 관례, 대상 축만 다름). skin이 obstacleSkins.tree의 base와 같아 별도 pool 항목이 아니라 크기 메타데이터로 병합됨(town_spikes와 같은 패턴). 처음엔 3px가 경계값이고 tree는 어차피 doubleJump 필수라 보류했으나, 사용자가 town_citizen 등과 '같은 결함'이라고 판단해 동일 규칙으로 수정. bodyHeightPx는 세로축은 문제가 없어(13px 차이는 타입 기본 10% 여유일 뿐) 손대지 않고 타입 기본값(115)에 맡김."
           }
         ]
       }
@@ -365,16 +374,18 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 3
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
           },
           {
             "skin": "town_cat",
             "displayWidthPx": 48,
             "displayHeightPx": 48,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 28,
-            "weight": 2
+            "bodyHeightPx": 19,
+            "weight": 2,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 28 -> 19. 알파 실루엣 실측(idle 프레임 0): 고양이가 캔버스 하단에 낮게 앉아 있어 잉크 상단이 캔버스 상단에서 26px 아래(높이 22)뿐인데 body(28)는 그 위로 6px 더 올라가 그림 밖(빈 공간)에서 판정이 났다. 새 값은 22*0.9=19(기존 10% 여유 관례와 동일 비율). 폭(32)은 어긋남이 기준 미달이라 그대로 둠."
           }
         ],
         "spike": [
@@ -384,6 +395,13 @@
             "displayHeightPx": 24,
             "bodyWidthPx": 48,
             "bodyHeightPx": 24
+          }
+        ],
+        "tree": [
+          {
+            "skin": "town_lamp",
+            "bodyWidthPx": 27,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyWidthPx 36 -> 27, palace_town 항목과 동일 실측/근거(가로축 문제, bodyHeightPx는 손대지 않음)."
           }
         ]
       }
@@ -608,8 +626,9 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 3
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
           },
           {
             "skin": "outskirts2_dog",
@@ -682,8 +701,9 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 3
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
           }
         ]
       },
@@ -752,16 +772,18 @@
             "displayWidthPx": 56,
             "displayHeightPx": 73,
             "bodyWidthPx": 32,
-            "bodyHeightPx": 66,
-            "weight": 3
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
           },
           {
             "skin": "village_kid",
             "displayWidthPx": 41,
             "displayHeightPx": 54,
             "bodyWidthPx": 24,
-            "bodyHeightPx": 49,
-            "weight": 3
+            "bodyHeightPx": 39,
+            "weight": 3,
+            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 49 -> 39. 알파 실루엣 실측(idle 프레임 0): 잉크 상단이 캔버스 상단에서 9.6px 아래(잉크 높이 44.4)인데 body(49)는 그 위로 4.6px 더 올라가 그림 밖(빈 공간)에서 판정이 났었음. 새 값은 44.4*0.9=39(town_citizen/palace_maid/town_cat과 동일한 10% 여유 관례). 처음엔 4.6px가 작고 TASK-STAGE7-KIDSIZE.md에서 이미 사용자가 직접 검수한 값이라 재조정을 보류하고 보고만 했으나, 사용자가 '같은 결함(그림 위 허공에서 판정)이라 크기만 다를 뿐 성격은 같다'고 확인해 동일 규칙으로 수정."
           },
           {
             "skin": "village_sign",
