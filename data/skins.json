@@ -18,6 +18,9 @@
       "coinBonusPercent": null,
       "coinBonusCondition": null,
       "feverBonusSeconds": null,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
       "speedBonusPercent": null,
       "blessingKey": null
     }
@@ -48,6 +51,9 @@
       "coinBonusPercent": 10,
       "coinBonusCondition": "nightStages",
       "feverBonusSeconds": null,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
       "speedBonusPercent": 10,
       "blessingKey": null
     }
@@ -63,7 +69,7 @@
     "nameKey": "data.skin.skin_royalviolet.name",
     "iconKey": "icon_skin_royalviolet",
     "rarity": "epic",
-    "description": "우아함은 기본, 피버 타임은 1초 덤이에요!",
+    "description": "우아함은 기본, 피버 타임은 2초 덤이에요!",
     "descKey": "data.skin.skin_royalviolet.desc",
     "priceCoins": 5000,
     "stats": {
@@ -71,6 +77,9 @@
       "coinBonusPercent": null,
       "coinBonusCondition": null,
       "feverBonusSeconds": 2,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
       "speedBonusPercent": null,
       "blessingKey": null
     }
@@ -78,26 +87,24 @@
   {
     "id": "skin_p2_aurora",
     "tier": "paid",
-    "blessing": {
-      "id": "aurora_grace",
-      "type": "charge",
-      "effect": "fever_charge_rate",
-      "value": 1.1
-    },
+    "blessing": null,
     "runSheet": "princess_winter_run",
     "displayName": "윈터 퀸",
     "nameKey": "data.skin.skin_p2_aurora.name",
     "iconKey": "icon_skin_winter",
     "rarity": "epic",
-    "description": "하늘빛 치맛자락이 피버를 야무지게 깨워요!",
+    "description": "화려함은 기본, 따뜻함은 덤",
     "descKey": "data.skin.skin_p2_aurora.desc",
     "priceCoins": 14800,
     "priceCash": null,
     "stats": {
-      "hearts": 5,
+      "hearts": 3,
       "coinBonusPercent": null,
       "coinBonusCondition": null,
-      "feverBonusSeconds": null,
+      "feverBonusSeconds": 2,
+      "feverBonusCondition": "snowStages",
+      "heartBonus": 1,
+      "heartBonusCondition": "snowStages",
       "speedBonusPercent": null,
       "blessingKey": null
     },
