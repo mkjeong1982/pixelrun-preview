@@ -652,10 +652,11 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "farMountainScale": 1.3,
+      "farMountainScale": 1,
       "layers": {
         "sky": "sky_base",
-        "farMountains": "far_mountain",
+        "farMountains": "far_mountain_field",
+        "nearStrip": "field_hills",
         "midground": [
           "mid_tree_oak",
           "mid_tree_apple",
@@ -667,14 +668,27 @@
           "deco_grass",
           "deco_flower"
         ],
-        "ground": "tile_ground"
+        "ground": "tile_field2"
       },
+      "nearStripScale": 0.55,
+      "nearStripParallax": 0.4,
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "village_blades",
+          "x": 1128,
+          "y": 393,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        }
+      ],
       "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "petal",
         "densityPerSec": 6
       },
-      "_note": "TASK-FIELD-BROADLEAF.md — 사용자 지시(\"넓은 평원 배경에 나무 활엽수만 남기고 다 제거. 벚꽃나무도 없애고 대신 활엽수로 채우기\")로 midground를 활엽수만 남기게 정리. 각 PNG를 직접 열어 분류 — 이름과 그림이 다른 것들이 있었다: mid_tree_maple(단풍이라는 이름과 달리 그림은 침엽수 실루엣), mid_tree_poplar(가늘고 뾰족한 사이프러스형이라 활엽수로 안 읽힘). 이 둘을 침엽수인 mid_pine_green, 꽃나무인 mid_tree_cherry, 나무가 아닌 mid_bush와 함께 제외. 남긴 5종(oak/apple/big/orange/small)은 전부 둥근 활엽수 캐노피 확인 완료. 밀도 확인: createMidground()의 propsPerTile은 목록 항목 수가 아니라 tileWidth(=combinedWidth+widest*2, 나열된 프롭들의 실제 픽셀 폭 합에서 유도)에 좌우돼, 종을 줄여도 tileWidth가 비례해서 줄어 폭 대비 밀도는 거의 그대로다(수정 시점마다 Playwright로 실측 확인). weather.particle:\"petal\"(분홍 꽃잎 흩날림)은 이번 지시가 \"배경 나무\"였고 날씨 파티클은 별개 시스템이라 손대지 않음 — 벚꽃나무가 빠진 뒤에도 꽃잎이 날리는 게 어색하면 사용자 판단이 필요해 보고만 한다. TASK-NO-WILLOW.md — 6번째 활엽수로 넣었던 mid_tree_willow(수양버들)를 사용자 지시로 다시 제외(\"스테이지9 나무 중 버드나무는 빼줘. 앞으로도 쓰지 마\"). **mid_tree_willow는 field뿐 아니라 어느 테마에도 쓰지 않는다 — 일회성이 아니라 계속 유효한 금지다.** 남은 활엽수는 oak/apple/big/orange/small 5종.",
+      "_note": "TASK-STAGE9-PLAINS-WIRE.md — 사용자 지시(\"기존 맵 폐기하고 이 컨셉에 맞춰 다시 만들어줘\", 목업 stage9_plains_mockup.png)로 field 테마를 새 에셋 3장으로 재구성. farMountains를 far_mountain_field(여러 겹 산맥)로, nearStrip을 신규로 field_hills(언덕+마을+길+울타리+양떼, village와 동일한 0.55/0.4 스케일·패럴랙스)로 추가, ground를 tile_field2(두꺼운 잔디+자갈흙)로 교체. **기존 far_mountain/tile_ground는 안 지웠다 — forest/night 테마가 그대로 참조 중이라 지우면 그 두 테마가 깨진다.** midground(활엽수 5종, TASK-FIELD-BROADLEAF.md/TASK-NO-WILLOW.md 확정값)는 목업의 가까운 사과나무·큰 나무에 해당해 그대로 유지 — 언덕 띠가 새로 생겨 화면 뒤가 꽉 찼지만 실제 렌더로 확인한 결과 나무가 과도하게 빽빽해 보이지 않아 종을 빼지 않음. farMountainScale은 1.3(TASK-FIELD-BROADLEAF.md 때 원본 far_mountain 128px 높이 기준으로 정한 값)을 그대로 두지 않고 1로 재조정 — far_mountain_field 자체가 이미 220px로 원본의 1.72배 높이인 다중 능선 산맥이라, 옛 배율을 그대로 얹으면 하늘을 과도하게 가리고 언덕 띠와도 겹쳐 답답해졌다(실제 렌더로 확인). stripAccessories(풍차 날개, village_blades 재사용 — 새 에셋 아님)는 field_hills.png 위 풍차 축 좌표(1128,393, 사용자 실측)에 origin(0.5,0.5)로 얹어 회전(45deg/s, village 테마와 동일 속도) — 실제 게임 렌더로 축에 정확히 얹히는 것을 재확인.",
       "midgroundWeights": {
         "mid_tree_oak": 4,
         "mid_tree_apple": 4,
