@@ -658,11 +658,11 @@
         "farMountains": "far_mountain_field",
         "nearStrip": "field_hills",
         "midground": [
-          "mid_tree_oak",
-          "mid_tree_apple",
-          "mid_tree_big",
-          "mid_tree_orange",
-          "mid_tree_small"
+          "mid_tree_oak_field",
+          "mid_tree_apple_field",
+          "mid_tree_big_field",
+          "mid_tree_orange_field",
+          "mid_tree_small_field"
         ],
         "foreground": [
           "deco_grass",
@@ -688,13 +688,13 @@
         "particle": "petal",
         "densityPerSec": 6
       },
-      "_note": "TASK-STAGE9-PLAINS-WIRE.md — 사용자 지시(\"기존 맵 폐기하고 이 컨셉에 맞춰 다시 만들어줘\", 목업 stage9_plains_mockup.png)로 field 테마를 새 에셋 3장으로 재구성. farMountains를 far_mountain_field(여러 겹 산맥)로, nearStrip을 신규로 field_hills(언덕+마을+길+울타리+양떼, village와 동일한 0.55/0.4 스케일·패럴랙스)로 추가, ground를 tile_field2(두꺼운 잔디+자갈흙)로 교체. **기존 far_mountain/tile_ground는 안 지웠다 — forest/night 테마가 그대로 참조 중이라 지우면 그 두 테마가 깨진다.** midground(활엽수 5종, TASK-FIELD-BROADLEAF.md/TASK-NO-WILLOW.md 확정값)는 목업의 가까운 사과나무·큰 나무에 해당해 그대로 유지 — 언덕 띠가 새로 생겨 화면 뒤가 꽉 찼지만 실제 렌더로 확인한 결과 나무가 과도하게 빽빽해 보이지 않아 종을 빼지 않음. farMountainScale은 1.3(TASK-FIELD-BROADLEAF.md 때 원본 far_mountain 128px 높이 기준으로 정한 값)을 그대로 두지 않고 1로 재조정 — far_mountain_field 자체가 이미 220px로 원본의 1.72배 높이인 다중 능선 산맥이라, 옛 배율을 그대로 얹으면 하늘을 과도하게 가리고 언덕 띠와도 겹쳐 답답해졌다(실제 렌더로 확인). stripAccessories(풍차 날개, village_blades 재사용 — 새 에셋 아님)는 field_hills.png 위 풍차 축 좌표(1128,393, 사용자 실측)에 origin(0.5,0.5)로 얹어 회전(45deg/s, village 테마와 동일 속도) — 실제 게임 렌더로 축에 정확히 얹히는 것을 재확인.",
+      "_note": "TASK-STAGE9-PLAINS-WIRE.md — 사용자 지시(\"기존 맵 폐기하고 이 컨셉에 맞춰 다시 만들어줘\", 목업 stage9_plains_mockup.png)로 field 테마를 새 에셋 3장으로 재구성. farMountains를 far_mountain_field(여러 겹 산맥)로, nearStrip을 신규로 field_hills(언덕+마을+길+울타리+양떼, village와 동일한 0.55/0.4 스케일·패럴랙스)로 추가, ground를 tile_field2(두꺼운 잔디+자갈흙)로 교체. **기존 far_mountain/tile_ground는 안 지웠다 — forest/night 테마가 그대로 참조 중이라 지우면 그 두 테마가 깨진다.** midground(활엽수 5종, TASK-FIELD-BROADLEAF.md/TASK-NO-WILLOW.md 확정값)는 목업의 가까운 사과나무·큰 나무에 해당해 그대로 유지 — 언덕 띠가 새로 생겨 화면 뒤가 꽉 찼지만 실제 렌더로 확인한 결과 나무가 과도하게 빽빽해 보이지 않아 종을 빼지 않음. farMountainScale은 1.3(TASK-FIELD-BROADLEAF.md 때 원본 far_mountain 128px 높이 기준으로 정한 값)을 그대로 두지 않고 1로 재조정 — far_mountain_field 자체가 이미 220px로 원본의 1.72배 높이인 다중 능선 산맥이라, 옛 배율을 그대로 얹으면 하늘을 과도하게 가리고 언덕 띠와도 겹쳐 답답해졌다(실제 렌더로 확인). stripAccessories(풍차 날개, village_blades 재사용 — 새 에셋 아님)는 field_hills.png 위 풍차 축 좌표(1128,393, 사용자 실측)에 origin(0.5,0.5)로 얹어 회전(45deg/s, village 테마와 동일 속도) — 실제 게임 렌더로 축에 정확히 얹히는 것을 재확인. TASK-FIELD-TREE-TONE.md — 새 언덕/산맥 배경과 색감이 안 맞는다는 지적으로 midground를 톤 보정된 사본 5장(mid_tree_{oak,apple,big,orange,small}_field.png, 사용자 제작·커밋)으로 교체. **원본(mid_tree_oak/apple/big/orange/small)이 아니라 사본을 쓰는 이유**: oak/big/small은 forest·night 테마도 그대로 참조하므로 원본을 새로 칠하면 그 두 테마 색까지 바뀐다 — field만 별도 파일을 써서 격리. 원본 5개는 그대로 두고 손대지 않았다(forest/night의 layers.midground 무변화 확인).",
       "midgroundWeights": {
-        "mid_tree_oak": 4,
-        "mid_tree_apple": 4,
-        "mid_tree_big": 3,
-        "mid_tree_orange": 3,
-        "mid_tree_small": 3
+        "mid_tree_oak_field": 4,
+        "mid_tree_apple_field": 4,
+        "mid_tree_big_field": 3,
+        "mid_tree_orange_field": 3,
+        "mid_tree_small_field": 3
       },
       "bgm": {
         "main": "bgm_adventure2",
