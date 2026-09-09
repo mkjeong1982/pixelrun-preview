@@ -13,6 +13,7 @@
     "dressroom.action.unequip": "해제",
     "dressroom.action.purchase": "구매 {{price}}",
     "dressroom.action.locked": "업적 보상",
+    "dressroom.action.cashPackage": "패키지 보상",
     "dressroom.card.wearing": "착용 중",
     "dressroom.card.owned": "보유",
     "dressroom.card.priceCoins": "{{price}}",
@@ -181,6 +182,9 @@
     "data.skin.skin_p2_aurora.effect.1.label": "오로라 광택",
     "data.skin.skin_p2_aurora.effect.2.label": "여왕 포스",
     "data.skin.skin_p2_aurora.effect.2.value": "철철",
+    "data.skin.skin_aurora.name": "오로라",
+    "data.skin.skin_aurora.desc": "밤하늘 오로라를 그대로 둘렀어요!",
+    "data.skin.skin_aurora.blessing": "달릴 때 오로라 후광",
     "settings.title": "설정",
     "settings.section.sound": "사운드 설정",
     "settings.sound.bgm": "배경음",
@@ -210,7 +214,8 @@
     "dressroom.stats.fever.snowStages": "설원에서 피버타임 {{seconds}}초 증가",
     "dressroom.stats.hearts.snowStages": "설원에서 하트 +{{count}}",
     "dressroom.stats.speed": "속도 {{percent}}% 증가",
-    "dressroom.toast.cashComingSoon": "현금 결제는 아직 준비 중이에요. 코인으로 먼저 만나요!"
+    "dressroom.toast.cashComingSoon": "현금 결제는 아직 준비 중이에요. 코인으로 먼저 만나요!",
+    "dressroom.toast.cashOnlyComingSoon": "현금 결제는 아직 준비 중이에요. 곧 만나요!"
   },
   "en": {
     "dressroom.title": "Dress Shop",
@@ -226,6 +231,7 @@
     "dressroom.action.unequip": "Take Off",
     "dressroom.action.purchase": "Buy {{price}}",
     "dressroom.action.locked": "Award Reward",
+    "dressroom.action.cashPackage": "Package Reward",
     "dressroom.card.wearing": "Wearing",
     "dressroom.card.owned": "Owned",
     "dressroom.card.priceCoins": "{{price}}",
@@ -394,6 +400,9 @@
     "data.skin.skin_p2_aurora.effect.1.label": "Aurora Shine",
     "data.skin.skin_p2_aurora.effect.2.label": "Queenly Presence",
     "data.skin.skin_p2_aurora.effect.2.value": "Overflowing",
+    "data.skin.skin_aurora.name": "Aurora",
+    "data.skin.skin_aurora.desc": "Wrapped in the night sky's own aurora!",
+    "data.skin.skin_aurora.blessing": "Aurora glow while you run",
     "settings.title": "Settings",
     "settings.section.sound": "Sound Settings",
     "settings.sound.bgm": "Music",
@@ -423,7 +432,8 @@
     "dressroom.stats.fever.snowStages": "+{{seconds}}s Fever in Snowfields",
     "dressroom.stats.hearts.snowStages": "+{{count}} Heart in Snowfields",
     "dressroom.stats.speed": "+{{percent}}% Speed",
-    "dressroom.toast.cashComingSoon": "Real-money checkout isn't open yet — coins work in the meantime!"
+    "dressroom.toast.cashComingSoon": "Real-money checkout isn't open yet — coins work in the meantime!",
+    "dressroom.toast.cashOnlyComingSoon": "Real-money checkout isn't open yet — hang tight!"
   },
   "ja": {
     "dressroom.title": "ドレスショップ",
@@ -439,6 +449,7 @@
     "dressroom.action.unequip": "脱ぐ",
     "dressroom.action.purchase": "購入 {{price}}",
     "dressroom.action.locked": "実績報酬",
+    "dressroom.action.cashPackage": "購入特典",
     "dressroom.card.wearing": "着用中",
     "dressroom.card.owned": "所持済み",
     "dressroom.card.priceCoins": "{{price}}",
@@ -607,6 +618,9 @@
     "data.skin.skin_p2_aurora.effect.1.label": "オーロラの輝き",
     "data.skin.skin_p2_aurora.effect.2.label": "女王オーラ",
     "data.skin.skin_p2_aurora.effect.2.value": "あふれるほど",
+    "data.skin.skin_aurora.name": "オーロラ",
+    "data.skin.skin_aurora.desc": "夜空のオーロラをまとった一着！",
+    "data.skin.skin_aurora.blessing": "走るときにオーロラの後光",
     "settings.title": "設定",
     "settings.section.sound": "サウンド設定",
     "settings.sound.bgm": "BGM",
@@ -636,6 +650,7 @@
     "dressroom.stats.fever.snowStages": "雪原ではフィーバー{{seconds}}秒アップ",
     "dressroom.stats.hearts.snowStages": "雪原ではハート+{{count}}",
     "dressroom.stats.speed": "スピード{{percent}}%アップ",
-    "dressroom.toast.cashComingSoon": "現金決済はまだ準備中です。まずはコインでどうぞ！"
+    "dressroom.toast.cashComingSoon": "現金決済はまだ準備中です。まずはコインでどうぞ！",
+    "dressroom.toast.cashOnlyComingSoon": "現金決済はまだ準備中です。もうすぐです！"
   }
 }
