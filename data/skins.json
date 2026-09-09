@@ -120,6 +120,8 @@
     "thumbFrame": 4,
     "displayName": "오로라",
     "nameKey": "data.skin.skin_aurora.name",
+    "cardName": "오로라 패키지",
+    "cardNameKey": "data.skin.skin_aurora.cardName",
     "iconKey": "icon_skin_aurora",
     "rarity": "epic",
     "description": "밤하늘 오로라를 그대로 둘렀어요!",
