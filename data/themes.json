@@ -652,20 +652,17 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
+      "farMountainScale": 1.3,
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain",
         "midground": [
           "mid_tree_oak",
           "mid_tree_apple",
-          "mid_tree_maple",
-          "mid_tree_cherry",
           "mid_tree_big",
           "mid_tree_orange",
-          "mid_tree_poplar",
           "mid_tree_small",
-          "mid_bush",
-          "mid_pine_green"
+          "mid_tree_willow"
         ],
         "foreground": [
           "deco_grass",
@@ -678,17 +675,14 @@
         "particle": "petal",
         "densityPerSec": 6
       },
+      "_note": "TASK-FIELD-BROADLEAF.md — 사용자 지시(\"넓은 평원 배경에 나무 활엽수만 남기고 다 제거. 벚꽃나무도 없애고 대신 활엽수로 채우기\")로 midground를 활엽수 6종만 남기게 정리. 각 PNG를 직접 열어 분류 — 이름과 그림이 다른 것들이 있었다: mid_tree_maple(단풍이라는 이름과 달리 그림은 침엽수 실루엣), mid_tree_poplar(가늘고 뾰족한 사이프러스형이라 활엽수로 안 읽힘). 이 둘을 침엽수인 mid_pine_green, 꽃나무인 mid_tree_cherry, 나무가 아닌 mid_bush와 함께 제외. 남긴 5종(oak/apple/big/orange/small)은 전부 둥근 활엽수 캐노피 확인 완료. 6번째로 다른 테마에 안 쓰이던 mid_tree_willow(84x124, 수양버들, 활엽수)를 추가 — PreloadScene 매니페스트에 이미 등록돼 있어 코드 변경 불필요. midgroundWeights도 제외된 5종 항목을 지우고 willow:3(신규 종이라 주력종 oak/apple의 4보다 한 단계 낮게, big/orange/small과 동급)을 추가. 밀도 확인: createMidground()의 propsPerTile은 목록 항목 수가 아니라 tileWidth(=combinedWidth+widest*2, 나열된 프롭들의 실제 픽셀 폭 합에서 유도)에 좌우돼, 종을 5개 빼도 tileWidth가 비례해서 줄어(1228→892px) propsPerTile도 같이 줄고(8→6) 폭 대비 밀도는 0.652%→0.673%로 사실상 그대로다(Playwright로 수정 전/후 화면 나무 수 스크린샷 비교, 체감 차이 없음 확인). weather.particle:\"petal\"(분홍 꽃잎 흩날림)은 이번 지시가 \"배경 나무\"였고 날씨 파티클은 별개 시스템이라 손대지 않음 — 벚꽃나무가 빠진 뒤에도 꽃잎이 날리는 게 어색하면 사용자 판단이 필요해 보고만 한다.",
       "midgroundWeights": {
         "mid_tree_oak": 4,
         "mid_tree_apple": 4,
-        "mid_tree_maple": 4,
-        "mid_tree_cherry": 3,
         "mid_tree_big": 3,
         "mid_tree_orange": 3,
-        "mid_tree_poplar": 2,
         "mid_tree_small": 3,
-        "mid_bush": 3,
-        "mid_pine_green": 1
+        "mid_tree_willow": 3
       },
       "bgm": {
         "main": "bgm_adventure2",
@@ -725,7 +719,10 @@
         "farMountains": "far_mountain",
         "nearStrip": "village_town",
         "midground": [],
-        "foreground": ["deco_grass", "deco_flower"],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
         "ground": "tile_village"
       },
       "obstacleGroundSinkPx": 6,
@@ -811,6 +808,105 @@
         "largeRock": 2,
         "stump": 3
       }
+    },
+    {
+      "id": "village_inside",
+      "displayTitle": "마을 안",
+      "lighting": "day",
+      "skyTint": "#8ed8ff",
+      "farMountainTint": "#86a9be",
+      "_note": "TASK-STAGE8-VILLAGE-INSIDE.md — 2-2(index 8, 이전 이름 '마을 앞 2', theme 없이 스텁이던 자리)를 목업(md_docs/references/stage8_village_inside_mockup.png: 돌담·기와집·풍차 탑·건초 수레·울타리·랜턴·왕관 깃발)에 맞춰 '마을 안'으로 신설. village 테마를 그대로 복제하는 걸 베이스로 삼되 아래만 다름. sky/farMountains: 목업 하늘·산이 village와 동일 톤이라 village 그대로(sky_base/far_mountain, skyTint/farMountainTint 동일값). ground(tile_village)는 새로 그리지 않고 재사용 — 목업의 지면(잔디+흙+자갈)이 tile_village.png와 픽셀 단위로 같은 그림임을 육안 대조로 확인했다(마을 앞과 마을 안이 같은 마을의 다른 지점이라 바닥 재질이 같은 게 자연스럽다). nearStrip은 아직 미납품인 village_inside_town — village_kid/btn_menu_*_en과 같은 optional glob + textures.exists 폴백(PreloadScene.ts villageInsideBgAssetUrls)으로 걸어 파일이 없어도 그 레이어만 안 그려지고(하늘/산/지면은 정상) 지금 배포가 깨지지 않게 했다. stripAccessories(풍차 날개·굴뚝 연기)는 일부러 비워뒀다 — 좌표는 실제 배경 그림 위에서 픽셀 스캔해야 나오는데(village의 windmill/smoke가 그랬듯) 그림이 아직 없어 좌표를 잡을 수 없다. 그래픽 워커가 village_inside_town.png를 납품하고 좌표를 보고하면 별도 지시로 추가한다. obstacleSkins/obstacleVariants/obstacleBaseWeights는 village와 완전히 동일한 구성으로 시작(smallRock:town_crate, stump+wall_barrel, largeRock에 town_citizen/village_kid/village_sign — 행인 NPC 장애물 필수 포함 규칙 준수). themeTags: segments.json의 field 태그(=village와 동일 38개) 세그먼트 전부에 village_inside도 같이 붙였다(GameScene.getStageRouteSegments) — 안 그러면 매칭 0건으로 스테이지가 빈다. stripAccessories: village_inside_town.png 위에서 실측한 좌표다 — 풍차 축(1105,345)에 village_blades(184x184)를 원점 0.5/0.5 로 얹어 회전시키고(45°/s, village 와 같은 속도), 굴뚝 상단 두 곳(460,331)(1382,355)에서 연기가 오른다. 날개는 배경 그림에 그리지 않았다 — 회전시켜야 하므로 별도 스프라이트여야 한다. 좌표는 합성 렌더로 축에 정확히 얹히는 것을 확인했다.",
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain",
+        "nearStrip": "village_inside_town",
+        "midground": [],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
+        "ground": "tile_village"
+      },
+      "obstacleGroundSinkPx": 6,
+      "nearStripParallax": 0.4,
+      "nearStripScale": 0.55,
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "smallRock": "town_crate"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "town_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 3
+          },
+          {
+            "skin": "village_kid",
+            "displayWidthPx": 41,
+            "displayHeightPx": 54,
+            "bodyWidthPx": 24,
+            "bodyHeightPx": 39,
+            "weight": 3
+          },
+          {
+            "skin": "village_sign",
+            "displayWidthPx": 41,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 10,
+            "bodyHeightPx": 60,
+            "weight": 2
+          }
+        ],
+        "stump": [
+          {
+            "skin": "wall_barrel",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 30,
+            "weight": 3
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      },
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "outskirts_smoke",
+          "animation": "outskirts-smoke-rise",
+          "x": 460,
+          "y": 331,
+          "alpha": 0.7
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "outskirts_smoke",
+          "animation": "outskirts-smoke-rise",
+          "x": 1382,
+          "y": 355,
+          "alpha": 0.7
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "village_blades",
+          "x": 1105,
+          "y": 345,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        }
+      ]
     },
     {
       "id": "forest",
