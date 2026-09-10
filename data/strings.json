@@ -58,7 +58,6 @@
     "ranking.achievement.djump100": "공중제비 마스터",
     "ranking.achievement.rewardCoins": "보상 {{n}}",
     "ranking.achievement.rewardDress": "드레스 보상",
-    "achievement.toast.gold": "업적 달성! 골드 {{amount}} 획득, 주머니가 두둑해졌어요!",
     "dressReward.unlocked": "업적 달성!",
     "dressReward.body": "{{dress}}, 옷장에 쏙 들어왔어요!",
     "dressReward.hint": "지금 드레스룸에서 갈아입으세요!",
@@ -218,7 +217,10 @@
     "dressroom.stats.hearts.snowStages": "설원에서 하트 +{{count}}",
     "dressroom.stats.speed": "속도 {{percent}}% 증가",
     "dressroom.toast.cashComingSoon": "현금 결제는 아직 준비 중이에요. 코인으로 먼저 만나요!",
-    "dressroom.toast.cashOnlyComingSoon": "현금 결제는 아직 준비 중이에요. 곧 만나요!"
+    "dressroom.toast.cashOnlyComingSoon": "현금 결제는 아직 준비 중이에요. 곧 만나요!",
+    "ranking.achievement.claim": "받기",
+    "ranking.achievement.claimed": "업적 달성! {{n}}코인 챙겼어요 🏆",
+    "ranking.achievement.dressHint": "클리어하면 자동으로 쏙 들어와요 👗"
   },
   "en": {
     "dressroom.title": "Dress Shop",
@@ -279,7 +281,6 @@
     "ranking.achievement.djump100": "Somersault Master",
     "ranking.achievement.rewardCoins": "Reward {{n}}",
     "ranking.achievement.rewardDress": "Dress reward",
-    "achievement.toast.gold": "Achievement unlocked! +{{amount}} gold — pockets feeling heavier!",
     "dressReward.unlocked": "Unlocked!",
     "dressReward.body": "{{dress}} just slipped into your closet!",
     "dressReward.hint": "Head to the dress room and try it on!",
@@ -439,7 +440,10 @@
     "dressroom.stats.hearts.snowStages": "+{{count}} Heart in Snowfields",
     "dressroom.stats.speed": "+{{percent}}% Speed",
     "dressroom.toast.cashComingSoon": "Real-money checkout isn't open yet — coins work in the meantime!",
-    "dressroom.toast.cashOnlyComingSoon": "Real-money checkout isn't open yet — hang tight!"
+    "dressroom.toast.cashOnlyComingSoon": "Real-money checkout isn't open yet — hang tight!",
+    "ranking.achievement.claim": "Claim",
+    "ranking.achievement.claimed": "Achievement cashed in! Grabbed {{n}} coins 🏆",
+    "ranking.achievement.dressHint": "Comes free the moment you clear it 👗"
   },
   "ja": {
     "dressroom.title": "ドレスショップ",
@@ -500,7 +504,6 @@
     "ranking.achievement.djump100": "宙返りマスター",
     "ranking.achievement.rewardCoins": "報酬{{n}}",
     "ranking.achievement.rewardDress": "ドレス報酬",
-    "achievement.toast.gold": "実績解除！ゴールド{{amount}}獲得、お財布がぽっちゃり！",
     "dressReward.unlocked": "実績解除！",
     "dressReward.body": "{{dress}}がクローゼットにするっとイン！",
     "dressReward.hint": "今すぐドレスルームで着替えよう！",
@@ -660,6 +663,9 @@
     "dressroom.stats.hearts.snowStages": "雪原ではハート+{{count}}",
     "dressroom.stats.speed": "スピード{{percent}}%アップ",
     "dressroom.toast.cashComingSoon": "現金決済はまだ準備中です。まずはコインでどうぞ！",
-    "dressroom.toast.cashOnlyComingSoon": "現金決済はまだ準備中です。もうすぐです！"
+    "dressroom.toast.cashOnlyComingSoon": "現金決済はまだ準備中です。もうすぐです！",
+    "ranking.achievement.claim": "受け取る",
+    "ranking.achievement.claimed": "実績達成！{{n}}コインゲット 🏆",
+    "ranking.achievement.dressHint": "クリアすると自動でもらえます 👗"
   }
 }

@@ -49,7 +49,8 @@
       "reward": { "type": "coins", "amount": 800 }
     },
     {
-      "id": "distance_5000",
+      "id": "distance_marathon",
+      "_note": "TASK-ACH-GRANT.md 곁다리 — id가 예전엔 distance_5000이었는데 target은 42195(마라톤 풀코스 미터)라 이름이 거짓말을 하고 있었다. titleKey(ranking.achievement.distance5000)는 그대로 뒀다(문구는 이미 '마라토너 등극!'이라 수치를 안 담고 있어 안 바꿔도 됨) — id만 target과 맞게 distance_marathon으로 교체. 마이그레이션 불필요: claimed 수령 시스템이 이 태스크에서 처음 생겨 이 id로 저장된 progress 항목이 지금까지 하나도 없었다(lifetimeDistanceMeters 지표는 progress[id]가 아니라 progression.lifetime에서 매번 계산돼 애초에 id에 의존하지 않았음).",
       "titleKey": "ranking.achievement.distance5000",
       "target": 42195,
       "metric": "lifetimeDistanceMeters",
@@ -66,8 +67,9 @@
     },
     {
       "id": "dress_all",
+      "_note": "TASK-ACH-GRANT.md 곁다리 — target 4->5. skins.json은 5벌(classic/p1_stardust/royalviolet/p2_aurora/aurora)인데 dressesOwned가 그 5개 전부를 isDressOwned로 세므로 4는 '전부'가 아니라 '현금 전용 패키지(skin_aurora, 코인 가격 없음) 하나만 안 가져도 달성'이었다. titleKey가 '드레스룸 완성'/'Wardrobe Complete!'/'ドレスルーム完成！'로 문자 그대로 전부를 가리켜 5로 맞춤 — 결과적으로 이 업적은 이제 현금 구매 하나를 포함해야 완성된다(스카이 아우로라가 코인 구매 경로가 없는 유일한 스킨). 반대로 4를 그대로 둬서 '현금 없이도 100% 완성 가능'하게 의도적으로 설계됐을 가능성도 검토했으나, id/문구 어디에도 그런 의도를 남긴 흔적이 없어 표기 그대로(전부) 해석했다 — 다르게 의도했다면 사용자가 되돌리면 된다.",
       "titleKey": "ranking.achievement.dressAll",
-      "target": 4,
+      "target": 5,
       "metric": "dressesOwned",
       "tier": "gold",
       "reward": { "type": "coins", "amount": 2000 }
