@@ -1,0 +1,312 @@
+{
+  "terms": {
+    "ko": {
+      "title": "이용약관",
+      "sections": [
+        {
+          "heading": "1. 목적 및 적용 범위·동의",
+          "body": "이 약관은 [사업자명](이하 \"회사\")이 제공하는 모바일 게임 'PixelRun'(이하 \"서비스\")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다. 이용자는 서비스를 다운로드하거나 실행함으로써 이 약관에 동의한 것으로 간주됩니다."
+        },
+        {
+          "heading": "2. 서비스의 내용",
+          "body": "서비스는 이용자가 캐릭터를 조작하여 스테이지를 진행하고, 게임 내 재화(코인)와 아이템(의상)을 수집·사용하는 캐주얼 러닝 게임입니다. 회사는 서비스의 내용, 구성 및 제공 방법을 수시로 변경할 수 있습니다."
+        },
+        {
+          "heading": "3. 계정",
+          "body": "서비스는 별도의 회원가입 또는 로그인 절차를 두지 않습니다. 이용자의 게임 진행 상황(보유 코인, 클리어한 스테이지, 보유 의상, 설정값, 일일 미션 및 업적 진행도 등)은 이용자가 사용하는 기기의 브라우저 저장공간(localStorage)에만 저장되며, 회사의 서버에는 저장되지 않습니다. 따라서 기기를 변경하거나 브라우저 저장공간을 삭제하는 경우 기존 진행 상황은 복구할 수 없습니다."
+        },
+        {
+          "heading": "4. 유료 결제 및 환불",
+          "body": "서비스 내 유료 결제 기능은 이 약관 시행일 현재 구현되어 있지 않습니다. 추후 유료 결제 기능이 제공되는 경우, 결제 및 환불은 이용자가 서비스를 다운로드한 오픈마켓(App Store, Google Play 등, 이하 \"스토어\")이 정하는 정책 및 절차에 따르며, 회사는 스토어가 정한 범위를 벗어나 별도의 결제·환불 절차를 두지 않습니다. 결제 관련 분쟁은 우선적으로 스토어의 고객센터를 통해 해결함을 원칙으로 합니다."
+        },
+        {
+          "heading": "5. 이용자의 의무 및 금지행위",
+          "body": "이용자는 다음 각 호의 행위를 하여서는 안 됩니다.\n가. 서비스의 정상적인 운영을 방해하는 행위\n나. 서비스에 허용되지 않은 자동화 프로그램(매크로, 봇 등)이나 비인가 도구를 사용하는 행위\n다. 서비스의 소스코드, 데이터 또는 저장된 게임 데이터를 임의로 변조·조작하는 행위\n라. 서비스를 이용하여 얻은 정보를 회사의 사전 동의 없이 복제·유통·상업적으로 이용하는 행위\n마. 관계 법령 및 이 약관에서 금지하거나 공서양속에 반하는 행위"
+        },
+        {
+          "heading": "6. 지식재산권",
+          "body": "서비스에 포함된 모든 저작물(그래픽, 캐릭터, 음악, 효과음, 텍스트, 프로그램 코드 등)에 대한 저작권 및 지식재산권은 회사 또는 정당한 권리자에게 귀속됩니다. 이용자는 회사의 사전 서면 동의 없이 이를 복제, 배포, 전송, 출판, 2차적 저작물 작성 등의 방법으로 이용하거나 제3자에게 이용하게 할 수 없습니다."
+        },
+        {
+          "heading": "7. 서비스의 변경 및 중단",
+          "body": "회사는 운영상, 기술상의 필요에 따라 서비스의 전부 또는 일부를 변경하거나 중단할 수 있습니다. 회사는 서비스를 중단하는 경우 이용자가 확인할 수 있는 방법으로 사전에 공지합니다. 다만, 긴급한 사정이 있는 경우 사후에 공지할 수 있습니다."
+        },
+        {
+          "heading": "8. 면책조항",
+          "body": "회사는 천재지변, 이용자의 귀책사유, 기기 또는 통신 환경의 문제 등 회사가 통제할 수 없는 사유로 발생한 서비스 이용 장애에 대하여 책임을 지지 않습니다. 서비스는 무료로 제공되는 기능을 포함하며, 관계 법령에 특별한 규정이 없는 한 무료로 제공되는 서비스 이용과 관련하여 회사는 어떠한 손해도 배상하지 않습니다."
+        },
+        {
+          "heading": "9. 준거법 및 분쟁해결",
+          "body": "이 약관의 해석 및 회사와 이용자 간의 분쟁에는 [대한민국] 법을 적용합니다. 서비스 이용과 관련하여 회사와 이용자 사이에 분쟁이 발생한 경우, 분쟁 발생일 당시 이용자의 주소지를 관할하는 법원을 관할 법원으로 하며, 주소가 없는 경우에는 거소지를 관할하는 법원으로 합니다."
+        },
+        {
+          "heading": "10. 약관의 변경과 고지방법",
+          "body": "회사는 관계 법령을 위배하지 않는 범위에서 이 약관을 변경할 수 있습니다. 약관이 변경되는 경우 회사는 변경 사항을 시행일 이전에 서비스 내 공지사항 또는 이에 준하는 방법으로 공지합니다. 이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단할 수 있으며, 변경된 약관의 효력 발생일 이후에도 서비스를 계속 이용하는 경우 약관의 변경사항에 동의한 것으로 봅니다."
+        },
+        {
+          "heading": "11. 문의처",
+          "body": "이 약관에 관한 문의는 아래 연락처로 하여 주시기 바랍니다.\n사업자명: [사업자명]\n대표자: [대표자명]\n문의 이메일: [문의 이메일]\n시행일: [시행일]\n최종 개정일: [최종 개정일]"
+        }
+      ]
+    },
+    "en": {
+      "title": "Terms of Service",
+      "sections": [
+        {
+          "heading": "1. Purpose, Scope, and Consent",
+          "body": "These Terms of Service (\"Terms\") govern the rights, obligations, and responsibilities between [Company Name] (\"Company\") and users in connection with the use of the mobile game \"PixelRun\" (the \"Service\"). By downloading or launching the Service, the user is deemed to have agreed to these Terms."
+        },
+        {
+          "heading": "2. Description of the Service",
+          "body": "The Service is a casual running game in which the user controls a character through stages and collects and uses in-game currency (coins) and items (costumes). The Company may change the content, composition, and manner of providing the Service from time to time."
+        },
+        {
+          "heading": "3. Accounts",
+          "body": "The Service does not require user registration or login. The user's game progress (owned coins, cleared stages, owned costumes, settings, and daily mission and achievement progress) is stored solely in the local browser storage of the device the user is using and is not stored on the Company's servers. Accordingly, if the user changes devices or clears the browser's site data, prior progress cannot be recovered."
+        },
+        {
+          "heading": "4. Paid Purchases and Refunds",
+          "body": "As of the effective date of these Terms, no in-app purchase feature has been implemented in the Service. If a paid purchase feature is provided in the future, payment and refunds will be governed by the policies and procedures of the platform (App Store, Google Play, etc., the \"Store\") through which the user downloaded the Service, and the Company does not operate a separate payment or refund process outside the scope set by the Store. Disputes relating to payment should first be addressed through the relevant Store's customer support."
+        },
+        {
+          "heading": "5. User Obligations and Prohibited Conduct",
+          "body": "The user shall not:\na. interfere with the normal operation of the Service;\nb. use unauthorized automation tools (macros, bots, etc.) not permitted by the Service;\nc. alter or tamper with the Service's source code, data, or stored game data;\nd. reproduce, distribute, or commercially exploit information obtained through the Service without the Company's prior consent; or\ne. engage in any conduct prohibited by applicable law, these Terms, or generally accepted standards of public order and morals."
+        },
+        {
+          "heading": "6. Intellectual Property",
+          "body": "All copyrights and other intellectual property rights in works included in the Service (graphics, characters, music, sound effects, text, program code, etc.) belong to the Company or its rightful licensors. The user may not reproduce, distribute, transmit, publish, create derivative works from, or otherwise allow a third party to use such works without the Company's prior written consent."
+        },
+        {
+          "heading": "7. Modification and Suspension of the Service",
+          "body": "The Company may modify or discontinue all or part of the Service for operational or technical reasons. Where the Service is to be discontinued, the Company will provide advance notice through a method the user can reasonably access, except where urgent circumstances require the notice to be given after the fact."
+        },
+        {
+          "heading": "8. Disclaimer",
+          "body": "The Company is not liable for any disruption to the Service arising from causes beyond its reasonable control, including acts of God, causes attributable to the user, or problems with the user's device or network environment. Except as otherwise required by applicable law, the Company does not compensate for any damages arising from the use of features of the Service provided free of charge."
+        },
+        {
+          "heading": "9. Governing Law and Dispute Resolution",
+          "body": "These Terms and any dispute between the Company and a user shall be governed by the laws of [Republic of Korea]. Any lawsuit relating to a dispute arising from the use of the Service shall be filed with the court having jurisdiction over the user's address at the time the dispute arose, or the user's place of residence if no address is available."
+        },
+        {
+          "heading": "10. Amendment and Notice",
+          "body": "The Company may amend these Terms to the extent permitted by applicable law. Where the Terms are amended, the Company will announce the changes within the Service or through an equivalent method prior to their effective date. A user who does not agree to the amended Terms may discontinue use of the Service; continued use of the Service after the effective date of the amended Terms constitutes agreement to the changes."
+        },
+        {
+          "heading": "11. Contact",
+          "body": "Inquiries regarding these Terms may be directed to the contact information below.\nCompany: [Company Name]\nRepresentative: [Representative Name]\nContact email: [Contact Email]\nEffective date: [Effective Date]\nLast revised: [Last Revised Date]"
+        }
+      ]
+    },
+    "ja": {
+      "title": "利用規約",
+      "sections": [
+        {
+          "heading": "1. 目的及び適用範囲・同意",
+          "body": "本利用規約（以下「本規約」）は、[事業者名]（以下「当社」）が提供するモバイルゲーム「PixelRun」（以下「本サービス」）の利用に関し、当社と利用者との間の権利、義務及び責任事項その他必要な事項を定めることを目的とする。利用者は本サービスをダウンロードまたは起動することにより、本規約に同意したものとみなされる。"
+        },
+        {
+          "heading": "2. サービスの内容",
+          "body": "本サービスは、利用者がキャラクターを操作してステージを進め、ゲーム内通貨（コイン）及びアイテム（衣装）を収集・使用するカジュアルランニングゲームである。当社は、本サービスの内容、構成及び提供方法を随時変更することができる。"
+        },
+        {
+          "heading": "3. アカウント",
+          "body": "本サービスは会員登録及びログイン機能を設けていない。利用者のゲーム進行状況（所持コイン、クリア済みステージ、所持衣装、設定値、デイリーミッション及び実績の進行度等）は、利用者が使用する端末のブラウザ内保存領域（localStorage）にのみ保存され、当社のサーバーには保存されない。したがって、端末を変更した場合やブラウザの保存データを削除した場合、既存の進行状況は復元できない。"
+        },
+        {
+          "heading": "4. 有料決済及び返金",
+          "body": "本規約の施行日現在、本サービス内に有料決済機能は実装されていない。今後有料決済機能が提供される場合、決済及び返金は、利用者が本サービスをダウンロードしたストア（App Store、Google Play等。以下「ストア」）の定める方針及び手続に従うものとし、当社はストアの定める範囲を超えて別途の決済・返金手続を設けない。決済に関する紛争は、まずストアのカスタマーサポートを通じて解決することを原則とする。"
+        },
+        {
+          "heading": "5. 利用者の義務及び禁止行為",
+          "body": "利用者は、次の各号の行為をしてはならない。\n一 本サービスの正常な運営を妨害する行為\n二 本サービスが許可していない自動化プログラム（マクロ、ボット等）や非公認ツールを使用する行為\n三 本サービスのソースコード、データまたは保存されたゲームデータを無断で改変・操作する行為\n四 本サービスを通じて得た情報を、当社の事前の同意なく複製・流通・商業的に利用する行為\n五 関係法令及び本規約で禁止する行為、または公序良俗に反する行為"
+        },
+        {
+          "heading": "6. 知的財産権",
+          "body": "本サービスに含まれる全ての著作物（グラフィック、キャラクター、音楽、効果音、テキスト、プログラムコード等）に関する著作権及び知的財産権は、当社または正当な権利者に帰属する。利用者は、当社の事前の書面による同意なく、これらを複製、配布、送信、出版、二次的著作物の作成等の方法で利用し、または第三者に利用させてはならない。"
+        },
+        {
+          "heading": "7. サービスの変更及び中断",
+          "body": "当社は、運営上または技術上の必要に応じて、本サービスの全部または一部を変更または中断することができる。当社はサービスを中断する場合、利用者が確認できる方法で事前に告知する。ただし、緊急の事情がある場合は事後に告知することができる。"
+        },
+        {
+          "heading": "8. 免責事項",
+          "body": "当社は、天災地変、利用者の責めに帰すべき事由、端末または通信環境の問題など、当社が制御できない事由により生じた本サービスの利用障害について責任を負わない。本サービスには無料で提供される機能が含まれ、関係法令に特別の定めがない限り、無料で提供されるサービスの利用に関して当社はいかなる損害も賠償しない。"
+        },
+        {
+          "heading": "9. 準拠法及び紛争解決",
+          "body": "本規約の解釈並びに当社と利用者との間の紛争には、[大韓民国]法を適用する。本サービスの利用に関連して当社と利用者との間に紛争が生じた場合、紛争発生時における利用者の住所地を管轄する裁判所を管轄裁判所とし、住所がない場合は居所地を管轄する裁判所とする。"
+        },
+        {
+          "heading": "10. 規約の変更及び告知方法",
+          "body": "当社は、関係法令に違反しない範囲で本規約を変更することができる。規約が変更される場合、当社は変更内容を施行日前に本サービス内のお知らせまたはこれに準ずる方法で告知する。利用者が変更後の規約に同意しない場合は本サービスの利用を中止することができ、変更後の規約の効力発生日以降も本サービスの利用を継続する場合は、規約の変更内容に同意したものとみなす。"
+        },
+        {
+          "heading": "11. お問い合わせ",
+          "body": "本規約に関するお問い合わせは、下記の連絡先までお願いいたします。\n事業者名：[事業者名]\n代表者：[代表者名]\nお問い合わせメール：[お問い合わせメール]\n施行日：[施行日]\n最終改定日：[最終改定日]"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "ko": {
+      "title": "개인정보처리방침",
+      "sections": [
+        {
+          "heading": "1. 총칙",
+          "body": "[사업자명](이하 \"회사\")은 이용자의 개인정보를 중요하게 생각하며, 관계 법령을 준수하기 위해 노력합니다. 회사가 제공하는 모바일 게임 'PixelRun'(이하 \"서비스\")은 회원가입, 로그인 등 계정 기능을 두지 않으며, 이름, 이메일 주소, 전화번호, 생년월일 등 개인을 식별할 수 있는 정보를 일절 수집하지 않습니다."
+        },
+        {
+          "heading": "2. 처리하는 정보의 항목",
+          "body": "서비스는 게임 진행에 필요한 다음 정보를 이용자의 기기 내 브라우저 저장공간(localStorage, 식별자: pixelrun:local-cache:v0)에 저장합니다: 보유 코인, 클리어한 스테이지, 보유 의상(스킨), 사운드·언어 등 설정값, 일일 미션 및 업적 진행도. 이 정보는 특정 개인을 식별할 수 없는 게임 진행 데이터이며, 회사의 서버로 전송되지 않습니다."
+        },
+        {
+          "heading": "3. 처리 목적",
+          "body": "위 정보는 이용자가 게임을 재실행하였을 때 이전 진행 상황을 이어서 이용할 수 있도록 하는 목적으로만 이용자의 기기 내에서 처리됩니다. 회사는 이 정보를 이용자 식별, 광고, 마케팅 등 다른 목적으로 이용하지 않습니다."
+        },
+        {
+          "heading": "4. 보유 및 파기",
+          "body": "위 정보는 이용자의 기기에만 저장되며 회사는 이를 보유하지 않습니다. 이용자는 서비스 내 설정 화면의 초기화 기능을 실행하거나 브라우저의 사이트 데이터를 삭제함으로써 언제든지 저장된 정보를 즉시 완전하게 삭제할 수 있습니다."
+        },
+        {
+          "heading": "5. 제3자 제공",
+          "body": "회사는 이용자의 정보를 제3자에게 제공하지 않습니다."
+        },
+        {
+          "heading": "6. 처리 위탁",
+          "body": "회사는 이용자의 정보 처리를 외부에 위탁하지 않습니다."
+        },
+        {
+          "heading": "7. 국외 이전",
+          "body": "이용자의 정보는 이용자의 기기 밖으로 전송되지 않으므로 국외로 이전되지 않습니다."
+        },
+        {
+          "heading": "8. 이용자의 권리와 행사방법",
+          "body": "이용자는 언제든지 설정 화면의 초기화 기능을 통해 기기에 저장된 정보를 확인·삭제할 수 있습니다. 서비스가 개인을 식별할 수 있는 정보를 수집하지 않으므로 별도의 개인정보 열람·정정·삭제 요청 절차를 운영하지 않으며, 관련 문의는 아래 연락처로 하실 수 있습니다."
+        },
+        {
+          "heading": "9. 아동의 개인정보",
+          "body": "서비스는 이용자의 연령과 관계없이 개인을 식별할 수 있는 정보를 수집하지 않으므로, 만 14세 미만 아동의 개인정보 또한 수집하지 않습니다."
+        },
+        {
+          "heading": "10. 안전성 확보조치",
+          "body": "서비스는 개인정보를 수집·보유하지 않으므로 별도의 개인정보 보호를 위한 기술적·관리적 조치의 대상이 되는 개인정보가 존재하지 않습니다. 다만 회사는 서비스 코드에 개인정보를 수집하는 기능이 추가되지 않도록 지속적으로 점검합니다."
+        },
+        {
+          "heading": "11. 개인정보 보호책임자 및 문의처",
+          "body": "회사는 개인정보 관련 문의에 대응하기 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.\n성명: [개인정보 보호책임자 성명]\n이메일: [개인정보 보호책임자 이메일]"
+        },
+        {
+          "heading": "12. 방침의 변경과 고지",
+          "body": "이 개인정보처리방침이 변경되는 경우 회사는 변경 사항을 시행일 이전에 서비스 내 공지사항 또는 이에 준하는 방법으로 공지합니다.\n시행일: [시행일]\n최종 개정일: [최종 개정일]"
+        }
+      ]
+    },
+    "en": {
+      "title": "Privacy Policy",
+      "sections": [
+        {
+          "heading": "1. General",
+          "body": "[Company Name] (\"Company\") values users' privacy and strives to comply with applicable law. The mobile game \"PixelRun\" (the \"Service\") provided by the Company does not have account features such as registration or login, and does not collect any personally identifiable information, including name, email address, phone number, or date of birth."
+        },
+        {
+          "heading": "2. Information Processed",
+          "body": "The Service stores the following information, necessary for gameplay, in the local browser storage of the user's device (localStorage, identifier: pixelrun:local-cache:v0): owned coins, cleared stages, owned costumes (skins), settings such as sound and language, and daily mission and achievement progress. This information is gameplay data that cannot identify a specific individual and is not transmitted to the Company's servers."
+        },
+        {
+          "heading": "3. Purpose of Processing",
+          "body": "The above information is processed solely on the user's device to allow the user to resume prior progress when the game is relaunched. The Company does not use this information for any other purpose, such as identifying users, advertising, or marketing."
+        },
+        {
+          "heading": "4. Retention and Destruction",
+          "body": "The above information is stored only on the user's device; the Company does not retain it. The user may immediately and completely delete the stored information at any time by using the reset feature on the Settings screen within the Service or by clearing the browser's site data."
+        },
+        {
+          "heading": "5. Provision to Third Parties",
+          "body": "The Company does not provide users' information to any third party."
+        },
+        {
+          "heading": "6. Outsourcing of Processing",
+          "body": "The Company does not outsource the processing of users' information to any external party."
+        },
+        {
+          "heading": "7. Overseas Transfer",
+          "body": "Users' information is never transmitted outside the user's device and is therefore not transferred overseas."
+        },
+        {
+          "heading": "8. User Rights",
+          "body": "Users may review and delete the information stored on their device at any time using the reset feature on the Settings screen. Because the Service does not collect personally identifiable information, the Company does not operate a separate procedure for requests to access, correct, or delete personal data; related inquiries may be directed to the contact information below."
+        },
+        {
+          "heading": "9. Children's Privacy",
+          "body": "Because the Service does not collect personally identifiable information regardless of the user's age, it likewise does not collect personal information from children."
+        },
+        {
+          "heading": "10. Security Measures",
+          "body": "Because the Service does not collect or retain personal information, there is no personal data subject to separate technical or managerial security measures. The Company nonetheless continually reviews the Service's code to ensure no personal-data-collection feature is introduced."
+        },
+        {
+          "heading": "11. Data Protection Officer and Contact",
+          "body": "The Company has designated the following Data Protection Officer to respond to privacy-related inquiries.\nName: [Data Protection Officer Name]\nEmail: [Data Protection Officer Email]"
+        },
+        {
+          "heading": "12. Amendment and Notice",
+          "body": "Where this Privacy Policy is amended, the Company will announce the changes within the Service or through an equivalent method prior to their effective date.\nEffective date: [Effective Date]\nLast revised: [Last Revised Date]"
+        }
+      ]
+    },
+    "ja": {
+      "title": "プライバシーポリシー",
+      "sections": [
+        {
+          "heading": "1. 総則",
+          "body": "[事業者名]（以下「当社」）は、利用者のプライバシーを重要視し、関係法令の遵守に努める。当社が提供するモバイルゲーム「PixelRun」（以下「本サービス」）は会員登録及びログイン機能を設けておらず、氏名、メールアドレス、電話番号、生年月日等、個人を識別できる情報を一切収集しない。"
+        },
+        {
+          "heading": "2. 取り扱う情報の項目",
+          "body": "本サービスは、ゲーム進行に必要な次の情報を、利用者端末のブラウザ内保存領域（localStorage、識別子：pixelrun:local-cache:v0）に保存する：所持コイン、クリア済みステージ、所持衣装（スキン）、サウンド・言語等の設定値、デイリーミッション及び実績の進行度。これらの情報は特定の個人を識別できないゲーム進行データであり、当社のサーバーには送信されない。"
+        },
+        {
+          "heading": "3. 処理目的",
+          "body": "上記情報は、利用者が本サービスを再度起動した際に、以前の進行状況を引き続き利用できるようにする目的でのみ、利用者の端末内で処理される。当社は、この情報を利用者の識別、広告、マーケティング等、他の目的には利用しない。"
+        },
+        {
+          "heading": "4. 保有及び破棄",
+          "body": "上記情報は利用者の端末にのみ保存され、当社はこれを保有しない。利用者は、本サービス内の設定画面のリセット機能を実行するか、ブラウザのサイトデータを削除することにより、いつでも保存された情報を直ちに完全に削除できる。"
+        },
+        {
+          "heading": "5. 第三者提供",
+          "body": "当社は、利用者の情報を第三者に提供しない。"
+        },
+        {
+          "heading": "6. 処理委託",
+          "body": "当社は、利用者の情報処理を外部に委託しない。"
+        },
+        {
+          "heading": "7. 国外移転",
+          "body": "利用者の情報は利用者の端末外に送信されないため、国外に移転されることはない。"
+        },
+        {
+          "heading": "8. 利用者の権利及び行使方法",
+          "body": "利用者は、いつでも設定画面のリセット機能を通じて、端末に保存された情報を確認・削除できる。本サービスは個人を識別できる情報を収集しないため、個人情報の閲覧・訂正・削除請求に関する別途の手続は設けておらず、関連するお問い合わせは下記連絡先までお願いいたします。"
+        },
+        {
+          "heading": "9. 児童の個人情報",
+          "body": "本サービスは利用者の年齢にかかわらず個人を識別できる情報を収集しないため、児童の個人情報についても収集しない。"
+        },
+        {
+          "heading": "10. 安全性確保措置",
+          "body": "本サービスは個人情報を収集・保有しないため、別途の技術的・管理的保護措置の対象となる個人情報は存在しない。ただし当社は、本サービスのコードに個人情報を収集する機能が追加されないよう継続的に点検する。"
+        },
+        {
+          "heading": "11. 個人情報保護責任者及びお問い合わせ",
+          "body": "当社は、個人情報に関するお問い合わせに対応するため、下記のとおり個人情報保護責任者を指定している。\n氏名：[個人情報保護責任者氏名]\nメール：[個人情報保護責任者メール]"
+        },
+        {
+          "heading": "12. 方針の変更及び告知",
+          "body": "本プライバシーポリシーが変更される場合、当社は変更内容を施行日前に本サービス内のお知らせまたはこれに準ずる方法で告知する。\n施行日：[施行日]\n最終改定日：[最終改定日]"
+        }
+      ]
+    }
+  }
+}
