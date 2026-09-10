@@ -720,6 +720,127 @@
       }
     },
     {
+      "id": "pasture",
+      "displayTitle": "넓은 평원 2",
+      "lighting": "day",
+      "skyTint": "#8ed8ff",
+      "farMountainTint": "#86a9be",
+      "farMountainScale": 1,
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain_field",
+        "nearStrip": "pasture_fields",
+        "midground": [
+          "mid_tree_oak_field",
+          "mid_tree_apple_field",
+          "mid_tree_big_field",
+          "mid_tree_orange_field",
+          "mid_tree_small_field"
+        ],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
+        "ground": "tile_field2"
+      },
+      "nearStripScale": 0.55,
+      "nearStripParallax": 0.4,
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "village_blades",
+          "x": 1261,
+          "y": 412,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "pasture_sheep",
+          "animation": "pasture-sheep-graze",
+          "x": 340,
+          "y": 472,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 0
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "pasture_sheep",
+          "animation": "pasture-sheep-graze",
+          "x": 950,
+          "y": 468,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 2
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "pasture_sheep",
+          "animation": "pasture-sheep-graze",
+          "x": 1435,
+          "y": 474,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 4
+        }
+      ],
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "petal",
+        "densityPerSec": 6
+      },
+      "_note": "TASK-STAGE10-PASTURE.md — 2-4('넓은 평원 2')를 field 테마 복제로 신설. 같은 지역(field)의 다른 지점이라 하늘/먼산/지면/중경/전경/날씨/bgm을 field와 동일하게 공유하고 nearStrip만 새 그림(pasture_fields.png, 1560x546, 상단 절반 투명·지면 미포함·좌우 타일링 확인됨)으로 교체. nearStripScale 0.55는 그래픽 워커의 합성 렌더 실측값(풍차 날개 village_blades 184x184가 화면 102px로 나왔고 184*0.55=101로 일치)이라 임의 변경 금지. stripAccessories의 풍차 날개는 field/village_inside와 완전히 동일한 패턴(village_blades 재사용, 45deg/s)이고 축 좌표(1261,412)는 그래픽 워커가 pasture_fields.png 위에서 실측 보고한 값 — 날개는 배경 그림에 없고(돌탑에 나무 축만 그려짐) 회전은 코드가 담당. 풀 뜯는 양(pasture_sheep.png, 36x24 x5프레임, 제자리 루프)은 최초 배선 시 배치 좌표가 미보고라 비워뒀었다(village_inside 때와 같은 이유). 코드 검토 결과 stripAccessories는 이미 굴뚝 연기(outskirts_smoke)에서 쓰인 `animation` 필드로 프레임 재생을 지원하고 있어(BackgroundLayer.updateStripAccessories의 canAnimate 분기, scene.anims에 등록된 애니메이션을 재생) 브리프가 요청한 '애니메이션 지원 신규 추가'는 이미 존재하는 구조였다 — 새 스키마(frameCount/frameRate를 JSON에 직접 얹는 방식)를 만들지 않고 PreloadScene에 pasture_sheep 스프라이트시트 로드 + `pasture-sheep-graze` Phaser 애니메이션만 등록해뒀었다. **후속(같은 날, 좌표 3곳 도착·사용자 승인 후)**: (340,472)(950,468)(1435,474) — 그래픽 워커가 pasture_fields.png 원본 픽셀 좌표로 실측하고 사용자가 승인한 값, originX 0.5/originY 1(발끝 기준)로 3곳 모두 배선. 세 곳 다 울타리 안쪽 풀밭이라 배경 그림(오두막·풍차·굽이길)과는 겹치지 않으나, 런타임에 무작위로 심어지는 중경 사과나무(mid_tree_apple_field 등, accessory보다 앞 depth)가 우연히 그 자리를 지나가며 잠깐 가리는 경우는 있다 — 이는 배치 좌표와 무관한 기존 패럴랙스 레이어 순서(액세서리 depth -14 < 중경 -10)에 따른 정상 동작이라 손대지 않음. frameRate는 실제 게임 화면(Playwright 헤드리스, 600ms 간격 2연속 스크린샷으로 프레임 변화 확인)으로 보고 초안 4fps를 그대로 채택 — 5프레임 한 바퀴가 1.25초로, citizen 걷기(6fps)나 굴뚝 연기(5fps)보다도 느려 '여유로운 풀 뜯기'로 읽힘. **버그 발견 및 수정**: 세 좌표(340/950/1435)가 전부 프레임 수(5)의 배수라 기존 시작-프레임 공식(`k*7+floor(x)) % frameCount`)이 셋 다 정확히 0으로 겹쳐 동시에 고개를 숙이는 '기계적' 동작이 됐다 — `stripAccessories`에 `animationSeed`(선택 필드, 기본 0, 기존 굴뚝 연기 등은 동작 불변) 필드를 신설해 세 항목에 0/2/4를 줘서 5프레임 루프상 서로 다른 위상에서 시작하도록 강제 분산(BackgroundLayer.ts/types/data.ts).",
+      "midgroundWeights": {
+        "mid_tree_oak_field": 4,
+        "mid_tree_apple_field": 4,
+        "mid_tree_big_field": 3,
+        "mid_tree_orange_field": 3,
+        "mid_tree_small_field": 3
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "town_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "field 항목 그대로 복제(TASK-COLLISION-ACCURACY.md §2 실측치). 모든 스테이지에 놀라는 행인 NPC 필수 포함 규칙 — pasture_farmer 미납품 상태라 그때까지 이 항목이 그 역할을 한다."
+          },
+          {
+            "skin": "pasture_farmer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "브리프 지시대로 town_citizen 항목 값을 그대로 복제(280x73, 56x73 x5프레임 — GUARD_FRAME_W/H와 동일 규격). 아직 미납품이라 optional glob(PreloadScene stage10ObstacleAssetUrls) + textures.exists 필터(GameScene의 obstacleVariants.filter)로 걸려 있어, 파일이 없으면 이 항목은 자동으로 빠지고 town_citizen만 나온다 — 파일이 도착하면 알파 바운드를 직접 재측정해 이 치수를 재확인할 것(이번 커밋에서는 town_citizen 값을 그대로 가정)."
+          },
+          {
+            "skin": "hay_bale",
+            "displayWidthPx": 41,
+            "displayHeightPx": 54,
+            "bodyWidthPx": 35,
+            "bodyHeightPx": 48,
+            "weight": 2,
+            "_note": "TASK-STAGE10-PASTURE.md — 사용자 지시(\"네모난 볏짚 추가\")로 신설. 41x54 는 village_sign(41x62)에 더 가깝고 town_citizen(56x73)보다 작아 largeRock 그룹에 얹었다(village_sign과 같은 판단 근거). 알파 바운드 실측(그래픽 워커 보고): x=1..39(잉크폭 39, 좌우 각 1px 여백), y=0..53(잉크높이 54, 캔버스 꽉 참 — 마지막 행 접지, 위쪽도 여백 없음). village_sign(기둥만 남기고 크게 줄임)과 달리 실루엣이 꽉 찬 사각형이라 추가로 줄일 이유가 없어, 다른 항목들과 같은 10% 여유 관례를 캔버스가 아니라 실측 잉크 치수에 적용: bodyWidthPx=floor(39*0.9)=35, bodyHeightPx=floor(54*0.9)=48(둘 다 Obstacle.spawn의 기본 자동 shrink(displayWidth*0.9)와 거의 같은 값 — 잉크가 캔버스를 거의 채우고 있어 당연한 결과). weight 2는 village 테마의 정적 소품(village_sign=2) vs NPC 스킨(town_citizen=3) 구도를 그대로 따른 것 — 이 테마의 '주 장애물'로 요청받았지만 놀라는 행인 규칙(town_citizen/pasture_farmer 합쳐 실질 비중 더 큼)이 우선이라는 기존 관례를 유지."
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      }
+    },
+    {
       "id": "village",
       "displayTitle": "마을 앞",
       "lighting": "day",

@@ -64,6 +64,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -107,6 +108,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -145,6 +147,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -186,6 +189,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -230,6 +234,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -265,6 +270,7 @@
       "minDistance": 180,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -300,6 +306,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -338,6 +345,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -379,6 +387,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -415,6 +424,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -452,6 +462,7 @@
       "minDistance": 330,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -493,6 +504,7 @@
       "minDistance": 500,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -531,6 +543,7 @@
       "minDistance": 700,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -651,6 +664,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -823,6 +837,7 @@
       "minDistance": 300,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -867,6 +882,7 @@
       "minDistance": 800,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -911,6 +927,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -952,6 +969,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -988,6 +1006,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -1030,6 +1049,7 @@
       "minDistance": 900,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside",
         "forest",
@@ -1072,6 +1092,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2041,6 +2062,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2074,6 +2096,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2107,6 +2130,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2141,6 +2165,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2174,6 +2199,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2206,6 +2232,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2245,6 +2272,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2282,6 +2310,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2315,6 +2344,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2351,6 +2381,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2384,6 +2415,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2422,6 +2454,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2461,6 +2494,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2494,6 +2528,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2530,6 +2565,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2573,6 +2609,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],
@@ -2613,6 +2650,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "pasture",
         "village",
         "village_inside"
       ],

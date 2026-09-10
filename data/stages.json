@@ -139,6 +139,8 @@
       "regionName": "평원",
       "subRegion": "wide_field",
       "displayName": "넓은 평원 2",
+      "distanceMeters": 2100,
+      "theme": "pasture",
       "mapX": 528,
       "mapY": 474,
       "nameKey": "data.stage.2-4.name",
