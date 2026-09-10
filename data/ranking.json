@@ -2,16 +2,32 @@
   "_mock": true,
   "starCoins": 12450,
   "entries": [
-    { "rank": 1, "name": "별빛공주", "score": 12840, "avatarFrame": 0 },
-    { "rank": 2, "name": "러닝퀸", "score": 11230, "avatarFrame": 1 },
-    { "rank": 3, "name": "체리공주", "score": 9875, "avatarFrame": 2 },
-    { "rank": 4, "name": "스노우벨", "score": 8210, "avatarFrame": 3 },
-    { "rank": 5, "name": "골드러너", "score": 7450, "avatarFrame": 4 }
+    { "rank": 1, "name": "별빛공주", "score": 12840, "skinId": "skin_p2_aurora" },
+    { "rank": 2, "name": "러닝퀸", "score": 11230, "skinId": "skin_aurora" },
+    { "rank": 3, "name": "체리공주", "score": 9875, "skinId": "skin_p1_stardust" },
+    { "rank": 4, "name": "스노우벨", "score": 8210, "skinId": "skin_royalviolet" },
+    { "rank": 5, "name": "골드러너", "score": 7450, "skinId": "skin_p2_aurora" },
+    { "rank": 6, "name": "캔디공주", "score": 7320, "skinId": "skin_royalviolet" },
+    { "rank": 7, "name": "달빛요정", "score": 7190, "skinId": "skin_aurora" },
+    { "rank": 8, "name": "딸기시럽", "score": 7060, "skinId": "skin_p1_stardust" },
+    { "rank": 9, "name": "슈가젤리", "score": 6970, "skinId": "skin_royalviolet" },
+    { "rank": 10, "name": "루비여왕", "score": 6890, "skinId": "skin_classic" },
+    { "rank": 11, "name": "초코머핀", "score": 6820, "skinId": "skin_p2_aurora" },
+    { "rank": 12, "name": "은하수공주", "score": 6760, "skinId": "skin_classic" },
+    { "rank": 13, "name": "새벽별빛", "score": 6710, "skinId": "skin_royalviolet" },
+    { "rank": 14, "name": "무지개런", "score": 6670, "skinId": "skin_classic" },
+    { "rank": 15, "name": "하늘공주", "score": 6640, "skinId": "skin_p1_stardust" },
+    { "rank": 16, "name": "코코아공주", "score": 6610, "skinId": "skin_classic" },
+    { "rank": 17, "name": "바람돌이", "score": 6580, "skinId": "skin_classic" },
+    { "rank": 18, "name": "포근토끼", "score": 6560, "skinId": "skin_royalviolet" },
+    { "rank": 19, "name": "핑크토끼", "score": 6540, "skinId": "skin_classic" },
+    { "rank": 20, "name": "스피드릴리", "score": 6520, "skinId": "skin_classic" }
   ],
   "player": {
-    "rank": 18,
+    "_note": "TASK-RANKING-MOCK-AVATAR.md — rank moved 18->24. The old rank(18) predates this task's 20-entry board and collided with entries[17]'s OWN rank-18 row (two different rows both labeled '18위' with two different scores) once entries grew from 5 to 20. Since the entries array is a top-20 board and this row is a separate pinned 'me' row rendered below it (not one of the 20), the only consistent placement is a rank strictly worse than entries' last row (20) with a correspondingly lower score — hence rank 24, score kept at 6420 (already < entries[19]'s 6520, so no score change needed, just the rank label).",
+    "rank": 24,
     "name": "MK Princess",
     "score": 6420,
-    "avatarFrame": 5
+    "skinId": "skin_classic"
   }
 }

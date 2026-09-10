@@ -120,14 +120,16 @@
     "thumbFrame": 4,
     "displayName": "오로라",
     "nameKey": "data.skin.skin_aurora.name",
-    "cardName": "오로라 패키지",
-    "cardNameKey": "data.skin.skin_aurora.cardName",
     "iconKey": "icon_skin_aurora",
     "rarity": "epic",
     "description": "밤하늘 오로라를 그대로 둘렀어요!",
     "descKey": "data.skin.skin_aurora.desc",
     "priceCoins": null,
-    "priceCash": { "KRW": 9900, "USD": 6.99, "JPY": 1000 },
+    "priceCash": {
+      "KRW": 2900,
+      "USD": 1.99,
+      "JPY": 300
+    },
     "stats": {
       "hearts": 4,
       "coinBonusPercent": null,
@@ -139,6 +141,6 @@
       "speedBonusPercent": null,
       "blessingKey": "data.skin.skin_aurora.blessing"
     },
-    "_note": "TASK-AURORA-DRESS.md — 사용자 확정(2026-09-09): \"9,900원 패키지 구매 시 얻는 드레스. 성능은 하트 4개, 피버타임 3초 증가, 인게임 오로라 후광효과.\" priceCash: KRW 9900은 확정값, USD 6.99/JPY 1000은 사용자가 직접 밝힌 잠정 환산치(공식 환율 적용 전) — 나중에 정식 환산값이 나오면 교체 필요. feverBonusCondition은 윈터 퀸(snowStages 조건부)과 달리 의도적으로 null — 조건 없이 상시 3초. **패키지 구매 상품이라는 점**: 코드에 패키지 시스템 자체가 없어 카드에는 priceCash만 있는 현금 가격 알약이 뜨고, 알약을 누르면 기존 dressroom.toast.cashComingSoon 토스트가 뜬다 — 새 구매 플로우를 만들지 않고 기존 동작 그대로 둠. **등록 직후 발견해 보고했던 UI 문구 두 건은 TASK-CASH-ONLY-COPY.md로 수정 완료**: (1) 정보 패널 상태 버튼이 achievement 전용이던 'dressroom.action.locked'('업적 보상') 대신, priceCoins===null을 achievement와 동일시하지 않는 acquisitionMethod() 판별로 신규 'dressroom.action.cashPackage'('패키지 보상')를 쓴다. (2) 현금 가격 알약 토스트도 코인 대안이 없을 때(priceCoins===null) 신규 'dressroom.toast.cashOnlyComingSoon'을 써서 '코인으로 먼저 만나요' 같은 거짓 안내를 없앴다. 기존 4벌(클래식/문나이트/로열바이올렛/윈터퀸)의 버튼·토스트 문구는 전부 그대로임을 Playwright로 확인. blessingKey는 인게임 오로라 후광 이펙트가 아직 없어 문구만 넣었다(TASK-AURORA-DRESS.md §B — 이펙트 구현은 별도 지시 예정). runSheet은 등록 당시(TASK-AURORA-DRESS.md) 아직 없던 princess_aurora_run을 미리 가리켜 뒀는데, TASK-AURORA-RUN-SHEET.md에서 실제 시트(972x146, 9프레임 — 다른 드레스는 전부 8프레임)가 납품·등록되면서 이 필드가 그대로 유효해졌다. 점프 시트는 아직 없어 resolvePrincessActionKeys()가 클래식으로 폴백 — royalviolet/barefoot가 각각 자기 시트가 없던 동안 탔던 것과 같은 경로."
+    "_note": "TASK-AURORA-DRESS.md 등록 당시 스탯(하트 4/피버 3초 증가/오로라 후광 문구)은 그대로. TASK-AURORA-PRICE.md — 가격 9,900원 패키지에서 2,900원 단품으로 확정(사용자 지시), cardName/cardNameKey 제거(카드도 그냥 '오로라' — nameKey/displayName 폴백 사용). USD/JPY는 정식 환율 적용 전 잠정 환산치(KRW 2,900 기준 통용 가격대인 1.99/300) — 이력·환산 근거는 md_docs/data-revisions.md 참조, 여기엔 안 쌓는다."
   }
 ]

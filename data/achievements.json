@@ -9,14 +9,6 @@
       "reward": { "type": "dress", "skinId": "skin_p1_stardust" }
     },
     {
-      "id": "barefoot_run",
-      "titleKey": "ranking.achievement.barefootRun",
-      "target": 3,
-      "metric": "barefootClears",
-      "tier": "bronze",
-      "reward": { "type": "coins", "amount": 300 }
-    },
-    {
       "id": "dress_2",
       "titleKey": "ranking.achievement.dress2",
       "target": 2,
@@ -25,49 +17,8 @@
       "reward": { "type": "coins", "amount": 300 }
     },
     {
-      "id": "coins_1000",
-      "titleKey": "ranking.achievement.coins1000",
-      "target": 1000,
-      "metric": "lifetimeCoinsEarned",
-      "tier": "bronze",
-      "reward": { "type": "coins", "amount": 300 }
-    },
-    {
-      "id": "clear_all_palace",
-      "titleKey": "ranking.achievement.clearAllPalace",
-      "target": 5,
-      "metric": "palaceStagesCleared",
-      "tier": "silver",
-      "reward": { "type": "coins", "amount": 800 }
-    },
-    {
-      "id": "coins_10000",
-      "titleKey": "ranking.achievement.coins10000",
-      "target": 10000,
-      "metric": "lifetimeCoinsEarned",
-      "tier": "silver",
-      "reward": { "type": "coins", "amount": 800 }
-    },
-    {
-      "id": "distance_marathon",
-      "_note": "TASK-ACH-GRANT.md 곁다리 — id가 예전엔 distance_5000이었는데 target은 42195(마라톤 풀코스 미터)라 이름이 거짓말을 하고 있었다. titleKey(ranking.achievement.distance5000)는 그대로 뒀다(문구는 이미 '마라토너 등극!'이라 수치를 안 담고 있어 안 바꿔도 됨) — id만 target과 맞게 distance_marathon으로 교체. 마이그레이션 불필요: claimed 수령 시스템이 이 태스크에서 처음 생겨 이 id로 저장된 progress 항목이 지금까지 하나도 없었다(lifetimeDistanceMeters 지표는 progress[id]가 아니라 progression.lifetime에서 매번 계산돼 애초에 id에 의존하지 않았음).",
-      "titleKey": "ranking.achievement.distance5000",
-      "target": 42195,
-      "metric": "lifetimeDistanceMeters",
-      "tier": "silver",
-      "reward": { "type": "coins", "amount": 800 }
-    },
-    {
-      "id": "nearmiss_50",
-      "titleKey": "ranking.achievement.nearmiss50",
-      "target": 50,
-      "metric": "lifetimeNearMisses",
-      "tier": "silver",
-      "reward": { "type": "coins", "amount": 800 }
-    },
-    {
       "id": "dress_all",
-      "_note": "TASK-ACH-GRANT.md 곁다리 — target 4->5. skins.json은 5벌(classic/p1_stardust/royalviolet/p2_aurora/aurora)인데 dressesOwned가 그 5개 전부를 isDressOwned로 세므로 4는 '전부'가 아니라 '현금 전용 패키지(skin_aurora, 코인 가격 없음) 하나만 안 가져도 달성'이었다. titleKey가 '드레스룸 완성'/'Wardrobe Complete!'/'ドレスルーム完成！'로 문자 그대로 전부를 가리켜 5로 맞춤 — 결과적으로 이 업적은 이제 현금 구매 하나를 포함해야 완성된다(스카이 아우로라가 코인 구매 경로가 없는 유일한 스킨). 반대로 4를 그대로 둬서 '현금 없이도 100% 완성 가능'하게 의도적으로 설계됐을 가능성도 검토했으나, id/문구 어디에도 그런 의도를 남긴 흔적이 없어 표기 그대로(전부) 해석했다 — 다르게 의도했다면 사용자가 되돌리면 된다.",
+      "_note": "TASK-ACH-GRANT.md 곁다리 — target 4->5(스킨 5벌 전부, 근거는 그 커밋의 데이터 주석). TASK-ACH-TIER-CHAIN.md: dressesOwned는 사슬로 안 만든다(사용자 지시) — 지표 자체가 5에서 상한이라 5~10배 규칙을 적용할 수 없다. 단발 금 그대로.",
       "titleKey": "ranking.achievement.dressAll",
       "target": 5,
       "metric": "dressesOwned",
@@ -75,12 +26,211 @@
       "reward": { "type": "coins", "amount": 2000 }
     },
     {
-      "id": "djump_100",
-      "titleKey": "ranking.achievement.djump100",
-      "target": 100,
-      "metric": "lifetimeDoubleJumpDodges",
+      "id": "clear_all_palace",
+      "_note": "TASK-ACH-TIER-CHAIN.md — tier silver->gold, reward 800->2000(사용자 지시: 지역 완료는 사슬 없이 처음부터 금). target(5)·metric 불변, id도 불변이라 마이그레이션 불필요.",
+      "titleKey": "ranking.achievement.clearAllPalace",
+      "target": 5,
+      "metric": "palaceStagesCleared",
       "tier": "gold",
       "reward": { "type": "coins", "amount": 2000 }
+    },
+    {
+      "id": "coins_1000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 코인 사슬 1/3(동). target·tier·reward 전부 불변, chain/step만 추가.",
+      "titleKey": "ranking.achievement.coins1000",
+      "target": 1000,
+      "metric": "lifetimeCoinsEarned",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "coins",
+      "step": 1
+    },
+    {
+      "id": "coins_10000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 코인 사슬 2/3(은). 동(1,000)의 정확히 10배 — 사용자가 준 5~10배 범위의 상한. target·tier·reward 전부 불변(원래도 10000/silver/800이었다), chain/step만 추가 — 이 항목은 이름 그대로였다.",
+      "titleKey": "ranking.achievement.coins10000",
+      "target": 10000,
+      "metric": "lifetimeCoinsEarned",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "coins",
+      "step": 2
+    },
+    {
+      "id": "coins_50000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 코인 사슬 3/3(금, 신규 id). 은(10,000)의 5배. 코인 획득 속도가 편차가 커서(런당 획득량이 플레이 스타일에 크게 좌우) 이 사슬의 금이 다섯 사슬 중 체감 그라인드가 가장 길 수 있음 — 데이터로 보고에 명시.",
+      "titleKey": "ranking.achievement.coins50000",
+      "target": 50000,
+      "metric": "lifetimeCoinsEarned",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "coins",
+      "step": 3
+    },
+    {
+      "id": "distance_5000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 거리 사슬 1/3(동, 신규 id). TASK-ACH-GRANT.md에서 이 id(distance_5000, 당시 target 42195)가 id/target 불일치였던 걸 distance_marathon으로 개명해 해소했었는데, 이번 사슬 설계가 원래 목표(동=5,000)를 은 단계 아래 별도 항목으로 되살려 id를 원래 뜻 그대로 재사용한다 — 그 사이 이 id로 저장된 progress가 하나도 없어(당시 커밋 기록 참조) 마이그레이션 불필요.",
+      "titleKey": "ranking.achievement.distanceBronze",
+      "target": 5000,
+      "metric": "lifetimeDistanceMeters",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "distance",
+      "step": 1
+    },
+    {
+      "id": "distance_marathon",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 거리 사슬 2/3(은). target(42195, 실제 마라톤 풀코스 미터)·tier·reward·id 전부 불변 — 마라톤이라는 사실은 titleKey를 distanceSilver로 바꾸되 값은 그대로 유지해 살렸다(\"마라토너 등극!\").",
+      "titleKey": "ranking.achievement.distanceSilver",
+      "target": 42195,
+      "metric": "lifetimeDistanceMeters",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "distance",
+      "step": 2
+    },
+    {
+      "id": "distance_200000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 거리 사슬 3/3(금, 신규 id). 은(42,195)의 약 4.7배 — 스테이지 1,300~2,100m 기준 완주 약 95~154회. 코인 금(333~1,000회 추정)보다는 짧지만 여러 세션에 걸친 장기 목표로 적당하다고 판단.",
+      "titleKey": "ranking.achievement.distanceGold",
+      "target": 200000,
+      "metric": "lifetimeDistanceMeters",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "distance",
+      "step": 3
+    },
+    {
+      "id": "nearmiss_50",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 니어미스 사슬 1/3(동). tier silver->bronze, reward 800->300으로 낮춤(사슬 규칙상 1단계는 동) — id·target(50)·metric은 그대로라 마이그레이션 불필요(tier/reward는 저장 키가 아니다).",
+      "titleKey": "ranking.achievement.nearmissBronze",
+      "target": 50,
+      "metric": "lifetimeNearMisses",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "nearmiss",
+      "step": 1
+    },
+    {
+      "id": "nearmiss_400",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 니어미스 사슬 2/3(은, 신규 id). 동(50)의 8배.",
+      "titleKey": "ranking.achievement.nearmissSilver",
+      "target": 400,
+      "metric": "lifetimeNearMisses",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "nearmiss",
+      "step": 2
+    },
+    {
+      "id": "nearmiss_2000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 니어미스 사슬 3/3(금, 신규 id). 은(400)의 5배.",
+      "titleKey": "ranking.achievement.nearmissGold",
+      "target": 2000,
+      "metric": "lifetimeNearMisses",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "nearmiss",
+      "step": 3
+    },
+    {
+      "id": "djump_100",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 더블점프 회피 사슬 1/3(동). tier gold->bronze, reward 2000->300(사슬 규칙상 1단계는 동) — id·target(100)·metric은 그대로라 마이그레이션 불필요.",
+      "titleKey": "ranking.achievement.djumpBronze",
+      "target": 100,
+      "metric": "lifetimeDoubleJumpDodges",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "djump",
+      "step": 1
+    },
+    {
+      "id": "djump_800",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 더블점프 회피 사슬 2/3(은, 신규 id). 동(100)의 8배.",
+      "titleKey": "ranking.achievement.djumpSilver",
+      "target": 800,
+      "metric": "lifetimeDoubleJumpDodges",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "djump",
+      "step": 2
+    },
+    {
+      "id": "djump_4000",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 더블점프 회피 사슬 3/3(금, 신규 id). 은(800)의 5배.",
+      "titleKey": "ranking.achievement.djumpGold",
+      "target": 4000,
+      "metric": "lifetimeDoubleJumpDodges",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "djump",
+      "step": 3
+    },
+    {
+      "id": "barefoot_run",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 맨발 클리어 사슬 1/3(동). 전부 불변, chain/step만 추가.",
+      "titleKey": "ranking.achievement.barefootRun",
+      "target": 3,
+      "metric": "barefootClears",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "barefoot",
+      "step": 1
+    },
+    {
+      "id": "barefoot_20",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 맨발 클리어 사슬 2/3(은, 신규 id). 동(3)의 약 6.7배.",
+      "titleKey": "ranking.achievement.barefootSilver",
+      "target": 20,
+      "metric": "barefootClears",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "barefoot",
+      "step": 2
+    },
+    {
+      "id": "barefoot_50",
+      "_note": "TASK-ACH-TIER-CHAIN.md — 맨발 클리어 사슬 3/3(금, 신규 id). 브리프 초안은 100(은의 5배)이었으나 50으로 낮췄다 — 맨발 클리어는 다른 네 사슬(코인/거리/니어미스/더블점프)처럼 아무 런에서나 수동적으로 쌓이는 지표가 아니라, 매번 드레스를 벗고 완주까지 해야 하는(하트·속도·코인 보너스 전부 포기) 능동적 조건이라 단위당 비용이 훨씬 크다. 같은 5~10배를 그대로 적용하면 상대적으로 가장 가혹한 금이 돼 은(20)의 2.5배로 낮췄다.",
+      "titleKey": "ranking.achievement.barefootGold",
+      "target": 50,
+      "metric": "barefootClears",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "barefoot",
+      "step": 3
+    },
+    {
+      "id": "birdsmash_10",
+      "_note": "TASK-ACH-TIER-CHAIN.md 추가 — \"새 학살자\" 사슬 1/3(동). 사용자 확정값(target 10). 신규 지표 lifetimeBirdSmashes.",
+      "titleKey": "ranking.achievement.birdsmashBronze",
+      "target": 10,
+      "metric": "lifetimeBirdSmashes",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "birdsmash",
+      "step": 1
+    },
+    {
+      "id": "birdsmash_80",
+      "_note": "TASK-ACH-TIER-CHAIN.md 추가 — \"새 학살자\" 사슬 2/3(은). 동(10)의 8배.",
+      "titleKey": "ranking.achievement.birdsmashSilver",
+      "target": 80,
+      "metric": "lifetimeBirdSmashes",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "birdsmash",
+      "step": 2
+    },
+    {
+      "id": "birdsmash_500",
+      "_note": "TASK-ACH-TIER-CHAIN.md 추가 — \"새 학살자\" 사슬 3/3(금). 은(80)의 6.25배.",
+      "titleKey": "ranking.achievement.birdsmashGold",
+      "target": 500,
+      "metric": "lifetimeBirdSmashes",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "birdsmash",
+      "step": 3
     }
   ]
 }
