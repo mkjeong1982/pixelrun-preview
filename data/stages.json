@@ -181,6 +181,8 @@
       "regionName": "숲",
       "subRegion": "shallow_forest",
       "displayName": "얕은 숲",
+      "distanceMeters": 2400,
+      "theme": "forest",
       "mapX": 713,
       "mapY": 150,
       "nameKey": "data.stage.3-1.name",
