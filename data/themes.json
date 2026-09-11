@@ -846,11 +846,12 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "farMountainScale": 1.22,
+      "farMountainScale": 1.81,
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain_field",
-        "nearStrip": "waterfall_hills",
+        "midStrip": "waterfall_hills",
+        "nearStrip": "waterfall_village",
         "midground": [
           "mid_tree_oak_field",
           "mid_tree_apple_field",
@@ -864,15 +865,44 @@
         ],
         "ground": "tile_field2"
       },
-      "nearStripScale": 0.73,
+      "midStripScale": 1.0,
+      "nearStripScale": 0.92,
       "nearStripParallax": 0.4,
-      "stripAccessories": [],
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "village_blades",
+          "x": 1235,
+          "y": 459,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        },
+        {
+          "strip": "midStrip",
+          "texture": "waterfall_mist",
+          "animation": "waterfall-mist-rise",
+          "x": 718,
+          "y": 242,
+          "alpha": 0.7,
+          "animationSeed": 0
+        },
+        {
+          "strip": "midStrip",
+          "texture": "waterfall_mist",
+          "animation": "waterfall-mist-rise",
+          "x": 718,
+          "y": 339,
+          "alpha": 0.7,
+          "animationSeed": 2
+        }
+      ],
       "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "petal",
         "densityPerSec": 6
       },
-      "_note": "TASK-STAGE11-WIRE.md — pasture를 베이스로 복제한 같은 지역의 다음 지점. nearStripScale 0.73·farMountainScale 1.22는 pasture와 동일 값을 그대로 사용(waterfall_hills.png가 pasture_fields.png와 크기·그림 시작 행이 거의 같아 재실측 불필요, TASK-STAGE10-LAYER-SCALE.md 계산식 참조). stripAccessories는 물보라 1곳·오리 2~3곳 좌표가 아직 미도착이라 비워둠 — 좌표 도착 시 별도 작업으로 채운다(village_inside 때와 같은 이유). 이력은 md_docs/data-revisions.md 참조.",
+      "_note": "TASK-STAGE11-REWIRE.md — stage11_waterfall_mockup.png(941x1672)에 맞춰 3겹 배경으로 재배선. midStrip(BackgroundLayer의 신설 세 번째 띠)을 실제로 쓰는 첫 테마: farMountains(-20)/midStrip(-17, waterfall_hills — 폭포·절벽·침엽수 언덕)/nearStrip(-15, waterfall_village — 마을·강·다리·풍차·양). farMountainScale 1.22 -> 1.81(553-175s=236), nearStripScale 0.73 -> 0.92(553-167s≈400) — 목업 목표(236/약400)와 1px 이내로 일치. farParallax(0.22) < midStripParallax(기본값 계산, (0.22+0.4)/2=0.31) < nearStripParallax(0.4) 깊이 순서 확인. stripAccessories: 풍차 날개(nearStrip, village_blades)·폭포 물보라(midStrip, waterfall_mist — outskirts_smoke와 동일 규격이라 기존 연기 애니메이션 재사용, 좌표는 굴뚝 연기와 같은 좌상단 원점이라 변환 불필요)는 그래픽 워커 실측 좌표. TASK-WATERFALL-SCALE-FIX.md — midStripScale은 원래 1.20(553-256s=245 역산)이었으나, 렌더해서 1.0과 나란히 비교한 결과 확대로 폭포 디테일이 흐려지는 게 실제로 보여 그래픽 워커에게 보고했고, waterfall_hills.png를 더 높게(그림 시작 행 290->238, 높이 256->308px) 다시 그리게 했다 — 이제 배율 1.0(553-308*1.0=245)로 목업 목표(245)에 그대로 맞는다, 확대 불필요. 물보라도 폭포가 2단이 되며 좌표가 하나에서 둘로(상단 테라스 718,242 / 하단 못 718,339, 그래픽 워커가 이미 waterfall_mist.png 자신의 바닥선(y=127)이 각 지점에 닿도록 계산해 넘긴 좌상단 좌표라 변환 없이 그대로 사용), 위상이 겹치지 않도록 animationSeed 0/2. 이력은 md_docs/data-revisions.md 참조.",
       "midgroundWeights": {
         "mid_tree_oak_field": 4,
         "mid_tree_apple_field": 4,
@@ -903,6 +933,35 @@
             "bodyHeightPx": 28,
             "weight": 2,
             "_note": "rock_l과 캔버스 크기(44x39)는 같지만 실루엣이 더 낮고 넓어 rock_l 값을 베끼지 않고 알파 바운드를 직접 실측: bbox(1,7)-(43,39) = 잉크 폭42 x 높이32(rock_l은 캔버스 꽉 찬 0,0-44,39). hay_bale과 같은 10% 여유 관례를 잉크 치수에 적용: bodyWidthPx=floor(42*0.9)=37, bodyHeightPx=floor(32*0.9)=28 — rock_l의 기본 자동 shrink(44*0.9=39, 39*0.9=35)보다 확실히 낮고 좁아, 실제 눈에 보이는 낮은 실루엣만큼만 충돌하도록 했다."
+          },
+          {
+            "skin": "wood_fence",
+            "displayWidthPx": 56,
+            "displayHeightPx": 38,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 32,
+            "weight": 2,
+            "_note": "TASK-STAGE11-REWIRE.md — 가로 난간(가로대 포함)까지 넘어야 하는 장애물이라 village_sign처럼 기둥만 남기지 않았다. 알파 바운드 실측: bbox(1,2)-(55,38) = 잉크 폭54 x 높이36(캔버스 56x38 거의 꽉 참, 바닥 접지). hay_bale/moss_rock과 같은 10% 여유: bodyWidthPx=floor(54*0.9)=48, bodyHeightPx=floor(36*0.9)=32."
+          },
+          {
+            "skin": "fallen_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2,
+            "_note": "TASK-STAGE11-REWIRE.md — 이 테마에서 가장 넓고 낮은 실루엣(목업에 쓰러진 통나무로 등장). 알파 바운드 실측: bbox(1,4)-(63,34) = 잉크 폭62 x 높이30(캔버스 64x34, 바닥 접지). 동일한 10% 여유: bodyWidthPx=floor(62*0.9)=55, bodyHeightPx=floor(30*0.9)=27."
+          }
+        ],
+        "stump": [
+          {
+            "skin": "wall_barrel",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 30,
+            "weight": 3,
+            "_note": "TASK-STAGE11-REWIRE.md — 목업에 나무 통이 보여 판단해서 추가. palace 테마의 stump 변형(wall_barrel, 34x30 캔버스 꽉 참)과 완전히 같은 값을 그대로 재사용 — 같은 에셋, 같은 stump 타입(34x30 기본 콜라이더)이라 재실측할 이유가 없다."
           }
         ]
       },
