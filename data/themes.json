@@ -841,6 +841,78 @@
       }
     },
     {
+      "id": "waterfall",
+      "displayTitle": "폭포 평원",
+      "lighting": "day",
+      "skyTint": "#8ed8ff",
+      "farMountainTint": "#86a9be",
+      "farMountainScale": 1.22,
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain_field",
+        "nearStrip": "waterfall_hills",
+        "midground": [
+          "mid_tree_oak_field",
+          "mid_tree_apple_field",
+          "mid_tree_big_field",
+          "mid_tree_orange_field",
+          "mid_tree_small_field"
+        ],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
+        "ground": "tile_field2"
+      },
+      "nearStripScale": 0.73,
+      "nearStripParallax": 0.4,
+      "stripAccessories": [],
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "petal",
+        "densityPerSec": 6
+      },
+      "_note": "TASK-STAGE11-WIRE.md — pasture를 베이스로 복제한 같은 지역의 다음 지점. nearStripScale 0.73·farMountainScale 1.22는 pasture와 동일 값을 그대로 사용(waterfall_hills.png가 pasture_fields.png와 크기·그림 시작 행이 거의 같아 재실측 불필요, TASK-STAGE10-LAYER-SCALE.md 계산식 참조). stripAccessories는 물보라 1곳·오리 2~3곳 좌표가 아직 미도착이라 비워둠 — 좌표 도착 시 별도 작업으로 채운다(village_inside 때와 같은 이유). 이력은 md_docs/data-revisions.md 참조.",
+      "midgroundWeights": {
+        "mid_tree_oak_field": 4,
+        "mid_tree_apple_field": 4,
+        "mid_tree_big_field": 3,
+        "mid_tree_orange_field": 3,
+        "mid_tree_small_field": 3
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "waterfall_angler",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 3,
+            "_note": "pasture_farmer/town_citizen 항목 그대로 복제(280x73, 56x73 x5프레임 — GUARD_FRAME_W/H와 동일 규격). 이미 납품되어 폴백 불필요. 알파 바운드 실측(서 있는 프레임 기준 x:6~49/y:18~73, 폭43·높이55)이 citizen/farmer 실측 범위(폭40~46·높이55~67)와 같은 대에 들어와 32x49를 그대로 채택 — 이 테마의 놀라는 행인 NPC 역할."
+          },
+          {
+            "skin": "moss_rock",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2,
+            "_note": "rock_l과 캔버스 크기(44x39)는 같지만 실루엣이 더 낮고 넓어 rock_l 값을 베끼지 않고 알파 바운드를 직접 실측: bbox(1,7)-(43,39) = 잉크 폭42 x 높이32(rock_l은 캔버스 꽉 찬 0,0-44,39). hay_bale과 같은 10% 여유 관례를 잉크 치수에 적용: bodyWidthPx=floor(42*0.9)=37, bodyHeightPx=floor(32*0.9)=28 — rock_l의 기본 자동 shrink(44*0.9=39, 39*0.9=35)보다 확실히 낮고 좁아, 실제 눈에 보이는 낮은 실루엣만큼만 충돌하도록 했다."
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      }
+    },
+    {
       "id": "village",
       "displayTitle": "마을 앞",
       "lighting": "day",

@@ -64,6 +64,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -108,6 +109,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -147,6 +149,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -189,6 +192,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -234,6 +238,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -270,6 +275,7 @@
       "minDistance": 180,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -306,6 +312,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -345,6 +352,7 @@
       "minDistance": 150,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -387,6 +395,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -424,6 +433,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -462,6 +472,7 @@
       "minDistance": 330,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -504,6 +515,7 @@
       "minDistance": 500,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -543,6 +555,7 @@
       "minDistance": 700,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -664,6 +677,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -837,6 +851,7 @@
       "minDistance": 300,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -882,6 +897,7 @@
       "minDistance": 800,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -927,6 +943,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -969,6 +986,7 @@
       "minDistance": 250,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -1006,6 +1024,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -1049,6 +1068,7 @@
       "minDistance": 900,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside",
@@ -1092,6 +1112,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2062,6 +2083,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2096,6 +2118,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2130,6 +2153,7 @@
       "minDistance": 0,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2165,6 +2189,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2199,6 +2224,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2232,6 +2258,7 @@
       "minDistance": 200,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2272,6 +2299,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2310,6 +2338,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2344,6 +2373,7 @@
       "minDistance": 400,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2381,6 +2411,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2415,6 +2446,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2454,6 +2486,7 @@
       "minDistance": 600,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2494,6 +2527,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2528,6 +2562,7 @@
       "minDistance": 850,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2565,6 +2600,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2609,6 +2645,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
@@ -2650,6 +2687,7 @@
       "minDistance": 1300,
       "themeTags": [
         "field",
+        "waterfall",
         "pasture",
         "village",
         "village_inside"
