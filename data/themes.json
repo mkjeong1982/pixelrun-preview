@@ -1328,7 +1328,7 @@
         "foreground": [
           "deco_grass"
         ],
-        "ground": "tile_ground"
+        "ground": "tile_forest"
       },
       "midStripScale": 1.0,
       "nearStripScale": 1.0,
