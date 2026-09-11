@@ -167,6 +167,8 @@
       "regionName": "평원",
       "subRegion": "waterfall_field",
       "displayName": "폭포 평원 2",
+      "distanceMeters": 2300,
+      "theme": "waterfall2",
       "mapX": 575,
       "mapY": 204,
       "nameKey": "data.stage.2-6.name",

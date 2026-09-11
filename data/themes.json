@@ -972,6 +972,137 @@
       }
     },
     {
+      "id": "waterfall2",
+      "displayTitle": "폭포 평원 2",
+      "lighting": "day",
+      "skyTint": "#8ed8ff",
+      "farMountainTint": "#86a9be",
+      "farMountainScale": 1.3,
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "far_mountain_field",
+        "midStrip": "waterfall2_cliff",
+        "nearStrip": "waterfall2_village",
+        "midground": [
+          "mid_tree_oak_field",
+          "mid_tree_apple_field",
+          "mid_tree_big_field",
+          "mid_tree_orange_field",
+          "mid_tree_small_field"
+        ],
+        "foreground": [
+          "deco_grass",
+          "deco_flower"
+        ],
+        "ground": "tile_field2"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "nearStripParallax": 0.4,
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "village_blades",
+          "x": 1281,
+          "y": 387,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        },
+        {
+          "strip": "midStrip",
+          "texture": "waterfall_mist",
+          "animation": "waterfall-mist-rise",
+          "x": 438,
+          "y": 321,
+          "alpha": 0.7,
+          "animationSeed": 0
+        },
+        {
+          "strip": "midStrip",
+          "texture": "waterfall_mist",
+          "animation": "waterfall-mist-rise",
+          "x": 633,
+          "y": 321,
+          "alpha": 0.7,
+          "animationSeed": 2
+        },
+        {
+          "strip": "midStrip",
+          "texture": "waterfall_mist",
+          "animation": "waterfall-mist-rise",
+          "x": 1228,
+          "y": 323,
+          "alpha": 0.7,
+          "animationSeed": 4
+        }
+      ],
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "petal",
+        "densityPerSec": 6
+      },
+      "_note": "TASK-STAGE12-WIRE.md — stage11 재배선의 반복. midStrip=waterfall2_cliff(여러 갈래 폭포·침엽수 절벽)/nearStrip=waterfall2_village(교회·마을·다리·풍차탑), 둘 다 배율 1.0(그림 자체가 목업 목표 높이로 납품됨: 553-423=130, 553-268=285, 렌더 실측으로 확인). farMountainScale은 목업에 산이 왼쪽 위 귀퉁이만 살짝 보이는 수준이라 stage11의 1.81(과함, 이번 과제의 반면교사)을 그대로 쓰지 않고 1.0부터 렌더로 확인 — far_mountain_field.png(768x220, 잉크 최고봉 y=47)를 1.0배로 앵커(553)에 붙이면 최고봉이 화면 y=380까지밖에 안 올라와 waterfall2_cliff의 나무 능선(대부분 y≈130, 캔버스 왼쪽 끝 구간만 예외적으로 낮아 y≈258~294)에 완전히 가려 아예 안 보였다. 1.3~2.0 구간을 렌더 비교한 결과 이 범위에서는 전부 같은 결과(캔버스 왼쪽 끝의 낮은 능선 틈새로만 살짝 비침, 다른 구간은 여전히 안 보임) — 그 이상 올릴수록 틈새 밖에서도 보이기 시작할 위험만 커지므로 범위의 아래쪽인 1.3을 채택(목업의 '왼쪽 위 귀퉁이만' 요구와 가장 가깝고 스크롤 전 구간에서 안전). stripAccessories: 풍차 날개(nearStrip, village_blades) 축 좌표는 그래픽 워커 미보고 — 배경 원본을 직접 픽셀 분석(허브 원반의 어두운 중심점)해 (1281,387) 측정, 렌더로 축 정렬 재확인. 폭포 물보라(midStrip, waterfall_mist) 3곳은 그래픽 워커 좌표 없이 절벽 그림을 직접 분석해 가장 뚜렷한 낙수 지점 3곳(전체 6~7줄기 중 산만함을 피해 2~3곳 권고를 따름)을 골라 각 지점의 물보라/포말 화소 위치를 실측하고 waterfall_mist.png 자신의 바닥선(로컬 y=127)·잉크 가로 중심(로컬 x≈32)을 역산해 좌상단 좌표로 변환, animationSeed를 0/2/4로 벌려 동시에 피어오르지 않게 함. 신규 장애물: banner_pole(다리 위 깃발 기둥, 28x86 — 이 게임 최초의 세로로 긴 largeRock 변형)은 실측 결과 천(깃발) 부분이 캔버스 폭 대부분(잉크 24px/28px)을 차지해 폭 그대로 히트박스에 반영하면 정점 여유가 빠듯한 높이(86px, 1단 점프 정점 126.8px보다는 낮지만 기존 largeRock류 30~73px보다 훨씬 큼)와 겹쳐 과도하게 빡빡해질 위험이 있었음 — 실측한 기둥 단면(로컬 y57~73, 폭 6~8px)만 히트박스 폭으로 채택(bodyWidthPx=10, 여유 1px씩), 높이는 잉크가 거의 캔버스 전체(y0~85)라 표준 10% 여유만 적용(bodyHeightPx=77). 128px 미만이라 GDD 3.3 파생값 규칙(이단점프 전용 장애물은 height>jumpVelocityY²/(2×gravityY)≈126.8px 필수)에 따라 tree 타입(이단점프)이 아니라 largeRock(1단 점프) 그대로 배치 — 실제로 반복 점프해 확인, 검증 결과는 이 태스크 보고에 기록. waterfall_shepherd(놀라는 양치기, 280x73 x5)는 waterfall_angler 항목을 표시 규격(56x73)만 복제하고 알파 바운드는 새로 실측(idle 프레임0 기준 x6~48/y3~72, 폭43·높이70 — 지팡이가 항상 위로 뻗어 있어 citizen/farmer/angler 대(높이55~67)보다 큼, 표준 10% 여유 적용: bodyWidthPx=38, bodyHeightPx=63). 기존 largeRock/stump 중 목업에 보이는 stump(기본 스킨 그대로)·wood_fence·wall_barrel(둘 다 waterfall 테마 값 그대로 재사용, 같은 에셋·같은 판정이라 재실측 불필요)도 포함. 가중치는 largeRock 풀 내에서 고르게(shepherd 3·banner_pole 3·wood_fence 2, 기본 rock_l 2) 배분해 새 장애물이 과점하지 않게 함, stump 풀은 wall_barrel 3(기본 stump 3과 동률). obstacleBaseWeights는 stage11과 동일(tree 3/largeRock 2/stump 3).",
+      "midgroundWeights": {
+        "mid_tree_oak_field": 4,
+        "mid_tree_apple_field": 4,
+        "mid_tree_big_field": 3,
+        "mid_tree_orange_field": 3,
+        "mid_tree_small_field": 3
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "waterfall_shepherd",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 38,
+            "bodyHeightPx": 63,
+            "weight": 3,
+            "_note": "waterfall_angler 항목(280x73, 56x73 x5프레임)을 표시 규격만 복제, 알파 바운드는 직접 실측(idle 프레임0: x6~48/y3~72, 폭43·높이70). 지팡이가 위로 뻗어 있어 citizen/farmer/angler보다 높이가 크게 나옴 — 같은 대에 억지로 맞추지 않고 표준 10% 여유를 새 실측치에 그대로 적용: bodyWidthPx=floor(43*0.9)=38, bodyHeightPx=floor(70*0.9)=63. 이 테마의 놀라는 행인 NPC 역할."
+          },
+          {
+            "skin": "banner_pole",
+            "displayWidthPx": 28,
+            "displayHeightPx": 86,
+            "bodyWidthPx": 10,
+            "bodyHeightPx": 77,
+            "weight": 3,
+            "_note": "다리 위 깃발 기둥, 이 게임 최초의 세로로 긴 largeRock 변형(28x86, 캔버스 거의 꽉 채운 잉크 x2~25/y0~85). 잉크 폭(24px)을 그대로 히트박스에 쓰면 큰 키(86px)와 겹쳐 정점 여유가 빠듯해져 과도하게 까다로워질 위험이 있어, 실측한 기둥 단면(로컬 y57~73 구간, 폭 6~8px)만 폭으로 채택 — village_sign(판자 아니라 기둥만 잡은 전례)과 같은 판단. bodyWidthPx=10(측정폭 8에 1px씩 여유, village_sign과 동일 관례), bodyHeightPx=floor(86*0.9)=77(잉크가 거의 캔버스 전체라 표준 10% 여유만 적용, 깃발도 실제로 피해야 하는 실루엣이라 높이는 줄이지 않음). GDD 3.3: 이단점프 전용 장애물은 height>126.8px가 필수 조건인데 86<128이라 tree(이단점프) 타입이 아니라 largeRock(1단 점프)으로 배치 — 실제 반복 점프로 통과 가능함을 확인(이 태스크 보고 참조)."
+          },
+          {
+            "skin": "wood_fence",
+            "displayWidthPx": 56,
+            "displayHeightPx": 38,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 32,
+            "weight": 2,
+            "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용 — 같은 에셋, 같은 판정이라 재실측 불필요. 목업에 다리 옆 난간으로 등장."
+          }
+        ],
+        "stump": [
+          {
+            "skin": "wall_barrel",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 30,
+            "weight": 3,
+            "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용(palace stump 변형과도 동일) — 같은 에셋, 같은 stump 타입이라 재실측 불필요. 목업에 나무 통으로 등장."
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 2,
+        "stump": 3
+      }
+    },
+    {
       "id": "village",
       "displayTitle": "마을 앞",
       "lighting": "day",
