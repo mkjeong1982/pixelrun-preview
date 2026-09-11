@@ -982,6 +982,7 @@
         "sky": "sky_base",
         "farMountains": "far_mountain_field",
         "midStrip": "waterfall2_cliff",
+        "flowStrip": "waterfall2_flow",
         "nearStrip": "waterfall2_village",
         "midground": [
           "mid_tree_oak_field",
@@ -1043,7 +1044,7 @@
         "particle": "petal",
         "densityPerSec": 6
       },
-      "_note": "TASK-STAGE12-WIRE.md — stage11 재배선의 반복. midStrip=waterfall2_cliff(여러 갈래 폭포·침엽수 절벽)/nearStrip=waterfall2_village(교회·마을·다리·풍차탑), 둘 다 배율 1.0(그림 자체가 목업 목표 높이로 납품됨: 553-423=130, 553-268=285, 렌더 실측으로 확인). farMountainScale은 목업에 산이 왼쪽 위 귀퉁이만 살짝 보이는 수준이라 stage11의 1.81(과함, 이번 과제의 반면교사)을 그대로 쓰지 않고 1.0부터 렌더로 확인 — far_mountain_field.png(768x220, 잉크 최고봉 y=47)를 1.0배로 앵커(553)에 붙이면 최고봉이 화면 y=380까지밖에 안 올라와 waterfall2_cliff의 나무 능선(대부분 y≈130, 캔버스 왼쪽 끝 구간만 예외적으로 낮아 y≈258~294)에 완전히 가려 아예 안 보였다. 1.3~2.0 구간을 렌더 비교한 결과 이 범위에서는 전부 같은 결과(캔버스 왼쪽 끝의 낮은 능선 틈새로만 살짝 비침, 다른 구간은 여전히 안 보임) — 그 이상 올릴수록 틈새 밖에서도 보이기 시작할 위험만 커지므로 범위의 아래쪽인 1.3을 채택(목업의 '왼쪽 위 귀퉁이만' 요구와 가장 가깝고 스크롤 전 구간에서 안전). stripAccessories: 풍차 날개(nearStrip, village_blades) 축 좌표는 그래픽 워커 미보고 — 배경 원본을 직접 픽셀 분석(허브 원반의 어두운 중심점)해 (1281,387) 측정, 렌더로 축 정렬 재확인. 폭포 물보라(midStrip, waterfall_mist) 3곳은 그래픽 워커 좌표 없이 절벽 그림을 직접 분석해 가장 뚜렷한 낙수 지점 3곳(전체 6~7줄기 중 산만함을 피해 2~3곳 권고를 따름)을 골라 각 지점의 물보라/포말 화소 위치를 실측하고 waterfall_mist.png 자신의 바닥선(로컬 y=127)·잉크 가로 중심(로컬 x≈32)을 역산해 좌상단 좌표로 변환, animationSeed를 0/2/4로 벌려 동시에 피어오르지 않게 함. 신규 장애물: banner_pole(다리 위 깃발 기둥, 28x86 — 이 게임 최초의 세로로 긴 largeRock 변형)은 실측 결과 천(깃발) 부분이 캔버스 폭 대부분(잉크 24px/28px)을 차지해 폭 그대로 히트박스에 반영하면 정점 여유가 빠듯한 높이(86px, 1단 점프 정점 126.8px보다는 낮지만 기존 largeRock류 30~73px보다 훨씬 큼)와 겹쳐 과도하게 빡빡해질 위험이 있었음 — 실측한 기둥 단면(로컬 y57~73, 폭 6~8px)만 히트박스 폭으로 채택(bodyWidthPx=10, 여유 1px씩), 높이는 잉크가 거의 캔버스 전체(y0~85)라 표준 10% 여유만 적용(bodyHeightPx=77). 128px 미만이라 GDD 3.3 파생값 규칙(이단점프 전용 장애물은 height>jumpVelocityY²/(2×gravityY)≈126.8px 필수)에 따라 tree 타입(이단점프)이 아니라 largeRock(1단 점프) 그대로 배치 — 실제로 반복 점프해 확인, 검증 결과는 이 태스크 보고에 기록. waterfall_shepherd(놀라는 양치기, 280x73 x5)는 waterfall_angler 항목을 표시 규격(56x73)만 복제하고 알파 바운드는 새로 실측(idle 프레임0 기준 x6~48/y3~72, 폭43·높이70 — 지팡이가 항상 위로 뻗어 있어 citizen/farmer/angler 대(높이55~67)보다 큼, 표준 10% 여유 적용: bodyWidthPx=38, bodyHeightPx=63). 기존 largeRock/stump 중 목업에 보이는 stump(기본 스킨 그대로)·wood_fence·wall_barrel(둘 다 waterfall 테마 값 그대로 재사용, 같은 에셋·같은 판정이라 재실측 불필요)도 포함. 가중치는 largeRock 풀 내에서 고르게(shepherd 3·banner_pole 3·wood_fence 2, 기본 rock_l 2) 배분해 새 장애물이 과점하지 않게 함, stump 풀은 wall_barrel 3(기본 stump 3과 동률). obstacleBaseWeights는 stage11과 동일(tree 3/largeRock 2/stump 3). TASK-STAGE13-AND-FLOW-WIRE.md §1 — layers.flowStrip=waterfall2_flow(같은 1560x546 캔버스, 물기둥만 그려진 나머지 투명) 배선, 배율은 midStrip과 동일 1.0(가로 정렬 어긋남 금지). flowSpeedPxPerSec 기본값 60/120/180/250을 150ms 간격 스크린샷으로 실제 비교한 결과 60은 프레임간 이동량이 작아 '지금과 다를 게 없다'는 우려에 해당했고 250은 한 틱에 확 튀어 부자연스러웠다(사용자 경고 그대로) — 120을 채택, 매 프레임 뚜렷이 흐르면서도 튀지 않음. 세로 546px 반복 경계(tilePositionY 540→552)를 직접 넘겨 스크린샷 비교했으나 이음매 없음(그래픽 워커가 세로로 이어지게 작업). 가로 동기화는 flowStrip.tilePositionX를 매 프레임 midStrip.tilePositionX 값으로 직접 복사(독립 누산 아님)해 드리프트 불가능하게 했고, 실제 스크롤 중 diff=0 확인. 세로 속도는 scrollSpeed와 무관한 고정값이라 피버로 속도가 올라가도 그대로(900으로 강제해도 1초당 델타 그대로 확인), 일시정지는 GameScene.update가 그 상태에서 BackgroundLayer.update 자체를 안 부르므로 별도 처리 없이 함께 멈춤(0 확인). 기존 물보라 3곳(waterfall_mist)은 그대로 유지. | 2026-09-11: flowStrip 임시 해제 — TileSprite 가 세로로 타일링되면서 물줄기가 절벽 위 하늘까지 반복돼 나타났다(사용자 스크린샷 issue_sky_waterfall.png). 물이 흐를 자리를 고정 마스크로 잘라내는 수정 후 다시 켠다.",
+      "_note": "TASK-STAGE12-WIRE.md — stage11 재배선의 반복. midStrip=waterfall2_cliff(여러 갈래 폭포·침엽수 절벽)/nearStrip=waterfall2_village(교회·마을·다리·풍차탑), 둘 다 배율 1.0(그림 자체가 목업 목표 높이로 납품됨: 553-423=130, 553-268=285, 렌더 실측으로 확인). farMountainScale은 목업에 산이 왼쪽 위 귀퉁이만 살짝 보이는 수준이라 stage11의 1.81(과함, 이번 과제의 반면교사)을 그대로 쓰지 않고 1.0부터 렌더로 확인 — far_mountain_field.png(768x220, 잉크 최고봉 y=47)를 1.0배로 앵커(553)에 붙이면 최고봉이 화면 y=380까지밖에 안 올라와 waterfall2_cliff의 나무 능선(대부분 y≈130, 캔버스 왼쪽 끝 구간만 예외적으로 낮아 y≈258~294)에 완전히 가려 아예 안 보였다. 1.3~2.0 구간을 렌더 비교한 결과 이 범위에서는 전부 같은 결과(캔버스 왼쪽 끝의 낮은 능선 틈새로만 살짝 비침, 다른 구간은 여전히 안 보임) — 그 이상 올릴수록 틈새 밖에서도 보이기 시작할 위험만 커지므로 범위의 아래쪽인 1.3을 채택(목업의 '왼쪽 위 귀퉁이만' 요구와 가장 가깝고 스크롤 전 구간에서 안전). stripAccessories: 풍차 날개(nearStrip, village_blades) 축 좌표는 그래픽 워커 미보고 — 배경 원본을 직접 픽셀 분석(허브 원반의 어두운 중심점)해 (1281,387) 측정, 렌더로 축 정렬 재확인. 폭포 물보라(midStrip, waterfall_mist) 3곳은 그래픽 워커 좌표 없이 절벽 그림을 직접 분석해 가장 뚜렷한 낙수 지점 3곳(전체 6~7줄기 중 산만함을 피해 2~3곳 권고를 따름)을 골라 각 지점의 물보라/포말 화소 위치를 실측하고 waterfall_mist.png 자신의 바닥선(로컬 y=127)·잉크 가로 중심(로컬 x≈32)을 역산해 좌상단 좌표로 변환, animationSeed를 0/2/4로 벌려 동시에 피어오르지 않게 함. 신규 장애물: banner_pole(다리 위 깃발 기둥, 28x86 — 이 게임 최초의 세로로 긴 largeRock 변형)은 실측 결과 천(깃발) 부분이 캔버스 폭 대부분(잉크 24px/28px)을 차지해 폭 그대로 히트박스에 반영하면 정점 여유가 빠듯한 높이(86px, 1단 점프 정점 126.8px보다는 낮지만 기존 largeRock류 30~73px보다 훨씬 큼)와 겹쳐 과도하게 빡빡해질 위험이 있었음 — 실측한 기둥 단면(로컬 y57~73, 폭 6~8px)만 히트박스 폭으로 채택(bodyWidthPx=10, 여유 1px씩), 높이는 잉크가 거의 캔버스 전체(y0~85)라 표준 10% 여유만 적용(bodyHeightPx=77). 128px 미만이라 GDD 3.3 파생값 규칙(이단점프 전용 장애물은 height>jumpVelocityY²/(2×gravityY)≈126.8px 필수)에 따라 tree 타입(이단점프)이 아니라 largeRock(1단 점프) 그대로 배치 — 실제로 반복 점프해 확인, 검증 결과는 이 태스크 보고에 기록. waterfall_shepherd(놀라는 양치기, 280x73 x5)는 waterfall_angler 항목을 표시 규격(56x73)만 복제하고 알파 바운드는 새로 실측(idle 프레임0 기준 x6~48/y3~72, 폭43·높이70 — 지팡이가 항상 위로 뻗어 있어 citizen/farmer/angler 대(높이55~67)보다 큼, 표준 10% 여유 적용: bodyWidthPx=38, bodyHeightPx=63). 기존 largeRock/stump 중 목업에 보이는 stump(기본 스킨 그대로)·wood_fence·wall_barrel(둘 다 waterfall 테마 값 그대로 재사용, 같은 에셋·같은 판정이라 재실측 불필요)도 포함. 가중치는 largeRock 풀 내에서 고르게(shepherd 3·banner_pole 3·wood_fence 2, 기본 rock_l 2) 배분해 새 장애물이 과점하지 않게 함, stump 풀은 wall_barrel 3(기본 stump 3과 동률). obstacleBaseWeights는 stage11과 동일(tree 3/largeRock 2/stump 3). TASK-STAGE13-AND-FLOW-WIRE.md §1 — layers.flowStrip=waterfall2_flow(같은 1560x546 캔버스, 물기둥만 그려진 나머지 투명) 배선, 배율은 midStrip과 동일 1.0(가로 정렬 어긋남 금지). flowSpeedPxPerSec 기본값 60/120/180/250을 150ms 간격 스크린샷으로 실제 비교한 결과 60은 프레임간 이동량이 작아 '지금과 다를 게 없다'는 우려에 해당했고 250은 한 틱에 확 튀어 부자연스러웠다(사용자 경고 그대로) — 120을 채택, 매 프레임 뚜렷이 흐르면서도 튀지 않음. 세로 546px 반복 경계(tilePositionY 540→552)를 직접 넘겨 스크린샷 비교했으나 이음매 없음(그래픽 워커가 세로로 이어지게 작업). 가로 동기화는 flowStrip.tilePositionX를 매 프레임 midStrip.tilePositionX 값으로 직접 복사(독립 누산 아님)해 드리프트 불가능하게 했고, 실제 스크롤 중 diff=0 확인. 세로 속도는 scrollSpeed와 무관한 고정값이라 피버로 속도가 올라가도 그대로(900으로 강제해도 1초당 델타 그대로 확인), 일시정지는 GameScene.update가 그 상태에서 BackgroundLayer.update 자체를 안 부르므로 별도 처리 없이 함께 멈춤(0 확인). 기존 물보라 3곳(waterfall_mist)은 그대로 유지. | 2026-09-11: flowStrip 임시 해제 — TileSprite 가 세로로 타일링되면서 물줄기가 절벽 위 하늘까지 반복돼 나타났다(사용자 스크린샷 issue_sky_waterfall.png). 물이 흐를 자리를 고정 마스크로 잘라내는 수정 후 다시 켠다. | 2026-09-11 TASK-FLOW-MASK.md — 마스크(BackgroundLayer.createFlowStrip이 waterfall2_flow_mask를 요구)로 고쳐 flowStrip을 되살림. 마스크 에셋(assets/bg/waterfall2_flow_mask.png)은 이 시점 아직 미납품 — 코드가 flow 텍스처·마스크 텍스처 둘 다 존재해야만 그리므로 지금은 여전히 아무것도 안 그려짐(버그였던 '마스크 없는 flowStrip'과 다름, textures.exists 폴백으로 안전하게 잠김), 마스크가 도착하면 코드 변경 없이 자동으로 켜짐.",
       "midgroundWeights": {
         "mid_tree_oak_field": 4,
         "mid_tree_apple_field": 4,
@@ -1336,7 +1337,7 @@
         "particle": "leaf",
         "densityPerSec": 7
       },
-      "_note": "TASK-STAGE13-AND-FLOW-WIRE.md §2 — 3-1(첫 3구역 스테이지)을 위해 껍데기였던 forest 테마(nearStrip 없음, 어느 스테이지도 미사용)를 채움. 3-2~3-5도 이 id를 공유하게 될 것(자연스러운 재사용, 태스크에서 판단하라고 한 부분). 세 띠 전부 배율 1.0, 목업 목표 윗선(파256/중173/근0)이 그대로 나옴: farMountains(forest_far, 546 캔버스, 잉크 행 246..545)는 553-546=7, 7+246=253. midStrip(forest_mid, 546 캔버스, 잉크 행 166..545)는 마찬가지로 7+166=173. nearStrip(forest_near, ⚠️캔버스 1560x600 — 이 게임 최초로 546이 아닌 근경)는 553-600=-47, 잉크가 행 47부터 시작하므로 -47+47=0 — 수관이 화면 맨 위(y=0)부터 덮이는 게 의도(목업 그대로), 코드가 frame.height를 텍스처에서 직접 읽어 이미 임의 캔버스 높이를 지원해 별도 처리 불필요, 렌더로 세 값 다 실측 확인. 지면은 tile_ground(숲 기본)를 그대로 채택 — tile_field2와 나란히 비교한 결과 tile_field2는 마른 흙길에 가까운 옅은 적갈색인데 tile_ground는 짙고 눅눅한 갈색에 둥근 뿌리/자갈 질감이라 목업의 진한 부엽토 색과 더 가까웠음. midground(기존 mid_tree_* 6종)는 그대로 유지 — nearStrip 자체가 이미 화면 양 옆을 거대한 둥치+수관으로 채우고 가운데만 비워두는 구성이라, 그 빈 가운데 통로에서 스치듯 지나가는 더 가까운 나무들이 시야를 막지 않으면서 깊이감을 더해줌(렌더 확인, 과도한 클러터 아님). 신규 장애물은 목업에 보이는 것 중 fallen_log·moss_rock 둘만(태스크 지시 — 울타리도 목업에 보이지만 이번 패스 범위 아님) waterfall 테마 항목 값 그대로 재사용(같은 에셋, 같은 판정, 재실측 불필요). 등불 이정표(forest_lantern_sign)와 숲 동물(forest_deer, 놀라는 행인 역할)은 그래픽 워커 납품 전 — optional glob으로 로딩 자리만 예약(PreloadScene), 실제 치수를 모르는 상태에서 obstacleVariants/애니메이션까지 추측해 넣지는 않음(납품 후 별도 태스크에서 알파 바운드 실측). 그 전까지 사람 NPC를 대신 넣지 않음(사용자 지시) — largeRock 풀에 놀라는 행인 항목이 없는 게 정상이며 의도적임.",
+      "_note": "TASK-STAGE13-AND-FLOW-WIRE.md §2 — 3-1(첫 3구역 스테이지)을 위해 껍데기였던 forest 테마(nearStrip 없음, 어느 스테이지도 미사용)를 채움. 3-2~3-5도 이 id를 공유하게 될 것(자연스러운 재사용, 태스크에서 판단하라고 한 부분). 세 띠 전부 배율 1.0, 목업 목표 윗선(파256/중173/근0)이 그대로 나옴: farMountains(forest_far, 546 캔버스, 잉크 행 246..545)는 553-546=7, 7+246=253. midStrip(forest_mid, 546 캔버스, 잉크 행 166..545)는 마찬가지로 7+166=173. nearStrip(forest_near, ⚠️캔버스 1560x600 — 이 게임 최초로 546이 아닌 근경)는 553-600=-47, 잉크가 행 47부터 시작하므로 -47+47=0 — 수관이 화면 맨 위(y=0)부터 덮이는 게 의도(목업 그대로), 코드가 frame.height를 텍스처에서 직접 읽어 이미 임의 캔버스 높이를 지원해 별도 처리 불필요, 렌더로 세 값 다 실측 확인. 지면은 tile_ground(숲 기본)를 그대로 채택 — tile_field2와 나란히 비교한 결과 tile_field2는 마른 흙길에 가까운 옅은 적갈색인데 tile_ground는 짙고 눅눅한 갈색에 둥근 뿌리/자갈 질감이라 목업의 진한 부엽토 색과 더 가까웠음. midground(기존 mid_tree_* 6종)는 그대로 유지 — nearStrip 자체가 이미 화면 양 옆을 거대한 둥치+수관으로 채우고 가운데만 비워두는 구성이라, 그 빈 가운데 통로에서 스치듯 지나가는 더 가까운 나무들이 시야를 막지 않으면서 깊이감을 더해줌(렌더 확인, 과도한 클러터 아님). 신규 장애물은 목업에 보이는 것 중 fallen_log·moss_rock 둘만(태스크 지시 — 울타리도 목업에 보이지만 이번 패스 범위 아님) waterfall 테마 항목 값 그대로 재사용(같은 에셋, 같은 판정, 재실측 불필요). 등불 이정표(forest_lantern_sign)와 숲 동물(forest_deer, 놀라는 행인 역할)은 그래픽 워커 납품 전 — optional glob으로 로딩 자리만 예약(PreloadScene), 실제 치수를 모르는 상태에서 obstacleVariants/애니메이션까지 추측해 넣지는 않음(납품 후 별도 태스크에서 알파 바운드 실측). 그 전까지 사람 NPC를 대신 넣지 않음(사용자 지시) — largeRock 풀에 놀라는 행인 항목이 없는 게 정상이며 의도적임. TASK-FOREST-ANIMALS-WIRE.md — forest_rabbit·forest_deer·forest_lantern_post 납품 후 largeRock 풀에 추가(각 항목 자신의 _note에 실측 근거). largeRock 풀 전체(기본 rock_l 2 + moss_rock 2 + fallen_log 2 + forest_rabbit 2 + forest_deer 2 + forest_lantern_post 2) 6갈래를 전부 동일 가중치 2로 맞춰 균등 배분.",
       "midgroundWeights": {
         "mid_tree_oak": 4,
         "mid_tree_big": 4,
@@ -1368,6 +1369,33 @@
             "bodyHeightPx": 27,
             "weight": 2,
             "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용 — 같은 에셋, 같은 판정이라 재실측 불필요. 목업에 쓰러진 통나무로 등장."
+          },
+          {
+            "skin": "forest_rabbit",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 20,
+            "weight": 2,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — 이 지역의 놀라는 행인 역할(사람 대신 동물, 사용자 지시). 프레임마다 높이가 23~48px로 크게 변해(웅크림→뒷다리로 섬) 기존 NPC 관례(idle 프레임0 실측)를 그대로 따름 — 가장 작은 프레임(0: 잉크 x12~43/y50~72, 폭32·높이23)으로 판정을 잡았다. 가장 큰 프레임(48px)으로 잡으면 웅크린 순간에도 큰 판정이 남아 억울하게 맞고, 가장 작은 프레임으로 잡으면 반대로 다 편 순간엔 판정이 시각보다 작아 관대해지기만 할 뿐 억울한 피격은 절대 없음 — 이 저장소의 관대함(GDD 3.2) 쪽으로 치우치는 선택. bodyWidthPx=floor(32*0.9)=28, bodyHeightPx=floor(23*0.9)=20. 실제로 달려서 너무 쉬운 장애물은 아닌지 확인(이 태스크 보고 참조) — 작은 게 의도이나 있으나 마나 하지 않음을 확인."
+          },
+          {
+            "skin": "forest_deer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 44,
+            "bodyHeightPx": 30,
+            "weight": 2,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — 토끼와 같은 이유로 idle 프레임0(잉크 x3~51/y39~72, 폭49·높이34) 채택 — 가장 작은(고개 숙인) 프레임, 다 편 프레임(70px)으로 잡으면 억울한 피격이 생김. bodyWidthPx=floor(49*0.9)=44, bodyHeightPx=floor(34*0.9)=30."
+          },
+          {
+            "skin": "forest_lantern_post",
+            "displayWidthPx": 46,
+            "displayHeightPx": 92,
+            "bodyWidthPx": 10,
+            "bodyHeightPx": 82,
+            "weight": 2,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — banner_pole(10x77, 기둥만)을 그대로 참고. 등불(팔 끝에 매달림)과 화살표 표지판(중간에 튀어나옴)은 기둥에서 옆으로 삐져나온 부속물이라, 폭까지 그 둘에 맞춰 넓히면 이미 큰 키(92px)와 겹쳐 banner_pole 때와 같은 이유로 과도하게 빡빡해진다고 판단 — 폭은 기둥 단면만(로컬 x12~19/20 구간, 측정폭 8~9px에 1px씩 여유 → bodyWidthPx=10) 채택하고, 등불·표지판까지 부딪히게 만들지 않기로 판단. 다만 세로로는 여전히 등불이 걸린 맨 위 가로대까지 넘어야 하므로 height는 줄이지 않음 — 잉크가 거의 캔버스 전체(y0~91)라 표준 10% 여유만 적용: bodyHeightPx=floor(92*0.9)=82. 128px 미만이라 GDD 3.3 규칙대로 largeRock(1단 점프) 유지, tree(이단점프) 아님."
           }
         ]
       },

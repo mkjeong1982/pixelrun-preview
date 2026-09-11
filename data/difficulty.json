@@ -4,13 +4,13 @@
   },
   "speed": {
     "start": 320,
-    "at300m": 400,
-    "at1000m": 470,
-    "max": 540,
+    "at300m": 430,
+    "at1000m": 515,
+    "max": 610,
     "segment1Curve": "easeOutQuad",
     "segment2Curve": "easeOutQuad",
     "after1000mCurve": "exponentialApproach",
-    "after1000mTauMeters": 800,
+    "after1000mTauMeters": 450,
     "tempoVariationRate": 0.06,
     "tempoVariationDurationMs": 2500,
     "tempoVariationCooldownMs": 12000
