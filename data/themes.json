@@ -1346,7 +1346,7 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "moss_rock",
+            "skin": "forest_boulder",
             "displayWidthPx": 44,
             "displayHeightPx": 39,
             "bodyWidthPx": 37,
@@ -1355,7 +1355,7 @@
             "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용 — 같은 에셋, 같은 판정이라 재실측 불필요. 목업에 이끼 낀 바위로 등장."
           },
           {
-            "skin": "fallen_log",
+            "skin": "forest_log",
             "displayWidthPx": 64,
             "displayHeightPx": 34,
             "bodyWidthPx": 55,
@@ -1396,6 +1396,10 @@
         "tree": 2,
         "largeRock": 4,
         "stump": 2
+      },
+      "obstacleSkins": {
+        "tree": "forest_deadtree",
+        "stump": "forest_stump"
       }
     },
     {
