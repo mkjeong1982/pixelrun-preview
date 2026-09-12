@@ -1403,6 +1403,103 @@
       }
     },
     {
+      "id": "forest2",
+      "displayTitle": "얕은 숲 2",
+      "lighting": "day",
+      "skyTint": "#2e5c4e",
+      "farMountainTint": "#37705e",
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_base",
+        "farMountains": "forest2_far",
+        "midStrip": "forest2_mid",
+        "nearStrip": "forest2_near",
+        "midground": [],
+        "foreground": [
+          "deco_grass"
+        ],
+        "ground": "tile_forest2"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "leaf",
+        "densityPerSec": 5
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_big": 4,
+        "mid_tree_maple": 3,
+        "mid_tree_poplar": 2,
+        "mid_pine_green": 3,
+        "mid_bush": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "forest_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2,
+            "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용 — 같은 에셋, 같은 판정이라 재실측 불필요. 목업에 이끼 낀 바위로 등장."
+          },
+          {
+            "skin": "forest_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2,
+            "_note": "TASK-STAGE11-REWIRE.md waterfall 테마 항목 그대로 재사용 — 같은 에셋, 같은 판정이라 재실측 불필요. 목업에 쓰러진 통나무로 등장."
+          },
+          {
+            "skin": "forest_rabbit",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 20,
+            "weight": 4,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — 이 지역의 놀라는 행인 역할(사람 대신 동물, 사용자 지시). 프레임마다 높이가 23~48px로 크게 변해(웅크림→뒷다리로 섬) 기존 NPC 관례(idle 프레임0 실측)를 그대로 따름 — 가장 작은 프레임(0: 잉크 x12~43/y50~72, 폭32·높이23)으로 판정을 잡았다. 가장 큰 프레임(48px)으로 잡으면 웅크린 순간에도 큰 판정이 남아 억울하게 맞고, 가장 작은 프레임으로 잡으면 반대로 다 편 순간엔 판정이 시각보다 작아 관대해지기만 할 뿐 억울한 피격은 절대 없음 — 이 저장소의 관대함(GDD 3.2) 쪽으로 치우치는 선택. bodyWidthPx=floor(32*0.9)=28, bodyHeightPx=floor(23*0.9)=20. 실제로 달려서 너무 쉬운 장애물은 아닌지 확인(이 태스크 보고 참조) — 작은 게 의도이나 있으나 마나 하지 않음을 확인."
+          },
+          {
+            "skin": "forest_deer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 44,
+            "bodyHeightPx": 30,
+            "weight": 4,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — 토끼와 같은 이유로 idle 프레임0(잉크 x3~51/y39~72, 폭49·높이34) 채택 — 가장 작은(고개 숙인) 프레임, 다 편 프레임(70px)으로 잡으면 억울한 피격이 생김. bodyWidthPx=floor(49*0.9)=44, bodyHeightPx=floor(34*0.9)=30."
+          },
+          {
+            "skin": "forest_lantern_post",
+            "displayWidthPx": 46,
+            "displayHeightPx": 92,
+            "bodyWidthPx": 10,
+            "bodyHeightPx": 82,
+            "weight": 2,
+            "_note": "TASK-FOREST-ANIMALS-WIRE.md — banner_pole(10x77, 기둥만)을 그대로 참고. 등불(팔 끝에 매달림)과 화살표 표지판(중간에 튀어나옴)은 기둥에서 옆으로 삐져나온 부속물이라, 폭까지 그 둘에 맞춰 넓히면 이미 큰 키(92px)와 겹쳐 banner_pole 때와 같은 이유로 과도하게 빡빡해진다고 판단 — 폭은 기둥 단면만(로컬 x12~19/20 구간, 측정폭 8~9px에 1px씩 여유 → bodyWidthPx=10) 채택하고, 등불·표지판까지 부딪히게 만들지 않기로 판단. 다만 세로로는 여전히 등불이 걸린 맨 위 가로대까지 넘어야 하므로 height는 줄이지 않음 — 잉크가 거의 캔버스 전체(y0~91)라 표준 10% 여유만 적용: bodyHeightPx=floor(92*0.9)=82. 128px 미만이라 GDD 3.3 규칙대로 largeRock(1단 점프) 유지, tree(이단점프) 아님."
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleSkins": {
+        "tree": "forest_deadtree",
+        "stump": "forest_stump"
+      },
+      "_note": "TASK-FOREST2-BG.md — stage 3-2. 같은 숲의 더 깊은 안쪽: 하늘이 안 보이고(수관 상단 94.9% 불투명) 공기가 차고 어둡다. far hue 167도/채도 55%/평균명도 73 로 forest(190도/21%/153)의 뿌연 흰 안개와 정반대다. 장애물 스킨은 forest 리톤본을 그대로 쓴다 — 배경이 더 어두워져서 가독성은 오히려 좋아진다."
+    },
+    {
       "id": "night",
       "displayTitle": "야경",
       "lighting": "night",
