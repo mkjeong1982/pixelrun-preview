@@ -2759,6 +2759,55 @@
           "yAbove": 88
         }
       ]
+    },
+    {
+      "id": "FOREST-D01",
+      "difficulty": 3,
+      "minDistance": 400,
+      "themeTags": ["forest"],
+      "safeExit": true,
+      "weight": 6,
+      "lengthPx": 2148,
+      "entrySafePx": 220,
+      "exitSafePx": 200,
+      "_note": "TASK-DJUMP-SOURCE.md — restores a genuine double-jump-forcing hazard after the forest rabbit's hop height was tuned down to 50px (no longer forces djump; that was the whole point). Uses width, not height, to force it: 'stump' has no forest obstacleVariants entry so it never gets reskinned as anything taller (unlike largeRock, which can roll forest_rabbit/forest_deer). Full speed-by-speed reach table, the RouteDirector dry-run validation, and the 20ms timing sweep are in md_docs/data-revisions.md.",
+      "obstacles": [
+        {
+          "type": "stump",
+          "x": 220,
+          "w": 34,
+          "h": 30
+        },
+        {
+          "type": "pit",
+          "x": 874,
+          "w": 420
+        },
+        {
+          "type": "stump",
+          "x": 1914,
+          "w": 34,
+          "h": 30
+        }
+      ],
+      "coins": [
+        {
+          "x": 930,
+          "yAbove": 140
+        },
+        {
+          "x": 1010,
+          "yAbove": 175
+        },
+        {
+          "x": 1090,
+          "yAbove": 175
+        },
+        {
+          "x": 1170,
+          "yAbove": 140
+        }
+      ]
     }
   ]
 }
