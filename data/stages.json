@@ -199,6 +199,7 @@
       "mapY": 250,
       "nameKey": "data.stage.3-2.name",
       "regionNameKey": "stagemap.region.forest",
+      "distanceMeters": 2500,
       "theme": "forest2"
     },
     {
