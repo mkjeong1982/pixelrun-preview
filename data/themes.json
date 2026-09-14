@@ -1503,11 +1503,11 @@
       "id": "forest3",
       "displayTitle": "중간 숲",
       "lighting": "night",
-      "skyTint": "#16324a",
+      "skyTint": "#2a1c3c",
       "farMountainTint": "#1d3f5c",
       "farMountainScale": 1.0,
       "layers": {
-        "sky": "sky_base",
+        "sky": "sky_forest3",
         "farMountains": "forest3_far",
         "midStrip": "forest3_mid",
         "nearStrip": "forest3_near",
