@@ -2017,6 +2017,221 @@
       "_note": "TASK-SWAMP-BG.md — stage 3-5. 늪지대: 지면 타일이 처음으로 3단(이끼 15행 / 흙 둑 / 물)이다. 맹수 눈 6쌍(노랑 4·빨강 2)과 반딧불 14개가 nearStrip 을 탄다. 눈은 화면 y 404~486 — 지면(533) 위 47~129px 로, 수풀 높이에 둔다(처음엔 149~357 에 둬서 '너무 공중에 뜬다'는 지적을 받았다). 붉은 눈은 노란 시트의 G·B 를 낮춘 색 변형이라 그림은 한 장이다. 하늘은 그라데이션만 — 달·별은 SkyDecor 가 그린다(스테이지16에서 달이 둘 나온 뒤 정한 규칙)."
     },
     {
+      "id": "swamp2",
+      "displayTitle": "깊은 숲 2",
+      "lighting": "night",
+      "skyTint": "#141f4a",
+      "farMountainTint": "#1c2c5e",
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_swamp2",
+        "farMountains": "swamp2_far",
+        "midStrip": "swamp2_mid",
+        "nearStrip": "swamp2_near",
+        "midground": [],
+        "foreground": [
+          "deco_grass"
+        ],
+        "ground": "tile_swamp2"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "leaf",
+        "densityPerSec": 2
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_big": 4,
+        "mid_tree_maple": 3,
+        "mid_tree_poplar": 2,
+        "mid_pine_green": 3,
+        "mid_bush": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "swamp_bear",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 26,
+            "weight": 4,
+            "_note": "TASK-SWAMP-BG.md — 이 지역의 놀라는 생물. 토끼·사슴과 같은 280x73 5프레임 규격이고 왼쪽(달려오는 공주 쪽)을 본다."
+          },
+          {
+            "skin": "forest_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2
+          },
+          {
+            "skin": "forest_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleSkins": {
+        "tree": "forest_deadtree",
+        "stump": "forest_stump"
+      },
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 50,
+          "y": 367,
+          "animationSeed": 2
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "forest4_owl_big",
+          "animation": "forest4-owl-big-blink",
+          "x": 152,
+          "y": 279,
+          "animationSeed": 5
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 170,
+          "y": 438,
+          "animationSeed": 8
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 180,
+          "y": 487,
+          "animationSeed": 11
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 291,
+          "y": 509,
+          "animationSeed": 14
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 412,
+          "y": 430,
+          "animationSeed": 17
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 533,
+          "y": 501,
+          "animationSeed": 20
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 654,
+          "y": 422,
+          "animationSeed": 23
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes_red",
+          "animation": "swamp-eyes-red-blink",
+          "x": 700,
+          "y": 515,
+          "animationSeed": 26
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 775,
+          "y": 493,
+          "animationSeed": 29
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 895,
+          "y": 414,
+          "animationSeed": 32
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1016,
+          "y": 485,
+          "animationSeed": 35
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1137,
+          "y": 406,
+          "animationSeed": 38
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 1240,
+          "y": 459,
+          "animationSeed": 41
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1258,
+          "y": 477,
+          "animationSeed": 44
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1379,
+          "y": 398,
+          "animationSeed": 47
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "forest3_owl",
+          "animation": "forest3-owl-blink",
+          "x": 1440,
+          "y": 284,
+          "animationSeed": 50
+        }
+      ],
+      "_note": "TASK-SWAMP2-BG.md — stage 3-6. 달빛 늪: 13~17 의 어두워지는 흐름을 뒤집어 세 배 밝다(상단 평균명도 23.2→69.2, 고유색 120,055→128,133). 지면이 흙이 아니라 물 위 통나무 잔교다 — 상판/기둥/수면 3단, 수면 표준편차 56.5·고유색 13,523. 부엉이 2·맹수 눈 3(눈은 지면 근처 화면 y 404~486)·반딧불 12 가 nearStrip 을 탄다. 하늘은 그라데이션만 — 달·별은 SkyDecor."
+    },
+    {
       "id": "night",
       "displayTitle": "야경",
       "lighting": "night",
