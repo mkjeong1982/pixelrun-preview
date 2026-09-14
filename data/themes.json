@@ -1778,6 +1778,245 @@
       "_note": "TASK-FOREST4-BG.md — stage 3-4. stage15 보다 한층 어둡고 질감이 단순하다: near 띠 평균명도 57→39, hue 184도(이끼 초록)→216도(달빛 파랑), flat 3.0%→20.2%(이번엔 하한 12%를 줬다 — 상한만 주면 점묘화가 온다). 부엉이 6마리를 큰(36x46)·중간(28x38, forest3_owl 재사용)·작은(18x24) 세 크기로 섞어 깊이감을 만들었다. 하늘은 초승달과 옅은 별이 든 별도 텍스처(sky_forest4) — skyTint 는 코드가 안 읽는 죽은 필드라 텍스처로 해야 한다."
     },
     {
+      "id": "swamp",
+      "displayTitle": "깊은 숲",
+      "lighting": "night",
+      "skyTint": "#080d1c",
+      "farMountainTint": "#101a33",
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_swamp",
+        "farMountains": "swamp_far",
+        "midStrip": "swamp_mid",
+        "nearStrip": "swamp_near",
+        "midground": [],
+        "foreground": [
+          "deco_grass"
+        ],
+        "ground": "tile_swamp"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "leaf",
+        "densityPerSec": 2
+      },
+      "midgroundWeights": {
+        "mid_tree_oak": 4,
+        "mid_tree_big": 4,
+        "mid_tree_maple": 3,
+        "mid_tree_poplar": 2,
+        "mid_pine_green": 3,
+        "mid_bush": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush2"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "swamp_bear",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 26,
+            "weight": 4,
+            "_note": "TASK-SWAMP-BG.md — 이 지역의 놀라는 생물. 토끼·사슴과 같은 280x73 5프레임 규격이고 왼쪽(달려오는 공주 쪽)을 본다."
+          },
+          {
+            "skin": "forest_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2
+          },
+          {
+            "skin": "forest_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleSkins": {
+        "tree": "forest_deadtree",
+        "stump": "forest_stump"
+      },
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 40,
+          "y": 340,
+          "animationSeed": 19
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes_red",
+          "animation": "swamp-eyes-red-blink",
+          "x": 110,
+          "y": 196,
+          "animationSeed": 1
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 145,
+          "y": 407,
+          "animationSeed": 21
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 250,
+          "y": 474,
+          "animationSeed": 23
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 326,
+          "y": 318,
+          "animationSeed": 4
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 355,
+          "y": 371,
+          "animationSeed": 25
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 460,
+          "y": 438,
+          "animationSeed": 27
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 542,
+          "y": 232,
+          "animationSeed": 7
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 565,
+          "y": 505,
+          "animationSeed": 29
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 670,
+          "y": 402,
+          "animationSeed": 31
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes_red",
+          "animation": "swamp-eyes-red-blink",
+          "x": 758,
+          "y": 404,
+          "animationSeed": 10
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 775,
+          "y": 469,
+          "animationSeed": 33
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 880,
+          "y": 366,
+          "animationSeed": 35
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 974,
+          "y": 268,
+          "animationSeed": 13
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 985,
+          "y": 433,
+          "animationSeed": 37
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1090,
+          "y": 500,
+          "animationSeed": 39
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_eyes",
+          "animation": "swamp-eyes-blink",
+          "x": 1190,
+          "y": 352,
+          "animationSeed": 16
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1195,
+          "y": 397,
+          "animationSeed": 41
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1300,
+          "y": 464,
+          "animationSeed": 43
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "swamp_firefly",
+          "animation": "swamp-firefly-glow",
+          "x": 1405,
+          "y": 361,
+          "animationSeed": 45
+        }
+      ],
+      "_note": "TASK-SWAMP-BG.md — stage 3-5. 늪지대: 지면 타일이 처음으로 3단(이끼 15행 / 흙 둑 / 물)이다. 맹수 눈 6쌍(노랑 4·빨강 2)과 반딧불 14개가 nearStrip 을 탄다. 붉은 눈은 노란 시트의 G·B 를 낮춘 색 변형이라 그림은 한 장이다. 하늘은 그라데이션만 — 달·별은 SkyDecor 가 그린다(스테이지16에서 달이 둘 나온 뒤 정한 규칙)."
+    },
+    {
       "id": "night",
       "displayTitle": "야경",
       "lighting": "night",
