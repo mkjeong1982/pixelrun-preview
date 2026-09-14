@@ -1866,7 +1866,7 @@
           "texture": "swamp_eyes_red",
           "animation": "swamp-eyes-red-blink",
           "x": 110,
-          "y": 196,
+          "y": 499,
           "animationSeed": 1
         },
         {
@@ -1890,7 +1890,7 @@
           "texture": "swamp_eyes",
           "animation": "swamp-eyes-blink",
           "x": 326,
-          "y": 318,
+          "y": 465,
           "animationSeed": 4
         },
         {
@@ -1914,7 +1914,7 @@
           "texture": "swamp_eyes",
           "animation": "swamp-eyes-blink",
           "x": 542,
-          "y": 232,
+          "y": 517,
           "animationSeed": 7
         },
         {
@@ -1938,7 +1938,7 @@
           "texture": "swamp_eyes_red",
           "animation": "swamp-eyes-red-blink",
           "x": 758,
-          "y": 404,
+          "y": 451,
           "animationSeed": 10
         },
         {
@@ -1962,7 +1962,7 @@
           "texture": "swamp_eyes",
           "animation": "swamp-eyes-blink",
           "x": 974,
-          "y": 268,
+          "y": 533,
           "animationSeed": 13
         },
         {
@@ -1986,7 +1986,7 @@
           "texture": "swamp_eyes",
           "animation": "swamp-eyes-blink",
           "x": 1190,
-          "y": 352,
+          "y": 483,
           "animationSeed": 16
         },
         {
@@ -2014,7 +2014,7 @@
           "animationSeed": 45
         }
       ],
-      "_note": "TASK-SWAMP-BG.md — stage 3-5. 늪지대: 지면 타일이 처음으로 3단(이끼 15행 / 흙 둑 / 물)이다. 맹수 눈 6쌍(노랑 4·빨강 2)과 반딧불 14개가 nearStrip 을 탄다. 붉은 눈은 노란 시트의 G·B 를 낮춘 색 변형이라 그림은 한 장이다. 하늘은 그라데이션만 — 달·별은 SkyDecor 가 그린다(스테이지16에서 달이 둘 나온 뒤 정한 규칙)."
+      "_note": "TASK-SWAMP-BG.md — stage 3-5. 늪지대: 지면 타일이 처음으로 3단(이끼 15행 / 흙 둑 / 물)이다. 맹수 눈 6쌍(노랑 4·빨강 2)과 반딧불 14개가 nearStrip 을 탄다. 눈은 화면 y 404~486 — 지면(533) 위 47~129px 로, 수풀 높이에 둔다(처음엔 149~357 에 둬서 '너무 공중에 뜬다'는 지적을 받았다). 붉은 눈은 노란 시트의 G·B 를 낮춘 색 변형이라 그림은 한 장이다. 하늘은 그라데이션만 — 달·별은 SkyDecor 가 그린다(스테이지16에서 달이 둘 나온 뒤 정한 규칙)."
     },
     {
       "id": "night",
