@@ -213,7 +213,8 @@
       "mapX": 847,
       "mapY": 402,
       "nameKey": "data.stage.3-3.name",
-      "regionNameKey": "stagemap.region.forest"
+      "regionNameKey": "stagemap.region.forest",
+      "theme": "forest3"
     },
     {
       "id": "3-4",
