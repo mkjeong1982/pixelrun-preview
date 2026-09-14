@@ -1599,15 +1599,15 @@
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 160,
-          "y": 302,
+          "x": 175,
+          "y": 328,
           "animationSeed": 2
         },
         {
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 604,
+          "x": 626,
           "y": 319,
           "animationSeed": 7
         },
@@ -1615,16 +1615,16 @@
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 1012,
-          "y": 181,
+          "x": 1007,
+          "y": 183,
           "animationSeed": 12
         },
         {
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 1292,
-          "y": 224,
+          "x": 1281,
+          "y": 245,
           "animationSeed": 17
         }
       ],
@@ -1730,48 +1730,48 @@
           "strip": "nearStrip",
           "texture": "forest4_owl_big",
           "animation": "forest4-owl-big-blink",
-          "x": 156,
-          "y": 260,
+          "x": 154,
+          "y": 263,
           "animationSeed": 1
         },
         {
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 501,
-          "y": 200,
+          "x": 560,
+          "y": 213,
           "animationSeed": 11
         },
         {
           "strip": "nearStrip",
           "texture": "forest4_owl_small",
           "animation": "forest4-owl-small-blink",
-          "x": 657,
-          "y": 265,
+          "x": 566,
+          "y": 228,
           "animationSeed": 21
         },
         {
           "strip": "nearStrip",
           "texture": "forest4_owl_big",
           "animation": "forest4-owl-big-blink",
-          "x": 942,
-          "y": 248,
+          "x": 946,
+          "y": 253,
           "animationSeed": 6
         },
         {
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 1245,
-          "y": 200,
+          "x": 1271,
+          "y": 139,
           "animationSeed": 16
         },
         {
           "strip": "nearStrip",
           "texture": "forest4_owl_small",
           "animation": "forest4-owl-small-blink",
-          "x": 1395,
-          "y": 253,
+          "x": 1364,
+          "y": 190,
           "animationSeed": 26
         }
       ],
@@ -2104,8 +2104,8 @@
           "strip": "nearStrip",
           "texture": "forest4_owl_big",
           "animation": "forest4-owl-big-blink",
-          "x": 152,
-          "y": 279,
+          "x": 322,
+          "y": 150,
           "animationSeed": 5
         },
         {
@@ -2224,8 +2224,8 @@
           "strip": "nearStrip",
           "texture": "forest3_owl",
           "animation": "forest3-owl-blink",
-          "x": 1440,
-          "y": 284,
+          "x": 1418,
+          "y": 337,
           "animationSeed": 50
         }
       ],
