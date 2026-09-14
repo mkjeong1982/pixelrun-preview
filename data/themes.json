@@ -1779,7 +1779,7 @@
     },
     {
       "id": "swamp",
-      "displayTitle": "깊은 숲",
+      "displayTitle": "늪지대",
       "lighting": "night",
       "skyTint": "#080d1c",
       "farMountainTint": "#101a33",
@@ -2018,7 +2018,7 @@
     },
     {
       "id": "swamp2",
-      "displayTitle": "깊은 숲 2",
+      "displayTitle": "늪지대 2",
       "lighting": "night",
       "skyTint": "#141f4a",
       "farMountainTint": "#1c2c5e",
