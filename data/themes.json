@@ -1389,6 +1389,14 @@
             "bodyHeightPx": 82,
             "weight": 2,
             "_note": "TASK-FOREST-ANIMALS-WIRE.md — banner_pole(10x77, 기둥만)을 그대로 참고. 등불(팔 끝에 매달림)과 화살표 표지판(중간에 튀어나옴)은 기둥에서 옆으로 삐져나온 부속물이라, 폭까지 그 둘에 맞춰 넓히면 이미 큰 키(92px)와 겹쳐 banner_pole 때와 같은 이유로 과도하게 빡빡해진다고 판단 — 폭은 기둥 단면만(로컬 x12~19/20 구간, 측정폭 8~9px에 1px씩 여유 → bodyWidthPx=10) 채택하고, 등불·표지판까지 부딪히게 만들지 않기로 판단. 다만 세로로는 여전히 등불이 걸린 맨 위 가로대까지 넘어야 하므로 height는 줄이지 않음 — 잉크가 거의 캔버스 전체(y0~91)라 표준 10% 여유만 적용: bodyHeightPx=floor(92*0.9)=82. 128px 미만이라 GDD 3.3 규칙대로 largeRock(1단 점프) 유지, tree(이단점프) 아님."
+          },
+          {
+            "skin": "forest_mushroom",
+            "displayWidthPx": 48,
+            "displayHeightPx": 44,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 32,
+            "weight": 3
           }
         ]
       },
@@ -1485,6 +1493,14 @@
             "bodyHeightPx": 82,
             "weight": 2,
             "_note": "TASK-FOREST-ANIMALS-WIRE.md — banner_pole(10x77, 기둥만)을 그대로 참고. 등불(팔 끝에 매달림)과 화살표 표지판(중간에 튀어나옴)은 기둥에서 옆으로 삐져나온 부속물이라, 폭까지 그 둘에 맞춰 넓히면 이미 큰 키(92px)와 겹쳐 banner_pole 때와 같은 이유로 과도하게 빡빡해진다고 판단 — 폭은 기둥 단면만(로컬 x12~19/20 구간, 측정폭 8~9px에 1px씩 여유 → bodyWidthPx=10) 채택하고, 등불·표지판까지 부딪히게 만들지 않기로 판단. 다만 세로로는 여전히 등불이 걸린 맨 위 가로대까지 넘어야 하므로 height는 줄이지 않음 — 잉크가 거의 캔버스 전체(y0~91)라 표준 10% 여유만 적용: bodyHeightPx=floor(92*0.9)=82. 128px 미만이라 GDD 3.3 규칙대로 largeRock(1단 점프) 유지, tree(이단점프) 아님."
+          },
+          {
+            "skin": "forest_mushroom",
+            "displayWidthPx": 48,
+            "displayHeightPx": 44,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 32,
+            "weight": 3
           }
         ]
       },
