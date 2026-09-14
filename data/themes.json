@@ -1849,7 +1849,7 @@
         "stump": 2
       },
       "obstacleSkins": {
-        "tree": "forest_deadtree",
+        "tree": "swamp_snag",
         "stump": "forest_stump"
       },
       "stripAccessories": [
@@ -2088,7 +2088,7 @@
         "stump": 2
       },
       "obstacleSkins": {
-        "tree": "forest_deadtree",
+        "tree": "swamp_snag",
         "stump": "forest_stump"
       },
       "stripAccessories": [
