@@ -2500,6 +2500,101 @@
           }
         ]
       }
+    },
+    {
+      "id": "icelake",
+      "displayTitle": "얼음호수",
+      "lighting": "day",
+      "snowTerrain": true,
+      "farMountainScale": 1.0,
+      "pitShadowTint": "#6f86a6",
+      "layers": {
+        "sky": "sky_icelake",
+        "farMountains": "icelake_far",
+        "midStrip": "icelake_mid",
+        "nearStrip": "icelake_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_icelake"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "midgroundWeights": {
+        "mid_pine_green": 5,
+        "mid_pine": 4
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "icelake_pillar",
+        "stump": "snow_stump",
+        "largeRock": "snow_boulder",
+        "smallRock": "snow_iceblock"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "icelake_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 45,
+            "weight": 5,
+            "_note": "TASK-ICELAKE-BG.md — 얼음으로 깎은 백조상(사용자 지시 '얼음 조각상도 장애물로 추가해줘'). 판정은 snow_boulder 비율(폭 x0.84 / 높이 x0.72)을 따랐다 — 생물 시트의 x0.9 규칙은 프레임마다 자세가 변하는 경우의 것이고, 이건 고정 형태라 관대함(GDD 3.2)을 어디에 둘지가 기준이다. 백조의 가는 목이 위쪽 17px 를 차지하는데 거기에 판정을 주면 목만 스쳐도 맞는다 — 몸통과 받침에만 판정이 걸리도록 높이를 45 로 잡았다."
+          },
+          {
+            "skin": "snow_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 3
+          },
+          {
+            "skin": "snow_iceblock",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 2
+          },
+          {
+            "skin": "snow_fox",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 21,
+            "weight": 4,
+            "_note": "TASK-SNOW-FOX-V2.md — 이 지역의 두 번째 놀라는 생물(사용자 지시로 설원 평야 1·2 양쪽). 사용자가 '더 작고 하얀털의 귀여운 디자인'으로 재작화를 지시해 v1(웅크린 잉크 51x32)보다 작아졌다 — 웅크린 프레임 잉크가 x9~46/y49~72 로 38x24 다. 프레임마다 높이가 24~52px 로 크게 변해(자다가 수직 파운스) forest_rabbit 전례대로 가장 작은(웅크린) 프레임으로 판정을 잡는다 — 큰 프레임으로 잡으면 자는 순간에도 큰 판정이 남아 억울하게 맞고, 작은 쪽으로 잡으면 다 편 순간 판정이 시각보다 작아 관대해지기만 한다(GDD 3.2). bodyWidthPx=floor(38*0.9)=34, bodyHeightPx=floor(24*0.9)=21. 에셋이 작아지면 이 값도 반드시 같이 줄여야 판정만 옛 크기로 남지 않는다."
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "snow_iceblock",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 3
+          },
+          {
+            "skin": "snow_rock_s",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 2
+          }
+        ]
+      }
     }
   ],
   "backlog": {
