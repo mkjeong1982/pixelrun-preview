@@ -2293,6 +2293,7 @@
       "skyTint": "#cfe6ff",
       "farMountainTint": "#bcd4e8",
       "farMountainScale": 1.0,
+      "pitShadowTint": "#414d5e",
       "layers": {
         "sky": "sky_snow",
         "farMountains": "snow_far",
