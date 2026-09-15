@@ -2317,8 +2317,8 @@
         "fever": "bgm_rush2"
       },
       "obstacleSkins": {
-        "tree": "forest_deadtree",
-        "stump": "forest_stump"
+        "tree": "snow_deadtree",
+        "stump": "snow_stump"
       },
       "obstacleBaseWeights": {
         "tree": 2,
@@ -2336,7 +2336,7 @@
             "weight": 5
           },
           {
-            "skin": "forest_boulder",
+            "skin": "snow_boulder",
             "displayWidthPx": 44,
             "displayHeightPx": 39,
             "bodyWidthPx": 37,
@@ -2344,7 +2344,7 @@
             "weight": 2
           },
           {
-            "skin": "forest_log",
+            "skin": "snow_log",
             "displayWidthPx": 64,
             "displayHeightPx": 34,
             "bodyWidthPx": 55,
