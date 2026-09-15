@@ -2319,7 +2319,7 @@
         "fever": "bgm_rush2"
       },
       "obstacleSkins": {
-        "tree": "snow_deadtree",
+        "tree": "snow_fir",
         "stump": "snow_stump"
       },
       "obstacleBaseWeights": {
@@ -2352,6 +2352,14 @@
             "bodyWidthPx": 55,
             "bodyHeightPx": 27,
             "weight": 2
+          },
+          {
+            "skin": "snow_reindeer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 44,
+            "weight": 4
           }
         ]
       }
