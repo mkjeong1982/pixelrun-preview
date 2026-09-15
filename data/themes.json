@@ -2321,7 +2321,8 @@
       "obstacleSkins": {
         "tree": "snow_fir",
         "stump": "snow_stump",
-        "largeRock": "snow_boulder"
+        "largeRock": "snow_boulder",
+        "smallRock": "snow_boulder"
       },
       "obstacleBaseWeights": {
         "tree": 2,
@@ -2361,6 +2362,16 @@
             "bodyWidthPx": 40,
             "bodyHeightPx": 44,
             "weight": 4
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "snow_boulder",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 1
           }
         ]
       }
