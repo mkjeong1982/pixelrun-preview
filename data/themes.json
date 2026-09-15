@@ -1418,7 +1418,7 @@
       "farMountainTint": "#37705e",
       "farMountainScale": 1.0,
       "layers": {
-        "sky": "sky_base",
+        "sky": "sky_forest2",
         "farMountains": "forest2_far",
         "midStrip": "forest2_mid",
         "nearStrip": "forest2_near",
