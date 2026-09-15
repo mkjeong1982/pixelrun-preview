@@ -2289,6 +2289,7 @@
       "id": "snow",
       "displayTitle": "설원 평야",
       "lighting": "day",
+      "snowTerrain": true,
       "skyTint": "#cfe6ff",
       "farMountainTint": "#bcd4e8",
       "farMountainScale": 1.0,
