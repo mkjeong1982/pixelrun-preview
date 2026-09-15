@@ -269,7 +269,8 @@
       "mapX": 1050,
       "mapY": 787,
       "nameKey": "data.stage.4-1.name",
-      "regionNameKey": "stagemap.region.snow"
+      "regionNameKey": "stagemap.region.snow",
+      "theme": "snow"
     },
     {
       "id": "4-2",
