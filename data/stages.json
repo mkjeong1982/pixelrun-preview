@@ -283,7 +283,8 @@
       "mapX": 1149,
       "mapY": 706,
       "nameKey": "data.stage.4-2.name",
-      "regionNameKey": "stagemap.region.snow"
+      "regionNameKey": "stagemap.region.snow",
+      "theme": "snow2"
     },
     {
       "id": "4-3",
