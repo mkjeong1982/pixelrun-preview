@@ -2542,13 +2542,13 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "icelake_crystal",
-            "displayWidthPx": 48,
-            "displayHeightPx": 62,
-            "bodyWidthPx": 40,
-            "bodyHeightPx": 45,
+            "skin": "icelake_wall",
+            "displayWidthPx": 56,
+            "displayHeightPx": 52,
+            "bodyWidthPx": 47,
+            "bodyHeightPx": 44,
             "weight": 5,
-            "_note": "TASK-ICELAKE-OBST-V2.md — 백조상을 수정 조각으로 교체(사용자 지시). 판정은 그대로 40x45 다. 형태 종류가 같아서다: 낮고 넓은 밑동에 위로 갈수록 가늘어지는 끝. 잉크는 48x60(x0~46/y2~61)이고 snow_boulder 비율(폭 x0.84 / 높이 x0.72)을 따른다 — 생물 시트의 x0.9 는 자세가 변하는 경우의 규칙이다. 가운데 결정 끝 17px 에는 판정을 주지 않는다. 백조 목에 판정을 안 준 것과 같은 이유로, 가늘어지는 꼭대기만 스쳐도 맞으면 눈으로 넘긴 판정이 억울해진다."
+            "_note": "TASK-ICELAKE-WALL.md — 수정 조각을 네모난 얼음벽으로 교체(사용자: 수정 장애물은 수정왕국에서 쓴다). 판정 비율을 다른 largeRock 변종과 다르게 잡았다: 폭은 관례대로 x0.84(=47)지만 높이는 x0.72 가 아니라 **x0.85(=44)** 다. x0.72 는 백조 목·결정 끝처럼 **위로 갈수록 가늘어지는** 형태를 위한 값이고, 이건 윗면이 평평한 벽이라 그 관대함을 주면 꼭대기 15px 를 뚫고 지나가는 게 눈에 보인다. 15% 축소는 GDD 3.2 의 10~20% 범위 안이다."
           },
           {
             "skin": "snow_boulder",
