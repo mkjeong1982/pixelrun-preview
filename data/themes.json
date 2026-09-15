@@ -554,7 +554,7 @@
         "smallRock": "wall_rubble_s",
         "largeRock": "wall_rubble_l",
         "stump": "wall_barrel",
-        "tree": "wall_turret"
+        "tree": "outskirts_tower"
       },
       "obstacleVariants": {
         "largeRock": [
