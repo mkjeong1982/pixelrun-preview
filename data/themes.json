@@ -2293,7 +2293,7 @@
       "skyTint": "#cfe6ff",
       "farMountainTint": "#bcd4e8",
       "farMountainScale": 1.0,
-      "pitShadowTint": "#414d5e",
+      "pitShadowTint": "#7b8598",
       "layers": {
         "sky": "sky_snow",
         "farMountains": "snow_far",
@@ -2320,7 +2320,8 @@
       },
       "obstacleSkins": {
         "tree": "snow_fir",
-        "stump": "snow_stump"
+        "stump": "snow_stump",
+        "largeRock": "snow_boulder"
       },
       "obstacleBaseWeights": {
         "tree": 2,
