@@ -175,5 +175,37 @@
     },
     "previewSheet": "dress_crystal",
     "thumbFrame": 5
+  },
+  {
+    "id": "skin_blackswan",
+    "tier": "paid",
+    "blessing": null,
+    "runSheet": "princess_blackswan_run",
+    "displayName": "블랙스완",
+    "nameKey": "data.skin.skin_blackswan.name",
+    "iconKey": "icon_skin_blackswan",
+    "rankAvatarFrame": 4,
+    "rarity": "epic",
+    "description": "우아한 척하지만 질주하면 깃털이 마구 휘날려요!",
+    "descKey": "data.skin.skin_blackswan.desc",
+    "priceCoins": null,
+    "priceCash": {
+      "KRW": 2900,
+      "USD": 1.99,
+      "JPY": 300
+    },
+    "stats": {
+      "hearts": 4,
+      "coinBonusPercent": null,
+      "coinBonusCondition": null,
+      "feverBonusSeconds": 3,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
+      "speedBonusPercent": null,
+      "blessingKey": "data.skin.skin_blackswan.blessing"
+    },
+    "previewSheet": "dress_blackswan",
+    "thumbFrame": 6
   }
 ]
