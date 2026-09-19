@@ -26,7 +26,7 @@
   },
   "fever": {
     "distanceChargePctPerMeter": 0.041,
-    "coinChargePct": 0.355,
+    "coinChargePct": 0.321,
     "nearMissChargePct": 4.7,
     "durationSec": 6.0,
     "speedBonusPct": 20,
