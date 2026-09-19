@@ -92,15 +92,15 @@
         },
         {
           "x": 185,
-          "yAbove": 36
+          "yAbove": 69
         },
         {
           "x": 300,
-          "yAbove": 36
+          "yAbove": 155
         },
         {
           "x": 335,
-          "yAbove": 36
+          "yAbove": 147
         }
       ]
     },
@@ -133,15 +133,15 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 70
+          "yAbove": 139
         },
         {
           "x": 285,
-          "yAbove": 84
+          "yAbove": 153
         },
         {
           "x": 320,
-          "yAbove": 70
+          "yAbove": 152
         }
       ]
     },
@@ -181,11 +181,11 @@
       "coins": [
         {
           "x": 260,
-          "yAbove": 40
+          "yAbove": 152
         },
         {
           "x": 388,
-          "yAbove": 40
+          "yAbove": 79
         }
       ]
     },
@@ -266,11 +266,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 110
+          "yAbove": 154
         },
         {
           "x": 335,
-          "yAbove": 120
+          "yAbove": 151
         }
       ]
     },
@@ -304,11 +304,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 165
+          "yAbove": 146
         },
         {
           "x": 290,
-          "yAbove": 165
+          "yAbove": 146
         }
       ]
     },
@@ -345,11 +345,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 70
+          "yAbove": 139
         },
         {
           "x": 350,
-          "yAbove": 70
+          "yAbove": 138
         }
       ]
     },
@@ -389,11 +389,11 @@
       "coins": [
         {
           "x": 270,
-          "yAbove": 40
+          "yAbove": 154
         },
         {
           "x": 400,
-          "yAbove": 110
+          "yAbove": 66
         }
       ]
     },
@@ -428,11 +428,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 90
+          "yAbove": 77
         },
         {
           "x": 330,
-          "yAbove": 50
+          "yAbove": 152
         }
       ]
     },
@@ -468,11 +468,11 @@
       "coins": [
         {
           "x": 330,
-          "yAbove": 110
+          "yAbove": 139
         },
         {
           "x": 365,
-          "yAbove": 120
+          "yAbove": 153
         }
       ]
     },
@@ -512,11 +512,11 @@
       "coins": [
         {
           "x": 240,
-          "yAbove": 165
+          "yAbove": 146
         },
         {
           "x": 320,
-          "yAbove": 40
+          "yAbove": 155
         }
       ]
     },
@@ -549,11 +549,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 90
+          "yAbove": 152
         },
         {
           "x": 360,
-          "yAbove": 100
+          "yAbove": 144
         },
         {
           "x": 420,
@@ -598,11 +598,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 100
+          "yAbove": 62
         },
         {
           "x": 340,
-          "yAbove": 90
+          "yAbove": 152
         }
       ]
     },
@@ -638,7 +638,7 @@
       "coins": [
         {
           "x": 350,
-          "yAbove": 110
+          "yAbove": 154
         }
       ]
     },
@@ -672,15 +672,15 @@
       "coins": [
         {
           "x": 240,
-          "yAbove": 165
+          "yAbove": 146
         },
         {
           "x": 330,
-          "yAbove": 60
+          "yAbove": 154
         },
         {
           "x": 420,
-          "yAbove": 165
+          "yAbove": 146
         }
       ]
     },
@@ -724,11 +724,11 @@
       "coins": [
         {
           "x": 260,
-          "yAbove": 70
+          "yAbove": 139
         },
         {
           "x": 360,
-          "yAbove": 70
+          "yAbove": 138
         }
       ]
     },
@@ -767,11 +767,11 @@
       "coins": [
         {
           "x": 320,
-          "yAbove": 110
+          "yAbove": 152
         },
         {
           "x": 440,
-          "yAbove": 80
+          "yAbove": 90
         }
       ]
     },
@@ -803,15 +803,15 @@
       "coins": [
         {
           "x": 260,
-          "yAbove": 165
+          "yAbove": 146
         },
         {
           "x": 480,
-          "yAbove": 100
+          "yAbove": 152
         },
         {
           "x": 540,
-          "yAbove": 100
+          "yAbove": 144
         }
       ]
     },
@@ -851,11 +851,11 @@
       "coins": [
         {
           "x": 360,
-          "yAbove": 100
+          "yAbove": 152
         },
         {
           "x": 480,
-          "yAbove": 60
+          "yAbove": 152
         }
       ]
     },
@@ -989,11 +989,11 @@
       "coins": [
         {
           "x": 268,
-          "yAbove": 70
+          "yAbove": 154
         },
         {
           "x": 300,
-          "yAbove": 70
+          "yAbove": 152
         }
       ]
     },
@@ -1028,11 +1028,11 @@
       "coins": [
         {
           "x": 180,
-          "yAbove": 80
+          "yAbove": 77
         },
         {
           "x": 320,
-          "yAbove": 50
+          "yAbove": 149
         }
       ]
     },
@@ -1073,11 +1073,11 @@
       "coins": [
         {
           "x": 292,
-          "yAbove": 75
+          "yAbove": 154
         },
         {
           "x": 448,
-          "yAbove": 55
+          "yAbove": 155
         }
       ]
     },
@@ -1118,11 +1118,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 95
+          "yAbove": 77
         },
         {
           "x": 330,
-          "yAbove": 85
+          "yAbove": 152
         }
       ]
     },
@@ -1154,11 +1154,11 @@
       "coins": [
         {
           "x": 278,
-          "yAbove": 70
+          "yAbove": 154
         },
         {
           "x": 320,
-          "yAbove": 50
+          "yAbove": 149
         }
       ]
     },
@@ -1185,11 +1185,11 @@
       "coins": [
         {
           "x": 142,
-          "yAbove": 40
+          "yAbove": 49
         },
         {
           "x": 270,
-          "yAbove": 48
+          "yAbove": 155
         }
       ]
     },
@@ -1216,11 +1216,11 @@
       "coins": [
         {
           "x": 255,
-          "yAbove": 62
+          "yAbove": 154
         },
         {
           "x": 295,
-          "yAbove": 48
+          "yAbove": 149
         }
       ]
     },
@@ -1279,11 +1279,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 76
+          "yAbove": 153
         },
         {
           "x": 292,
-          "yAbove": 54
+          "yAbove": 150
         }
       ]
     },
@@ -1310,15 +1310,15 @@
       "coins": [
         {
           "x": 180,
-          "yAbove": 82
+          "yAbove": 102
         },
         {
           "x": 228,
-          "yAbove": 92
+          "yAbove": 143
         },
         {
           "x": 276,
-          "yAbove": 72
+          "yAbove": 154
         }
       ]
     },
@@ -1373,11 +1373,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 164
+          "yAbove": 146
         },
         {
           "x": 246,
-          "yAbove": 164
+          "yAbove": 147
         }
       ]
     },
@@ -1404,11 +1404,11 @@
       "coins": [
         {
           "x": 258,
-          "yAbove": 84
+          "yAbove": 154
         },
         {
           "x": 302,
-          "yAbove": 56
+          "yAbove": 148
         }
       ]
     },
@@ -1435,11 +1435,11 @@
       "coins": [
         {
           "x": 275,
-          "yAbove": 78
+          "yAbove": 153
         },
         {
           "x": 320,
-          "yAbove": 50
+          "yAbove": 149
         }
       ]
     },
@@ -1494,11 +1494,11 @@
       "coins": [
         {
           "x": 286,
-          "yAbove": 88
+          "yAbove": 154
         },
         {
           "x": 334,
-          "yAbove": 58
+          "yAbove": 147
         }
       ]
     },
@@ -1525,11 +1525,11 @@
       "coins": [
         {
           "x": 220,
-          "yAbove": 166
+          "yAbove": 146
         },
         {
           "x": 270,
-          "yAbove": 166
+          "yAbove": 149
         }
       ]
     },
@@ -1555,15 +1555,15 @@
       "coins": [
         {
           "x": 220,
-          "yAbove": 68
+          "yAbove": 135
         },
         {
           "x": 255,
-          "yAbove": 82
+          "yAbove": 152
         },
         {
           "x": 290,
-          "yAbove": 68
+          "yAbove": 153
         }
       ]
     },
@@ -1589,15 +1589,15 @@
       "coins": [
         {
           "x": 235,
-          "yAbove": 72
+          "yAbove": 135
         },
         {
           "x": 285,
-          "yAbove": 90
+          "yAbove": 155
         },
         {
           "x": 335,
-          "yAbove": 72
+          "yAbove": 141
         }
       ]
     },
@@ -1629,15 +1629,15 @@
       "coins": [
         {
           "x": 815,
-          "yAbove": 68
+          "yAbove": 134
         },
         {
           "x": 857,
-          "yAbove": 82
+          "yAbove": 153
         },
         {
           "x": 899,
-          "yAbove": 68
+          "yAbove": 150
         }
       ]
     },
@@ -1663,15 +1663,15 @@
       "coins": [
         {
           "x": 255,
-          "yAbove": 78
+          "yAbove": 142
         },
         {
           "x": 330,
-          "yAbove": 96
+          "yAbove": 149
         },
         {
           "x": 405,
-          "yAbove": 78
+          "yAbove": 83
         }
       ]
     },
@@ -1698,11 +1698,11 @@
       "coins": [
         {
           "x": 142,
-          "yAbove": 40
+          "yAbove": 49
         },
         {
           "x": 270,
-          "yAbove": 48
+          "yAbove": 155
         }
       ]
     },
@@ -1729,11 +1729,11 @@
       "coins": [
         {
           "x": 255,
-          "yAbove": 62
+          "yAbove": 154
         },
         {
           "x": 295,
-          "yAbove": 48
+          "yAbove": 149
         }
       ]
     },
@@ -1792,11 +1792,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 76
+          "yAbove": 153
         },
         {
           "x": 292,
-          "yAbove": 54
+          "yAbove": 150
         }
       ]
     },
@@ -1823,15 +1823,15 @@
       "coins": [
         {
           "x": 180,
-          "yAbove": 82
+          "yAbove": 102
         },
         {
           "x": 228,
-          "yAbove": 92
+          "yAbove": 143
         },
         {
           "x": 276,
-          "yAbove": 72
+          "yAbove": 154
         }
       ]
     },
@@ -1857,11 +1857,11 @@
       "coins": [
         {
           "x": 220,
-          "yAbove": 66
+          "yAbove": 135
         },
         {
           "x": 265,
-          "yAbove": 66
+          "yAbove": 154
         }
       ]
     },
@@ -1888,11 +1888,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 164
+          "yAbove": 146
         },
         {
           "x": 246,
-          "yAbove": 164
+          "yAbove": 147
         }
       ]
     },
@@ -1924,7 +1924,7 @@
         },
         {
           "x": 280,
-          "yAbove": 40
+          "yAbove": 155
         }
       ]
     },
@@ -1954,11 +1954,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 70
+          "yAbove": 139
         },
         {
           "x": 360,
-          "yAbove": 70
+          "yAbove": 131
         }
       ]
     },
@@ -1990,15 +1990,15 @@
       "coins": [
         {
           "x": 815,
-          "yAbove": 68
+          "yAbove": 134
         },
         {
           "x": 857,
-          "yAbove": 82
+          "yAbove": 153
         },
         {
           "x": 899,
-          "yAbove": 68
+          "yAbove": 150
         }
       ]
     },
@@ -2025,11 +2025,11 @@
       "coins": [
         {
           "x": 220,
-          "yAbove": 166
+          "yAbove": 146
         },
         {
           "x": 270,
-          "yAbove": 166
+          "yAbove": 149
         }
       ]
     },
@@ -2056,11 +2056,11 @@
       "coins": [
         {
           "x": 286,
-          "yAbove": 88
+          "yAbove": 154
         },
         {
           "x": 334,
-          "yAbove": 58
+          "yAbove": 147
         }
       ]
     },
@@ -2086,15 +2086,15 @@
       "coins": [
         {
           "x": 255,
-          "yAbove": 78
+          "yAbove": 142
         },
         {
           "x": 330,
-          "yAbove": 96
+          "yAbove": 149
         },
         {
           "x": 405,
-          "yAbove": 78
+          "yAbove": 83
         }
       ]
     },
@@ -2126,11 +2126,11 @@
       "coins": [
         {
           "x": 150,
-          "yAbove": 40
+          "yAbove": 45
         },
         {
           "x": 300,
-          "yAbove": 50
+          "yAbove": 152
         }
       ]
     },
@@ -2162,11 +2162,11 @@
       "coins": [
         {
           "x": 270,
-          "yAbove": 60
+          "yAbove": 154
         },
         {
           "x": 320,
-          "yAbove": 46
+          "yAbove": 144
         }
       ]
     },
@@ -2235,11 +2235,11 @@
       "coins": [
         {
           "x": 270,
-          "yAbove": 76
+          "yAbove": 152
         },
         {
           "x": 310,
-          "yAbove": 54
+          "yAbove": 152
         }
       ]
     },
@@ -2270,11 +2270,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 60
+          "yAbove": 144
         },
         {
           "x": 290,
-          "yAbove": 60
+          "yAbove": 155
         }
       ]
     },
@@ -2312,11 +2312,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 50
+          "yAbove": 154
         },
         {
           "x": 690,
-          "yAbove": 48
+          "yAbove": 154
         }
       ]
     },
@@ -2348,15 +2348,15 @@
       "coins": [
         {
           "x": 190,
-          "yAbove": 80
+          "yAbove": 77
         },
         {
           "x": 270,
-          "yAbove": 92
+          "yAbove": 149
         },
         {
           "x": 330,
-          "yAbove": 80
+          "yAbove": 149
         }
       ]
     },
@@ -2388,11 +2388,11 @@
       "coins": [
         {
           "x": 220,
-          "yAbove": 164
+          "yAbove": 146
         },
         {
           "x": 266,
-          "yAbove": 164
+          "yAbove": 147
         }
       ]
     },
@@ -2427,11 +2427,11 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 60
+          "yAbove": 139
         },
         {
           "x": 350,
-          "yAbove": 60
+          "yAbove": 138
         }
       ]
     },
@@ -2463,11 +2463,11 @@
       "coins": [
         {
           "x": 290,
-          "yAbove": 78
+          "yAbove": 152
         },
         {
           "x": 330,
-          "yAbove": 54
+          "yAbove": 152
         }
       ]
     },
@@ -2504,11 +2504,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 50
+          "yAbove": 154
         },
         {
           "x": 760,
-          "yAbove": 90
+          "yAbove": 151
         }
       ]
     },
@@ -2546,11 +2546,11 @@
       "coins": [
         {
           "x": 200,
-          "yAbove": 80
+          "yAbove": 77
         },
         {
           "x": 680,
-          "yAbove": 60
+          "yAbove": 69
         }
       ]
     },
@@ -2582,11 +2582,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 80
+          "yAbove": 152
         },
         {
           "x": 340,
-          "yAbove": 56
+          "yAbove": 152
         }
       ]
     },
@@ -2617,11 +2617,11 @@
       "coins": [
         {
           "x": 280,
-          "yAbove": 96
+          "yAbove": 144
         },
         {
           "x": 420,
-          "yAbove": 110
+          "yAbove": 90
         },
         {
           "x": 540,
@@ -2663,15 +2663,15 @@
       "coins": [
         {
           "x": 250,
-          "yAbove": 164
+          "yAbove": 146
         },
         {
           "x": 296,
-          "yAbove": 164
+          "yAbove": 147
         },
         {
           "x": 830,
-          "yAbove": 78
+          "yAbove": 144
         }
       ]
     },
@@ -2702,11 +2702,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 110
+          "yAbove": 149
         },
         {
           "x": 420,
-          "yAbove": 130
+          "yAbove": 102
         },
         {
           "x": 560,
@@ -2752,11 +2752,11 @@
       "coins": [
         {
           "x": 300,
-          "yAbove": 80
+          "yAbove": 149
         },
         {
           "x": 850,
-          "yAbove": 88
+          "yAbove": 153
         }
       ]
     },
@@ -2764,7 +2764,9 @@
       "id": "FOREST-D01",
       "difficulty": 3,
       "minDistance": 400,
-      "themeTags": ["forest"],
+      "themeTags": [
+        "forest"
+      ],
       "safeExit": true,
       "weight": 6,
       "lengthPx": 2148,
@@ -2793,15 +2795,15 @@
       "coins": [
         {
           "x": 930,
-          "yAbove": 140
+          "yAbove": 151
         },
         {
           "x": 1010,
-          "yAbove": 175
+          "yAbove": 134
         },
         {
           "x": 1090,
-          "yAbove": 175
+          "yAbove": 50
         },
         {
           "x": 1170,
