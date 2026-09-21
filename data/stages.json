@@ -325,7 +325,8 @@
       "mapX": 1160,
       "mapY": 315,
       "nameKey": "data.stage.4-5.name",
-      "regionNameKey": "stagemap.region.snow"
+      "regionNameKey": "stagemap.region.snow",
+      "theme": "stormpass"
     },
     {
       "id": "4-6",

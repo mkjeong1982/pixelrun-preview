@@ -2511,14 +2511,6 @@
             "bodyHeightPx": 21,
             "weight": 4,
             "_note": "TASK-SNOW-FOX-V2.md — 이 지역의 두 번째 놀라는 생물(사용자 지시로 설원 평야 1·2 양쪽). 사용자가 '더 작고 하얀털의 귀여운 디자인'으로 재작화를 지시해 v1(웅크린 잉크 51x32)보다 작아졌다 — 웅크린 프레임 잉크가 x9~46/y49~72 로 38x24 다. 프레임마다 높이가 24~52px 로 크게 변해(자다가 수직 파운스) forest_rabbit 전례대로 가장 작은(웅크린) 프레임으로 판정을 잡는다 — 큰 프레임으로 잡으면 자는 순간에도 큰 판정이 남아 억울하게 맞고, 작은 쪽으로 잡으면 다 편 순간 판정이 시각보다 작아 관대해지기만 한다(GDD 3.2). bodyWidthPx=floor(38*0.9)=34, bodyHeightPx=floor(24*0.9)=21. 에셋이 작아지면 이 값도 반드시 같이 줄여야 판정만 옛 크기로 남지 않는다."
-          },
-          {
-            "skin": "snow_yeti",
-            "displayWidthPx": 72,
-            "displayHeightPx": 96,
-            "bodyWidthPx": 54,
-            "bodyHeightPx": 58,
-            "weight": 3
           }
         ],
         "smallRock": [
@@ -2727,6 +2719,121 @@
             "bodyWidthPx": 28,
             "bodyHeightPx": 22,
             "weight": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "stormpass",
+      "displayTitle": "눈보라 고개",
+      "lighting": "day",
+      "snowTerrain": true,
+      "skyTint": "#d6ecff",
+      "farMountainTint": "#c4d9ec",
+      "farMountainScale": 1.0,
+      "pitShadowTint": "#7b8598",
+      "layers": {
+        "sky": "sky_stormpass",
+        "farMountains": "stormpass_far",
+        "midStrip": "stormpass_mid",
+        "nearStrip": "stormpass_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_snow"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "snow",
+        "densityPerSec": 10
+      },
+      "midgroundWeights": {
+        "mid_pine_green": 5,
+        "mid_pine": 4
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "snow_fir",
+        "stump": "snow_stump",
+        "largeRock": "snow_boulder",
+        "smallRock": "snow_rock_s"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "snow_snowman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 46,
+            "weight": 5
+          },
+          {
+            "skin": "snow_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2
+          },
+          {
+            "skin": "snow_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2
+          },
+          {
+            "skin": "snow_reindeer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 44,
+            "weight": 4
+          },
+          {
+            "skin": "snow_fox",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 21,
+            "weight": 4
+          },
+          {
+            "skin": "snow_yeti",
+            "displayWidthPx": 72,
+            "displayHeightPx": 96,
+            "bodyWidthPx": 54,
+            "bodyHeightPx": 58,
+            "weight": 3
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "snow_rock_s",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 3
+          },
+          {
+            "skin": "snow_iceblock",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 3
           }
         ]
       }
