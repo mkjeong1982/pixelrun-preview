@@ -23,6 +23,17 @@
     { "rank": 19, "name": "핑크토끼", "score": 6540, "skinId": "skin_classic" },
     { "rank": 20, "name": "스피드릴리", "score": 6520, "skinId": "skin_classic" }
   ],
+  "friends": [
+    { "rank": 1, "name": "뭉게구름", "score": 12800, "skinId": "skin_p2_aurora" },
+    { "rank": 2, "name": "달빛솜사탕", "score": 11200, "skinId": "skin_crystal" },
+    { "rank": 3, "name": "새콤레몬", "score": 9600, "skinId": "skin_royalviolet" },
+    { "rank": 4, "name": "하늘다람쥐", "score": 8100, "skinId": "skin_blackswan" },
+    { "rank": 5, "name": "MK Princess", "score": 7400, "skinId": "skin_classic" },
+    { "rank": 6, "name": "초코브라우니", "score": 6900, "skinId": "skin_starlight" },
+    { "rank": 7, "name": "반짝이별", "score": 5800, "skinId": "skin_aurora" },
+    { "rank": 8, "name": "폭신구름", "score": 4600, "skinId": "skin_p1_stardust" },
+    { "rank": 9, "name": "노을빛여우", "score": 3200, "skinId": "skin_classic" }
+  ],
   "player": {
     "_note": "TASK-RANKING-MOCK-AVATAR.md — rank moved 18->24. The old rank(18) predates this task's 20-entry board and collided with entries[17]'s OWN rank-18 row (two different rows both labeled '18위' with two different scores) once entries grew from 5 to 20. Since the entries array is a top-20 board and this row is a separate pinned 'me' row rendered below it (not one of the 20), the only consistent placement is a rank strictly worse than entries' last row (20) with a correspondingly lower score — hence rank 24, score kept at 6420 (already < entries[19]'s 6520, so no score change needed, just the rank label).",
     "rank": 24,
