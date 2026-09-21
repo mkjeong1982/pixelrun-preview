@@ -207,5 +207,33 @@
     },
     "previewSheet": "dress_blackswan",
     "thumbFrame": 6
+  },
+  {
+    "id": "skin_starlight",
+    "tier": "paid",
+    "blessing": null,
+    "runSheet": "princess_starlight_run",
+    "previewSheet": "dress_starlight",
+    "thumbFrame": 7,
+    "displayName": "스타라이트",
+    "nameKey": "data.skin.skin_starlight.name",
+    "iconKey": "icon_skin_starlight",
+    "rankAvatarFrame": 4,
+    "rarity": "epic",
+    "description": "밤하늘 별가루를 두른 드레스",
+    "descKey": "data.skin.skin_starlight.desc",
+    "priceCoins": 50000,
+    "priceCash": null,
+    "stats": {
+      "hearts": 3,
+      "coinBonusPercent": null,
+      "coinBonusCondition": null,
+      "feverBonusSeconds": 3,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
+      "speedBonusPercent": null,
+      "blessingKey": "data.skin.skin_starlight.blessing"
+    }
   }
 ]
