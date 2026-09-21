@@ -2339,8 +2339,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "weather": {
-        "particle": "petal",
-        "densityPerSec": 4
+        "particle": "snow",
+        "densityPerSec": 5
       },
       "midgroundWeights": {
         "mid_pine_green": 5,
@@ -2427,7 +2427,7 @@
     },
     {
       "id": "snow2",
-      "displayTitle": "설원 평야 2",
+      "displayTitle": "설원 골짜기",
       "lighting": "day",
       "snowTerrain": true,
       "skyTint": "#d6ecff",
@@ -2447,8 +2447,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "weather": {
-        "particle": "petal",
-        "densityPerSec": 4
+        "particle": "snow",
+        "densityPerSec": 5
       },
       "midgroundWeights": {
         "mid_pine_green": 5,
@@ -2552,6 +2552,10 @@
       "midStripScale": 1.0,
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "snow",
+        "densityPerSec": 5
+      },
       "midgroundWeights": {
         "mid_pine_green": 5,
         "mid_pine": 4
@@ -2647,6 +2651,10 @@
       "midStripScale": 1.0,
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "snow",
+        "densityPerSec": 5
+      },
       "midgroundWeights": {
         "mid_pine_green": 5,
         "mid_pine": 4
