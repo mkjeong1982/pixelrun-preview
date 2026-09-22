@@ -235,5 +235,33 @@
       "speedBonusPercent": null,
       "blessingKey": "data.skin.skin_starlight.blessing"
     }
+  },
+  {
+    "id": "skin_royaldenim",
+    "tier": "paid",
+    "blessing": null,
+    "runSheet": "princess_royaldenim_run",
+    "previewSheet": "dress_royaldenim",
+    "thumbFrame": 8,
+    "displayName": "로열 데님",
+    "nameKey": "data.skin.skin_royaldenim.name",
+    "iconKey": "icon_skin_royaldenim",
+    "rankAvatarFrame": 4,
+    "rarity": "epic",
+    "description": "청바지 입어도 나는 공주! 코인도 두둑, 발걸음도 가뿐가뿐~",
+    "descKey": "data.skin.skin_royaldenim.desc",
+    "priceCoins": 70000,
+    "priceCash": null,
+    "stats": {
+      "hearts": 3,
+      "coinBonusPercent": 10,
+      "coinBonusCondition": null,
+      "feverBonusSeconds": null,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
+      "speedBonusPercent": 15,
+      "blessingKey": "data.skin.skin_royaldenim.blessing"
+    }
   }
 ]
