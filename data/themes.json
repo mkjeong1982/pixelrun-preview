@@ -2839,6 +2839,123 @@
           }
         ]
       }
+    },
+    {
+      "id": "summit",
+      "displayTitle": "설산 정상",
+      "lighting": "day",
+      "snowTerrain": true,
+      "skyTint": "#d6ecff",
+      "farMountainTint": "#c4d9ec",
+      "farMountainScale": 1.0,
+      "pitShadowTint": "#7b8598",
+      "layers": {
+        "sky": "sky_summit",
+        "farMountains": "summit_far",
+        "midStrip": "summit_mid",
+        "nearStrip": "summit_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_summit"
+      },
+      "midStripScale": 1.0,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "weather": {
+        "particle": "snow",
+        "densityPerSec": 4
+      },
+      "midgroundWeights": {
+        "mid_pine_green": 5,
+        "mid_pine": 4
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "snow_fir",
+        "stump": "snow_stump",
+        "largeRock": "snow_boulder",
+        "smallRock": "snow_rock_s"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "snow_snowman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 46,
+            "weight": 5
+          },
+          {
+            "skin": "snow_boulder",
+            "displayWidthPx": 44,
+            "displayHeightPx": 39,
+            "bodyWidthPx": 37,
+            "bodyHeightPx": 28,
+            "weight": 2
+          },
+          {
+            "skin": "snow_log",
+            "displayWidthPx": 64,
+            "displayHeightPx": 34,
+            "bodyWidthPx": 55,
+            "bodyHeightPx": 27,
+            "weight": 2
+          },
+          {
+            "skin": "snow_reindeer",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 40,
+            "bodyHeightPx": 44,
+            "weight": 4
+          },
+          {
+            "skin": "snow_fox",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 34,
+            "bodyHeightPx": 21,
+            "weight": 4
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "snow_rock_s",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 3
+          },
+          {
+            "skin": "snow_iceblock",
+            "displayWidthPx": 34,
+            "displayHeightPx": 30,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 22,
+            "weight": 3
+          }
+        ],
+        "tree": [
+          {
+            "skin": "snow_yeti",
+            "displayWidthPx": 96,
+            "displayHeightPx": 128,
+            "bodyWidthPx": 72,
+            "bodyHeightPx": 77,
+            "weight": 3
+          }
+        ]
+      }
     }
   ],
   "backlog": {
