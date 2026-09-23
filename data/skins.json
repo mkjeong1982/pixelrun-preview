@@ -202,7 +202,7 @@
     },
     "stats": {
       "hearts": 4,
-      "coinBonusPercent": null,
+      "coinBonusPercent": 10,
       "coinBonusCondition": null,
       "feverBonusSeconds": 3,
       "feverBonusCondition": null,
