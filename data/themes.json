@@ -2978,7 +2978,9 @@
       },
       "midStripScale": 1.0,
       "flowSpeedPxPerSec": 120,
-      "stripAccessories": [],
+      "stripAccessories": [
+        { "strip": "midStrip", "texture": "abroad_edge_blades", "x": 146, "y": 225, "originX": 0.5, "originY": 0.5, "rotationDegPerSec": 45 }
+      ],
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
