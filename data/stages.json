@@ -353,7 +353,8 @@
       "mapX": 1344,
       "mapY": 215,
       "nameKey": "data.stage.5-1.name",
-      "regionNameKey": "stagemap.region.abroad"
+      "regionNameKey": "stagemap.region.abroad",
+      "theme": "abroad_edge"
     },
     {
       "id": "5-2",
