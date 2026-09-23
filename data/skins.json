@@ -287,7 +287,7 @@
     "rarity": "epic",
     "description": "파티의 주인공은 나! 달리면 선홍빛 조각이 팔랑팔랑~",
     "descKey": "data.skin.skin_cocktail.desc",
-    "priceCoins": 70000,
+    "priceCoins": 100000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
