@@ -2961,6 +2961,9 @@
       "id": "abroad_edge",
       "displayTitle": "수정왕국 진입로",
       "lighting": "night",
+      "moonXRatio": 0.66,
+      "moonYRatio": 0.2,
+      "moonScale": 0.65,
       "_note": "TASK-ABROAD-EDGE-WIRING.md — summit 을 복제해 레이어 구조만 가져오고 설원 요소는 전부 제거했다. lighting:\"night\" 필수(사용자 확정: 달빛왕국·수정왕국은 밤 지역) — GameScene.isCoinBonusActive()가 이 값을 직접 읽어 문나이트 골드 보너스를 켠다. weather 없음(눈 제거, 맑은 노을녘) · paintedStars/paintedMoon 미설정(SkyDecor가 달·별을 직접 그림, 하늘 그림엔 없음). obstacleSkins/obstacleVariants 실측·가중치 근거는 md_docs/data-revisions.md 참조.",
       "farMountainScale": 1.0,
       "layers": {
