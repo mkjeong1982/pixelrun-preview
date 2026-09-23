@@ -291,5 +291,33 @@
       "speedBonusPercent": null,
       "blessingKey": "data.skin.skin_cocktail.blessing"
     }
+  },
+  {
+    "id": "skin_golden",
+    "tier": "paid",
+    "blessing": null,
+    "runSheet": "princess_golden_run",
+    "previewSheet": "dress_golden",
+    "thumbFrame": 10,
+    "displayName": "골든",
+    "nameKey": "data.skin.skin_golden.name",
+    "iconKey": "icon_skin_golden",
+    "rankAvatarFrame": 4,
+    "rarity": "epic",
+    "description": "반짝반짝 온몸이 황금! 코인도 황금처럼 쏟아져요~",
+    "descKey": "data.skin.skin_golden.desc",
+    "priceCoins": null,
+    "priceCash": { "KRW": 3900, "USD": 2.99, "JPY": 400 },
+    "stats": {
+      "hearts": 4,
+      "coinBonusPercent": 20,
+      "coinBonusCondition": null,
+      "feverBonusSeconds": 4,
+      "feverBonusCondition": null,
+      "heartBonus": null,
+      "heartBonusCondition": null,
+      "speedBonusPercent": 15,
+      "blessingKey": "data.skin.skin_golden.blessing"
+    }
   }
 ]
