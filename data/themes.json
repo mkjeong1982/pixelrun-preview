@@ -2970,7 +2970,6 @@
         "sky": "sky_abroad_edge",
         "farMountains": "abroad_edge_far",
         "midStrip": "abroad_edge_mid",
-        "flowStrip": "abroad_edge_flow",
         "nearStrip": "abroad_edge_near",
         "midground": [],
         "foreground": [],
