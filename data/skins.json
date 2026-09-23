@@ -23,6 +23,7 @@
       "heartBonus": null,
       "heartBonusCondition": null,
       "speedBonusPercent": null,
+      "speedBonusCondition": null,
       "blessingKey": null
     }
   },
@@ -57,6 +58,7 @@
       "heartBonus": null,
       "heartBonusCondition": null,
       "speedBonusPercent": 10,
+      "speedBonusCondition": "nightStages",
       "blessingKey": null
     }
   },
@@ -83,7 +85,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": null,
+      "speedBonusPercent": 5,
+      "speedBonusCondition": null,
       "blessingKey": null
     }
   },
@@ -109,7 +112,8 @@
       "feverBonusCondition": "snowStages",
       "heartBonus": 1,
       "heartBonusCondition": "snowStages",
-      "speedBonusPercent": null,
+      "speedBonusPercent": 10,
+      "speedBonusCondition": "snowStages",
       "blessingKey": null
     },
     "previewSheet": "dress_winter",
@@ -127,7 +131,7 @@
     "iconKey": "icon_skin_aurora",
     "rankAvatarFrame": 4,
     "rarity": "epic",
-    "description": "밤하늘 오로라를 그대로 둘렀어요!",
+    "description": "밤하늘 오로라를 둘렀어요! 달리면 오로라 빛이 사르르~",
     "descKey": "data.skin.skin_aurora.desc",
     "priceCoins": null,
     "priceCash": {
@@ -143,7 +147,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": null,
+      "speedBonusPercent": 10,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_aurora.blessing"
     },
     "_note": "TASK-AURORA-DRESS.md 등록 당시 스탯(하트 4/피버 3초 증가/오로라 후광 문구)은 그대로. TASK-AURORA-PRICE.md — 가격 9,900원 패키지에서 2,900원 단품으로 확정(사용자 지시), cardName/cardNameKey 제거(카드도 그냥 '오로라' — nameKey/displayName 폴백 사용). USD/JPY는 정식 환율 적용 전 잠정 환산치(KRW 2,900 기준 통용 가격대인 1.99/300) — 이력·환산 근거는 md_docs/data-revisions.md 참조, 여기엔 안 쌓는다."
@@ -158,7 +163,7 @@
     "iconKey": "icon_skin_crystal",
     "rankAvatarFrame": 3,
     "rarity": "epic",
-    "description": "수정 왕국에서 한층 더 빛나는 보석을 품은 드레스",
+    "description": "수정 왕국에서 더 빛나요! 달리면 보랏빛 수정이 반짝반짝",
     "descKey": "data.skin.skin_crystal.desc",
     "priceCoins": 30000,
     "priceCash": null,
@@ -170,7 +175,8 @@
       "feverBonusCondition": "crystalStages",
       "heartBonus": 1,
       "heartBonusCondition": "crystalStages",
-      "speedBonusPercent": null,
+      "speedBonusPercent": 10,
+      "speedBonusCondition": "crystalStages",
       "blessingKey": "data.skin.skin_crystal.blessing"
     },
     "previewSheet": "dress_crystal",
@@ -202,7 +208,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": null,
+      "speedBonusPercent": 10,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_blackswan.blessing"
     },
     "previewSheet": "dress_blackswan",
@@ -232,7 +239,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": null,
+      "speedBonusPercent": 10,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_starlight.blessing"
     }
   },
@@ -260,7 +268,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": 15,
+      "speedBonusPercent": 12,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_royaldenim.blessing"
     }
   },
@@ -276,7 +285,7 @@
     "iconKey": "icon_skin_cocktail",
     "rankAvatarFrame": 4,
     "rarity": "epic",
-    "description": "파티의 주인공은 나! 코인도 두둑, 피버도 화끈하게!",
+    "description": "파티의 주인공은 나! 달리면 선홍빛 조각이 팔랑팔랑~",
     "descKey": "data.skin.skin_cocktail.desc",
     "priceCoins": 70000,
     "priceCash": null,
@@ -288,7 +297,8 @@
       "feverBonusCondition": null,
       "heartBonus": null,
       "heartBonusCondition": null,
-      "speedBonusPercent": null,
+      "speedBonusPercent": 12,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_cocktail.blessing"
     }
   },
@@ -304,7 +314,7 @@
     "iconKey": "icon_skin_golden",
     "rankAvatarFrame": 4,
     "rarity": "epic",
-    "description": "반짝반짝 온몸이 황금! 코인도 황금처럼 쏟아져요~",
+    "description": "반짝반짝 온몸이 황금! 달리면 황금 가루가 촤르르~",
     "descKey": "data.skin.skin_golden.desc",
     "priceCoins": null,
     "priceCash": { "KRW": 3900, "USD": 2.99, "JPY": 400 },
@@ -317,6 +327,7 @@
       "heartBonus": null,
       "heartBonusCondition": null,
       "speedBonusPercent": 15,
+      "speedBonusCondition": null,
       "blessingKey": "data.skin.skin_golden.blessing"
     }
   }
