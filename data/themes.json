@@ -3039,6 +3039,86 @@
           }
         ]
       }
+    },
+    {
+      "id": "abroad_outskirts",
+      "displayTitle": "수정왕국 외곽",
+      "lighting": "night",
+      "moonXRatio": 0.38,
+      "moonYRatio": 0.2,
+      "moonScale": 0.65,
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_abroad_outskirts",
+        "farMountains": "abroad_outskirts_far",
+        "midStrip": "abroad_outskirts_mid",
+        "flowStrip": "abroad_outskirts_flow",
+        "nearStrip": "abroad_outskirts_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_abroad_outskirts"
+      },
+      "midStripScale": 1.0,
+      "flowSpeedPxPerSec": 120,
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "abroad_signpost"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "abroad_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 8
+          },
+          {
+            "skin": "abroad_patrol",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 63,
+            "weight": 5
+          },
+          {
+            "skin": "abroad_kid_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 54,
+            "weight": 3
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
+        ],
+        "tree": [
+          {
+            "skin": "abroad_signpost",
+            "bodyWidthPx": 11,
+            "bodyOffsetXPx": -12
+          }
+        ]
+      }
     }
   ],
   "backlog": {
