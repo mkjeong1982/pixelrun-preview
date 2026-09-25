@@ -3124,9 +3124,9 @@
       "id": "abroad_city",
       "displayTitle": "수정왕국 도심",
       "lighting": "night",
-      "moonXRatio": 0.4,
-      "moonYRatio": 0.27,
-      "moonScale": 0.65,
+      "moonXRatio": 0.45,
+      "moonYRatio": 0.175,
+      "moonScale": 0.42,
       "farMountainScale": 1.0,
       "layers": {
         "sky": "sky_abroad_city",
