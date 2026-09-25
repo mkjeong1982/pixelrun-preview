@@ -381,7 +381,8 @@
       "mapX": 1517,
       "mapY": 358,
       "nameKey": "data.stage.5-3.name",
-      "regionNameKey": "stagemap.region.abroad"
+      "regionNameKey": "stagemap.region.abroad",
+      "theme": "abroad_city"
     },
     {
       "id": "5-4",

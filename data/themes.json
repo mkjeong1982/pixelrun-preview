@@ -3119,6 +3119,174 @@
           }
         ]
       }
+    },
+    {
+      "id": "abroad_city",
+      "displayTitle": "수정왕국 도심",
+      "lighting": "night",
+      "moonXRatio": 0.4,
+      "moonYRatio": 0.27,
+      "moonScale": 0.65,
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_abroad_city",
+        "farMountains": "abroad_city_far",
+        "midStrip": "abroad_city_mid",
+        "flowStrip": "abroad_city_flow",
+        "nearStrip": "abroad_city_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_abroad_city"
+      },
+      "midStripScale": 1.0,
+      "flowSpeedPxPerSec": 120,
+      "stripAccessories": [
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 95,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 0
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 812,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 3
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 268,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 0
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 615,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 2
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 1280,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 4
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_gent",
+          "animation": "abroad-city-gent-stroll",
+          "x": 440,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 1
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_gent",
+          "animation": "abroad-city-gent-stroll",
+          "x": 1050,
+          "y": 477,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 4
+        }
+      ],
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "abroad_signpost"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "abroad_noble_lady",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 36,
+            "bodyHeightPx": 63,
+            "weight": 7
+          },
+          {
+            "skin": "abroad_gentleman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 55,
+            "weight": 7
+          },
+          {
+            "skin": "abroad_patrol",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 63,
+            "weight": 4
+          },
+          {
+            "skin": "abroad_citizen",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 49,
+            "weight": 2
+          },
+          {
+            "skin": "abroad_kid_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 54,
+            "weight": 2
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
+        ],
+        "tree": [
+          {
+            "skin": "abroad_signpost",
+            "bodyWidthPx": 11,
+            "bodyOffsetXPx": -12
+          }
+        ]
+      }
     }
   ],
   "backlog": {
