@@ -4025,24 +4025,6 @@
           "x": 1299,
           "y": 533,
           "size": 16
-        },
-        {
-          "strip": "midStrip",
-          "x": 114,
-          "y": 419,
-          "size": 14
-        },
-        {
-          "strip": "midStrip",
-          "x": 566,
-          "y": 422,
-          "size": 14
-        },
-        {
-          "strip": "midStrip",
-          "x": 1454,
-          "y": 420,
-          "size": 14
         }
       ],
       "moonFixed": true,
@@ -4165,6 +4147,182 @@
           "subtle": true
         }
       ]
+    },
+    {
+      "id": "abroad_throne",
+      "displayTitle": "수정왕국 궁궐 안",
+      "lighting": "night",
+      "layers": {
+        "sky": "abroad_throne_back",
+        "farMountains": "abroad_throne_hall",
+        "midground": [
+          "abroad_throne_planter",
+          "abroad_throne_candelabra"
+        ],
+        "foreground": [],
+        "ground": "tile_abroad_throne_floor"
+      },
+      "farParallax": 0.45,
+      "farDecals": {
+        "points": [
+          [
+            358,
+            252
+          ],
+          [
+            371,
+            243
+          ],
+          [
+            384,
+            253
+          ],
+          [
+            535,
+            253
+          ],
+          [
+            547,
+            244
+          ],
+          [
+            560,
+            253
+          ]
+        ]
+      },
+      "farOverlays": [
+        {
+          "texture": "abroad_throne_portrait",
+          "x": 413,
+          "y": 238,
+          "frames": 3
+        }
+      ],
+      "midgroundTint": "#b9a089",
+      "indoor": true,
+      "midgroundWeights": {
+        "abroad_throne_planter": 3,
+        "abroad_throne_candelabra": 2
+      },
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "weather": {
+        "particle": "star",
+        "densityPerSec": 0
+      },
+      "obstacleSkins": {
+        "tree": "palace_candelabra"
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "abroad_throne_maid",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 30,
+            "bodyHeightPx": 58,
+            "weight": 4
+          },
+          {
+            "skin": "abroad_throne_butler",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 26,
+            "bodyHeightPx": 60,
+            "weight": 4
+          },
+          {
+            "skin": "abroad_throne_knight",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 28,
+            "bodyHeightPx": 58,
+            "weight": 4
+          },
+          {
+            "skin": "abroad_royal_guard",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 60,
+            "weight": 3
+          },
+          {
+            "skin": "abroad_cherub_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 47,
+            "weight": 2
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
+        ],
+        "stump": [
+          {
+            "skin": "palace_armor_stand",
+            "displayWidthPx": 34,
+            "displayHeightPx": 96,
+            "bodyWidthPx": 30,
+            "bodyHeightPx": 88,
+            "weight": 2
+          },
+          {
+            "skin": "abroad_kid_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 54,
+            "weight": 2
+          }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
+          }
+        ]
+      },
+      "obstacleBaseWeights": {
+        "tree": 3,
+        "largeRock": 0,
+        "smallRock": 0,
+        "stump": 0,
+        "spike": 0
+      },
+      "fixedProps": [
+        {
+          "texture": "abroad_throne_chandelier",
+          "animation": "abroad-throne-chandelier",
+          "x": 75,
+          "y": 17
+        }
+      ],
+      "goalGuest": {
+        "skin": "abroad_throne_prince",
+        "metersBeforeGoal": 65,
+        "clearMeters": 25,
+        "displayWidthPx": 78,
+        "displayHeightPx": 73,
+        "bodyWidthPx": 30,
+        "bodyHeightPx": 60,
+        "groundSinkPx": 3
+      }
     }
   ],
   "backlog": {

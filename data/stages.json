@@ -417,13 +417,14 @@
       "index": 30,
       "region": "abroad",
       "regionName": "수정왕국",
-      "subRegion": "abroad_palace",
+      "subRegion": "abroad_throne",
       "distanceMeters": 2550,
       "displayName": "궁궐 안",
       "mapX": 1518,
       "mapY": 778,
       "nameKey": "data.stage.5-6.name",
-      "regionNameKey": "stagemap.region.abroad"
+      "regionNameKey": "stagemap.region.abroad",
+      "theme": "abroad_throne"
     }
   ]
 }
