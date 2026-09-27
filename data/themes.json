@@ -3283,6 +3283,182 @@
           }
         ]
       }
+    },
+    {
+      "id": "abroad_plaza",
+      "displayTitle": "수정왕국 광장",
+      "lighting": "night",
+      "moonXRatio": 0.92,
+      "moonYRatio": 0.19,
+      "moonScale": 0.42,
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_abroad_plaza",
+        "farMountains": "abroad_plaza_far",
+        "midStrip": "abroad_plaza_mid",
+        "nearStrip": "abroad_plaza_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_abroad_plaza"
+      },
+      "midStripScale": 1.0,
+      "stripAccessories": [
+        {
+          "strip": "midStrip",
+          "texture": "abroad_plaza_fountain",
+          "animation": "abroad-plaza-fountain",
+          "x": 180,
+          "y": 243,
+          "originX": 0,
+          "originY": 0,
+          "animationSeed": 0,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_plaza_fountain",
+          "animation": "abroad-plaza-fountain",
+          "x": 900,
+          "y": 243,
+          "originX": 0,
+          "originY": 0,
+          "animationSeed": 4,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 50,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 0,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 940,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 3,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 400,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 2,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 1200,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 5,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_gent",
+          "animation": "abroad-city-gent-stroll",
+          "x": 680,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 1,
+          "behindStrip": true
+        },
+        {
+          "strip": "nearStrip",
+          "texture": "abroad_city_gent",
+          "animation": "abroad-city-gent-stroll",
+          "x": 1480,
+          "y": 500,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 4,
+          "behindStrip": true
+        }
+      ],
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "abroad_signpost"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "abroad_plaza_lady",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 30,
+            "bodyHeightPx": 60,
+            "weight": 8
+          },
+          {
+            "skin": "abroad_gentleman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 55,
+            "weight": 4
+          },
+          {
+            "skin": "abroad_patrol",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 32,
+            "bodyHeightPx": 63,
+            "weight": 3
+          },
+          {
+            "skin": "abroad_cherub_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 47,
+            "weight": 3
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
+        ],
+        "tree": [
+          {
+            "skin": "abroad_signpost",
+            "bodyWidthPx": 11,
+            "bodyOffsetXPx": -12
+          }
+        ]
+      }
     }
   ],
   "backlog": {

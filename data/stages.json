@@ -389,13 +389,14 @@
       "index": 28,
       "region": "abroad",
       "regionName": "수정왕국",
-      "subRegion": "abroad_city",
+      "subRegion": "abroad_plaza",
       "distanceMeters": 2470,
       "displayName": "광장",
       "mapX": 1528,
       "mapY": 492,
       "nameKey": "data.stage.5-4.name",
-      "regionNameKey": "stagemap.region.abroad"
+      "regionNameKey": "stagemap.region.abroad",
+      "theme": "abroad_plaza"
     },
     {
       "id": "5-5",
