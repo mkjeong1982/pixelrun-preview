@@ -3288,8 +3288,8 @@
       "id": "abroad_plaza",
       "displayTitle": "수정왕국 광장",
       "lighting": "night",
-      "moonXRatio": 0.92,
-      "moonYRatio": 0.19,
+      "moonXRatio": 0.36,
+      "moonYRatio": 0.15,
       "moonScale": 0.42,
       "farMountainScale": 1.0,
       "layers": {
