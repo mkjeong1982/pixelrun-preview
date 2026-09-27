@@ -3118,7 +3118,45 @@
             "bodyOffsetXPx": -12
           }
         ]
-      }
+      },
+      "crystalGlints": [
+        {
+          "strip": "nearStrip",
+          "x": 59,
+          "y": 454,
+          "size": 20
+        },
+        {
+          "strip": "nearStrip",
+          "x": 88,
+          "y": 382,
+          "size": 28
+        },
+        {
+          "strip": "nearStrip",
+          "x": 277,
+          "y": 440,
+          "size": 30
+        },
+        {
+          "strip": "nearStrip",
+          "x": 369,
+          "y": 444,
+          "size": 24
+        },
+        {
+          "strip": "nearStrip",
+          "x": 370,
+          "y": 244,
+          "size": 45
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1529,
+          "y": 438,
+          "size": 32
+        }
+      ]
     },
     {
       "id": "abroad_city",
@@ -3282,7 +3320,69 @@
             "bodyOffsetXPx": -12
           }
         ]
-      }
+      },
+      "crystalGlints": [
+        {
+          "strip": "nearStrip",
+          "x": 53,
+          "y": 415,
+          "size": 28
+        },
+        {
+          "strip": "nearStrip",
+          "x": 218,
+          "y": 418,
+          "size": 22
+        },
+        {
+          "strip": "nearStrip",
+          "x": 310,
+          "y": 263,
+          "size": 25
+        },
+        {
+          "strip": "nearStrip",
+          "x": 604,
+          "y": 415,
+          "size": 28
+        },
+        {
+          "strip": "nearStrip",
+          "x": 760,
+          "y": 418,
+          "size": 22
+        },
+        {
+          "strip": "nearStrip",
+          "x": 895,
+          "y": 416,
+          "size": 26
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1128,
+          "y": 380,
+          "size": 24
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1265,
+          "y": 335,
+          "size": 22
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1344,
+          "y": 414,
+          "size": 27
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1505,
+          "y": 416,
+          "size": 22
+        }
+      ]
     },
     {
       "id": "abroad_plaza",
@@ -3458,7 +3558,93 @@
             "bodyOffsetXPx": -12
           }
         ]
-      }
+      },
+      "crystalGlints": [
+        {
+          "strip": "nearStrip",
+          "x": 67,
+          "y": 483,
+          "size": 36
+        },
+        {
+          "strip": "nearStrip",
+          "x": 520,
+          "y": 485,
+          "size": 24
+        },
+        {
+          "strip": "nearStrip",
+          "x": 782,
+          "y": 316,
+          "size": 32
+        },
+        {
+          "strip": "nearStrip",
+          "x": 905,
+          "y": 484,
+          "size": 32
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1172,
+          "y": 486,
+          "size": 27
+        },
+        {
+          "strip": "midStrip",
+          "x": 60,
+          "y": 350,
+          "size": 16
+        },
+        {
+          "strip": "midStrip",
+          "x": 521,
+          "y": 364,
+          "size": 17
+        },
+        {
+          "strip": "midStrip",
+          "x": 627,
+          "y": 381,
+          "size": 18
+        },
+        {
+          "strip": "midStrip",
+          "x": 732,
+          "y": 380,
+          "size": 13
+        },
+        {
+          "strip": "midStrip",
+          "x": 851,
+          "y": 383,
+          "size": 15
+        },
+        {
+          "strip": "midStrip",
+          "x": 949,
+          "y": 363,
+          "size": 13
+        },
+        {
+          "strip": "midStrip",
+          "x": 1021,
+          "y": 381,
+          "size": 12
+        },
+        {
+          "strip": "midStrip",
+          "x": 1211,
+          "y": 363,
+          "size": 20
+        },
+        {
+          "strip": "midStrip",
+          "x": 1406,
+          "y": 380,
+          "size": 12
+        }
+      ]
     }
   ],
   "backlog": {
