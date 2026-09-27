@@ -2979,7 +2979,15 @@
       "midStripScale": 1.0,
       "flowSpeedPxPerSec": 120,
       "stripAccessories": [
-        { "strip": "midStrip", "texture": "abroad_edge_blades", "x": 146, "y": 225, "originX": 0.5, "originY": 0.5, "rotationDegPerSec": 45 }
+        {
+          "strip": "midStrip",
+          "texture": "abroad_edge_blades",
+          "x": 146,
+          "y": 225,
+          "originX": 0.5,
+          "originY": 0.5,
+          "rotationDegPerSec": 45
+        }
       ],
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
@@ -3852,39 +3860,6 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 307,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 1,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 421,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 2,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 697,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 3,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
           "x": 811,
           "y": 465,
           "originX": 0,
@@ -3894,64 +3869,9 @@
         },
         {
           "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1087,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 5,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1201,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 6,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1477,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 7,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_city_couple",
-          "animation": "abroad-city-couple-stroll",
-          "x": 140,
-          "y": 465,
-          "originX": 0.5,
-          "originY": 1,
-          "animationSeed": 0,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_city_parasol",
-          "animation": "abroad-city-parasol-stroll",
-          "x": 530,
-          "y": 465,
-          "originX": 0.5,
-          "originY": 1,
-          "animationSeed": 2,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
           "texture": "abroad_city_gent",
           "animation": "abroad-city-gent-stroll",
-          "x": 920,
+          "x": 1015,
           "y": 465,
           "originX": 0.5,
           "originY": 1,
@@ -3982,17 +3902,6 @@
         },
         {
           "strip": "midStrip",
-          "texture": "abroad_bg_awkward_youth",
-          "animation": "abroad-bg-awkward-youth",
-          "x": 1015,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 21,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
           "texture": "abroad_bg_cheerful_lady",
           "animation": "abroad-bg-cheerful-lady",
           "x": 628,
@@ -4000,17 +3909,6 @@
           "originX": 0,
           "originY": 1,
           "animationSeed": 22,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_bg_cheerful_lady",
-          "animation": "abroad-bg-cheerful-lady",
-          "x": 1410,
-          "y": 465,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 23,
           "behindStrip": true
         }
       ],
