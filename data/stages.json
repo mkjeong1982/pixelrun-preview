@@ -403,13 +403,14 @@
       "index": 29,
       "region": "abroad",
       "regionName": "수정왕국",
-      "subRegion": "abroad_palace",
+      "subRegion": "abroad_gate",
       "distanceMeters": 2500,
       "displayName": "궁궐 입구",
       "mapX": 1518,
       "mapY": 635,
       "nameKey": "data.stage.5-5.name",
-      "regionNameKey": "stagemap.region.abroad"
+      "regionNameKey": "stagemap.region.abroad",
+      "theme": "abroad_gate"
     },
     {
       "id": "5-6",

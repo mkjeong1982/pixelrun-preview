@@ -3645,6 +3645,404 @@
           "size": 12
         }
       ]
+    },
+    {
+      "id": "abroad_gate",
+      "displayTitle": "수정왕국 궁궐 입구",
+      "lighting": "night",
+      "moonXRatio": 0.3,
+      "moonYRatio": 0.165,
+      "moonScale": 0.42,
+      "farMountainScale": 1.0,
+      "layers": {
+        "sky": "sky_abroad_gate",
+        "farMountains": "abroad_gate_far",
+        "midStrip": "abroad_gate_mid",
+        "nearStrip": "abroad_gate_near",
+        "midground": [],
+        "foreground": [],
+        "ground": "tile_abroad_gate"
+      },
+      "midStripScale": 1.0,
+      "stripAccessories": [
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 32,
+          "y": 474,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 0,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 215,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 1,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 300,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 2,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 422,
+          "y": 474,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 3,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 605,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 4,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 690,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 5,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 812,
+          "y": 474,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 6,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 995,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 7,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 1080,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 8,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 1202,
+          "y": 474,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 9,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 1385,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 10,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_gate_guard",
+          "animation": "abroad-gate-guard-salute",
+          "x": 1470,
+          "y": 500,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 11,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 94,
+          "y": 489,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 0,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_city_parasol",
+          "animation": "abroad-city-parasol-stroll",
+          "x": 457,
+          "y": 489,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 2,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_city_gent",
+          "animation": "abroad-city-gent-stroll",
+          "x": 860,
+          "y": 489,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 1,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_city_couple",
+          "animation": "abroad-city-couple-stroll",
+          "x": 1253,
+          "y": 489,
+          "originX": 0.5,
+          "originY": 1,
+          "animationSeed": 3,
+          "behindStrip": true
+        }
+      ],
+      "nearStripScale": 1.0,
+      "obstacleGroundSinkPx": 6,
+      "bgm": {
+        "main": "bgm_adventure2",
+        "fever": "bgm_rush2"
+      },
+      "obstacleSkins": {
+        "tree": "abroad_signpost"
+      },
+      "obstacleBaseWeights": {
+        "tree": 2,
+        "largeRock": 4,
+        "stump": 2
+      },
+      "obstacleVariants": {
+        "largeRock": [
+          {
+            "skin": "abroad_royal_guard",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 60,
+            "weight": 8
+          },
+          {
+            "skin": "abroad_plaza_lady",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 30,
+            "bodyHeightPx": 60,
+            "weight": 6
+          },
+          {
+            "skin": "abroad_gentleman",
+            "displayWidthPx": 56,
+            "displayHeightPx": 73,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 55,
+            "weight": 3
+          },
+          {
+            "skin": "abroad_cherub_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 47,
+            "weight": 3
+          }
+        ],
+        "smallRock": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
+        ],
+        "tree": [
+          {
+            "skin": "abroad_signpost",
+            "bodyWidthPx": 11,
+            "bodyOffsetXPx": -12
+          }
+        ]
+      },
+      "crystalGlints": [
+        {
+          "strip": "nearStrip",
+          "x": 119,
+          "y": 476,
+          "size": 18
+        },
+        {
+          "strip": "nearStrip",
+          "x": 507,
+          "y": 476,
+          "size": 18
+        },
+        {
+          "strip": "nearStrip",
+          "x": 912,
+          "y": 476,
+          "size": 18
+        },
+        {
+          "strip": "nearStrip",
+          "x": 1227,
+          "y": 476,
+          "size": 18
+        },
+        {
+          "strip": "midStrip",
+          "x": 66,
+          "y": 392,
+          "size": 22
+        },
+        {
+          "strip": "midStrip",
+          "x": 394,
+          "y": 405,
+          "size": 20
+        },
+        {
+          "strip": "midStrip",
+          "x": 626,
+          "y": 399,
+          "size": 15
+        },
+        {
+          "strip": "midStrip",
+          "x": 925,
+          "y": 401,
+          "size": 18
+        },
+        {
+          "strip": "midStrip",
+          "x": 1166,
+          "y": 408,
+          "size": 16
+        },
+        {
+          "strip": "midStrip",
+          "x": 1311,
+          "y": 404,
+          "size": 21
+        },
+        {
+          "strip": "midStrip",
+          "x": 1494,
+          "y": 391,
+          "size": 16
+        },
+        {
+          "strip": "midStrip",
+          "x": 63,
+          "y": 489,
+          "size": 24
+        },
+        {
+          "strip": "midStrip",
+          "x": 368,
+          "y": 492,
+          "size": 24
+        }
+      ],
+      "moonFixed": true,
+      "groundSparkles": {
+        "texture": "abroad_gate_marble_glint",
+        "animation": "abroad-gate-marble-glint",
+        "periodPx": 1560,
+        "minGapSec": 2,
+        "maxGapSec": 4,
+        "points": [
+          {
+            "x": 68,
+            "y": 565
+          },
+          {
+            "x": 150,
+            "y": 579
+          },
+          {
+            "x": 306,
+            "y": 569
+          },
+          {
+            "x": 438,
+            "y": 572
+          },
+          {
+            "x": 521,
+            "y": 582
+          },
+          {
+            "x": 683,
+            "y": 565
+          },
+          {
+            "x": 822,
+            "y": 579
+          },
+          {
+            "x": 995,
+            "y": 572
+          },
+          {
+            "x": 1135,
+            "y": 565
+          },
+          {
+            "x": 1288,
+            "y": 580
+          },
+          {
+            "x": 1487,
+            "y": 568
+          }
+        ]
+      }
     }
   ],
   "backlog": {
