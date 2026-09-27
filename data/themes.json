@@ -3650,8 +3650,8 @@
       "id": "abroad_gate",
       "displayTitle": "수정왕국 궁궐 입구",
       "lighting": "night",
-      "moonXRatio": 0.3,
-      "moonYRatio": 0.165,
+      "moonXRatio": 0.218,
+      "moonYRatio": 0.181,
       "moonScale": 0.42,
       "farMountainScale": 1.0,
       "layers": {
@@ -3669,8 +3669,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 32,
-          "y": 474,
+          "x": 31,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 0,
@@ -3680,8 +3680,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 215,
-          "y": 500,
+          "x": 307,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 1,
@@ -3691,8 +3691,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 300,
-          "y": 500,
+          "x": 421,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 2,
@@ -3702,8 +3702,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 422,
-          "y": 474,
+          "x": 697,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 3,
@@ -3713,8 +3713,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 605,
-          "y": 500,
+          "x": 811,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 4,
@@ -3724,8 +3724,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 690,
-          "y": 500,
+          "x": 1087,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 5,
@@ -3735,8 +3735,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 812,
-          "y": 474,
+          "x": 1201,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 6,
@@ -3746,8 +3746,8 @@
           "strip": "midStrip",
           "texture": "abroad_gate_guard",
           "animation": "abroad-gate-guard-salute",
-          "x": 995,
-          "y": 500,
+          "x": 1477,
+          "y": 465,
           "originX": 0,
           "originY": 1,
           "animationSeed": 7,
@@ -3755,54 +3755,10 @@
         },
         {
           "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1080,
-          "y": 500,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 8,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1202,
-          "y": 474,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 9,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1385,
-          "y": 500,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 10,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
-          "texture": "abroad_gate_guard",
-          "animation": "abroad-gate-guard-salute",
-          "x": 1470,
-          "y": 500,
-          "originX": 0,
-          "originY": 1,
-          "animationSeed": 11,
-          "behindStrip": true
-        },
-        {
-          "strip": "midStrip",
           "texture": "abroad_city_couple",
           "animation": "abroad-city-couple-stroll",
-          "x": 94,
-          "y": 489,
+          "x": 140,
+          "y": 465,
           "originX": 0.5,
           "originY": 1,
           "animationSeed": 0,
@@ -3812,8 +3768,8 @@
           "strip": "midStrip",
           "texture": "abroad_city_parasol",
           "animation": "abroad-city-parasol-stroll",
-          "x": 457,
-          "y": 489,
+          "x": 530,
+          "y": 465,
           "originX": 0.5,
           "originY": 1,
           "animationSeed": 2,
@@ -3823,8 +3779,8 @@
           "strip": "midStrip",
           "texture": "abroad_city_gent",
           "animation": "abroad-city-gent-stroll",
-          "x": 860,
-          "y": 489,
+          "x": 920,
+          "y": 465,
           "originX": 0.5,
           "originY": 1,
           "animationSeed": 1,
@@ -3834,8 +3790,8 @@
           "strip": "midStrip",
           "texture": "abroad_city_couple",
           "animation": "abroad-city-couple-stroll",
-          "x": 1253,
-          "y": 489,
+          "x": 1300,
+          "y": 465,
           "originX": 0.5,
           "originY": 1,
           "animationSeed": 3,
@@ -3912,81 +3868,45 @@
       "crystalGlints": [
         {
           "strip": "nearStrip",
-          "x": 119,
-          "y": 476,
-          "size": 18
+          "x": 82,
+          "y": 533,
+          "size": 16
         },
         {
           "strip": "nearStrip",
-          "x": 507,
-          "y": 476,
-          "size": 18
+          "x": 544,
+          "y": 533,
+          "size": 16
         },
         {
           "strip": "nearStrip",
-          "x": 912,
-          "y": 476,
-          "size": 18
+          "x": 891,
+          "y": 533,
+          "size": 16
         },
         {
           "strip": "nearStrip",
-          "x": 1227,
-          "y": 476,
-          "size": 18
-        },
-        {
-          "strip": "midStrip",
-          "x": 66,
-          "y": 392,
-          "size": 22
-        },
-        {
-          "strip": "midStrip",
-          "x": 394,
-          "y": 405,
-          "size": 20
-        },
-        {
-          "strip": "midStrip",
-          "x": 626,
-          "y": 399,
-          "size": 15
-        },
-        {
-          "strip": "midStrip",
-          "x": 925,
-          "y": 401,
-          "size": 18
-        },
-        {
-          "strip": "midStrip",
-          "x": 1166,
-          "y": 408,
+          "x": 1299,
+          "y": 533,
           "size": 16
         },
         {
           "strip": "midStrip",
-          "x": 1311,
-          "y": 404,
-          "size": 21
+          "x": 114,
+          "y": 419,
+          "size": 14
         },
         {
           "strip": "midStrip",
-          "x": 1494,
-          "y": 391,
-          "size": 16
+          "x": 566,
+          "y": 422,
+          "size": 14
         },
         {
           "strip": "midStrip",
-          "x": 63,
-          "y": 489,
-          "size": 24
-        },
-        {
-          "strip": "midStrip",
-          "x": 368,
-          "y": 492,
-          "size": 24
+          "x": 1454,
+          "y": 420,
+          "size": 14
         }
       ],
       "moonFixed": true,
