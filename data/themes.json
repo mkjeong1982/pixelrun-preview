@@ -2994,7 +2994,8 @@
         "tree": 2,
         "largeRock": 0,
         "stump": 0,
-        "smallRock": 0
+        "smallRock": 0,
+        "spike": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3048,6 +3049,16 @@
             "bodyHeightPx": 53,
             "weight": 3
           }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
+          }
         ]
       }
     },
@@ -3084,7 +3095,8 @@
         "tree": 2,
         "largeRock": 0,
         "stump": 0,
-        "smallRock": 0
+        "smallRock": 0,
+        "spike": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3138,6 +3150,16 @@
             "bodyWidthPx": 42,
             "bodyHeightPx": 54,
             "weight": 3
+          }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
           }
         ]
       },
@@ -3225,13 +3247,13 @@
         },
         {
           "strip": "nearStrip",
-          "texture": "abroad_city_gent",
-          "animation": "abroad-city-gent-stroll",
+          "texture": "abroad_bg_awkward_youth",
+          "animation": "abroad-bg-awkward-youth",
           "x": 725,
           "y": 473,
           "originX": 0.5,
           "originY": 1,
-          "animationSeed": 1,
+          "animationSeed": 7,
           "behindStrip": true
         },
         {
@@ -3258,13 +3280,13 @@
         },
         {
           "strip": "nearStrip",
-          "texture": "abroad_city_parasol",
-          "animation": "abroad-city-parasol-stroll",
+          "texture": "abroad_bg_cheerful_lady",
+          "animation": "abroad-bg-cheerful-lady",
           "x": 1389,
           "y": 473,
           "originX": 0.5,
           "originY": 1,
-          "animationSeed": 5,
+          "animationSeed": 8,
           "behindStrip": true
         }
       ],
@@ -3281,7 +3303,8 @@
         "tree": 2,
         "largeRock": 0,
         "stump": 0,
-        "smallRock": 0
+        "smallRock": 0,
+        "spike": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3351,6 +3374,16 @@
             "bodyWidthPx": 42,
             "bodyHeightPx": 54,
             "weight": 3
+          }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
           }
         ]
       },
@@ -3535,24 +3568,24 @@
         },
         {
           "strip": "nearStrip",
-          "texture": "abroad_city_parasol",
-          "animation": "abroad-city-parasol-stroll",
+          "texture": "abroad_bg_cheerful_lady",
+          "animation": "abroad-bg-cheerful-lady",
           "x": 1200,
           "y": 500,
-          "originX": 0.5,
+          "originX": 0,
           "originY": 1,
-          "animationSeed": 5,
+          "animationSeed": 8,
           "behindStrip": true
         },
         {
           "strip": "nearStrip",
-          "texture": "abroad_city_gent",
-          "animation": "abroad-city-gent-stroll",
+          "texture": "abroad_bg_awkward_youth",
+          "animation": "abroad-bg-awkward-youth",
           "x": 680,
           "y": 500,
-          "originX": 0.5,
+          "originX": 0,
           "originY": 1,
-          "animationSeed": 1,
+          "animationSeed": 7,
           "behindStrip": true
         },
         {
@@ -3580,7 +3613,8 @@
         "tree": 2,
         "largeRock": 0,
         "stump": 0,
-        "smallRock": 0
+        "smallRock": 0,
+        "spike": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3642,6 +3676,16 @@
             "bodyWidthPx": 27,
             "bodyHeightPx": 54,
             "weight": 3
+          }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
           }
         ]
       },
@@ -3924,6 +3968,50 @@
           "originY": 1,
           "animationSeed": 3,
           "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_bg_awkward_youth",
+          "animation": "abroad-bg-awkward-youth",
+          "x": 244,
+          "y": 465,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 20,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_bg_awkward_youth",
+          "animation": "abroad-bg-awkward-youth",
+          "x": 1015,
+          "y": 465,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 21,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_bg_cheerful_lady",
+          "animation": "abroad-bg-cheerful-lady",
+          "x": 628,
+          "y": 465,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 22,
+          "behindStrip": true
+        },
+        {
+          "strip": "midStrip",
+          "texture": "abroad_bg_cheerful_lady",
+          "animation": "abroad-bg-cheerful-lady",
+          "x": 1410,
+          "y": 465,
+          "originX": 0,
+          "originY": 1,
+          "animationSeed": 23,
+          "behindStrip": true
         }
       ],
       "nearStripScale": 1.0,
@@ -3939,7 +4027,8 @@
         "tree": 2,
         "largeRock": 0,
         "stump": 0,
-        "smallRock": 0
+        "smallRock": 0,
+        "spike": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -4001,6 +4090,16 @@
             "bodyWidthPx": 27,
             "bodyHeightPx": 54,
             "weight": 3
+          }
+        ],
+        "spike": [
+          {
+            "skin": "abroad_crystal_spikes",
+            "displayWidthPx": 48,
+            "displayHeightPx": 24,
+            "bodyWidthPx": 48,
+            "bodyHeightPx": 24,
+            "weight": 1
           }
         ]
       },
