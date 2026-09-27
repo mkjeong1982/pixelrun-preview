@@ -4305,24 +4305,81 @@
         "stump": 0,
         "spike": 0
       },
-      "fixedProps": [
-        {
-          "texture": "abroad_throne_chandelier",
-          "animation": "abroad-throne-chandelier",
-          "x": 75,
-          "y": 17
-        }
-      ],
       "goalGuest": {
         "skin": "abroad_throne_prince",
-        "metersBeforeGoal": 65,
-        "clearMeters": 25,
+        "clearMeters": 135,
         "displayWidthPx": 78,
         "displayHeightPx": 73,
-        "bodyWidthPx": 30,
-        "bodyHeightPx": 60,
         "groundSinkPx": 3
-      }
+      },
+      "stripAccessories": [
+        {
+          "strip": "farMountains",
+          "texture": "abroad_throne_chandelier",
+          "x": 55,
+          "y": 0,
+          "originX": 0,
+          "originY": 0
+        }
+      ],
+      "crystalGlints": [
+        {
+          "strip": "farMountains",
+          "x": 174,
+          "y": 281,
+          "size": 24,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 180,
+          "y": 245,
+          "size": 30,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 181,
+          "y": 203,
+          "size": 20,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 174,
+          "y": 127,
+          "size": 20,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 81,
+          "y": 238,
+          "size": 16,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 267,
+          "y": 238,
+          "size": 16,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 125,
+          "y": 219,
+          "size": 16,
+          "onAccessory": true
+        },
+        {
+          "strip": "farMountains",
+          "x": 241,
+          "y": 222,
+          "size": 16,
+          "onAccessory": true
+        }
+      ]
     }
   ],
   "backlog": {
