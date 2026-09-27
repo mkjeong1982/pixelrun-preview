@@ -2992,8 +2992,9 @@
       },
       "obstacleBaseWeights": {
         "tree": 2,
-        "largeRock": 4,
-        "stump": 2
+        "largeRock": 0,
+        "stump": 0,
+        "smallRock": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3037,6 +3038,16 @@
             "skin": "abroad_stele",
             "bodyHeightPx": 100
           }
+        ],
+        "stump": [
+          {
+            "skin": "abroad_crystal_lamp",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 39,
+            "bodyHeightPx": 53,
+            "weight": 3
+          }
         ]
       }
     },
@@ -3071,8 +3082,9 @@
       },
       "obstacleBaseWeights": {
         "tree": 2,
-        "largeRock": 4,
-        "stump": 2
+        "largeRock": 0,
+        "stump": 0,
+        "smallRock": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3116,6 +3128,16 @@
             "skin": "abroad_signpost",
             "bodyWidthPx": 11,
             "bodyOffsetXPx": -12
+          }
+        ],
+        "stump": [
+          {
+            "skin": "abroad_crystal",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 42,
+            "bodyHeightPx": 54,
+            "weight": 3
           }
         ]
       },
@@ -3257,8 +3279,9 @@
       },
       "obstacleBaseWeights": {
         "tree": 2,
-        "largeRock": 4,
-        "stump": 2
+        "largeRock": 0,
+        "stump": 0,
+        "smallRock": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3318,6 +3341,16 @@
             "skin": "abroad_signpost",
             "bodyWidthPx": 11,
             "bodyOffsetXPx": -12
+          }
+        ],
+        "stump": [
+          {
+            "skin": "abroad_crystal",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 42,
+            "bodyHeightPx": 54,
+            "weight": 3
           }
         ]
       },
@@ -3503,8 +3536,9 @@
       },
       "obstacleBaseWeights": {
         "tree": 2,
-        "largeRock": 4,
-        "stump": 2
+        "largeRock": 0,
+        "stump": 0,
+        "smallRock": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3556,6 +3590,16 @@
             "skin": "abroad_signpost",
             "bodyWidthPx": 11,
             "bodyOffsetXPx": -12
+          }
+        ],
+        "stump": [
+          {
+            "skin": "abroad_kid_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 54,
+            "weight": 3
           }
         ]
       },
@@ -3809,8 +3853,9 @@
       },
       "obstacleBaseWeights": {
         "tree": 2,
-        "largeRock": 4,
-        "stump": 2
+        "largeRock": 0,
+        "stump": 0,
+        "smallRock": 0
       },
       "obstacleVariants": {
         "largeRock": [
@@ -3862,6 +3907,16 @@
             "skin": "abroad_signpost",
             "bodyWidthPx": 11,
             "bodyOffsetXPx": -12
+          }
+        ],
+        "stump": [
+          {
+            "skin": "abroad_kid_statue",
+            "displayWidthPx": 48,
+            "displayHeightPx": 62,
+            "bodyWidthPx": 27,
+            "bodyHeightPx": 54,
+            "weight": 3
           }
         ]
       },
