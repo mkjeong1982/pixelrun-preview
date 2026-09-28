@@ -1,16 +1,6 @@
 {
   "items": [
     {
-      "id": "jump",
-      "titleKey": "ranking.mission.doubleJumpDodge",
-      "titleParams": {
-        "n": 20
-      },
-      "iconFrame": 0,
-      "target": 20,
-      "reward": 50
-    },
-    {
       "id": "coins",
       "titleKey": "ranking.mission.coins",
       "titleParams": {
@@ -18,6 +8,16 @@
       },
       "iconFrame": 1,
       "target": 400,
+      "reward": 80
+    },
+    {
+      "id": "distance",
+      "titleKey": "ranking.mission.distance",
+      "titleParams": {
+        "n": "3,000"
+      },
+      "iconFrame": 0,
+      "target": 3000,
       "reward": 80
     },
     {
@@ -31,14 +31,74 @@
       "reward": 120
     },
     {
-      "id": "dodges",
+      "id": "nearmiss",
+      "titleKey": "ranking.mission.nearmiss",
+      "titleParams": {
+        "n": 15
+      },
+      "iconFrame": 0,
+      "target": 15,
+      "reward": 60
+    },
+    {
+      "id": "djump",
+      "titleKey": "ranking.mission.doubleJumpDodge",
+      "titleParams": {
+        "n": 3
+      },
+      "iconFrame": 0,
+      "target": 3,
+      "reward": 80
+    },
+    {
+      "id": "smash",
       "titleKey": "ranking.mission.smash",
       "titleParams": {
-        "n": 20
+        "n": 15
       },
       "iconFrame": 3,
-      "target": 20,
+      "target": 15,
       "reward": 60
+    },
+    {
+      "id": "birds",
+      "titleKey": "ranking.mission.birds",
+      "titleParams": {
+        "n": 1
+      },
+      "iconFrame": 3,
+      "target": 1,
+      "reward": 80
+    },
+    {
+      "id": "fever",
+      "titleKey": "ranking.mission.fever",
+      "titleParams": {
+        "n": 3
+      },
+      "iconFrame": 3,
+      "target": 3,
+      "reward": 60
+    },
+    {
+      "id": "noHit",
+      "titleKey": "ranking.mission.noHit",
+      "titleParams": {
+        "n": 1
+      },
+      "iconFrame": 2,
+      "target": 1,
+      "reward": 150
+    },
+    {
+      "id": "dress",
+      "titleKey": "ranking.mission.dress",
+      "titleParams": {
+        "n": 2
+      },
+      "iconFrame": 2,
+      "target": 2,
+      "reward": 100
     }
   ]
 }

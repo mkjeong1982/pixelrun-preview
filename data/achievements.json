@@ -3,6 +3,7 @@
     {
       "id": "first_run",
       "titleKey": "ranking.achievement.firstRun",
+      "hintKey": "ranking.achievement.hint.firstStage",
       "target": 1,
       "metric": "stagesCleared",
       "tier": "bronze",
@@ -11,6 +12,7 @@
     {
       "id": "all_clear",
       "titleKey": "ranking.achievement.allClear",
+      "hintKey": "ranking.achievement.hint.allStages",
       "target": 30,
       "metric": "stagesCleared",
       "tier": "gold",
@@ -19,6 +21,7 @@
     {
       "id": "region_palace",
       "titleKey": "ranking.achievement.regionPalace",
+      "hintKey": "ranking.achievement.hint.regionPalace",
       "target": 6,
       "metric": "regionStagesCleared:palace",
       "tier": "bronze",
@@ -29,6 +32,7 @@
     {
       "id": "region_field",
       "titleKey": "ranking.achievement.regionField",
+      "hintKey": "ranking.achievement.hint.regionField",
       "target": 6,
       "metric": "regionStagesCleared:field",
       "tier": "bronze",
@@ -39,6 +43,7 @@
     {
       "id": "region_forest",
       "titleKey": "ranking.achievement.regionForest",
+      "hintKey": "ranking.achievement.hint.regionForest",
       "target": 6,
       "metric": "regionStagesCleared:forest",
       "tier": "silver",
@@ -49,6 +54,7 @@
     {
       "id": "region_snow",
       "titleKey": "ranking.achievement.regionSnow",
+      "hintKey": "ranking.achievement.hint.regionSnow",
       "target": 6,
       "metric": "regionStagesCleared:snow",
       "tier": "silver",
@@ -59,6 +65,7 @@
     {
       "id": "region_abroad",
       "titleKey": "ranking.achievement.regionAbroad",
+      "hintKey": "ranking.achievement.hint.regionAbroad",
       "target": 6,
       "metric": "regionStagesCleared:abroad",
       "tier": "gold",
@@ -69,6 +76,7 @@
     {
       "id": "dress_5",
       "titleKey": "ranking.achievement.dress5",
+      "hintKey": "ranking.achievement.hint.dresses",
       "target": 5,
       "metric": "dressesOwned",
       "tier": "bronze",
@@ -79,6 +87,7 @@
     {
       "id": "dress_10",
       "titleKey": "ranking.achievement.dress10",
+      "hintKey": "ranking.achievement.hint.dresses",
       "target": 10,
       "metric": "dressesOwned",
       "tier": "silver",
@@ -87,8 +96,27 @@
       "step": 2
     },
     {
+      "id": "first_gold_dress",
+      "titleKey": "ranking.achievement.firstGoldDress",
+      "hintKey": "ranking.achievement.hint.goldDress",
+      "target": 1,
+      "metric": "coinDressesBought",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 1000 }
+    },
+    {
+      "id": "first_cash_dress",
+      "titleKey": "ranking.achievement.firstCashDress",
+      "hintKey": "ranking.achievement.hint.cashDress",
+      "target": 1,
+      "metric": "cashDressesBought",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 3000 }
+    },
+    {
       "id": "coins_1000",
       "titleKey": "ranking.achievement.coins1000",
+      "hintKey": "ranking.achievement.hint.coins",
       "target": 1500,
       "metric": "lifetimeCoinsEarned",
       "tier": "bronze",
@@ -99,6 +127,7 @@
     {
       "id": "coins_10000",
       "titleKey": "ranking.achievement.coins10000",
+      "hintKey": "ranking.achievement.hint.coins",
       "target": 7500,
       "metric": "lifetimeCoinsEarned",
       "tier": "silver",
@@ -109,6 +138,7 @@
     {
       "id": "coins_50000",
       "titleKey": "ranking.achievement.coins50000",
+      "hintKey": "ranking.achievement.hint.coins",
       "target": 15000,
       "metric": "lifetimeCoinsEarned",
       "tier": "gold",
@@ -119,6 +149,7 @@
     {
       "id": "distance_5000",
       "titleKey": "ranking.achievement.distanceBronze",
+      "hintKey": "ranking.achievement.hint.distance",
       "target": 5000,
       "metric": "lifetimeDistanceMeters",
       "tier": "bronze",
@@ -129,6 +160,7 @@
     {
       "id": "distance_marathon",
       "titleKey": "ranking.achievement.distanceSilver",
+      "hintKey": "ranking.achievement.hint.distance",
       "target": 25000,
       "metric": "lifetimeDistanceMeters",
       "tier": "silver",
@@ -139,6 +171,7 @@
     {
       "id": "distance_200000",
       "titleKey": "ranking.achievement.distanceGold",
+      "hintKey": "ranking.achievement.hint.distance",
       "target": 50000,
       "metric": "lifetimeDistanceMeters",
       "tier": "gold",
@@ -149,6 +182,7 @@
     {
       "id": "nearmiss_50",
       "titleKey": "ranking.achievement.nearmissBronze",
+      "hintKey": "ranking.achievement.hint.nearmiss",
       "target": 25,
       "metric": "lifetimeNearMisses",
       "tier": "bronze",
@@ -159,6 +193,7 @@
     {
       "id": "nearmiss_400",
       "titleKey": "ranking.achievement.nearmissSilver",
+      "hintKey": "ranking.achievement.hint.nearmiss",
       "target": 125,
       "metric": "lifetimeNearMisses",
       "tier": "silver",
@@ -169,6 +204,7 @@
     {
       "id": "nearmiss_2000",
       "titleKey": "ranking.achievement.nearmissGold",
+      "hintKey": "ranking.achievement.hint.nearmiss",
       "target": 250,
       "metric": "lifetimeNearMisses",
       "tier": "gold",
@@ -179,7 +215,12 @@
     {
       "id": "djump_100",
       "titleKey": "ranking.achievement.djumpBronze",
+<<<<<<< HEAD
       "target": 25,
+=======
+      "hintKey": "ranking.achievement.hint.djump",
+      "target": 1,
+>>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "bronze",
       "reward": { "type": "coins", "amount": 300 },
@@ -189,7 +230,12 @@
     {
       "id": "djump_800",
       "titleKey": "ranking.achievement.djumpSilver",
+<<<<<<< HEAD
       "target": 125,
+=======
+      "hintKey": "ranking.achievement.hint.djump",
+      "target": 5,
+>>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "silver",
       "reward": { "type": "coins", "amount": 800 },
@@ -199,7 +245,12 @@
     {
       "id": "djump_4000",
       "titleKey": "ranking.achievement.djumpGold",
+<<<<<<< HEAD
       "target": 250,
+=======
+      "hintKey": "ranking.achievement.hint.djump",
+      "target": 10,
+>>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "gold",
       "reward": { "type": "coins", "amount": 2000 },
@@ -209,6 +260,7 @@
     {
       "id": "barefoot_run",
       "titleKey": "ranking.achievement.barefootRun",
+      "hintKey": "ranking.achievement.hint.barefoot",
       "target": 3,
       "metric": "barefootClears",
       "tier": "bronze",
@@ -219,6 +271,7 @@
     {
       "id": "barefoot_20",
       "titleKey": "ranking.achievement.barefootSilver",
+      "hintKey": "ranking.achievement.hint.barefoot",
       "target": 10,
       "metric": "barefootClears",
       "tier": "silver",
@@ -229,6 +282,7 @@
     {
       "id": "barefoot_50",
       "titleKey": "ranking.achievement.barefootGold",
+      "hintKey": "ranking.achievement.hint.barefoot",
       "target": 20,
       "metric": "barefootClears",
       "tier": "gold",
@@ -239,6 +293,7 @@
     {
       "id": "birdsmash_10",
       "titleKey": "ranking.achievement.birdsmashBronze",
+      "hintKey": "ranking.achievement.hint.birds",
       "target": 10,
       "metric": "lifetimeBirdSmashes",
       "tier": "bronze",
@@ -249,6 +304,7 @@
     {
       "id": "birdsmash_80",
       "titleKey": "ranking.achievement.birdsmashSilver",
+      "hintKey": "ranking.achievement.hint.birds",
       "target": 50,
       "metric": "lifetimeBirdSmashes",
       "tier": "silver",
@@ -259,6 +315,7 @@
     {
       "id": "birdsmash_500",
       "titleKey": "ranking.achievement.birdsmashGold",
+      "hintKey": "ranking.achievement.hint.birds",
       "target": 100,
       "metric": "lifetimeBirdSmashes",
       "tier": "gold",
