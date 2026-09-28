@@ -179,7 +179,7 @@
     {
       "id": "djump_100",
       "titleKey": "ranking.achievement.djumpBronze",
-      "target": 1,
+      "target": 25,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "bronze",
       "reward": { "type": "coins", "amount": 300 },
@@ -189,7 +189,7 @@
     {
       "id": "djump_800",
       "titleKey": "ranking.achievement.djumpSilver",
-      "target": 5,
+      "target": 125,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "silver",
       "reward": { "type": "coins", "amount": 800 },
@@ -199,7 +199,7 @@
     {
       "id": "djump_4000",
       "titleKey": "ranking.achievement.djumpGold",
-      "target": 10,
+      "target": 250,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "gold",
       "reward": { "type": "coins", "amount": 2000 },
