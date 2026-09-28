@@ -24,6 +24,22 @@
     "restAfterHazardSegmentsMin": 2,
     "restAfterHazardSegmentsMax": 4
   },
+  "stageScaling": {
+    "first": {
+      "speedMultiplier": 1.0,
+      "minDistanceMultiplier": 1.0,
+      "earlyDistanceMaxMeters": 150,
+      "restAfterHazardSegmentsMin": 2,
+      "restAfterHazardSegmentsMax": 4
+    },
+    "last": {
+      "speedMultiplier": 1.15,
+      "minDistanceMultiplier": 0.5,
+      "earlyDistanceMaxMeters": 60,
+      "restAfterHazardSegmentsMin": 4,
+      "restAfterHazardSegmentsMax": 6
+    }
+  },
   "fever": {
     "distanceChargePctPerMeter": 0.041,
     "coinChargePct": 0.2575,
