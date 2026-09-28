@@ -9,6 +9,14 @@
       "reward": { "type": "dress", "skinId": "skin_p1_stardust" }
     },
     {
+      "id": "all_clear",
+      "titleKey": "ranking.achievement.allClear",
+      "target": 30,
+      "metric": "stagesCleared",
+      "tier": "gold",
+      "reward": { "type": "dress", "skinId": "skin_queen" }
+    },
+    {
       "id": "dress_2",
       "titleKey": "ranking.achievement.dress2",
       "target": 2,
