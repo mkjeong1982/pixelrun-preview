@@ -215,12 +215,8 @@
     {
       "id": "djump_100",
       "titleKey": "ranking.achievement.djumpBronze",
-<<<<<<< HEAD
-      "target": 25,
-=======
       "hintKey": "ranking.achievement.hint.djump",
-      "target": 1,
->>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
+      "target": 25,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "bronze",
       "reward": { "type": "coins", "amount": 300 },
@@ -230,12 +226,8 @@
     {
       "id": "djump_800",
       "titleKey": "ranking.achievement.djumpSilver",
-<<<<<<< HEAD
-      "target": 125,
-=======
       "hintKey": "ranking.achievement.hint.djump",
-      "target": 5,
->>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
+      "target": 125,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "silver",
       "reward": { "type": "coins", "amount": 800 },
@@ -245,12 +237,8 @@
     {
       "id": "djump_4000",
       "titleKey": "ranking.achievement.djumpGold",
-<<<<<<< HEAD
-      "target": 250,
-=======
       "hintKey": "ranking.achievement.hint.djump",
-      "target": 10,
->>>>>>> 898e6200 (feat(achievements): a short plain-words hint beside every achievement's progress (TASK-ACH-HINT.md))
+      "target": 250,
       "metric": "lifetimeDoubleJumpDodges",
       "tier": "gold",
       "reward": { "type": "coins", "amount": 2000 },
