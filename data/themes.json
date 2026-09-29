@@ -110,8 +110,8 @@
         "palace_floorlamp": 2
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
@@ -243,8 +243,8 @@
       "indoor": false,
       "paintedStars": true,
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush1"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
@@ -369,8 +369,8 @@
       "paintedStars": true,
       "paintedMoon": true,
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush1"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
@@ -451,8 +451,8 @@
         "mid_torch": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush1"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
@@ -570,8 +570,8 @@
         }
       ],
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush1"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
@@ -638,8 +638,8 @@
         "outskirts2_lamp": 4
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush1"
+        "main": "bgm_moon",
+        "fever": "bgm_moon_rush"
       },
       "weather": {
         "particle": "star",
