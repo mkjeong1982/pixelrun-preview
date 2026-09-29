@@ -735,13 +735,12 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "town_citizen",
+            "skin": "field_villager",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 32,
-            "bodyHeightPx": 49,
-            "weight": 3,
-            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
+            "bodyWidthPx": 31,
+            "bodyHeightPx": 50,
+            "weight": 3
           }
         ]
       },
@@ -838,13 +837,12 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "town_citizen",
+            "skin": "field_villager",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 32,
-            "bodyHeightPx": 49,
-            "weight": 3,
-            "_note": "field 항목 그대로 복제(TASK-COLLISION-ACCURACY.md §2 실측치). 모든 스테이지에 놀라는 행인 NPC 필수 포함 규칙 — pasture_farmer 미납품 상태라 그때까지 이 항목이 그 역할을 한다."
+            "bodyWidthPx": 31,
+            "bodyHeightPx": 50,
+            "weight": 3
           },
           {
             "skin": "pasture_farmer",
@@ -1194,13 +1192,12 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "town_citizen",
+            "skin": "field_villager",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 32,
-            "bodyHeightPx": 49,
-            "weight": 3,
-            "_note": "TASK-COLLISION-ACCURACY.md §2 — bodyHeightPx 66 -> 49, palace_town 항목과 동일 실측/근거."
+            "bodyWidthPx": 31,
+            "bodyHeightPx": 50,
+            "weight": 3
           },
           {
             "skin": "village_kid",
@@ -1269,11 +1266,11 @@
       "obstacleVariants": {
         "largeRock": [
           {
-            "skin": "town_citizen",
+            "skin": "field_villager",
             "displayWidthPx": 56,
             "displayHeightPx": 73,
-            "bodyWidthPx": 32,
-            "bodyHeightPx": 49,
+            "bodyWidthPx": 31,
+            "bodyHeightPx": 50,
             "weight": 3
           },
           {
