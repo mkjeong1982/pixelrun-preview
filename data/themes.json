@@ -2901,7 +2901,9 @@
       "obstacleGroundSinkPx": 6,
       "weather": {
         "particle": "snow",
-        "densityPerSec": 4
+        "densityPerSec": 16,
+        "windPxS": 260,
+        "gust": 0.45
       },
       "midgroundWeights": {
         "mid_pine_green": 5,
@@ -2913,7 +2915,7 @@
       },
       "ambient": {
         "kind": "wind",
-        "intensity": 0.35
+        "intensity": 1.0
       },
       "obstacleSkins": {
         "tree": "snow_fir",
