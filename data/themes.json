@@ -2365,8 +2365,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
@@ -2477,8 +2477,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
@@ -2587,8 +2587,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
@@ -2690,8 +2690,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
@@ -2789,8 +2789,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
@@ -2908,8 +2908,8 @@
         "mid_pine": 4
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_snow",
+        "fever": "bgm_snow_rush"
       },
       "ambient": {
         "kind": "wind",
