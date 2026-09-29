@@ -729,8 +729,8 @@
         "mid_tree_small_field": 3
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -1187,8 +1187,8 @@
         }
       ],
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
       },
       "obstacleSkins": {
         "smallRock": "town_crate"
@@ -1260,8 +1260,8 @@
       "nearStripParallax": 0.4,
       "nearStripScale": 0.4125,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_adventure1",
+        "fever": "bgm_rush1"
       },
       "obstacleSkins": {
         "smallRock": "town_crate"
