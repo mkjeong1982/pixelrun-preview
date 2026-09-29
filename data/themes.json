@@ -1377,8 +1377,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -1481,8 +1481,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -1586,8 +1586,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -1717,8 +1717,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -1864,8 +1864,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
@@ -2103,8 +2103,8 @@
         "mid_bush": 2
       },
       "bgm": {
-        "main": "bgm_adventure1",
-        "fever": "bgm_rush2"
+        "main": "bgm_forest",
+        "fever": "bgm_forest_rush"
       },
       "obstacleVariants": {
         "largeRock": [
