@@ -1140,7 +1140,6 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "_note": "nearStripScale 0.55·stripAccessories(굴뚝 연기·풍차 축 1215,343)는 전부 실측/렌더 확인값. largeRock의 village_kid 치수는 town_citizen 대비 80% 축소비 실측값. 이력은 md_docs/data-revisions.md 참조.",
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain",
@@ -1154,29 +1153,34 @@
       },
       "obstacleGroundSinkPx": 6,
       "nearStripParallax": 0.4,
-      "nearStripScale": 0.55,
+      "nearStripScale": 0.275,
       "stripAccessories": [
         {
           "strip": "nearStrip",
           "texture": "outskirts_smoke",
           "animation": "outskirts-smoke-rise",
-          "x": 135,
-          "y": 290,
+          "x": 270,
+          "y": 580,
+          "sizeMultiplier": 2,
+          "offsetYPx": -56,
           "alpha": 0.7
         },
         {
           "strip": "nearStrip",
           "texture": "outskirts_smoke",
           "animation": "outskirts-smoke-rise",
-          "x": 1031,
-          "y": 267,
+          "x": 2062,
+          "y": 534,
+          "sizeMultiplier": 2,
+          "offsetYPx": -64,
           "alpha": 0.7
         },
         {
           "strip": "nearStrip",
           "texture": "village_blades",
-          "x": 1215,
-          "y": 343,
+          "x": 2430,
+          "y": 686,
+          "sizeMultiplier": 2,
           "originX": 0.5,
           "originY": 0.5,
           "rotationDegPerSec": 45
@@ -1241,7 +1245,6 @@
       "lighting": "day",
       "skyTint": "#8ed8ff",
       "farMountainTint": "#86a9be",
-      "_note": "village 테마 복제 베이스. nearStripScale 0.825(village의 1.5배)는 사용자 지시로 확대한 값. stripAccessories(풍차 축 1105,345·굴뚝 460,331/1382,355)는 village_inside_town.png 실측 좌표. 이력은 md_docs/data-revisions.md 참조.",
       "layers": {
         "sky": "sky_base",
         "farMountains": "far_mountain",
@@ -1255,7 +1258,7 @@
       },
       "obstacleGroundSinkPx": 6,
       "nearStripParallax": 0.4,
-      "nearStripScale": 0.825,
+      "nearStripScale": 0.4125,
       "bgm": {
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
@@ -1311,23 +1314,28 @@
           "strip": "nearStrip",
           "texture": "outskirts_smoke",
           "animation": "outskirts-smoke-rise",
-          "x": 460,
-          "y": 331,
+          "x": 920,
+          "y": 662,
+          "sizeMultiplier": 2,
+          "offsetYPx": -336,
           "alpha": 0.7
         },
         {
           "strip": "nearStrip",
           "texture": "outskirts_smoke",
           "animation": "outskirts-smoke-rise",
-          "x": 1382,
-          "y": 355,
+          "x": 2764,
+          "y": 710,
+          "sizeMultiplier": 2,
+          "offsetYPx": -344,
           "alpha": 0.7
         },
         {
           "strip": "nearStrip",
           "texture": "village_blades",
-          "x": 1105,
-          "y": 345,
+          "x": 2210,
+          "y": 690,
+          "sizeMultiplier": 2,
           "originX": 0.5,
           "originY": 0.5,
           "rotationDegPerSec": 45
