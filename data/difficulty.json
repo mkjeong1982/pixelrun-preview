@@ -24,6 +24,10 @@
     "restAfterHazardSegmentsMin": 2,
     "restAfterHazardSegmentsMax": 4
   },
+  "clearGold": {
+    "newRecordGold": 300,
+    "cleanSheetGold": { "first": 100, "last": 500 }
+  },
   "stageScaling": {
     "first": {
       "speedMultiplier": 1.0,

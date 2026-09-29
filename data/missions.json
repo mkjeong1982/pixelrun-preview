@@ -36,7 +36,7 @@
       "titleParams": {
         "n": 15
       },
-      "iconFrame": 0,
+      "iconFrame": 4,
       "target": 15,
       "reward": 60
     },
@@ -46,7 +46,7 @@
       "titleParams": {
         "n": 3
       },
-      "iconFrame": 0,
+      "iconFrame": 5,
       "target": 3,
       "reward": 80
     },
@@ -66,7 +66,7 @@
       "titleParams": {
         "n": 1
       },
-      "iconFrame": 3,
+      "iconFrame": 6,
       "target": 1,
       "reward": 80
     },
@@ -76,7 +76,7 @@
       "titleParams": {
         "n": 3
       },
-      "iconFrame": 3,
+      "iconFrame": 7,
       "target": 3,
       "reward": 60
     },
@@ -86,7 +86,7 @@
       "titleParams": {
         "n": 1
       },
-      "iconFrame": 2,
+      "iconFrame": 8,
       "target": 1,
       "reward": 150
     },
@@ -96,7 +96,7 @@
       "titleParams": {
         "n": 2
       },
-      "iconFrame": 2,
+      "iconFrame": 9,
       "target": 2,
       "reward": 100
     }
