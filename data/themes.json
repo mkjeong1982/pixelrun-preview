@@ -3034,8 +3034,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "obstacleSkins": {
         "tree": "abroad_stele"
@@ -3135,8 +3135,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "obstacleSkins": {
         "tree": "abroad_signpost"
@@ -3354,8 +3354,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "obstacleSkins": {
         "tree": "abroad_signpost"
@@ -3675,8 +3675,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "obstacleSkins": {
         "tree": "abroad_signpost"
@@ -3979,8 +3979,8 @@
       "nearStripScale": 1.0,
       "obstacleGroundSinkPx": 6,
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "obstacleSkins": {
         "tree": "abroad_signpost"
@@ -4270,8 +4270,8 @@
         "abroad_throne_candelabra": 2
       },
       "bgm": {
-        "main": "bgm_adventure2",
-        "fever": "bgm_rush2"
+        "main": "bgm_crystal",
+        "fever": "bgm_crystal_rush"
       },
       "weather": {
         "particle": "star",
