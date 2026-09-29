@@ -834,6 +834,10 @@
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
       },
+      "ambient": {
+        "kind": "windmill",
+        "source": "village_blades"
+      },
       "obstacleVariants": {
         "largeRock": [
           {
@@ -944,6 +948,17 @@
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
       },
+      "ambient": [
+      {
+        "kind": "windmill",
+        "source": "village_blades"
+      },
+      {
+        "kind": "waterfall",
+        "source": "waterfall_mist",
+        "intensity": 0.6
+      }
+      ],
       "obstacleVariants": {
         "largeRock": [
           {
@@ -1086,6 +1101,17 @@
         "main": "bgm_adventure2",
         "fever": "bgm_rush2"
       },
+      "ambient": [
+      {
+        "kind": "windmill",
+        "source": "village_blades"
+      },
+      {
+        "kind": "waterfall",
+        "source": "waterfall_mist",
+        "intensity": 1.0
+      }
+      ],
       "obstacleVariants": {
         "largeRock": [
           {
@@ -3679,6 +3705,10 @@
       "bgm": {
         "main": "bgm_crystal",
         "fever": "bgm_crystal_rush"
+      },
+      "ambient": {
+        "kind": "fountain",
+        "source": "abroad_plaza_fountain"
       },
       "obstacleSkins": {
         "tree": "abroad_signpost"

@@ -4,19 +4,19 @@
       "index": 1,
       "image": "outro_01",
       "dialogueBox": {
-        "left": 12.3,
-        "top": 564.1,
-        "right": 376.2,
-        "bottom": 679.5
+        "left": 11.9,
+        "top": 546.0,
+        "right": 378.8,
+        "bottom": 685.6
       },
       "nameplate": {
-        "left": 16.6,
-        "top": 543.0,
-        "right": 135.0,
-        "bottom": 565.8
+        "left": 17.5,
+        "top": 514.2,
+        "right": 159.6,
+        "bottom": 540.9
       },
-      "nameplateTextLeft": 45.9,
-      "nameplateTextRight": 124.7,
+      "nameplateTextLeft": 51.1,
+      "nameplateTextRight": 148.8,
       "lines": [
         {
           "speaker": "prince"
@@ -30,19 +30,19 @@
       "index": 2,
       "image": "outro_02",
       "dialogueBox": {
-        "left": 13.2,
-        "top": 565.8,
-        "right": 376.2,
-        "bottom": 684.3
+        "left": 11.9,
+        "top": 546.0,
+        "right": 378.8,
+        "bottom": 685.6
       },
       "nameplate": {
-        "left": 17.9,
-        "top": 535.3,
-        "right": 153.1,
-        "bottom": 562.0
+        "left": 17.5,
+        "top": 514.2,
+        "right": 159.6,
+        "bottom": 540.9
       },
-      "nameplateTextLeft": 49.8,
-      "nameplateTextRight": 142.4,
+      "nameplateTextLeft": 51.1,
+      "nameplateTextRight": 148.8,
       "lines": [
         {
           "speaker": "prince"
@@ -56,19 +56,19 @@
       "index": 3,
       "image": "outro_03",
       "dialogueBox": {
-        "left": 0.0,
-        "top": 557.9,
-        "right": 389.5,
-        "bottom": 704.0
+        "left": 11.9,
+        "top": 546.0,
+        "right": 378.8,
+        "bottom": 685.6
       },
       "nameplate": {
-        "left": 6.6,
-        "top": 528.2,
-        "right": 159.3,
-        "bottom": 557.9
+        "left": 17.5,
+        "top": 514.2,
+        "right": 159.6,
+        "bottom": 540.9
       },
-      "nameplateTextLeft": 42.5,
-      "nameplateTextRight": 147.5,
+      "nameplateTextLeft": 51.1,
+      "nameplateTextRight": 148.8,
       "lines": [
         {
           "speaker": "prince"
@@ -86,19 +86,19 @@
       "index": 4,
       "image": "outro_04",
       "dialogueBox": {
-        "left": 13.6,
-        "top": 570.6,
-        "right": 375.8,
-        "bottom": 683.0
+        "left": 11.9,
+        "top": 546.0,
+        "right": 378.8,
+        "bottom": 685.6
       },
       "nameplate": {
-        "left": 11.0,
-        "top": 540.0,
-        "right": 155.3,
-        "bottom": 566.7
+        "left": 17.5,
+        "top": 514.2,
+        "right": 159.6,
+        "bottom": 540.9
       },
-      "nameplateTextLeft": 49.3,
-      "nameplateTextRight": 144.9,
+      "nameplateTextLeft": 51.1,
+      "nameplateTextRight": 148.8,
       "lines": [
         {
           "speaker": "prince"
