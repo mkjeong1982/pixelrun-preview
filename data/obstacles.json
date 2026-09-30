@@ -40,5 +40,26 @@
       "color": "#6b4a2a"
     }
   },
+  "voices": {
+    "palace_maid": "woman",
+    "palace_butler": "oldman",
+    "town_citizen": "woman",
+    "field_villager": "woman",
+    "village_kid": "boy",
+    "pasture_farmer": "man",
+    "waterfall_angler": "man",
+    "waterfall_shepherd": "man",
+    "outskirts_spearman": "man",
+    "wall_patrol": "man",
+    "abroad_citizen": "woman",
+    "abroad_patrol": "man",
+    "abroad_gentleman": "man",
+    "abroad_noble_lady": "woman",
+    "abroad_plaza_lady": "woman",
+    "abroad_royal_guard": "man",
+    "abroad_throne_maid": "woman",
+    "abroad_throne_butler": "oldman",
+    "abroad_throne_knight": "man"
+  },
   "_note": "GDD 3.3 v5.10 revision: tree 112->140->132->128. 128 is the GDD 3.3 floor: the single-jump apex is 126.8px, so anything under 128 could be cleared with one tap and the double-jump lesson collapses. Rock/spike sizes reduced from the 3.3 defaults (32/48/32x24) after playtest — on a 390px-wide screen they read as walls. minGapSec is a time-based floor for hazard spacing so gaps scale with speed."
 }
