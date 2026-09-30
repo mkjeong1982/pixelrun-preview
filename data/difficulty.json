@@ -61,6 +61,13 @@
     "magnetRadiusPx": 240,
     "boltFeverChargePct": 100,
     "bigCoinValue": 10,
+    "giftContents": {
+      "bigcoin": 3,
+      "magnet": 3,
+      "bolt": 3,
+      "heart": 2,
+      "bomb": 2
+    },
     "types": [
       {
         "id": "bigcoin",
