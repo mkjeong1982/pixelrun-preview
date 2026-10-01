@@ -121,6 +121,7 @@
   },
   {
     "id": "skin_aurora",
+    "storeProductId": "com.mkgamestudio.pixelrun.dress.aurora",
     "tier": "paid",
     "blessing": null,
     "runSheet": "princess_aurora_run",
@@ -184,6 +185,7 @@
   },
   {
     "id": "skin_blackswan",
+    "storeProductId": "com.mkgamestudio.pixelrun.dress.blackswan",
     "tier": "paid",
     "blessing": null,
     "runSheet": "princess_blackswan_run",
@@ -304,6 +306,7 @@
   },
   {
     "id": "skin_golden",
+    "storeProductId": "com.mkgamestudio.pixelrun.dress.golden",
     "tier": "paid",
     "blessing": null,
     "runSheet": "princess_golden_run",
