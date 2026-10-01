@@ -249,7 +249,7 @@
       "id": "combo_25",
       "titleKey": "ranking.achievement.comboBronze",
       "hintKey": "ranking.achievement.hint.combo",
-      "target": 25,
+      "target": 150,
       "metric": "lifetimeCombos",
       "tier": "bronze",
       "reward": {
@@ -263,7 +263,7 @@
       "id": "combo_125",
       "titleKey": "ranking.achievement.comboSilver",
       "hintKey": "ranking.achievement.hint.combo",
-      "target": 125,
+      "target": 1000,
       "metric": "lifetimeCombos",
       "tier": "silver",
       "reward": {
@@ -277,7 +277,7 @@
       "id": "combo_250",
       "titleKey": "ranking.achievement.comboGold",
       "hintKey": "ranking.achievement.hint.combo",
-      "target": 250,
+      "target": 4000,
       "metric": "lifetimeCombos",
       "tier": "gold",
       "reward": {
