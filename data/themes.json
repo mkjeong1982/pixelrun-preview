@@ -147,10 +147,10 @@
         "stump": [
           {
             "skin": "palace_armor_stand",
-            "displayWidthPx": 26,
-            "displayHeightPx": 74,
-            "bodyWidthPx": 23,
-            "bodyHeightPx": 64,
+            "displayWidthPx": 30,
+            "displayHeightPx": 84,
+            "bodyWidthPx": 26,
+            "bodyHeightPx": 72,
             "weight": 2
           }
         ]
@@ -485,10 +485,10 @@
         "stump": [
           {
             "skin": "palace_armor_stand",
-            "displayWidthPx": 26,
-            "displayHeightPx": 74,
-            "bodyWidthPx": 23,
-            "bodyHeightPx": 64,
+            "displayWidthPx": 30,
+            "displayHeightPx": 84,
+            "bodyWidthPx": 26,
+            "bodyHeightPx": 72,
             "weight": 2
           }
         ]
@@ -4352,10 +4352,10 @@
         "stump": [
           {
             "skin": "palace_armor_stand",
-            "displayWidthPx": 26,
-            "displayHeightPx": 74,
-            "bodyWidthPx": 23,
-            "bodyHeightPx": 64,
+            "displayWidthPx": 30,
+            "displayHeightPx": 84,
+            "bodyWidthPx": 26,
+            "bodyHeightPx": 72,
             "weight": 2
           },
           {
