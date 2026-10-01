@@ -330,10 +330,10 @@
       "step": 3
     },
     {
-      "id": "speed_30",
+      "id": "speed_40",
       "titleKey": "ranking.achievement.speedBronze",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 30,
+      "target": 40,
       "metric": "bestSpeed",
       "tier": "bronze",
       "reward": {
@@ -344,10 +344,10 @@
       "step": 1
     },
     {
-      "id": "speed_35",
+      "id": "speed_45",
       "titleKey": "ranking.achievement.speedSilver",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 35,
+      "target": 45,
       "metric": "bestSpeed",
       "tier": "silver",
       "reward": {
@@ -358,10 +358,10 @@
       "step": 2
     },
     {
-      "id": "speed_40",
+      "id": "speed_50",
       "titleKey": "ranking.achievement.speedGold",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 40,
+      "target": 50,
       "metric": "bestSpeed",
       "tier": "gold",
       "reward": {
