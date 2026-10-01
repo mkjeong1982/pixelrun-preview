@@ -60,8 +60,8 @@
     "_note": "GDD 8.3. Rates sit at the slow end of the sanctioned ranges (distance 0.03~0.07, coin 0.8~1.6): at the defaults the gauge filled in ~45s, under the 50~70s target, because a coin-heavy line charges far faster than the distance-only sanity check in 8.3 assumes. ~68s now. durationSec 5.0 -> 7.5 (GDD 8.3 revision, user request): five seconds ended before the payoff registered. Tune from measured per-minute distance/coins/near-miss, never by hardcoding elsewhere. | 2026-08-21: durationSec 7.5 -> 9.5 (user request, balance pass)."
   },
   "items": {
-    "spawnIntervalSecMin": 7.0,
-    "spawnIntervalSecMax": 13.0,
+    "spawnIntervalSecMin": 5.3,
+    "spawnIntervalSecMax": 9.9,
     "magnetDurationSec": 7.0,
     "magnetRadiusPx": 240,
     "boltFeverChargePct": 100,
@@ -96,7 +96,7 @@
       },
       {
         "id": "gift",
-        "weight": 5,
+        "weight": 10,
         "placement": "neutral"
       }
     ],
