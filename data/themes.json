@@ -949,15 +949,15 @@
         "fever": "bgm_rush2"
       },
       "ambient": [
-      {
-        "kind": "windmill",
-        "source": "village_blades"
-      },
-      {
-        "kind": "waterfall",
-        "source": "waterfall_mist",
-        "intensity": 0.6
-      }
+        {
+          "kind": "windmill",
+          "source": "village_blades"
+        },
+        {
+          "kind": "waterfall",
+          "source": "waterfall_mist",
+          "intensity": 0.6
+        }
       ],
       "obstacleVariants": {
         "largeRock": [
@@ -1102,15 +1102,15 @@
         "fever": "bgm_rush2"
       },
       "ambient": [
-      {
-        "kind": "windmill",
-        "source": "village_blades"
-      },
-      {
-        "kind": "waterfall",
-        "source": "waterfall_mist",
-        "intensity": 1.0
-      }
+        {
+          "kind": "windmill",
+          "source": "village_blades"
+        },
+        {
+          "kind": "waterfall",
+          "source": "waterfall_mist",
+          "intensity": 1.0
+        }
       ],
       "obstacleVariants": {
         "largeRock": [
@@ -2394,10 +2394,6 @@
         "main": "bgm_snow",
         "fever": "bgm_snow_rush"
       },
-      "ambient": {
-        "kind": "wind",
-        "intensity": 0.3
-      },
       "obstacleSkins": {
         "tree": "snow_fir",
         "stump": "snow_stump",
@@ -2506,10 +2502,6 @@
         "main": "bgm_snow",
         "fever": "bgm_snow_rush"
       },
-      "ambient": {
-        "kind": "wind",
-        "intensity": 0.3
-      },
       "obstacleSkins": {
         "tree": "snow_fir",
         "stump": "snow_stump",
@@ -2616,10 +2608,6 @@
         "main": "bgm_snow",
         "fever": "bgm_snow_rush"
       },
-      "ambient": {
-        "kind": "wind",
-        "intensity": 0.3
-      },
       "obstacleSkins": {
         "tree": "icelake_goddess",
         "stump": "snow_stump",
@@ -2718,10 +2706,6 @@
       "bgm": {
         "main": "bgm_snow",
         "fever": "bgm_snow_rush"
-      },
-      "ambient": {
-        "kind": "wind",
-        "intensity": 0.3
       },
       "obstacleSkins": {
         "tree": "icelake_goddess",
