@@ -29,19 +29,24 @@
     "cleanSheetGold": { "first": 100, "last": 500 }
   },
   "stageScaling": {
+    "afterFirstFloor": 0.3,
     "first": {
       "speedMultiplier": 1.0,
       "minDistanceMultiplier": 1.0,
       "earlyDistanceMaxMeters": 150,
       "restAfterHazardSegmentsMin": 2,
-      "restAfterHazardSegmentsMax": 4
+      "restAfterHazardSegmentsMax": 4,
+      "minimumHazardIntervalSec": 1.0,
+      "maxVisibleHazards": 2
     },
     "last": {
-      "speedMultiplier": 1.15,
-      "minDistanceMultiplier": 0.5,
-      "earlyDistanceMaxMeters": 60,
-      "restAfterHazardSegmentsMin": 4,
-      "restAfterHazardSegmentsMax": 6
+      "speedMultiplier": 1.25,
+      "minDistanceMultiplier": 0.25,
+      "earlyDistanceMaxMeters": 30,
+      "restAfterHazardSegmentsMin": 5,
+      "restAfterHazardSegmentsMax": 8,
+      "minimumHazardIntervalSec": 0.8,
+      "maxVisibleHazards": 3
     }
   },
   "fever": {
