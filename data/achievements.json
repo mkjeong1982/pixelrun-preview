@@ -330,6 +330,48 @@
       "step": 3
     },
     {
+      "id": "speed_30",
+      "titleKey": "ranking.achievement.speedBronze",
+      "hintKey": "ranking.achievement.hint.speed",
+      "target": 30,
+      "metric": "bestSpeed",
+      "tier": "bronze",
+      "reward": {
+        "type": "coins",
+        "amount": 300
+      },
+      "chain": "speed",
+      "step": 1
+    },
+    {
+      "id": "speed_35",
+      "titleKey": "ranking.achievement.speedSilver",
+      "hintKey": "ranking.achievement.hint.speed",
+      "target": 35,
+      "metric": "bestSpeed",
+      "tier": "silver",
+      "reward": {
+        "type": "coins",
+        "amount": 800
+      },
+      "chain": "speed",
+      "step": 2
+    },
+    {
+      "id": "speed_40",
+      "titleKey": "ranking.achievement.speedGold",
+      "hintKey": "ranking.achievement.hint.speed",
+      "target": 40,
+      "metric": "bestSpeed",
+      "tier": "gold",
+      "reward": {
+        "type": "coins",
+        "amount": 2000
+      },
+      "chain": "speed",
+      "step": 3
+    },
+    {
       "id": "barefoot_run",
       "titleKey": "ranking.achievement.barefootRun",
       "hintKey": "ranking.achievement.hint.barefoot",
