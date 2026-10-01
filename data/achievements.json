@@ -246,6 +246,90 @@
       "step": 3
     },
     {
+      "id": "combo_25",
+      "titleKey": "ranking.achievement.comboBronze",
+      "hintKey": "ranking.achievement.hint.combo",
+      "target": 25,
+      "metric": "lifetimeCombos",
+      "tier": "bronze",
+      "reward": {
+        "type": "coins",
+        "amount": 300
+      },
+      "chain": "combo",
+      "step": 1
+    },
+    {
+      "id": "combo_125",
+      "titleKey": "ranking.achievement.comboSilver",
+      "hintKey": "ranking.achievement.hint.combo",
+      "target": 125,
+      "metric": "lifetimeCombos",
+      "tier": "silver",
+      "reward": {
+        "type": "coins",
+        "amount": 800
+      },
+      "chain": "combo",
+      "step": 2
+    },
+    {
+      "id": "combo_250",
+      "titleKey": "ranking.achievement.comboGold",
+      "hintKey": "ranking.achievement.hint.combo",
+      "target": 250,
+      "metric": "lifetimeCombos",
+      "tier": "gold",
+      "reward": {
+        "type": "coins",
+        "amount": 2000
+      },
+      "chain": "combo",
+      "step": 3
+    },
+    {
+      "id": "bestcombo_3",
+      "titleKey": "ranking.achievement.bestcomboBronze",
+      "hintKey": "ranking.achievement.hint.bestcombo",
+      "target": 3,
+      "metric": "bestCombo",
+      "tier": "bronze",
+      "reward": {
+        "type": "coins",
+        "amount": 300
+      },
+      "chain": "bestcombo",
+      "step": 1
+    },
+    {
+      "id": "bestcombo_5",
+      "titleKey": "ranking.achievement.bestcomboSilver",
+      "hintKey": "ranking.achievement.hint.bestcombo",
+      "target": 5,
+      "metric": "bestCombo",
+      "tier": "silver",
+      "reward": {
+        "type": "coins",
+        "amount": 800
+      },
+      "chain": "bestcombo",
+      "step": 2
+    },
+    {
+      "id": "bestcombo_6",
+      "titleKey": "ranking.achievement.bestcomboGold",
+      "hintKey": "ranking.achievement.hint.bestcombo",
+      "target": 6,
+      "metric": "bestCombo",
+      "tier": "gold",
+      "reward": {
+        "type": "coins",
+        "amount": 2000
+      },
+      "chain": "bestcombo",
+      "step": 3
+    },
+    {
       "id": "barefoot_run",
       "titleKey": "ranking.achievement.barefootRun",
       "hintKey": "ranking.achievement.hint.barefoot",
