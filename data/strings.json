@@ -398,7 +398,9 @@
     "ranking.achievement.birdsmashBronze": "새 학살자",
     "ranking.achievement.birdsmashSilver": "새들의 공포",
     "ranking.achievement.birdsmashGold": "조류 멸종 위기의 주범",
-    "dressroom.action.buyCash": "구매"
+    "dressroom.action.buyCash": "구매",
+    "settings.contact.subject": "[픽셀런] 문의",
+    "settings.contact.toast": "메일 앱이 열려요! 안 열리면 {{email}} 로 보내 주세요"
   },
   "en": {
     "dressroom.title": "Dresses",
@@ -799,7 +801,9 @@
     "ranking.achievement.birdsmashBronze": "Fowl Play Champion",
     "ranking.achievement.birdsmashSilver": "Birds Fear My Name",
     "ranking.achievement.birdsmashGold": "Single-Handedly Endangering Birds",
-    "dressroom.action.buyCash": "Buy"
+    "dressroom.action.buyCash": "Buy",
+    "settings.contact.subject": "[PixelRun] Support",
+    "settings.contact.toast": "Opening your mail app! If not, write to {{email}}"
   },
   "ja": {
     "dressroom.title": "ドレス",
@@ -1200,6 +1204,8 @@
     "ranking.achievement.birdsmashBronze": "鳥さん、ごめんね",
     "ranking.achievement.birdsmashSilver": "鳥たちのトラウマ",
     "ranking.achievement.birdsmashGold": "鳥類絶滅危機の戦犯",
-    "dressroom.action.buyCash": "購入"
+    "dressroom.action.buyCash": "購入",
+    "settings.contact.subject": "【ピクセルラン】お問い合わせ",
+    "settings.contact.toast": "メールアプリを開くよ！開かなければ {{email}} まで"
   }
 }
