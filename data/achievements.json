@@ -372,6 +372,48 @@
       "step": 3
     },
     {
+      "id": "flag_30",
+      "titleKey": "ranking.achievement.flagBronze",
+      "hintKey": "ranking.achievement.hint.flag",
+      "target": 30,
+      "metric": "lifetimeFlagTouches",
+      "tier": "bronze",
+      "reward": {
+        "type": "coins",
+        "amount": 300
+      },
+      "chain": "flag",
+      "step": 1
+    },
+    {
+      "id": "flag_100",
+      "titleKey": "ranking.achievement.flagSilver",
+      "hintKey": "ranking.achievement.hint.flag",
+      "target": 100,
+      "metric": "lifetimeFlagTouches",
+      "tier": "silver",
+      "reward": {
+        "type": "coins",
+        "amount": 800
+      },
+      "chain": "flag",
+      "step": 2
+    },
+    {
+      "id": "flag_300",
+      "titleKey": "ranking.achievement.flagGold",
+      "hintKey": "ranking.achievement.hint.flag",
+      "target": 300,
+      "metric": "lifetimeFlagTouches",
+      "tier": "gold",
+      "reward": {
+        "type": "coins",
+        "amount": 2000
+      },
+      "chain": "flag",
+      "step": 3
+    },
+    {
       "id": "barefoot_run",
       "titleKey": "ranking.achievement.barefootRun",
       "hintKey": "ranking.achievement.hint.barefoot",
