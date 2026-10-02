@@ -1,0 +1,7 @@
+{
+  "continueTickets": [
+    { "id": "ticket_2", "storeProductId": "com.mkgamestudio.pixelrun.ticket.2", "count": 2, "priceCash": { "KRW": 500, "USD": 0.49, "JPY": 80 } },
+    { "id": "ticket_5", "storeProductId": "com.mkgamestudio.pixelrun.ticket.5", "count": 5, "priceCash": { "KRW": 1000, "USD": 0.99, "JPY": 160 } },
+    { "id": "ticket_10", "storeProductId": "com.mkgamestudio.pixelrun.ticket.10", "count": 10, "priceCash": { "KRW": 2000, "USD": 1.99, "JPY": 320 } }
+  ]
+}
