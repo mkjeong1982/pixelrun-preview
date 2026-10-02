@@ -333,7 +333,7 @@
       "id": "speed_40",
       "titleKey": "ranking.achievement.speedBronze",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 48,
+      "target": 47,
       "metric": "bestSpeed",
       "tier": "bronze",
       "reward": {
@@ -347,7 +347,7 @@
       "id": "speed_45",
       "titleKey": "ranking.achievement.speedSilver",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 52,
+      "target": 51,
       "metric": "bestSpeed",
       "tier": "silver",
       "reward": {
@@ -361,7 +361,7 @@
       "id": "speed_50",
       "titleKey": "ranking.achievement.speedGold",
       "hintKey": "ranking.achievement.hint.speed",
-      "target": 56,
+      "target": 55,
       "metric": "bestSpeed",
       "tier": "gold",
       "reward": {

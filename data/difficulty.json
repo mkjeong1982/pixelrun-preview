@@ -30,7 +30,7 @@
     "starUpGold": 150
   },
   "stageScaling": {
-    "afterFirstFloor": 0.3,
+    "afterFirstFloor": 0.15,
     "first": {
       "speedMultiplier": 1.0,
       "minDistanceMultiplier": 1.0,
@@ -41,12 +41,12 @@
       "maxVisibleHazards": 2
     },
     "last": {
-      "speedMultiplier": 1.25,
-      "minDistanceMultiplier": 0.25,
+      "speedMultiplier": 1.2,
+      "minDistanceMultiplier": 0.3,
       "earlyDistanceMaxMeters": 30,
-      "restAfterHazardSegmentsMin": 5,
-      "restAfterHazardSegmentsMax": 8,
-      "minimumHazardIntervalSec": 0.8,
+      "restAfterHazardSegmentsMin": 4,
+      "restAfterHazardSegmentsMax": 7,
+      "minimumHazardIntervalSec": 0.85,
       "maxVisibleHazards": 3
     }
   },
