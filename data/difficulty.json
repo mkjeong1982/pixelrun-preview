@@ -26,7 +26,8 @@
   },
   "clearGold": {
     "newRecordGold": 300,
-    "cleanSheetGold": { "first": 100, "last": 500 }
+    "cleanSheetGold": { "first": 100, "last": 500 },
+    "starUpGold": 150
   },
   "stageScaling": {
     "afterFirstFloor": 0.3,

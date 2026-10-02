@@ -478,6 +478,39 @@
       "reward": { "type": "coins", "amount": 2000 },
       "chain": "birdsmash",
       "step": 3
+    },
+    {
+      "id": "stars_30",
+      "titleKey": "ranking.achievement.starsBronze",
+      "hintKey": "ranking.achievement.hint.stars",
+      "target": 30,
+      "metric": "totalStars",
+      "tier": "bronze",
+      "reward": { "type": "coins", "amount": 300 },
+      "chain": "stars",
+      "step": 1
+    },
+    {
+      "id": "stars_60",
+      "titleKey": "ranking.achievement.starsSilver",
+      "hintKey": "ranking.achievement.hint.stars",
+      "target": 60,
+      "metric": "totalStars",
+      "tier": "silver",
+      "reward": { "type": "coins", "amount": 800 },
+      "chain": "stars",
+      "step": 2
+    },
+    {
+      "id": "stars_90",
+      "titleKey": "ranking.achievement.starsGold",
+      "hintKey": "ranking.achievement.hint.stars",
+      "target": 90,
+      "metric": "totalStars",
+      "tier": "gold",
+      "reward": { "type": "coins", "amount": 2000 },
+      "chain": "stars",
+      "step": 3
     }
   ]
 }

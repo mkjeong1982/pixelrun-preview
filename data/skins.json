@@ -76,7 +76,7 @@
     "rarity": "epic",
     "description": "우아함은 기본, 피버 타임은 2초 덤이에요!",
     "descKey": "data.skin.skin_royalviolet.desc",
-    "priceCoins": 5000,
+    "priceCoins": 8000,
     "stats": {
       "hearts": 3,
       "coinBonusPercent": null,
@@ -102,7 +102,7 @@
     "rarity": "epic",
     "description": "화려함은 기본, 따뜻함은 덤",
     "descKey": "data.skin.skin_p2_aurora.desc",
-    "priceCoins": 14800,
+    "priceCoins": 22000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
@@ -166,7 +166,7 @@
     "rarity": "epic",
     "description": "수정 왕국에서 더 빛나요! 달리면 보랏빛 수정이 반짝반짝",
     "descKey": "data.skin.skin_crystal.desc",
-    "priceCoins": 30000,
+    "priceCoins": 45000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
@@ -231,7 +231,7 @@
     "rarity": "epic",
     "description": "밤하늘 별가루를 두른 드레스",
     "descKey": "data.skin.skin_starlight.desc",
-    "priceCoins": 50000,
+    "priceCoins": 75000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
@@ -260,7 +260,7 @@
     "rarity": "epic",
     "description": "데님을 입어도 나는 공주! 코인도 두둑, 발걸음도 가뿐가뿐~",
     "descKey": "data.skin.skin_royaldenim.desc",
-    "priceCoins": 70000,
+    "priceCoins": 110000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
@@ -289,7 +289,7 @@
     "rarity": "epic",
     "description": "파티의 주인공은 나! 달리면 선홍빛 조각이 팔랑팔랑~",
     "descKey": "data.skin.skin_cocktail.desc",
-    "priceCoins": 100000,
+    "priceCoins": 150000,
     "priceCash": null,
     "stats": {
       "hearts": 3,
