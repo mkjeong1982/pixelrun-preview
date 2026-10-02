@@ -29,7 +29,7 @@
     "dressroom.card.wearing": "착용 중",
     "dressroom.wearing.label": "착용 중: {{dress}}",
     "dressroom.wearing.none": "착용 중: 없음 (속옷 바람!)",
-    "dressroom.tickets.owned": "부활 티켓 {{count}}장 보유",
+    "dressroom.tickets.owned": "부활 티켓 {{count}}장",
     "dressroom.filter.owned": "보유 중",
     "dressroom.card.owned": "보유",
     "dressroom.card.priceCoins": "{{price}}",
