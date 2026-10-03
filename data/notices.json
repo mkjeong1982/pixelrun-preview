@@ -1,0 +1,13 @@
+{
+  "notices": [
+    {
+      "id": "open-promo-2026-10",
+      "date": "2026-10-03",
+      "kind": "event",
+      "icon": "notice_icon_gift",
+      "titleKey": "notice.openPromo.title",
+      "bodyKey": "notice.openPromo.body",
+      "popup": true
+    }
+  ]
+}
