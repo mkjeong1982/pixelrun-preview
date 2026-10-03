@@ -414,6 +414,48 @@
       "step": 3
     },
     {
+      "id": "revive_1",
+      "titleKey": "ranking.achievement.reviveBronze",
+      "hintKey": "ranking.achievement.hint.revive",
+      "target": 1,
+      "metric": "lifetimeRevives",
+      "tier": "bronze",
+      "reward": {
+        "type": "coins",
+        "amount": 300
+      },
+      "chain": "revive",
+      "step": 1
+    },
+    {
+      "id": "revive_5",
+      "titleKey": "ranking.achievement.reviveSilver",
+      "hintKey": "ranking.achievement.hint.revive",
+      "target": 5,
+      "metric": "lifetimeRevives",
+      "tier": "silver",
+      "reward": {
+        "type": "coins",
+        "amount": 800
+      },
+      "chain": "revive",
+      "step": 2
+    },
+    {
+      "id": "revive_20",
+      "titleKey": "ranking.achievement.reviveGold",
+      "hintKey": "ranking.achievement.hint.revive",
+      "target": 20,
+      "metric": "lifetimeRevives",
+      "tier": "gold",
+      "reward": {
+        "type": "coins",
+        "amount": 2000
+      },
+      "chain": "revive",
+      "step": 3
+    },
+    {
       "id": "barefoot_run",
       "titleKey": "ranking.achievement.barefootRun",
       "hintKey": "ranking.achievement.hint.barefoot",
