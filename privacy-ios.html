@@ -18,6 +18,8 @@ small{color:var(--soft)}
 다. 랭킹 이용 시
 - 닉네임, 점수, 착용 드레스, 기록 시각: 전체 순위 표시를 위해(다른 이용자에게 공개됨)
 - 닉네임 신고 시: 신고자·대상자 식별자, 대상 닉네임, 신고 시각: 부적절한 닉네임 처리를 위해
+- 플레이 기록(스테이지, 결과, 거리, 플레이 시간, 점수, 획득 골드, 남은 하트, 부활 여부, 별점, 착용 드레스, 앱 버전, 기기 종류, 기록 시각): 랭킹 점수의 근거 확인과 부정 이용 탐지를 위해(다른 이용자에게 공개되지 않음)
+- 앱 무결성 확인 토큰(Apple App Attest): 정상 앱에서 온 요청인지 확인하기 위해
 라. 문의하기 이용 시
 - 문의 유형과 내용, 답장 받을 이메일(선택), 앱 버전, 기기 종류(iOS/Android), 언어, 브라우저 정보(User-Agent), 작성 시각: 문의 확인·답변과 오류 재현을 위해
 마. 유료 구매 시
@@ -29,10 +31,11 @@ small{color:var(--soft)}
 - 업적 달성 기록과 랭킹 점수: Game Center 업적·순위 화면에 표시하기 위해. 이 기록은 Apple 로 전송되며 Apple 의 개인정보처리방침을 따릅니다.</p><h2>3. 보유 기간과 파기</h2><p>가. 계정·진행 정보·랭킹 기록: 계정 삭제 시 즉시 삭제합니다. 1년 이상 접속하지 않은 게스트 계정은 삭제할 수 있습니다.
 나. 문의 내용: 처리 기록 보관을 위해 접수일로부터 3년간 보관 후 삭제합니다(「전자상거래 등에서의 소비자보호에 관한 법률」 소비자 불만·분쟁처리 기록).
 다. 닉네임 신고 기록: 처리 후 1년간 보관 후 삭제합니다.
+- 플레이 기록: 부정 이용 탐지·분쟁 확인을 위해 기록일로부터 1년간 보관 후 삭제합니다(계정을 삭제해도 이 기간 동안 보관). 부정 이용 판정 기록은 판정일로부터 1년간 보관합니다.
 라. 구매 기록: 대금결제·재화공급 기록 보존 의무에 따라 5년간 보관합니다. 결제 원장은 스토어가 보관합니다.
 마. 파기는 복구할 수 없는 방법으로 지웁니다.</p><h2>4. 제3자 제공</h2><p>운영자는 이용자의 정보를 제3자에게 제공하지 않습니다. 다만 랭킹의 닉네임·점수·드레스는 서비스 기능으로서 다른 이용자에게 공개되며, 법령에 따른 요청이 있으면 그에 따릅니다.</p><h2>5. 처리 위탁 및 국외 이전</h2><p>서비스 운영을 위해 아래 업체에 정보 처리를 맡기며, 이 과정에서 정보가 국외로 이전됩니다. 이전은 서비스 이용 시 네트워크를 통해 수시로 이루어집니다. 이용자가 국외 이전을 원하지 않으면 계정 연결·랭킹·문의·구매 기능을 쓰지 않거나 계정을 삭제할 수 있으나, 이 경우 해당 기능을 이용할 수 없습니다.
 가. Google LLC (미국)  Firebase 인증·데이터베이스(데이터베이스 저장 위치: 대한민국 서울 리전)
-- 이전 항목: 익명 식별자, 연결 계정 정보, 진행 정보, 랭킹·신고·문의 정보
+- 이전 항목: 익명 식별자, 연결 계정 정보, 진행 정보, 랭킹·플레이 기록·신고·문의 정보, 앱 무결성 확인 토큰(Firebase App Check)
 - 보유 기간: 위 3항과 같음
 나. RevenueCat, Inc. (미국)  인앱 구매 확인·복원
 - 이전 항목: 익명 식별자, 구매 상품 ID와 구매 내역, 스토어 영수증 정보
@@ -43,7 +46,7 @@ small{color:var(--soft)}
 - 진행 데이터 초기화: 설정 &gt; 데이터 초기화
 - 계정과 클라우드 데이터·랭킹 삭제: 설정 &gt; 계정 &gt; 계정 삭제
 - 닉네임 변경: 설정 &gt; 계정 &gt; 닉네임 바꾸기
-- 그 밖의 요청(문의·구매 기록 등): 아래 문의처로 연락 주시면 지체 없이 처리합니다.</p><h2>7. 아동의 개인정보</h2><p>서비스는 이용자의 나이 정보를 수집하지 않습니다. 만 14세 미만 아동은 계정 연결, 문의하기(이메일 입력), 유료 구매를 법정대리인의 동의를 받아 이용해야 합니다. 법정대리인은 아동의 정보 열람·삭제를 문의처로 요청할 수 있습니다.</p><h2>8. 안전성 확보 조치</h2><p>운영자는 전송 구간 암호화(HTTPS), 데이터베이스 접근 권한 제한(이용자는 자신의 데이터만 읽고 쓸 수 있도록 보안 규칙 적용(공개되는 랭킹과 닉네임 중복 확인은 예외), 문의·신고는 작성만 가능), 관리자 계정 보호 등의 조치를 하고 있습니다.</p><h2>9. 자동 수집 장치</h2><p>서비스는 쿠키나 광고 식별자(IDFA, 광고 ID)를 수집하지 않으며, 이용자를 다른 앱·웹사이트에 걸쳐 추적하지 않습니다.</p><h2>10. 개인정보 보호책임자</h2><p>성명: [대표자명]
+- 그 밖의 요청(문의·구매 기록 등): 아래 문의처로 연락 주시면 지체 없이 처리합니다.</p><h2>7. 아동의 개인정보</h2><p>서비스는 이용자의 나이 정보를 수집하지 않습니다. 만 14세 미만 아동은 계정 연결, 문의하기(이메일 입력), 유료 구매를 법정대리인의 동의를 받아 이용해야 합니다. 법정대리인은 아동의 정보 열람·삭제를 문의처로 요청할 수 있습니다.</p><h2>8. 안전성 확보 조치</h2><p>운영자는 전송 구간 암호화(HTTPS), 데이터베이스 접근 권한 제한(이용자는 자신의 데이터만 읽고 쓸 수 있도록 보안 규칙 적용(공개되는 랭킹과 닉네임 중복 확인은 예외), 문의·신고는 작성만 가능), 관리자 계정 보호, 앱 무결성 확인(App Check), 플레이 기록에 근거한 부정 이용 점검 등의 조치를 하고 있습니다.</p><h2>9. 자동 수집 장치</h2><p>서비스는 쿠키나 광고 식별자(IDFA, 광고 ID)를 수집하지 않으며, 이용자를 다른 앱·웹사이트에 걸쳐 추적하지 않습니다.</p><h2>10. 개인정보 보호책임자</h2><p>성명: [대표자명]
 이메일: redhat9p0@gmail.com
 게임 안 문의: 설정 &gt; 문의하기
 개인정보 침해 신고·상담은 개인정보침해신고센터(privacy.kisa.or.kr, 국번 없이 118), 개인정보분쟁조정위원회(www.kopico.go.kr, 1833-6972)에도 할 수 있습니다.</p><h2>11. 방침의 변경</h2><p>이 방침이 바뀌면 시행일 7일 전까지 앱 안에서 알립니다.
@@ -55,6 +58,8 @@ b. Linking an account (optional)
 c. Using the leaderboard
 - Nickname, score, worn dress and time of record: to show the leaderboard (visible to other users)
 - When reporting a nickname: reporter and target identifiers, the nickname and time: to handle inappropriate nicknames
+- Play records (stage, result, distance, play time, score, gold earned, hearts left, revive used, stars, dress worn, app version, device type, time): to back leaderboard scores and detect cheating (not shown to other users)
+- App integrity tokens (Apple App Attest): to confirm requests come from the genuine app
 d. Using the contact form
 - Inquiry type and message, reply email (optional), app version, device type (iOS/Android), language, browser information (User-Agent) and time: to read and answer inquiries and reproduce bugs
 e. Making a purchase
@@ -66,10 +71,11 @@ g. Using Game Center
 - Achievement progress and leaderboard scores: to show them on Game Center&#x27;s achievements and leaderboard screens. These are sent to Apple and are subject to Apple&#x27;s privacy policy.</p><h2>3. Retention and Deletion</h2><p>a. Account, progress and leaderboard record: deleted immediately when you delete your account. Guest accounts inactive for one year or more may be deleted.
 b. Inquiries: kept for 3 years from receipt as complaint-handling records (Korean Act on Consumer Protection in Electronic Commerce), then deleted.
 c. Nickname reports: kept for 1 year after handling, then deleted.
+- Play records: kept for 1 year from the record date for cheating detection and dispute handling, then deleted (kept for that period even if you delete your account). Cheating decisions are kept for 1 year from the decision.
 d. Purchase records: kept for 5 years under the obligation to keep payment and supply records. The Stores keep the payment ledger.
 e. Deleted information is erased so it cannot be recovered.</p><h2>4. Sharing with Third Parties</h2><p>The Operator does not provide your information to third parties, except that leaderboard nicknames, scores and dresses are shown to other users as part of the Service, and except where required by law.</p><h2>5. Processors and International Transfers</h2><p>We entrust processing to the companies below, and your information is transferred abroad over the network whenever you use the related features. If you do not want this, you may choose not to use account linking, the leaderboard, the contact form or purchases, or delete your account, in which case those features will be unavailable.
 a. Google LLC (USA): Firebase authentication and database (database location: Seoul, Republic of Korea)
-- Items: anonymous identifier, linked account information, progress, leaderboard, report and inquiry information
+- Items: anonymous identifier, linked account information, progress, leaderboard, play records, report and inquiry information, app integrity tokens (Firebase App Check)
 - Retention: as in section 3
 b. RevenueCat, Inc. (USA): in-app purchase verification and restoring
 - Items: anonymous identifier, purchased product IDs and history, Store receipt information
@@ -80,7 +86,7 @@ Contact details for each company are in its privacy policy.</p><h2>6. Your Right
 - Reset progress: Settings &gt; Reset Data
 - Delete account, cloud data and leaderboard record: Settings &gt; Account &gt; Delete Account
 - Change nickname: Settings &gt; Account &gt; Change name
-- Anything else (inquiries, purchase records, etc.): contact us below and we will act without delay.</p><h2>7. Children</h2><p>The Service does not collect age information. Children under 14 should use account linking, the contact form (entering an email) and purchases only with a legal guardian&#x27;s consent. A guardian may ask us to access or delete a child&#x27;s information.</p><h2>8. Security</h2><p>We use encrypted transmission (HTTPS), restricted database access (security rules let each user read and write only their own data, except the public leaderboard and nickname availability checks; inquiries and reports are write-only), and protection of administrator accounts.</p><h2>9. Automatic Collection</h2><p>The Service does not collect cookies or advertising identifiers (IDFA, Advertising ID), and does not track you across other apps or websites.</p><h2>10. Privacy Officer</h2><p>Name: [Representative Name]
+- Anything else (inquiries, purchase records, etc.): contact us below and we will act without delay.</p><h2>7. Children</h2><p>The Service does not collect age information. Children under 14 should use account linking, the contact form (entering an email) and purchases only with a legal guardian&#x27;s consent. A guardian may ask us to access or delete a child&#x27;s information.</p><h2>8. Security</h2><p>We use encrypted transmission (HTTPS), restricted database access (security rules let each user read and write only their own data, except the public leaderboard and nickname availability checks; inquiries and reports are write-only), protection of administrator accounts, app integrity checks (App Check) and cheating reviews based on play records.</p><h2>9. Automatic Collection</h2><p>The Service does not collect cookies or advertising identifiers (IDFA, Advertising ID), and does not track you across other apps or websites.</p><h2>10. Privacy Officer</h2><p>Name: [Representative Name]
 Email: redhat9p0@gmail.com
 In-game: Settings &gt; Contact Us</p><h2>11. Changes to This Policy</h2><p>We will announce changes in the app at least 7 days before they take effect.
 Effective date: [Effective Date]</p></section><section id="ja" lang="ja"><h1>ピクセルラン：はしるおひめさま プライバシーポリシー</h1><small>ピクセルラン：はしるおひめさま · App Store(iPhone)版</small><h2>1. 総則</h2><p>[事業者名](以下「運営者」)は、モバイルゲーム「ピクセルラン：はしるおひめさま」(以下「本サービス」)の運営にあたり、大韓民国の個人情報保護法その他の関係法令を遵守し、必要最小限の情報のみを取り扱います。本サービスには広告や行動分析・トラッキングツールはありません。</p><h2>2. 取り扱う情報と目的</h2><p>ア. ゲストでの利用(必須)
@@ -91,6 +97,8 @@ Effective date: [Effective Date]</p></section><section id="ja" lang="ja"><h1>ピ
 ウ. ランキング利用時
 - ニックネーム、スコア、着用ドレス、記録時刻:ランキング表示のため(他の利用者に公開)
 - ニックネーム通報時:通報者・対象者の識別子、対象ニックネーム、通報時刻:不適切なニックネームの対応のため
+- プレイ記録(ステージ、結果、距離、プレイ時間、スコア、獲得ゴールド、残りハート、復活の有無、星評価、着用ドレス、アプリのバージョン、端末の種類、記録時刻):ランキングスコアの根拠確認と不正利用の検知のため(他の利用者には公開されません)
+- アプリの完全性確認トークン(Apple App Attest):正規のアプリからのリクエストか確認するため
 エ. お問い合わせ利用時
 - 種類と内容、返信用メール(任意)、アプリのバージョン、端末の種類(iOS/Android)、言語、ブラウザ情報(User-Agent)、送信時刻:確認・回答と不具合の再現のため
 オ. 有料購入時
@@ -102,10 +110,11 @@ Effective date: [Effective Date]</p></section><section id="ja" lang="ja"><h1>ピ
 - 実績の達成記録とランキングスコア:Game Centerの実績・ランキング画面に表示するため。これらはAppleに送信され、Appleのプライバシーポリシーに従います。</p><h2>3. 保存期間と削除</h2><p>ア. アカウント・進行情報・ランキング記録:アカウント削除時に直ちに削除します。1年以上利用のないゲストアカウントは削除することがあります。
 イ. お問い合わせ:苦情・紛争処理の記録として受付から3年間保存後に削除します(大韓民国電子商取引消費者保護法)。
 ウ. ニックネーム通報記録:対応後1年間保存後に削除します。
+- プレイ記録:不正利用の検知と紛争対応のため記録日から1年間保存後に削除します(アカウントを削除してもこの期間は保存)。不正利用の判定記録は判定日から1年間保存します。
 エ. 購入記録:代金決済・供給記録の保存義務により5年間保存します。決済の元帳はストアが保存します。
 オ. 削除は復元できない方法で行います。</p><h2>4. 第三者提供</h2><p>運営者は利用者の情報を第三者に提供しません。ただし、ランキングのニックネーム・スコア・ドレスはサービスの機能として他の利用者に公開され、法令に基づく要請がある場合はそれに従います。</p><h2>5. 委託および国外移転</h2><p>サービス運営のため下記の事業者に処理を委託しており、関連機能の利用時にネットワークを通じて情報が国外に移転されます。望まない場合はアカウント連携・ランキング・お問い合わせ・購入を利用しないか、アカウントを削除できますが、その場合は当該機能を利用できません。
 ア. Google LLC(米国):Firebase認証・データベース(データベース所在地:大韓民国ソウル)
-- 移転項目:匿名の識別子、連携アカウント情報、進行情報、ランキング・通報・お問い合わせ情報
+- 移転項目:匿名の識別子、連携アカウント情報、進行情報、ランキング・プレイ記録・通報・お問い合わせ情報、アプリの完全性確認トークン(Firebase App Check)
 - 保存期間:3項と同じ
 イ. RevenueCat, Inc.(米国):アプリ内購入の確認・復元
 - 移転項目:匿名の識別子、購入商品IDと履歴、ストアのレシート情報
@@ -116,7 +125,7 @@ Effective date: [Effective Date]</p></section><section id="ja" lang="ja"><h1>ピ
 - 進行データの初期化:設定 &gt; データ初期化
 - アカウント・クラウドデータ・ランキングの削除:設定 &gt; アカウント &gt; アカウント削除
 - ニックネーム変更:設定 &gt; アカウント &gt; 名前を変える
-- その他(お問い合わせ・購入記録など):下記のお問い合わせ先にご連絡いただければ遅滞なく対応します。</p><h2>7. 子どもの個人情報</h2><p>本サービスは年齢情報を収集しません。14歳未満のお子さまは、アカウント連携、お問い合わせ(メール入力)、有料購入を法定代理人の同意を得て利用してください。法定代理人はお子さまの情報の閲覧・削除をお問い合わせ先に依頼できます。</p><h2>8. 安全管理措置</h2><p>通信の暗号化(HTTPS)、データベースのアクセス制限(各利用者が自分のデータのみ読み書きできるセキュリティルール(公開されるランキングとニックネームの重複確認を除く)、お問い合わせ・通報は書き込みのみ)、管理者アカウントの保護などの措置を講じています。</p><h2>9. 自動収集</h2><p>本サービスはCookieや広告識別子(IDFA、広告ID)を収集せず、他のアプリやウェブサイトをまたいで利用者を追跡しません。</p><h2>10. 個人情報保護責任者</h2><p>氏名:[代表者名]
+- その他(お問い合わせ・購入記録など):下記のお問い合わせ先にご連絡いただければ遅滞なく対応します。</p><h2>7. 子どもの個人情報</h2><p>本サービスは年齢情報を収集しません。14歳未満のお子さまは、アカウント連携、お問い合わせ(メール入力)、有料購入を法定代理人の同意を得て利用してください。法定代理人はお子さまの情報の閲覧・削除をお問い合わせ先に依頼できます。</p><h2>8. 安全管理措置</h2><p>通信の暗号化(HTTPS)、データベースのアクセス制限(各利用者が自分のデータのみ読み書きできるセキュリティルール(公開されるランキングとニックネームの重複確認を除く)、お問い合わせ・通報は書き込みのみ)、管理者アカウントの保護、アプリの完全性確認(App Check)、プレイ記録に基づく不正利用の点検などの措置を講じています。</p><h2>9. 自動収集</h2><p>本サービスはCookieや広告識別子(IDFA、広告ID)を収集せず、他のアプリやウェブサイトをまたいで利用者を追跡しません。</p><h2>10. 個人情報保護責任者</h2><p>氏名:[代表者名]
 メール:redhat9p0@gmail.com
 ゲーム内:設定 &gt; お問い合わせ</p><h2>11. 本ポリシーの変更</h2><p>変更する場合は施行日の7日前までにアプリ内でお知らせします。
 施行日:[施行日]</p></section></main></body></html>
