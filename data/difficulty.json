@@ -6,21 +6,21 @@
     "start": 310,
     "at300m": 400,
     "at1000m": 470,
-    "max": 545,
+    "max": 530,
     "segment1Curve": "easeOutQuad",
     "segment2Curve": "easeOutQuad",
     "after1000mCurve": "exponentialApproach",
-    "after1000mTauMeters": 450,
+    "after1000mTauMeters": 600,
     "tempoVariationRate": 0.06,
     "tempoVariationDurationMs": 2500,
     "tempoVariationCooldownMs": 12000
   },
   "route": {
-    "minimumHazardIntervalSec": 1.0,
-    "earlyDistanceMaxMeters": 150,
+    "minimumHazardIntervalSec": 1.05,
+    "earlyDistanceMaxMeters": 170,
     "earlyMaxVisibleHazards": 1,
     "maxVisibleHazards": 2,
-    "interSegmentSafeSec": 0.6,
+    "interSegmentSafeSec": 0.7,
     "restAfterHazardSegmentsMin": 2,
     "restAfterHazardSegmentsMax": 4
   },
@@ -34,19 +34,19 @@
     "first": {
       "speedMultiplier": 1.0,
       "minDistanceMultiplier": 1.0,
-      "earlyDistanceMaxMeters": 150,
+      "earlyDistanceMaxMeters": 170,
       "restAfterHazardSegmentsMin": 2,
       "restAfterHazardSegmentsMax": 4,
-      "minimumHazardIntervalSec": 1.0,
+      "minimumHazardIntervalSec": 1.05,
       "maxVisibleHazards": 2
     },
     "last": {
       "speedMultiplier": 1.2,
       "minDistanceMultiplier": 0.3,
-      "earlyDistanceMaxMeters": 30,
+      "earlyDistanceMaxMeters": 40,
       "restAfterHazardSegmentsMin": 4,
-      "restAfterHazardSegmentsMax": 7,
-      "minimumHazardIntervalSec": 0.85,
+      "restAfterHazardSegmentsMax": 6,
+      "minimumHazardIntervalSec": 0.9,
       "maxVisibleHazards": 3
     }
   },
