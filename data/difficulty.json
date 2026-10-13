@@ -31,6 +31,19 @@
   },
   "stageScaling": {
     "afterFirstFloor": 0.15,
+    "firstStageOnly": {
+      "speedMultiplier": 0.94,
+      "minimumHazardIntervalSec": 1.35,
+      "earlyDistanceMaxMeters": 250,
+      "restAfterHazardSegmentsMin": 1,
+      "restAfterHazardSegmentsMax": 2,
+      "maxVisibleHazards": 1,
+      "maxSegmentDifficulty": 2,
+      "excludeObstacles": ["spike", "enemy"],
+      "maxPitWidth": 110,
+      "obstacleFromMeters": { "tree": 700 },
+      "tutorial": { "speedFactor": 0.85, "hintLeadSec": 1.8, "skipAfterRetries": 3 }
+    },
     "first": {
       "speedMultiplier": 1.0,
       "minDistanceMultiplier": 1.0,
